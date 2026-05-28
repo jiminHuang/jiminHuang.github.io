@@ -1,0 +1,151 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Meander from "../../components/Meander.astro";
+import SectionEyebrow from "../../components/SectionEyebrow.astro";
+
+const tools = await getCollection("tools");
+
+const CATEGORIES: Array<{ key: string; greek: string; label: string; blurb: string }> = [
+  { key: "Platform",                    greek: "Α", label: "Platforms",                 blurb: "Composable infrastructure for building and running pipelines." },
+  { key: "Search & retrieval",          greek: "Β", label: "Search & retrieval",        blurb: "Semantic search over PubMed and the wider scientific literature." },
+  { key: "Information extraction",      greek: "Γ", label: "Information extraction",    blurb: "Turning unstructured text into structured events, relations, and evidence." },
+  { key: "Entity & term recognition",   greek: "Δ", label: "Entity & term recognition", blurb: "Finding the genes, proteins, anatomy, and terminology hidden in a corpus." },
+  { key: "Parsing & tagging",           greek: "Ε", label: "Parsing & tagging",         blurb: "Linguistic backbone — POS tags, chunks, dependency and HPSG parses." },
+  { key: "Annotation",                  greek: "Ζ", label: "Annotation",                blurb: "Tools for building the corpora the rest of the field is trained on." },
+];
+
+const sections = CATEGORIES.map((c) => ({
+  ...c,
+  items: tools
+    .filter((t) => t.data.category === c.key)
+    .sort((a, b) => a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)),
+})).filter((c) => c.items.length > 0);
+
+const statusColor: Record<string, string> = {
+  "Web service": "var(--color-amber-600)",
+  "Available": "var(--color-ink-700)",
+  "Demo": "var(--color-amber-500)",
+  "Archived": "var(--color-ink-300)",
+};
+---
+
+<Layout
+  title="Tools — NaCTeM"
+  description="Open infrastructure for text mining — services, libraries, and interactive tools built and maintained by NaCTeM."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">Tools</span>
+      </nav>
+
+      <SectionEyebrow letter="Τ" label="Open infrastructure" />
+
+      <h1 class="antique text-[clamp(2.6rem,5.6vw,5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-4xl mb-8">
+        Tools for reading the <em class="italic text-[color:var(--color-amber-600)]">scientific literature</em> at scale.
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+        Two decades of NaCTeM methods, packaged as services, libraries, and
+        interactive platforms. From individual taggers to full evaluation
+        frameworks — most are free for academic use.
+      </p>
+
+      <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{tools.length}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Tools</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{sections.length}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Categories</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">
+            {tools.filter((t) => t.data.status === "Web service").length}
+          </div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Live services</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  {sections.map((s, idx) => (
+    <section class={`border-b hairline ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
+      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+        <div class="grid md:grid-cols-[1fr_2fr] gap-10 mb-12 items-end">
+          <div>
+            <SectionEyebrow letter={s.greek} label={s.label} />
+            <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+              {s.label}
+            </h2>
+          </div>
+          <p class="serif text-lg text-[color:var(--color-ink-700)] leading-[1.55] max-w-2xl self-end">
+            {s.blurb}
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {s.items.map((t) => (
+            <a
+              href={`/tools/${t.id}`}
+              class="group block border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all"
+            >
+              <div class="flex items-start justify-between mb-4 gap-3">
+                <span
+                  class="smallcaps"
+                  style={`color: ${statusColor[t.data.status] ?? "var(--color-ink-500)"};`}
+                >{t.data.status}</span>
+                <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
+              </div>
+              <div class="display text-2xl font-medium text-[color:var(--color-ink-900)] mb-2 group-hover:text-[color:var(--color-amber-600)] transition-colors">{t.data.name}</div>
+              <p class="serif text-base text-[color:var(--color-ink-700)] leading-snug">{t.data.tagline}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="Need something custom?" tone="dark" />
+        <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
+          We build <em class="italic text-[color:var(--color-amber-400)]">domain-tuned</em> pipelines too.
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          If none of these fit your corpus, talk to us. NaCTeM runs custom
+          text-mining projects for research groups, the NHS, charities, and
+          industry.
+        </p>
+      </div>
+      <a
+        href="mailto:nactem@manchester.ac.uk"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Start a conversation <span aria-hidden>→</span>
+      </a>
+    </div>
+  </section>
+</Layout>

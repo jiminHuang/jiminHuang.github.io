@@ -1,0 +1,162 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Meander from "../../components/Meander.astro";
+import SectionEyebrow from "../../components/SectionEyebrow.astro";
+
+export async function getStaticPaths() {
+  const tools = await getCollection("tools");
+  return tools.map((t) => ({ params: { slug: t.id }, props: { tool: t } }));
+}
+
+const { tool } = Astro.props;
+const { Content } = await render(tool);
+const d = tool.data;
+
+const allTools = await getCollection("tools");
+const related = allTools
+  .filter((t) => t.id !== tool.id && t.data.category === d.category)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+
+const meta: { label: string; value: string }[] = [];
+meta.push({ label: "Status", value: d.status });
+meta.push({ label: "Category", value: d.category });
+if (d.paper) meta.push({ label: "Paper", value: d.paper });
+---
+
+<Layout title={`${d.name} — NaCTeM Tools`} description={d.tagline}>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <a href="/tools" class="hover:text-[color:var(--color-amber-600)]">Tools</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">{d.name}</span>
+      </nav>
+
+      <div class="grid lg:grid-cols-[2fr_1fr] gap-12 items-start">
+        <div>
+          <SectionEyebrow letter="Τ" label={`Tool · ${d.category}`} />
+          <h1 class="antique text-[clamp(3rem,6vw,5.5rem)] font-normal leading-[1.02] tracking-[-0.01em] text-[color:var(--color-ink-900)] mb-8">
+            {d.name}
+          </h1>
+          <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+            {d.tagline}
+          </p>
+
+          {(d.url || d.repo) && (
+            <div class="mt-10 flex flex-wrap gap-3 sans">
+              {d.url && (
+                <a
+                  href={d.url}
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors"
+                >
+                  Open {d.name} <span aria-hidden>↗</span>
+                </a>
+              )}
+              {d.repo && (
+                <a
+                  href={d.repo}
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors"
+                >
+                  Source <span aria-hidden>↗</span>
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+
+        <aside class="border hairline rounded-2xl bg-[color:var(--color-paper)]/70 backdrop-blur p-6 space-y-4">
+          {meta.map((m) => (
+            <div>
+              <div class="smallcaps text-[color:var(--color-ink-500)]">{m.label}</div>
+              <div class="display italic text-lg text-[color:var(--color-ink-900)] mt-1">{m.value}</div>
+            </div>
+          ))}
+        </aside>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="border-b hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid lg:grid-cols-[2fr_1fr] gap-16">
+      <article class="prose-tool serif text-lg leading-[1.7] text-[color:var(--color-ink-800)] max-w-none">
+        <Content />
+      </article>
+
+      {related.length > 0 && (
+        <aside>
+          <SectionEyebrow letter="Σ" label="In the same category" />
+          <ul class="space-y-2 mt-2">
+            {related.map((r) => (
+              <li>
+                <a href={`/tools/${r.id}`} class="block border hairline rounded-xl p-4 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
+                  <div class="display text-lg font-medium text-[color:var(--color-ink-900)] leading-tight">{r.data.name}</div>
+                  <div class="serif text-sm text-[color:var(--color-ink-700)] mt-1 leading-snug">{r.data.tagline}</div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-12">
+      <a href="/tools" class="inline-flex items-center gap-2 sans text-sm font-medium text-[color:var(--color-ink-700)] hover:text-[color:var(--color-amber-600)]">
+        <span aria-hidden>←</span> All tools
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .prose-tool :global(h2) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-top: 2.5rem;
+    margin-bottom: 0.875rem;
+    color: var(--color-ink-900);
+  }
+  .prose-tool :global(h3) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin-top: 2rem;
+    margin-bottom: 0.625rem;
+    color: var(--color-ink-900);
+  }
+  .prose-tool :global(p) { margin-bottom: 1.25rem; }
+  .prose-tool :global(strong) { color: var(--color-ink-900); font-weight: 600; }
+  .prose-tool :global(em) { color: var(--color-amber-600); }
+  .prose-tool :global(a) {
+    color: var(--color-amber-600);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .prose-tool :global(a:hover) { color: var(--color-ink-900); }
+</style>

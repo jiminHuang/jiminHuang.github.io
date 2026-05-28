@@ -34,9 +34,21 @@ const tools = defineCollection({
     name: z.string(),
     tag: z.string(),
     tagline: z.string(),
-    status: z.enum(["Available", "Beta", "Archived"]).default("Available"),
+    category: z.enum([
+      "Platform",
+      "Search & retrieval",
+      "Entity & term recognition",
+      "Parsing & tagging",
+      "Annotation",
+      "Information extraction",
+      "Other",
+    ]),
+    status: z.enum(["Available", "Web service", "Demo", "Archived"]).default("Available"),
     url: z.string().url().optional(),
     repo: z.string().url().optional(),
+    paper: z.string().optional(),
+    /** Display ordering inside a category (lower = earlier) */
+    order: z.number().int().default(100),
   }),
 });
 
