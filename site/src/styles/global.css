@@ -10,7 +10,7 @@
   /* Antique flavor — 17c. English revival. ACCENT ONLY: hero H1, Greek letters, MMIV. */
   --font-antique: "IM Fell English", "Iowan Old Style", "Apple Garamond", serif;
 
-  /* Greyscale (neutral, screen-tuned) */
+  /* Greyscale (light theme default) */
   --color-ink-950: #0a0a0a;
   --color-ink-900: #171717;
   --color-ink-800: #262626;
@@ -22,17 +22,46 @@
   --color-ink-100: #f5f5f5;
   --color-ink-50:  #fafafa;
 
-  /* Surfaces */
-  --color-paper:   #ffffff;     /* main background — pure white */
-  --color-paper-2: #f7f7f5;     /* very subtle warm grey for section alternation */
-  --color-paper-3: #f0efeb;     /* slightly more saturated for cards-on-tint */
+  --color-paper:   #ffffff;
+  --color-paper-2: #f7f7f5;
+  --color-paper-3: #f0efeb;
 
-  /* Brand amber (NaCTeM logo) — tuned for white background contrast */
-  --color-amber-600: #b16500;   /* darker for body text */
-  --color-amber-500: #e6840a;   /* primary brand */
+  --color-amber-600: #b16500;
+  --color-amber-500: #e6840a;
   --color-amber-400: #f59e0b;
   --color-amber-300: #fcd34d;
   --color-amber-100: #fef3c7;
+}
+
+/* Dark mode overrides */
+html.dark {
+  --color-ink-950: #fafafa;   /* "ink-950" used for darkest surfaces in light theme → brightest text in dark */
+  --color-ink-900: #f5f5f5;
+  --color-ink-800: #e5e5e5;
+  --color-ink-700: #d4d4d4;
+  --color-ink-500: #a3a3a3;
+  --color-ink-400: #737373;
+  --color-ink-300: #525252;
+  --color-ink-200: #404040;
+  --color-ink-100: #262626;
+  --color-ink-50:  #171717;
+
+  --color-paper:   #0a0a0a;
+  --color-paper-2: #141414;
+  --color-paper-3: #1f1f1f;
+
+  --color-amber-600: #f59e0b;
+  --color-amber-500: #fbbf24;
+  --color-amber-400: #fcd34d;
+  --color-amber-300: #fde68a;
+  --color-amber-100: #2a1a05;
+}
+
+html.dark img:not([src$=".svg"]):not(.no-dark-tweak) {
+  filter: brightness(0.92);
+}
+html.dark .paper-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
 }
 
 html {

@@ -14,6 +14,40 @@ const peopleCount = new Set(pubs.flatMap((p) => p.data.authors)).size;
 const allYears = [...new Set(pubs.map((p) => p.data.year ?? 0))].filter((y) => y > 0).sort((a, b) => b - a);
 const yearRange = allYears.length ? `${allYears[allYears.length - 1]}–${allYears[0]}` : "—";
 
+// Topic heuristics: scan title + venue
+const TOPIC_RULES: { topic: string; patterns: RegExp[] }[] = [
+  { topic: "LLMs",            patterns: [/\b(LLM|large language model|GPT|llama|prompt)/i] },
+  { topic: "Biomedical NLP",  patterns: [/\b(biomedical|bioNLP|MEDLINE|PubMed|gene|protein|biology|clinical)/i] },
+  { topic: "Mental health",   patterns: [/\b(mental health|depression|stress|suicid|emotional|empathy|psych)/i] },
+  { topic: "Event extraction",patterns: [/\b(event extraction|event mining|biomedical event)/i] },
+  { topic: "Information retrieval", patterns: [/\b(retrieval|search|ranking|RAG|reranking)/i] },
+  { topic: "Sentiment & stance",   patterns: [/\b(sentiment|opinion|stance|emotion)/i] },
+  { topic: "Summarisation",   patterns: [/\b(summari[sz]ation|summari[sz]e)/i] },
+  { topic: "Misinformation",  patterns: [/\b(fake|misinformation|conspiracy|fact[- ]check)/i] },
+  { topic: "Argument mining", patterns: [/\b(argument|claim detection|debate)/i] },
+  { topic: "Financial NLP",   patterns: [/\b(financial|finance|FinTech|investment|trading|stock)/i] },
+  { topic: "Multilingual",    patterns: [/\b(multilingual|cross-lingual|translation|low-resource)/i] },
+  { topic: "Knowledge graphs",patterns: [/\b(knowledge graph|ontology|semantic web)/i] },
+];
+
+function topicsFor(p: typeof pubs[number]): string[] {
+  const blob = `${p.data.title} ${p.data.venue ?? ""}`.toLowerCase();
+  const matches = new Set<string>();
+  for (const r of TOPIC_RULES) {
+    if (r.patterns.some((pat) => pat.test(blob))) matches.add(r.topic);
+  }
+  return [...matches];
+}
+
+const pubTopics = new Map(pubs.map((p) => [p.id, topicsFor(p)]));
+const topicCounts: Record<string, number> = {};
+for (const list of pubTopics.values()) {
+  for (const t of list) topicCounts[t] = (topicCounts[t] ?? 0) + 1;
+}
+const topTopics = Object.entries(topicCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 10);
+
 const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.html";
 
 const typeMeta: Record<string, { label: string; fg: string; bg: string }> = {
@@ -110,6 +144,13 @@ const typeCounts = Object.fromEntries(
       </div>
 
       <div class="flex items-center gap-3 sans text-sm">
+        <button
+          type="button"
+          id="pub-export"
+          class="inline-flex items-center gap-1.5 sans text-sm font-medium text-[color:var(--color-ink-700)] border hairline rounded-full px-3 py-1.5 hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] transition-colors"
+        >
+          Export <span class="hidden md:inline">filtered</span> .bib
+        </button>
         <label class="smallcaps text-[color:var(--color-ink-500)]" for="pub-sort">Sort</label>
         <select
           id="pub-sort"
@@ -123,7 +164,7 @@ const typeCounts = Object.fromEntries(
     </div>
 
     <!-- Year filter row -->
-    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-5 -mt-2 flex flex-wrap gap-1.5 sans text-xs items-center" id="pub-year-row">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-3 -mt-2 flex flex-wrap gap-1.5 sans text-xs items-center" id="pub-year-row">
       <span class="smallcaps text-[color:var(--color-ink-500)] mr-2">Year</span>
       <button type="button" data-year-all class="pub-year-btn border hairline rounded-full px-2.5 py-1 tabular-nums">All</button>
       {allYears.map((y) => (
@@ -132,6 +173,18 @@ const typeCounts = Object.fromEntries(
           data-year={y}
           class="pub-year-btn border hairline rounded-full px-2.5 py-1 tabular-nums"
         >{y}</button>
+      ))}
+    </div>
+
+    <!-- Topic filter row -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-5 flex flex-wrap gap-1.5 sans text-xs items-center" id="pub-topic-row">
+      <span class="smallcaps text-[color:var(--color-ink-500)] mr-2">Topic</span>
+      {topTopics.map(([topic, count]) => (
+        <button
+          type="button"
+          data-topic={topic}
+          class="pub-topic-btn border hairline rounded-full px-2.5 py-1 transition-colors text-[color:var(--color-ink-700)]"
+        >{topic} <span class="opacity-60 ml-0.5">{count}</span></button>
       ))}
     </div>
   </section>
@@ -176,6 +229,7 @@ const typeCounts = Object.fromEntries(
               data-title={p.data.title.toLowerCase()}
               data-authors={p.data.authors.join(" ").toLowerCase()}
               data-author-slugs={(p.data.authorSlugs ?? []).filter(Boolean).join(" ")}
+              data-topics={(pubTopics.get(p.id) ?? []).join("|")}
               data-idx={idx}
               data-pub-index
             >
@@ -358,9 +412,9 @@ const typeCounts = Object.fromEntries(
     sort: "newest",
     page: 0,
     authorSlug: null,       // null = all
+    topics: new Set(),      // empty = all
   };
 
-  // Pre-compute item meta for sorting
   const meta = items.map((el) => ({
     el,
     year: parseInt(el.dataset.year || "0", 10),
@@ -368,6 +422,7 @@ const typeCounts = Object.fromEntries(
     title: el.dataset.title,
     authors: el.dataset.authors,
     authorSlugs: (el.dataset.authorSlugs || "").split(" ").filter(Boolean),
+    topics: (el.dataset.topics || "").split("|").filter(Boolean),
   }));
 
   // URL ?author=<slug> presets the filter
@@ -387,6 +442,7 @@ const typeCounts = Object.fromEntries(
       if (state.types.size > 0 && !state.types.has(m.type)) return false;
       if (state.year != null && m.year !== state.year) return false;
       if (state.authorSlug && !m.authorSlugs.includes(state.authorSlug)) return false;
+      if (state.topics.size > 0 && !m.topics.some((t) => state.topics.has(t))) return false;
       if (q && !m.title.includes(q) && !m.authors.includes(q)) return false;
       return true;
     });
@@ -503,6 +559,25 @@ const typeCounts = Object.fromEntries(
       render();
     });
   }
+  const topicBtns = [...document.querySelectorAll(".pub-topic-btn")];
+  function updateTopicButtons() {
+    for (const b of topicBtns) {
+      const active = state.topics.has(b.dataset.topic);
+      b.style.background = active ? "var(--color-ink-900)" : "";
+      b.style.color = active ? "var(--color-paper)" : "";
+      b.style.borderColor = active ? "var(--color-ink-900)" : "";
+    }
+  }
+  for (const b of topicBtns) {
+    b.addEventListener("click", () => {
+      const t = b.dataset.topic;
+      if (state.topics.has(t)) state.topics.delete(t); else state.topics.add(t);
+      state.page = 0;
+      updateTopicButtons();
+      render();
+    });
+  }
+  updateTopicButtons();
   prevBtn.addEventListener("click", () => {
     if (state.page > 0) { state.page--; render(); window.scrollTo({ top: list.offsetTop - 240, behavior: "smooth" }); }
   });
@@ -532,6 +607,26 @@ const typeCounts = Object.fromEntries(
         btn.style.color = "";
       }, 1500);
     });
+  });
+
+  // Export currently-filtered BibTeX as a single .bib file
+  document.getElementById("pub-export").addEventListener("click", () => {
+    const filtered = applyFilters();
+    const sorted = applySort(filtered);
+    const parts = [];
+    for (const m of sorted) {
+      const pre = m.el.querySelector("details pre");
+      if (pre && pre.textContent) parts.push(pre.textContent.trim());
+    }
+    const blob = new Blob([parts.join("\n\n") + "\n"], { type: "application/x-bibtex" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    const stamp = new Date().toISOString().slice(0, 10);
+    a.download = `nactem-publications-${stamp}.bib`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
 })();
 </script>

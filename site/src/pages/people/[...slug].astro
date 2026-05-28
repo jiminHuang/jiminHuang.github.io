@@ -68,7 +68,7 @@ const pubYears = [...new Set(personPubs.map((p) => p.data.year).filter(Boolean))
       <div class="grid md:grid-cols-[280px_1fr] gap-12 items-start">
         <div>
           {d.photo ? (
-            <img
+            <img loading="lazy" decoding="async"
               src={d.photo}
               alt={d.name}
               class="w-full aspect-square object-cover rounded-2xl border hairline shadow-[0_8px_28px_rgba(20,19,15,0.10)]"
@@ -195,7 +195,7 @@ const pubYears = [...new Set(personPubs.map((p) => p.data.year).filter(Boolean))
             <li>
               <a href={`/people/${p.id}`} class="flex gap-4 items-start border hairline rounded-xl p-4 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
                 {p.data.photo ? (
-                  <img src={p.data.photo} alt={p.data.name} class="w-14 h-14 rounded-full object-cover border hairline shrink-0" style="filter: sepia(0.08) saturate(0.95);" />
+                  <img loading="lazy" decoding="async" src={p.data.photo} alt={p.data.name} class="w-14 h-14 rounded-full object-cover border hairline shrink-0" style="filter: sepia(0.08) saturate(0.95);" />
                 ) : (
                   <div class="w-14 h-14 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-xl text-[color:var(--color-amber-600)]" aria-hidden="true">
                     {p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}

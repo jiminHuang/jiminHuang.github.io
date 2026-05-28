@@ -1,0 +1,158 @@
+---
+// Floating search modal. Trigger with the "/" key or by clicking the header search button.
+---
+
+<dialog
+  id="search-dialog"
+  class="bg-transparent backdrop:bg-[color:var(--color-ink-900)]/40 backdrop:backdrop-blur-sm p-0 m-0 max-w-none w-full h-full"
+>
+  <div class="min-h-screen flex items-start justify-center px-4 pt-[8vh] pb-24">
+    <div class="w-full max-w-2xl bg-[color:var(--color-paper)] border hairline rounded-2xl shadow-2xl overflow-hidden">
+      <div class="flex items-center gap-3 p-5 border-b hairline">
+        <span aria-hidden class="text-[color:var(--color-ink-500)] text-lg">⌕</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search across the site…"
+          class="flex-1 bg-transparent outline-none text-base placeholder-[color:var(--color-ink-500)]"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+        />
+        <kbd class="sans text-[10px] uppercase tracking-wider text-[color:var(--color-ink-500)] border hairline rounded px-2 py-1">Esc</kbd>
+      </div>
+
+      <div id="search-empty" class="px-5 py-12 text-center sans text-sm text-[color:var(--color-ink-500)]">
+        Type to search publications, people, projects, tools, and corpora.
+      </div>
+
+      <div id="search-results" class="hidden max-h-[60vh] overflow-y-auto">
+        <ul id="search-results-list" class="divide-y hairline"></ul>
+      </div>
+
+      <div class="hidden px-5 py-4 border-t hairline sans text-[11px] uppercase tracking-wider text-[color:var(--color-ink-500)] flex items-center justify-between gap-3" id="search-footer">
+        <div><span id="search-count">0</span> results</div>
+        <div>Powered by Pagefind</div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script is:inline>
+  (() => {
+    let pagefind = null;
+    let pendingDebounce = null;
+
+    async function initPagefind() {
+      if (pagefind) return pagefind;
+      try {
+        pagefind = await import(/* @vite-ignore */ "/pagefind/pagefind.js");
+        await pagefind.options({ excerptLength: 28 });
+        return pagefind;
+      } catch (e) {
+        console.warn("Pagefind index not available.", e);
+        return null;
+      }
+    }
+
+    const dialog = document.getElementById("search-dialog");
+    const input = document.getElementById("search-input");
+    const empty = document.getElementById("search-empty");
+    const resultsWrap = document.getElementById("search-results");
+    const resultsList = document.getElementById("search-results-list");
+    const footer = document.getElementById("search-footer");
+    const countEl = document.getElementById("search-count");
+
+    function openSearch() {
+      if (!dialog.open) {
+        dialog.showModal();
+        setTimeout(() => input.focus(), 50);
+        initPagefind();
+      }
+    }
+    function closeSearch() {
+      dialog.close();
+      input.value = "";
+      showEmpty();
+    }
+    function showEmpty() {
+      empty.textContent = "Type to search publications, people, projects, tools, and corpora.";
+      empty.classList.remove("hidden");
+      resultsWrap.classList.add("hidden");
+      footer.classList.add("hidden");
+      resultsList.innerHTML = "";
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if ((e.key === "/" || (e.key === "k" && (e.metaKey || e.ctrlKey))) && !["INPUT","TEXTAREA","SELECT"].includes(e.target.tagName)) {
+        e.preventDefault();
+        openSearch();
+      } else if (e.key === "Escape" && dialog.open) {
+        closeSearch();
+      }
+    });
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) closeSearch();
+    });
+    document.addEventListener("click", (e) => {
+      const trigger = e.target.closest("[data-open-search]");
+      if (trigger) { e.preventDefault(); openSearch(); }
+    });
+
+    function esc(s) {
+      return s.replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    }
+
+    async function runSearch(q) {
+      if (!q.trim()) { showEmpty(); return; }
+      const pf = await initPagefind();
+      if (!pf) {
+        empty.textContent = "Search index not built yet.";
+        empty.classList.remove("hidden");
+        resultsWrap.classList.add("hidden");
+        footer.classList.add("hidden");
+        return;
+      }
+      const { results } = await pf.search(q);
+      const top = results.slice(0, 12);
+      if (top.length === 0) {
+        empty.classList.remove("hidden");
+        empty.textContent = "No results.";
+        resultsWrap.classList.add("hidden");
+        footer.classList.add("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+      resultsWrap.classList.remove("hidden");
+      footer.classList.remove("hidden");
+      countEl.textContent = String(results.length);
+      const loaded = await Promise.all(top.map((r) => r.data()));
+      resultsList.innerHTML = loaded.map((d) => {
+        const title = esc(d.meta?.title || d.url);
+        const excerpt = d.excerpt || "";
+        return `
+          <li>
+            <a href="${d.url}" class="block px-5 py-4 hover:bg-[color:var(--color-paper-2)] transition-colors">
+              <div class="display text-base text-[color:var(--color-ink-900)] leading-snug mb-1">${title}</div>
+              <div class="serif text-sm text-[color:var(--color-ink-500)] leading-snug line-clamp-2">${excerpt}</div>
+            </a>
+          </li>
+        `;
+      }).join("");
+    }
+
+    input.addEventListener("input", () => {
+      if (pendingDebounce) clearTimeout(pendingDebounce);
+      pendingDebounce = window.setTimeout(() => runSearch(input.value), 150);
+    });
+  })();
+</script>
+
+<style>
+  #search-results-list :global(mark) {
+    background: var(--color-amber-100);
+    color: var(--color-amber-600);
+    padding: 0 0.1em;
+    border-radius: 2px;
+  }
+</style>

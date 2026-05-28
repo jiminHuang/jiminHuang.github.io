@@ -155,4 +155,15 @@ const publications = defineCollection({
   }),
 });
 
-export const collections = { projects, tools, people, press, seminars, corpora, publications };
+const news = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/news" }),
+  schema: z.object({
+    title: z.string(),
+    date: z.string(),
+    tag: z.string().optional(),
+    summary: z.string().optional(),
+    href: z.string().optional(),
+  }),
+});
+
+export const collections = { projects, tools, people, press, seminars, corpora, publications, news };

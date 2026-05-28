@@ -24,7 +24,26 @@ const nav = [
         </a>
       ))}
     </nav>
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2">
+      <button
+        type="button"
+        data-open-search
+        aria-label="Search"
+        class="hidden sm:inline-flex items-center gap-2 sans text-sm text-[color:var(--color-ink-500)] border hairline rounded-full pl-3 pr-2 py-1.5 hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] transition-colors"
+      >
+        <span aria-hidden>⌕</span>
+        <span class="hidden lg:inline">Search</span>
+        <kbd class="sans text-[10px] uppercase tracking-wider text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] border hairline rounded px-1.5 py-0.5">/</kbd>
+      </button>
+      <button
+        type="button"
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+        class="hidden sm:inline-flex w-9 h-9 items-center justify-center border hairline rounded-full text-[color:var(--color-ink-700)] hover:text-[color:var(--color-ink-900)] hover:border-[color:var(--color-ink-900)] transition-colors text-sm"
+      >
+        <span class="dark:hidden" data-theme-light aria-hidden>☀</span>
+        <span class="hidden" data-theme-dark aria-hidden>☾</span>
+      </button>
       <a
         href="mailto:nactem@manchester.ac.uk"
         class="hidden sm:inline-flex items-center gap-1.5 sans text-sm font-medium text-[color:var(--color-ink-900)] border hairline rounded-full px-4 py-1.5 hover:bg-[color:var(--color-ink-900)] hover:text-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] transition-colors"
@@ -72,11 +91,28 @@ const nav = [
   (() => {
     const btn = document.getElementById("mobile-nav-toggle");
     const drawer = document.getElementById("mobile-nav-drawer");
-    if (!btn || !drawer) return;
-    btn.addEventListener("click", () => {
-      const open = drawer.classList.toggle("hidden") === false;
-      btn.setAttribute("aria-expanded", String(open));
-      btn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
-    });
+    if (btn && drawer) {
+      btn.addEventListener("click", () => {
+        const open = drawer.classList.toggle("hidden") === false;
+        btn.setAttribute("aria-expanded", String(open));
+        btn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      });
+    }
+
+    // Theme toggle
+    const toggle = document.getElementById("theme-toggle");
+    function applyTheme(name) {
+      document.documentElement.classList.toggle("dark", name === "dark");
+      document.querySelectorAll("[data-theme-light]").forEach((el) => el.classList.toggle("hidden", name === "dark"));
+      document.querySelectorAll("[data-theme-dark]").forEach((el) => el.classList.toggle("hidden", name !== "dark"));
+    }
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const current = document.documentElement.classList.contains("dark") ? "dark" : "light";
+        const next = current === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", next);
+        applyTheme(next);
+      });
+    }
   })();
 </script>

@@ -12,6 +12,9 @@ const seminars = (await getCollection("seminars")).sort((a, b) =>
     a.data.date ?? `${a.data.year ?? 0}-12-31`,
   ),
 );
+const announcements = (await getCollection("news")).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date),
+);
 
 const formatDate = (iso?: string) => {
   if (!iso) return "";
@@ -60,8 +63,11 @@ const formatYear = (iso?: string, fallback?: number) => {
         Interdisciplinary Biocentre.
       </p>
 
-      <div class="mt-14 flex gap-3 sans">
-        <a href="#press" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors">
+      <div class="mt-14 flex gap-3 sans flex-wrap">
+        <a href="#recent" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors">
+          {announcements.length} recent updates
+        </a>
+        <a href="#press" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors">
           {press.length} press mentions
         </a>
         <a href="#seminars" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors">
@@ -74,6 +80,48 @@ const formatYear = (iso?: string, fallback?: number) => {
       <Meander tone="ink" />
     </div>
   </section>
+
+  <!-- RECENT -->
+  {announcements.length > 0 && (
+    <section id="recent" class="border-b hairline">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+        <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+          <div>
+            <SectionEyebrow letter="α" label="Recently" />
+            <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+              What's new.
+            </h2>
+          </div>
+          <div class="smallcaps text-[color:var(--color-ink-500)]">
+            {announcements.length} updates
+          </div>
+        </div>
+
+        <ul class="space-y-8">
+          {announcements.map((a) => (
+            <li class="grid md:grid-cols-[140px_1fr] gap-x-8 gap-y-3 items-baseline">
+              <div class="smallcaps text-[color:var(--color-ink-500)] tabular-nums">{formatDate(a.data.date)}</div>
+              <div>
+                {a.data.tag && (
+                  <div class="smallcaps text-[color:var(--color-amber-600)] mb-2">{a.data.tag}</div>
+                )}
+                <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
+                  {a.data.href ? (
+                    <a href={a.data.href} class="hover:text-[color:var(--color-amber-600)] transition-colors">{a.data.title}</a>
+                  ) : (
+                    a.data.title
+                  )}
+                </div>
+                {a.data.summary && (
+                  <p class="serif text-base text-[color:var(--color-ink-700)] leading-snug max-w-3xl">{a.data.summary}</p>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <!-- PRESS -->
   <section id="press" class="border-b hairline">
