@@ -38,7 +38,7 @@ const typeCounts = Object.fromEntries(
   <section class="relative overflow-hidden paper-grain border-b hairline">
     <div class="absolute inset-0 -z-10">
       <div
-        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.08]"
         style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
       ></div>
     </div>
@@ -63,15 +63,15 @@ const typeCounts = Object.fromEntries(
 
       <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Papers</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{yearRange}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{yearRange}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Year range</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{peopleCount}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{peopleCount}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Unique authors</div>
         </div>
       </div>
@@ -180,7 +180,7 @@ const typeCounts = Object.fromEntries(
               data-pub-index
             >
               <div class="flex flex-col items-start gap-3">
-                <div class="antique text-3xl md:text-4xl text-[color:var(--color-ink-900)] leading-none tabular-nums">{p.data.year ?? "—"}</div>
+                <div class="display font-medium text-3xl md:text-4xl text-[color:var(--color-ink-900)] leading-none tabular-nums">{p.data.year ?? "—"}</div>
                 <span
                   class="smallcaps rounded-full px-2.5 py-1 border hairline"
                   style={`color: ${t.fg}; background: ${t.bg};`}

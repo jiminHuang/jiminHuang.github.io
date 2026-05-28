@@ -30,7 +30,7 @@ const sections = CATEGORIES.map((c) => ({
   <section class="relative overflow-hidden paper-grain border-b hairline">
     <div class="absolute inset-0 -z-10">
       <div
-        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.08]"
         style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
       ></div>
     </div>
@@ -57,15 +57,15 @@ const sections = CATEGORIES.map((c) => ({
 
       <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{corpora.length}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{corpora.length}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Corpora</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{sections.length}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{sections.length}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Categories</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">
             {Math.min(...corpora.map((c) => c.data.year ?? 9999))}
           </div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">First release</div>

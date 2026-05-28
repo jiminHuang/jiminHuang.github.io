@@ -54,7 +54,7 @@ const initials = (name: string) =>
   <section class="relative overflow-hidden paper-grain border-b hairline">
     <div class="absolute inset-0 -z-10">
       <div
-        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.08]"
         style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
       ></div>
     </div>
@@ -80,15 +80,15 @@ const initials = (name: string) =>
 
       <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">People listed</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{phdCount}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{phdCount}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Current PhDs</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{alumniCount}</div>
+          <div class="display font-medium text-4xl text-[color:var(--color-ink-900)] leading-none">{alumniCount}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Alumni</div>
         </div>
       </div>
@@ -127,7 +127,7 @@ const initials = (name: string) =>
             {alumniSorted.map((p) => (
               <li class="border-b hairline py-5 grid grid-cols-12 gap-4 items-baseline">
                 <div class="col-span-12 md:col-span-5 display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
-                <div class="col-span-3 md:col-span-1 antique text-lg text-[color:var(--color-ink-700)]">{p.data.yearGraduated ?? "—"}</div>
+                <div class="col-span-3 md:col-span-1 display font-medium text-lg text-[color:var(--color-ink-700)]">{p.data.yearGraduated ?? "—"}</div>
                 <div class="col-span-3 md:col-span-1 sans text-xs text-[color:var(--color-ink-500)] uppercase tracking-wider">{p.data.degree}</div>
                 <div class="col-span-6 md:col-span-5 serif text-base text-[color:var(--color-ink-700)] italic leading-snug">{p.data.currentPosition || "—"}</div>
               </li>
@@ -159,7 +159,7 @@ const initials = (name: string) =>
                     )}
                     <div class="self-center">
                       <div class="smallcaps text-[color:var(--color-amber-600)] mb-3">{p.data.group}</div>
-                      <h3 class="antique text-4xl md:text-5xl font-normal text-[color:var(--color-ink-900)] leading-[1.05] mb-3 group-hover:text-[color:var(--color-amber-600)] transition-colors">
+                      <h3 class="display font-medium text-4xl md:text-5xl font-normal text-[color:var(--color-ink-900)] leading-[1.05] mb-3 group-hover:text-[color:var(--color-amber-600)] transition-colors">
                         {p.data.name}
                       </h3>
                       {p.data.title && (

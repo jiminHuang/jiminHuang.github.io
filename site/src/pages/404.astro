@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
+import Meander from "../components/Meander.astro";
+---
+
+<Layout
+  title="Page not found — NaCTeM"
+  description="The page you were looking for could not be found."
+>
+  <section class="relative overflow-hidden paper-grain">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[680px] h-[680px] rounded-full blur-3xl opacity-[0.10]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-3xl px-6 lg:px-10 pt-28 pb-32 text-center">
+      <SectionEyebrow letter="∅" label="Page not found" />
+
+      <h1 class="display text-[clamp(4rem,12vw,9rem)] font-medium leading-none text-[color:var(--color-ink-900)] mb-6 tracking-tighter">
+        404
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-2xl mx-auto mb-12">
+        We can't find the page you're looking for. It may have been moved,
+        renamed, or never existed in the first place.
+      </p>
+
+      <div class="flex flex-wrap gap-3 justify-center sans">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors"
+        >
+          Back to homepage <span aria-hidden>→</span>
+        </a>
+        <a
+          href="/publications"
+          class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors"
+        >
+          Browse publications
+        </a>
+      </div>
+
+      <div class="mt-16 opacity-50">
+        <Meander tone="ink" />
+      </div>
+
+      <p class="mt-12 sans text-sm text-[color:var(--color-ink-500)]">
+        If you arrived here from a broken link on our site, let us know at
+        <a href="mailto:nactem@manchester.ac.uk" class="text-[color:var(--color-amber-600)] hover:underline">nactem@manchester.ac.uk</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

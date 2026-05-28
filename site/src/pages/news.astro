@@ -36,7 +36,7 @@ const formatYear = (iso?: string, fallback?: number) => {
   <section class="relative overflow-hidden paper-grain border-b hairline">
     <div class="absolute inset-0 -z-10">
       <div
-        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.08]"
         style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
       ></div>
     </div>
@@ -153,7 +153,7 @@ const formatYear = (iso?: string, fallback?: number) => {
               rel="noopener"
               class="py-5 grid grid-cols-12 gap-4 items-baseline group"
             >
-              <div class="col-span-3 md:col-span-1 antique text-lg text-[color:var(--color-ink-700)] tabular-nums">
+              <div class="col-span-3 md:col-span-1 display font-medium text-lg text-[color:var(--color-ink-700)] tabular-nums">
                 {formatYear(s.data.date, s.data.year)}
               </div>
               <div class="col-span-9 md:col-span-4 display text-lg md:text-xl text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">
