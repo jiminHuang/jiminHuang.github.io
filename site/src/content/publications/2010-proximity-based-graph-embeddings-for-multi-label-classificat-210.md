@@ -8,4 +8,7 @@ venueType: conference
 year: 2010
 url: "http://www.nactem.ac.uk/papers/Mu_KDIR_2010.pdf"
 aigaionId: 210
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+keywords: []
 ---

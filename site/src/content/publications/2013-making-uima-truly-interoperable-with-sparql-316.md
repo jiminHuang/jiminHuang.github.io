@@ -8,4 +8,10 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/W13-2311"
 aigaionId: 316
+pubType: "Inproceedings"
+bibtexKey: "rak13making"
+pages: "88-97"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/125"
+pdfName: "rak13making.pdf"
 ---

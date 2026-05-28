@@ -8,4 +8,7 @@ venueType: conference
 year: 2014
 url: "https://mbgserv18.mobot.org/ocs/index.php/tdwg/2014/paper/view/588"
 aigaionId: 394
+pubType: "Inproceedings"
+bibtexKey: "batista14enriching"
+keywords: []
 ---

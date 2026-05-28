@@ -8,4 +8,8 @@ venueType: workshop
 year: 2010
 url: "http://www.nactem.ac.uk/biotxtm/papers/Wang.pdf"
 aigaionId: 185
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "23--30"
+keywords: []
 ---

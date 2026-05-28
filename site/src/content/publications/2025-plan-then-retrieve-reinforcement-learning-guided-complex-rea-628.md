@@ -9,4 +9,7 @@ year: 2025
 doi: "http://dx.doi.org/10.48550/arXiv.2510.20691"
 url: "https://arxiv.org/abs/2510.20691"
 aigaionId: 628
+pubType: "Misc"
+bibtexKey: "song:2025"
+keywords: []
 ---

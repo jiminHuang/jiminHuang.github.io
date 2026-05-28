@@ -8,4 +8,7 @@ venueType: preprint
 year: 2025
 url: "https://arxiv.org/abs/2503.20990"
 aigaionId: 607
+pubType: "Misc"
+bibtexKey: "cao:2025"
+keywords: []
 ---

@@ -4,8 +4,12 @@ authors: ["Christopoulou, F.", "Tran, T. T.", "Sahu, S. K.", "Miwa, M.", "Anania
 authorSlugs: ["fenia-christopoulou-alum-2020", "", "", "", "sophia-ananiadou"]
 venue: "in: Journal of the American Medical Informatics Association(ocz101)"
 venueShort: "in: Journal of the American Medical Informatics Association("
-venueType: other
+venueType: journal
 year: 2019
 doi: "http://dx.doi.org/10.1093/jamia/ocz101"
 aigaionId: 464
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "ocz101"
+keywords: []
 ---

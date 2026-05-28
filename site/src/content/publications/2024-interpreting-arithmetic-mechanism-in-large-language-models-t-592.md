@@ -9,4 +9,8 @@ year: 2024
 doi: "http://dx.doi.org/10.18653/v1/2024.emnlp-main.193"
 url: "https://aclanthology.org/2024.emnlp-main.193/"
 aigaionId: 592
+pubType: "Inproceedings"
+bibtexKey: "yu:2024interpreting"
+pages: "3293–3306"
+keywords: []
 ---

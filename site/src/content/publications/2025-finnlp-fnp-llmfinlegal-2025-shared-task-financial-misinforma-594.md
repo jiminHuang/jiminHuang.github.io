@@ -8,4 +8,8 @@ venueType: workshop
 year: 2025
 url: "https://aclanthology.org/2025.finnlp-1.30/"
 aigaionId: 594
+pubType: "Inproceedings"
+bibtexKey: "liu:2025"
+pages: "271–276"
+keywords: []
 ---

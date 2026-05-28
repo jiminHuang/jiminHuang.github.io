@@ -4,9 +4,12 @@ authors: ["Miwa, M.", "Thomas, J.", "O'Mara-Eves, A.", "Ananiadou, S."]
 authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Journal of Biomedical Informatics"
 venueShort: "JBI"
-venueType: other
+venueType: journal
 year: 2014
 doi: "http://dx.doi.org/10.1016/j.jbi.2014.06.005"
 url: "http://www.j-biomed-inform.com/article/S1532-0464%2814%2900143-9/abstract"
 aigaionId: 355
+pubType: "Article"
+bibtexKey: "miwa:2014jbi"
+keywords: ["ebph"]
 ---

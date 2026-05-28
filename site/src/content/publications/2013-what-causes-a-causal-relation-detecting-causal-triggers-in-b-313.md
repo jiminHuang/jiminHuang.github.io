@@ -8,4 +8,10 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/P13-3006"
 aigaionId: 313
+pubType: "Inproceedings"
+bibtexKey: "mihaila13c"
+pages: "38-45"
+keywords: ["biocause"]
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/123"
+pdfName: "mihaila13c.pdf"
 ---

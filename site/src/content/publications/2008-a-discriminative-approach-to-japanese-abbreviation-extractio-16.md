@@ -7,4 +7,10 @@ venueShort: "Proceedings of the Third International Joint Conference on N"
 venueType: conference
 year: 2008
 aigaionId: 16
+pubType: "Inproceedings"
+bibtexKey: "okazaki:2008b"
+pages: "889-894"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/26"
+pdfName: "Okazaki_IJCNLP_2008.pdf"
 ---

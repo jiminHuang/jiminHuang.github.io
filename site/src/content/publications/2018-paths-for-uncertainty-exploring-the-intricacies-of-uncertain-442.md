@@ -8,4 +8,8 @@ venueType: workshop
 year: 2018
 url: "http://aclweb.org/anthology/W18-1302"
 aigaionId: 442
+pubType: "Inproceedings"
+bibtexKey: "zerva:2018"
+pages: "6-20"
+keywords: []
 ---

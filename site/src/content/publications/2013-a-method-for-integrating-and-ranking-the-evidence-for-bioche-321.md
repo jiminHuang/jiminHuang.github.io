@@ -4,9 +4,13 @@ authors: ["Miwa, M.", "Ohta, T.", "Rak, R.", "Rowley, A.", "Kell, D. B.", "Pyysa
 authorSlugs: ["", "", "", "", "", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 29:13(i44-i52)"
 venueShort: "Bioinformatics"
-venueType: other
+venueType: journal
 year: 2013
 doi: "http://dx.doi.org/10.1093/bioinformatics/btt227"
 url: "http://bioinformatics.oxfordjournals.org/content/29/13/i44.abstract"
 aigaionId: 321
+pubType: "Article"
+bibtexKey: "miwa13b"
+pages: "i44-i52"
+keywords: []
 ---

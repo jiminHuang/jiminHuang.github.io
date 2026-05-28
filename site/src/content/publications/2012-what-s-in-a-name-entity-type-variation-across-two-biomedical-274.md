@@ -8,4 +8,8 @@ venueType: workshop
 year: 2012
 url: "http://aclweb.org/anthology-new/E/E12/E12-3005.pdf"
 aigaionId: 274
+pubType: "Inproceedings"
+bibtexKey: "mihaila12a"
+pages: "38-45"
+keywords: []
 ---

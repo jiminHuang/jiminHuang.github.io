@@ -4,9 +4,13 @@ authors: ["Husain, N", "Chaudhry, I. B.", "Taylor, P.", "Ananiadou, S.", "Aseem,
 authorSlugs: ["", "", "", "sophia-ananiadou", "", "", ""]
 venue: "in: BMJ Open, 12(e056301)"
 venueShort: "in: BMJ Open"
-venueType: other
+venueType: journal
 year: 2022
 doi: "http://dx.doi.org/10.1136/bmjopen-2021-056301"
 url: "https://bmjopen.bmj.com/content/12/5/e056301"
 aigaionId: 510
+pubType: "Article"
+bibtexKey: "husain:2022"
+pages: "e056301"
+keywords: []
 ---

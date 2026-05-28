@@ -8,4 +8,7 @@ venueType: conference
 year: 2011
 url: "http://www.nactem.ac.uk/papers/Kocbek-ICCABS-2011.pdf"
 aigaionId: 218
+pubType: "Inproceedings"
+bibtexKey: "Kokbek:2011"
+keywords: []
 ---

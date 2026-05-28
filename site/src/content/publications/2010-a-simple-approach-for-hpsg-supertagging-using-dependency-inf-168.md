@@ -8,4 +8,7 @@ venueType: conference
 year: 2010
 url: "http://www.aclweb.org/anthology/N/N10/N10-1090.pdf"
 aigaionId: 168
+pubType: "Inproceedings"
+bibtexKey: "Zhang:2010"
+keywords: []
 ---

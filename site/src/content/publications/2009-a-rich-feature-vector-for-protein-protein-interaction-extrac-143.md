@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.aclweb.org/anthology/D/D09/D09-1013.pdf"
 aigaionId: 143
+pubType: "Inproceedings"
+bibtexKey: "miwa:2009b"
+pages: "121--130"
+keywords: []
 ---

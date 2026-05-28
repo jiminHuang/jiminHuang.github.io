@@ -8,4 +8,7 @@ venueType: conference
 year: 2024
 url: "https://neurips.cc/virtual/2024/poster/97525"
 aigaionId: 578
+pubType: "Inproceedings"
+bibtexKey: "xie-2024-finben"
+keywords: []
 ---

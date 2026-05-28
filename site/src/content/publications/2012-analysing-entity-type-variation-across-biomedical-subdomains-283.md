@@ -8,4 +8,8 @@ venueType: workshop
 year: 2012
 url: "http://www.nactem.ac.uk/papers/Mihaila_BioTxtM_2012.pdf"
 aigaionId: 283
+pubType: "Inproceedings"
+bibtexKey: "mihaila12b"
+pages: "1-7"
+keywords: []
 ---

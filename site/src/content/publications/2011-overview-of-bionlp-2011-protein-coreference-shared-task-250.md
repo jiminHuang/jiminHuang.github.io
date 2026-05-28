@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-1811"
 aigaionId: 250
+pubType: "Inproceedings"
+bibtexKey: "nguyen-kim-tsujii:2011:BioNLP-ST"
+pages: "74--82"
+keywords: []
 ---

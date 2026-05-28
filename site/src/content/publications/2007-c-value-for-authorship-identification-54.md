@@ -7,4 +7,7 @@ venueShort: "Proceedings of the 8th Conference on Forensic Linguistics"
 venueType: conference
 year: 2007
 aigaionId: 54
+pubType: "Inproceedings"
+bibtexKey: "frantzi:2007"
+keywords: []
 ---

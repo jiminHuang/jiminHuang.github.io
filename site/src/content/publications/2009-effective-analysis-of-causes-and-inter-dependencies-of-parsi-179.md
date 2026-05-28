@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www-tsujii.is.s.u-tokyo.ac.jp/~harasan/papers/harasan-IWPT2009.pdf"
 aigaionId: 179
+pubType: "Inproceedings"
+bibtexKey: "hara:2009"
+pages: "180--191"
+keywords: []
 ---

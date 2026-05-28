@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://www.lrec-conf.org/proceedings/lrec2010/pdf/306_Paper.pdf"
 aigaionId: 169
+pubType: "Inproceedings"
+bibtexKey: "nawaz:2010"
+pages: "2498--2505"
+keywords: ["metaknowledge"]
 ---

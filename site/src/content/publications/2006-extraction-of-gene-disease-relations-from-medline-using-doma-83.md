@@ -4,7 +4,13 @@ authors: ["Chun, H.-W.", "Tsuruoka, Y.", "Kim, J.-D.", "Shiba, R.", "Nagata, N."
 authorSlugs: ["", "", "", "", "", "", "junichi-tsujii"]
 venue: "Proceedings of the Pacific Symposium on Biocomputing (PSB) 11, pages 4-15"
 venueShort: "PSB"
-venueType: workshop
+venueType: conference
 year: 2006
 aigaionId: 83
+pubType: "Inproceedings"
+bibtexKey: "chun:2006"
+pages: "4-15"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/70"
+pdfName: "Chun_PSB_2006.pdf"
 ---

@@ -8,4 +8,8 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/W13-2009"
 aigaionId: 327
+pubType: "Inproceedings"
+bibtexKey: "Ohta_Pyysalo:2013:BioNLP-ST"
+pages: "67-75"
+keywords: []
 ---

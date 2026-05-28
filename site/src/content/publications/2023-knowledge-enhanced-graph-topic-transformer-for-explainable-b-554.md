@@ -4,9 +4,12 @@ authors: ["Xie, Q.", "Tiwari, P.", "Ananiadou, S."]
 authorSlugs: ["qianqian-xie", "", "sophia-ananiadou"]
 venue: "in: IEEE Journal of Biomedical and Health Informatics"
 venueShort: "in: IEEE Journal of Biomedical and Health Informatics"
-venueType: other
+venueType: journal
 year: 2023
 doi: "http://dx.doi.org/10.1109/JBHI.2023.3308064"
 url: "https://ieeexplore.ieee.org/abstract/document/10227516"
 aigaionId: 554
+pubType: "Article"
+bibtexKey: "xie:2023b"
+keywords: []
 ---

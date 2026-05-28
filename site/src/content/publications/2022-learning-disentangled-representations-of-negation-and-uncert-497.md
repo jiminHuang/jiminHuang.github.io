@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "https://aclanthology.org/2022.acl-long.574/"
 aigaionId: 497
+pubType: "Inproceedings"
+bibtexKey: "Vasilakes:2022"
+pages: "8380–8397"
+keywords: []
 ---

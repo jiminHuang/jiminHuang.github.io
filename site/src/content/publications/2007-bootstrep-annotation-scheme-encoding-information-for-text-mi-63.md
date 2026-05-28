@@ -7,4 +7,9 @@ venueShort: "Proceedings of the 4th Corpus Linguistics Conference (CL2007"
 venueType: conference
 year: 2007
 aigaionId: 63
+pubType: "Inproceedings"
+bibtexKey: "piao2007"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/56"
+pdfName: "Piao_CorpLing_2007.pdf"
 ---

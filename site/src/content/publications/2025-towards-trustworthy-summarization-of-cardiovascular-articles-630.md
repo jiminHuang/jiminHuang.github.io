@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.uncertainlp-main.18"
 url: "https://aclanthology.org/2025.uncertainlp-main.18/"
 aigaionId: 630
+pubType: "Inproceedings"
+bibtexKey: "partalidou:2025"
+pages: "200–207"
+keywords: []
 ---

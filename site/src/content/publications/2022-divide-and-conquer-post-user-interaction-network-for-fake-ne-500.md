@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "https://dl.acm.org/doi/10.1145/3485447.3512163"
 aigaionId: 500
+pubType: "Inproceedings"
+bibtexKey: "min:2022"
+pages: "1148–1158"
+keywords: []
 ---

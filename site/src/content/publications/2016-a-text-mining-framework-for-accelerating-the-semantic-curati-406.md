@@ -8,4 +8,8 @@ venueType: conference
 year: 2016
 url: "http://link.springer.com/chapter/10.1007%2F978-3-319-43997-6_44"
 aigaionId: 406
+pubType: "Inproceedings"
+bibtexKey: "batista16tmframework"
+pages: "459-462"
+keywords: []
 ---

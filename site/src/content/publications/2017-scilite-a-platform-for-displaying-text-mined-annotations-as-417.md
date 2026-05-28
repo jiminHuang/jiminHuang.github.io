@@ -4,9 +4,12 @@ authors: ["Venkatesan, A.", "Kim, J. -H.", "Talo, F.", "Ide-Smith, M.", "Gobeill
 authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou", "", ""]
 venue: "in: Wellcome Open Res, 1:25"
 venueShort: "in: Wellcome Open Res"
-venueType: other
+venueType: journal
 year: 2017
 doi: "http://dx.doi.org/10.12688/wellcomeopenres.10210.2"
 url: "https://wellcomeopenresearch.org/articles/1-25/v2"
 aigaionId: 417
+pubType: "Article"
+bibtexKey: "Venkatesan:2016"
+keywords: []
 ---

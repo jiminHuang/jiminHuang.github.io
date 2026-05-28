@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.aclweb.org/anthology/E/E09/E09-2016.pdf"
 aigaionId: 46
+pubType: "Inproceedings"
+bibtexKey: "sasaki:2009"
+pages: "61--64"
+keywords: []
 ---

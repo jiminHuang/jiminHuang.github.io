@@ -8,4 +8,8 @@ venueType: workshop
 year: 2013
 url: "http://www.biocreative.org/media/store/files/2013/bc4_v2_5.pdf"
 aigaionId: 333
+pubType: "Inproceedings"
+bibtexKey: "batista13chemistry"
+pages: "55-59"
+keywords: []
 ---

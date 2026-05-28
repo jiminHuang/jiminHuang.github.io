@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://www.lrec-conf.org/proceedings/lrec2010/pdf/617_Paper.pdf"
 aigaionId: 174
+pubType: "Inproceedings"
+bibtexKey: "hanaoka:2010"
+pages: "1876--1880"
+keywords: []
 ---

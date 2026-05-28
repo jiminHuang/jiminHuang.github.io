@@ -8,4 +8,8 @@ venueType: workshop
 year: 2019
 url: "https://www.aclweb.org/anthology/D19-5727/"
 aigaionId: 469
+pubType: "Inproceedings"
+bibtexKey: "trieu:2019"
+pages: "196-205"
+keywords: []
 ---

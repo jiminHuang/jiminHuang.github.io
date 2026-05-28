@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.aclweb.org/anthology/D/D09/D09-1138.pdf"
 aigaionId: 178
+pubType: "Inproceedings"
+bibtexKey: "miyao:2009b"
+pages: "1328--1337"
+keywords: []
 ---

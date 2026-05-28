@@ -8,4 +8,8 @@ venueType: conference
 year: 2012
 url: "http://www.lrec-conf.org/proceedings/lrec2012/pdf/818_Paper.pdf"
 aigaionId: 276
+pubType: "Inproceedings"
+bibtexKey: "nawaz:2012"
+pages: "3505-3510"
+keywords: ["metaknowledge"]
 ---

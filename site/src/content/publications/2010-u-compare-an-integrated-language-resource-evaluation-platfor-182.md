@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://www.lrec-conf.org/proceedings/lrec2010/pdf/307_Paper.pdf"
 aigaionId: 182
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "428--434"
+keywords: ["ucompare"]
 ---

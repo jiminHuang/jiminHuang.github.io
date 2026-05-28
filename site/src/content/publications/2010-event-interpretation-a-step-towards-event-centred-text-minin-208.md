@@ -7,4 +7,9 @@ venueShort: "Proceedings of the 1st Automated Motif Discovery in Cultural"
 venueType: workshop
 year: 2010
 aigaionId: 208
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+keywords: ["metaknowledge"]
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/121"
+pdfName: "Nawaz_AMICUS_2010.pdf"
 ---

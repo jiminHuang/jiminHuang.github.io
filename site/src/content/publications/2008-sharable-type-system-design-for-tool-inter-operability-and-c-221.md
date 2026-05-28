@@ -7,4 +7,8 @@ venueShort: "Proceedings of the First International Conference on Global"
 venueType: conference
 year: 2008
 aigaionId: 221
+pubType: "Inproceedings"
+bibtexKey: "kano:2008c"
+pages: "122--129"
+keywords: []
 ---

@@ -8,4 +8,7 @@ venueType: preprint
 year: 2025
 url: "https://arxiv.org/abs/2506.14028"
 aigaionId: 614
+pubType: "Misc"
+bibtexKey: "peng:2025b"
+keywords: []
 ---

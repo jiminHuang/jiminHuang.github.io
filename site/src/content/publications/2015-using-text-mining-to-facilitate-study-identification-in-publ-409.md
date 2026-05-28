@@ -4,7 +4,10 @@ authors: ["Haynes, C.", "Kay, N.", "Harrison, K.", "McLeod, C.", "Shaw, B.", "Le
 authorSlugs: ["", "", "", "", "", "", "georgios-kontonatsios-alum-2014", "sophia-ananiadou"]
 venue: "in: Guidelines International Network (G-I-N) conference"
 venueShort: "in: Guidelines International Network (G-I-N) conference"
-venueType: other
+venueType: journal
 year: 2015
 aigaionId: 409
+pubType: "Article"
+bibtexKey: "Journal:"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://aclweb.org/anthology-new/W/W10/W10-1919.pdf"
 aigaionId: 195
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "132--140"
+keywords: []
 ---

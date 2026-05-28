@@ -8,4 +8,7 @@ venueType: conference
 year: 2009
 url: "http://www.mt-archive.info/MTS-2009-Yu.pdf"
 aigaionId: 175
+pubType: "Inproceedings"
+bibtexKey: "yu:2010b"
+keywords: []
 ---

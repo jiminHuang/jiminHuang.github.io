@@ -8,4 +8,8 @@ venueType: conference
 year: 2014
 url: "http://www.lrec-conf.org/proceedings/lrec2014/pdf/23_Paper.pdf"
 aigaionId: 341
+pubType: "Inproceedings"
+bibtexKey: "mihaila14a"
+pages: "1984-1991"
+keywords: ["biocause"]
 ---

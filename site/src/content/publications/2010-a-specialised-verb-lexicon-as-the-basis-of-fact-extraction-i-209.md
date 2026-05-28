@@ -8,4 +8,7 @@ venueType: workshop
 year: 2010
 url: "http://linguistica.sns.it/Workshop_verb/papers/Rupp_verb2010_submission_49.pdf"
 aigaionId: 209
+pubType: "Inproceedings"
+bibtexKey: "rupp:2010"
+keywords: []
 ---

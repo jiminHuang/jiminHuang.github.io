@@ -9,4 +9,8 @@ year: 2024
 doi: "http://dx.doi.org/10.3233/FAIA241060"
 url: "https://ebooks.iospress.nl/volumearticle/70155"
 aigaionId: 573
+pubType: "Inproceedings"
+bibtexKey: "liu:2024d"
+pages: "4649 - 4656"
+keywords: []
 ---

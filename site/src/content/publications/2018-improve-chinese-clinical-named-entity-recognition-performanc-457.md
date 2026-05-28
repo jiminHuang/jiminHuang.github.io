@@ -8,4 +8,7 @@ venueType: workshop
 year: 2018
 url: "https://www.aminer.cn/archive/improve-chinese-clinical-named-entity-recognition-performance-by-using-the-graphical-and-phonetic-feature/5bff525d28686d2064b2d4ea"
 aigaionId: 457
+pubType: "Inproceedings"
+bibtexKey: "wang:2018"
+keywords: []
 ---

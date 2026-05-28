@@ -8,4 +8,7 @@ venueType: conference
 year: 2018
 url: "http://www.aclweb.org/anthology/D18-2019"
 aigaionId: 452
+pubType: "Inproceedings"
+bibtexKey: "Nghiem:2018"
+keywords: []
 ---

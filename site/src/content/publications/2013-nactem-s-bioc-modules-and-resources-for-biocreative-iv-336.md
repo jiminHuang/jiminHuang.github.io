@@ -7,4 +7,8 @@ venueShort: "Proceedings of the Fourth BioCreative Challenge Evaluation W"
 venueType: workshop
 year: 2013
 aigaionId: 336
+pubType: "Inproceedings"
+bibtexKey: "rak13nactem"
+pages: "61-67"
+keywords: []
 ---

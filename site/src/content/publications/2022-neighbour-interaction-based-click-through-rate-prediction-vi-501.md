@@ -9,4 +9,8 @@ year: 2022
 doi: "http://dx.doi.org/10.1145/3477495.3532031"
 url: "https://dl.acm.org/doi/10.1145/3477495.3532031"
 aigaionId: 501
+pubType: "Inproceedings"
+bibtexKey: "min:2022b"
+pages: "353-362"
+keywords: []
 ---

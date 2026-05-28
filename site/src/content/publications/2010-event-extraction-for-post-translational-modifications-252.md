@@ -8,4 +8,8 @@ venueType: workshop
 year: 2010
 url: "http://www.aclweb.org/anthology/W10-1903"
 aigaionId: 252
+pubType: "Inproceedings"
+bibtexKey: "ohta10ptm"
+pages: "19--27"
+keywords: []
 ---

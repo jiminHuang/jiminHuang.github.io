@@ -4,8 +4,12 @@ authors: ["Kolluru, B.", "Hawizy, L.", "Murray-Rust, P.", "Tsujii, J.", "Ananiad
 authorSlugs: ["", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: PLoS ONE, 6:5(e20181)"
 venueShort: "PLOS ONE"
-venueType: other
+venueType: journal
 year: 2011
 doi: "http://dx.doi.org/doi:10.1371/journal.pone.0020181"
 aigaionId: 227
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "e20181"
+keywords: []
 ---

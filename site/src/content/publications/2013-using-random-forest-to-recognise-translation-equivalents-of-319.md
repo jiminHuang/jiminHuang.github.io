@@ -8,4 +8,10 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/W13-2512"
 aigaionId: 319
+pubType: "Inproceedings"
+bibtexKey: "kontonatsios13c"
+pages: "95-104"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/127"
+pdfName: "kontonatsios13c.pdf"
 ---

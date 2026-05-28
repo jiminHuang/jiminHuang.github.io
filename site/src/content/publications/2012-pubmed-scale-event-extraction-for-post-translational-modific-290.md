@@ -8,4 +8,8 @@ venueType: conference
 year: 2012
 url: "http://aclweb.org/anthology-new/W/W12/W12-2410.pdf"
 aigaionId: 290
+pubType: "Inproceedings"
+bibtexKey: "bjorne:2012"
+pages: "82-90"
+keywords: []
 ---

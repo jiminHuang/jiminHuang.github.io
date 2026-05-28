@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://www.lrec-conf.org/proceedings/lrec2010/pdf/121_Paper.pdf"
 aigaionId: 170
+pubType: "Inproceedings"
+bibtexKey: "ananiadou:2010"
+pages: "3344--3350"
+keywords: []
 ---

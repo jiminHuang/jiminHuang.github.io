@@ -7,4 +7,10 @@ venueShort: "ACL 2007"
 venueType: conference
 year: 2007
 aigaionId: 62
+pubType: "Inproceedings"
+bibtexKey: "okanohara:2007"
+pages: "73--80"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/55"
+pdfName: "Okanohara_ACL_2007.pdf"
 ---

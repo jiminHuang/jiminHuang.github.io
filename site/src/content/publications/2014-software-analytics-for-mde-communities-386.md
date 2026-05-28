@@ -8,4 +8,7 @@ venueType: workshop
 year: 2014
 url: "http://ceur-ws.org/Vol-1290/paper5.pdf"
 aigaionId: 386
+pubType: "Inproceedings"
+bibtexKey: "williams:2015"
+keywords: []
 ---

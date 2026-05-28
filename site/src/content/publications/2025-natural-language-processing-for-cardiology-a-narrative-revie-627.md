@@ -9,4 +9,7 @@ year: 2025
 doi: "http://dx.doi.org/10.48550/arXiv.2510.16708"
 url: "https://arxiv.org/abs/2510.16708"
 aigaionId: 627
+pubType: "Misc"
+bibtexKey: "yangcardiology:2025"
+keywords: []
 ---

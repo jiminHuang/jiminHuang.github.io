@@ -4,9 +4,13 @@ authors: ["Bannach-Brown, A.", "Przybyɫa, P.", "Thomas, J.", "Rice, A.", "Anani
 authorSlugs: ["", "", "", "", "sophia-ananiadou", "", ""]
 venue: "in: Systematic Reviews, 8(23)"
 venueShort: "in: Systematic Reviews"
-venueType: other
+venueType: journal
 year: 2019
 doi: "http://dx.doi.org/10.1186/s13643-019-0942-7"
 url: "https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-019-0942-7"
 aigaionId: 458
+pubType: "Article"
+bibtexKey: "bb:2019"
+pages: "23"
+keywords: []
 ---

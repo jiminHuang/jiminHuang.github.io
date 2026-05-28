@@ -7,4 +7,10 @@ venueShort: "LREC 2008"
 venueType: conference
 year: 2008
 aigaionId: 17
+pubType: "Inproceedings"
+bibtexKey: "piao:2008"
+pages: "2013-2019"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/27"
+pdfName: "Piao_LREC_2008.pdf"
 ---

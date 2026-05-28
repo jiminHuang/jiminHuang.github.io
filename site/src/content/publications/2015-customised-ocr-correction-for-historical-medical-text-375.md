@@ -9,4 +9,8 @@ year: 2015
 doi: "http://dx.doi.org/10.1109/DigitalHeritage.2015.7413829"
 url: "http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=7413829"
 aigaionId: 375
+pubType: "Inproceedings"
+bibtexKey: "thompson:2015b"
+pages: "35 - 42"
+keywords: []
 ---

@@ -4,9 +4,13 @@ authors: ["Xie, Q.", "Bishop, J.", "Tiwari, P.", "Ananiadou, S."]
 authorSlugs: ["qianqian-xie", "jenny-bishop-alum-2023", "", "sophia-ananiadou"]
 venue: "in: Knowledge-Based Systems, 252(109460)"
 venueShort: "Knowledge-Based Systems"
-venueType: other
+venueType: journal
 year: 2022
 doi: "http://dx.doi.org/10.1016/j.knosys.2022.109460"
 url: "https://www.sciencedirect.com/science/article/pii/S0950705122007328"
 aigaionId: 513
+pubType: "Article"
+bibtexKey: "xie:2022"
+pages: "109460"
+keywords: []
 ---

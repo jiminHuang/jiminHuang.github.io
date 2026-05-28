@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.663.pdf"
 aigaionId: 504
+pubType: "Inproceedings"
+bibtexKey: "liu:2022"
+pages: "6162-6169"
+keywords: []
 ---

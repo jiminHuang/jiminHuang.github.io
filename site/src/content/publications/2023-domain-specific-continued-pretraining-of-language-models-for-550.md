@@ -8,4 +8,7 @@ venueType: preprint
 year: 2023
 doi: "https://doi.org/10.48550/arXiv.2304.10447"
 aigaionId: 550
+pubType: "Misc"
+bibtexKey: "ji:2023"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2025
 url: "https://ebooks.iospress.nl/volumearticle/76404"
 aigaionId: 609
+pubType: "Inproceedings"
+bibtexKey: "liu:2025c"
+pages: "5311 - 5318"
+keywords: []
 ---

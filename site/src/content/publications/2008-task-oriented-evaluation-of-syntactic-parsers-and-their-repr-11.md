@@ -7,4 +7,10 @@ venueShort: "ACL"
 venueType: conference
 year: 2008
 aigaionId: 11
+pubType: "Inproceedings"
+bibtexKey: "miyao:2008b"
+pages: "46-54"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/18"
+pdfName: "Miyao_ACL_2008.pdf"
 ---

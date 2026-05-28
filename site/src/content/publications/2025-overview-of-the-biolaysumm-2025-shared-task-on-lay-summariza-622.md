@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.bionlp-1.31"
 url: "https://aclanthology.org/2025.bionlp-1.31/"
 aigaionId: 622
+pubType: "Inproceedings"
+bibtexKey: "xiao:2025b"
+pages: "365–377"
+keywords: []
 ---

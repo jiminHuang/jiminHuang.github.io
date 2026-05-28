@@ -4,9 +4,12 @@ authors: ["O'Mara-Eves, A.", "Thomas, J.", "McNaught, J.", "Miwa, M.", "Ananiado
 authorSlugs: ["", "", "john-mcnaught", "", "sophia-ananiadou"]
 venue: "in: Systematic Reviews, 4:1"
 venueShort: "in: Systematic Reviews"
-venueType: other
+venueType: journal
 year: 2015
 doi: "http://dx.doi.org/10.1186/2046-4053-4-5"
 url: "http://www.systematicreviewsjournal.com/content/4/1/5"
 aigaionId: 368
+pubType: "Article"
+bibtexKey: "Journal:"
+keywords: []
 ---

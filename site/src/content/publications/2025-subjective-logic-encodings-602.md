@@ -8,4 +8,7 @@ venueType: preprint
 year: 2025
 url: "https://arxiv.org/abs/2502.12225"
 aigaionId: 602
+pubType: "Misc"
+bibtexKey: "vasilakes:2025"
+keywords: []
 ---

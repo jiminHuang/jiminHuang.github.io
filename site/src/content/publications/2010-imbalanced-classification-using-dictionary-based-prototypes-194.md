@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 url: "http://www.aclweb.org/anthology/C/C10/C10-2098.pdf"
 aigaionId: 194
+pubType: "Inproceedings"
+bibtexKey: "mu:2010"
+pages: "851-859"
+keywords: []
 ---

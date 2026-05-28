@@ -7,4 +7,10 @@ venueShort: "EMNLP 2007"
 venueType: conference
 year: 2007
 aigaionId: 72
+pubType: "Inproceedings"
+bibtexKey: "sagae:2007b"
+pages: "1044-1050"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/63"
+pdfName: "Sagae_EMNLP_2007.pdf"
 ---

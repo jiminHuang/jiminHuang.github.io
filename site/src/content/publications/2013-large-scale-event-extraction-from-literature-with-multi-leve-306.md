@@ -4,9 +4,13 @@ authors: ["Van Landeghem, S.", "BjÃ¶rne, J.", "Wei, C-. H", "Hakala, K.", "Pyy
 authorSlugs: ["", "", "", "", "", "sophia-ananiadou", "", "", "", "", ""]
 venue: "in: PLOS ONE, 8:4(e55814)"
 venueShort: "PLOS ONE"
-venueType: other
+venueType: journal
 year: 2013
 doi: "http://dx.doi.org/10.1371/journal.pone.0055814"
 url: "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0055814"
 aigaionId: 306
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "e55814"
+keywords: []
 ---

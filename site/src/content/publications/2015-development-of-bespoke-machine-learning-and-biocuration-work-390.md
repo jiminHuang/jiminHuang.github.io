@@ -8,4 +8,8 @@ venueType: workshop
 year: 2015
 url: "http://www.biocreative.org/media/store/files/2015/BCV2015_paper_15.pdf"
 aigaionId: 390
+pubType: "Inproceedings"
+bibtexKey: "batista15development"
+pages: "51-56"
+keywords: []
 ---

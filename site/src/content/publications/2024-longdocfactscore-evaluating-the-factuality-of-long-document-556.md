@@ -8,4 +8,8 @@ venueType: conference
 year: 2024
 url: "https://aclanthology.org/2024.lrec-main.941"
 aigaionId: 556
+pubType: "Inproceedings"
+bibtexKey: "bishop:2024"
+pages: "10777-10789"
+keywords: []
 ---

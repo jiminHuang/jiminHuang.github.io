@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-1816"
 aigaionId: 244
+pubType: "Inproceedings"
+bibtexKey: "stenetorp-EtAl:2011:BioNLP-ST"
+pages: "112--120"
+keywords: []
 ---

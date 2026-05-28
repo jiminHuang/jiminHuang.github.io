@@ -7,4 +7,10 @@ venueShort: "Proceedings of the 14th International Conference on Applicat"
 venueType: conference
 year: 2009
 aigaionId: 134
+pubType: "Inproceedings"
+bibtexKey: "piao:2009b"
+pages: "301-302"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/115"
+pdfName: "Piao_NLDB_2009.pdf"
 ---

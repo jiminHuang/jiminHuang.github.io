@@ -4,8 +4,11 @@ authors: ["Zerva, C.", "Nghiem, M-. Q.", "Nguyen, N. T. H.", "Ananiadou, S."]
 authorSlugs: ["chrysoula-zerva-alum-2018", "", "", "sophia-ananiadou"]
 venue: "in: Scientometrics"
 venueShort: "in: Scientometrics"
-venueType: other
+venueType: journal
 year: 2020
 doi: "http://dx.doi.org/10.1007/s11192-020-03455-z"
 aigaionId: 475
+pubType: "Article"
+bibtexKey: "zerva:2020"
+keywords: []
 ---

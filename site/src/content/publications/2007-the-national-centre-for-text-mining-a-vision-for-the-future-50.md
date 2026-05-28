@@ -4,8 +4,11 @@ authors: ["Ananiadou, S."]
 authorSlugs: ["sophia-ananiadou"]
 venue: "in: Ariadne, 53"
 venueShort: "in: Ariadne"
-venueType: other
+venueType: journal
 year: 2007
 url: "http://www.ariadne.ac.uk/issue53/ananiadou/"
 aigaionId: 50
+pubType: "Article"
+bibtexKey: "ananiadou:2007"
+keywords: []
 ---

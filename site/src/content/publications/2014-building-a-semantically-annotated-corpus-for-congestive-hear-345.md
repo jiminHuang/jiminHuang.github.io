@@ -8,4 +8,8 @@ venueType: workshop
 year: 2014
 url: "http://aclweb.org/anthology/W/W14/W14-1110.pdf"
 aigaionId: 345
+pubType: "Inproceedings"
+bibtexKey: "alnazzawi14a"
+pages: "69-74"
+keywords: []
 ---

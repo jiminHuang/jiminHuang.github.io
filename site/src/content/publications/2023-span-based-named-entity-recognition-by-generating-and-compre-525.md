@@ -8,4 +8,8 @@ venueType: conference
 year: 2023
 url: "https://aclanthology.org/2023.eacl-main.146"
 aigaionId: 525
+pubType: "Inproceedings"
+bibtexKey: "nguyen:2023"
+pages: "1984–1996"
+keywords: []
 ---

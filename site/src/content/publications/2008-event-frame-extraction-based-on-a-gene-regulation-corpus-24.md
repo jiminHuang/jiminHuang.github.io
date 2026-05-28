@@ -7,4 +7,10 @@ venueShort: "Computational Linguistics"
 venueType: conference
 year: 2008
 aigaionId: 24
+pubType: "Inproceedings"
+bibtexKey: "sasaki:2008c"
+pages: "761--768"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/34"
+pdfName: "Sasaki_COLING_2008.pdf"
 ---

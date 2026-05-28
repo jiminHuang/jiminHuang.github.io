@@ -7,4 +7,10 @@ venueShort: "LREC 2008"
 venueType: conference
 year: 2008
 aigaionId: 29
+pubType: "Inproceedings"
+bibtexKey: "thompson:2008"
+pages: "2159--2166"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/38"
+pdfName: "Thompson_LREC_2008.pdf"
 ---

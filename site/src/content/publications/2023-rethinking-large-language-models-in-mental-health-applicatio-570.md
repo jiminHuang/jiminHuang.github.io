@@ -8,4 +8,7 @@ venueType: preprint
 year: 2023
 url: "http://Rethinking large language models in mental health applications"
 aigaionId: 570
+pubType: "Misc"
+bibtexKey: "shaoxiong:2023"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2025
 url: "https://aclanthology.org/2025.coling-main.313/"
 aigaionId: 593
+pubType: "Inproceedings"
+bibtexKey: "yano:2024b"
+pages: "4670–4688"
+keywords: []
 ---

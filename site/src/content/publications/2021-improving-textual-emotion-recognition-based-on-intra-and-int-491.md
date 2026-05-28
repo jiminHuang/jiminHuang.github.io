@@ -4,9 +4,12 @@ authors: ["Alhuzali, H.", "Ananiadou, S."]
 authorSlugs: ["hassan-alhuzali-alum-2021", "sophia-ananiadou"]
 venue: "in: IEEE Transactions on Affective Computing"
 venueShort: "in: IEEE Transactions on Affective Computing"
-venueType: other
+venueType: journal
 year: 2021
 doi: "http://dx.doi.org/10.1109/TAFFC.2021.3104720"
 url: "https://ieeexplore.ieee.org/document/9513563"
 aigaionId: 491
+pubType: "Article"
+bibtexKey: "Publication status:"
+keywords: []
 ---

@@ -7,4 +7,8 @@ venueShort: "Proceedings of the 30th IFSCC Congress"
 venueType: conference
 year: 2018
 aigaionId: 446
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "Poster S2-296"
+keywords: []
 ---

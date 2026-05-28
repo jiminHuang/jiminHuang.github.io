@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.findings-acl.840"
 url: "https://aclanthology.org/2025.findings-acl.840/"
 aigaionId: 606
+pubType: "Inproceedings"
+bibtexKey: "zhang:2025"
+pages: "16338–16356"
+keywords: []
 ---

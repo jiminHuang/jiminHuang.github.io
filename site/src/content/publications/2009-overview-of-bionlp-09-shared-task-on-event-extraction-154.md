@@ -8,4 +8,8 @@ venueType: workshop
 year: 2009
 url: "http://www.aclweb.org/anthology/W/W09/W09-1401.pdf"
 aigaionId: 154
+pubType: "Inproceedings"
+bibtexKey: "kim:2009"
+pages: "1--9"
+keywords: []
 ---

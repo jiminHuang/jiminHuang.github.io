@@ -7,4 +7,8 @@ venueShort: "BIBM 2013"
 venueType: conference
 year: 2013
 aigaionId: 332
+pubType: "Inproceedings"
+bibtexKey: "mihaila13g"
+pages: "361-366"
+keywords: ["biocause"]
 ---

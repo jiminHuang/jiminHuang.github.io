@@ -8,4 +8,8 @@ venueType: conference
 year: 2014
 url: "http://www.aclweb.org/anthology/D14-1177"
 aigaionId: 360
+pubType: "Inproceedings"
+bibtexKey: "kontsonatsios:2014b"
+pages: "1701-1712"
+keywords: []
 ---

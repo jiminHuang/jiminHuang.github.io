@@ -9,4 +9,8 @@ year: 2024
 doi: "http://dx.doi.org/10.18653/v1/2023.bionlp-1.44"
 url: "https://aclanthology.org/2023.bionlp-1.44/"
 aigaionId: 584
+pubType: "Inproceedings"
+bibtexKey: "goldsack:2024"
+pages: "468-477"
+keywords: []
 ---

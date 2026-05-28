@@ -9,4 +9,7 @@ year: 2025
 doi: "http://dx.doi.org/10.48550/arXiv.2508.13491"
 url: "https://arxiv.org/abs/2508.13491"
 aigaionId: 624
+pubType: "Misc"
+bibtexKey: "kuang:2025"
+keywords: []
 ---

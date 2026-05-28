@@ -9,4 +9,8 @@ year: 2024
 doi: "http://dx.doi.org/10.18653/v1/2024.emnlp-main.191"
 url: "https://aclanthology.org/2024.emnlp-main.191"
 aigaionId: 590
+pubType: "Inproceedings"
+bibtexKey: "yu:2024neuron"
+pages: "3267–3280"
+keywords: []
 ---

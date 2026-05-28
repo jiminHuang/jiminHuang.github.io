@@ -8,4 +8,7 @@ venueType: conference
 year: 2017
 url: "https://hijournal.bcs.org/index.php/jhi/article/view/969/1006"
 aigaionId: 421
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+keywords: []
 ---

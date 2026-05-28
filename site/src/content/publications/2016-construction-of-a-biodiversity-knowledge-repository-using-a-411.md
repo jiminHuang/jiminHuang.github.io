@@ -4,8 +4,12 @@ authors: ["Batista-Navarro, R.", "Zerva, C.", "Ananiadou, S."]
 authorSlugs: ["", "chrysoula-zerva-alum-2018", "sophia-ananiadou"]
 venue: "Proceedings of the 3rd Annual International Symposium on Information Management and Big Data (SIMBig 2016), pages 22-25"
 venueShort: "Proceedings of the 3rd Annual International Symposium on Inf"
-venueType: workshop
+venueType: conference
 year: 2016
 url: "http://ceur-ws.org/Vol-1743/paper1.pdf"
 aigaionId: 411
+pubType: "Inproceedings"
+bibtexKey: "batista16construction"
+pages: "22-25"
+keywords: []
 ---

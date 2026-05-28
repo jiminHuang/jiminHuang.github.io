@@ -8,4 +8,7 @@ venueType: preprint
 year: 2024
 url: "https://arxiv.org/abs/2408.11878"
 aigaionId: 585
+pubType: "Misc"
+bibtexKey: "xie:2024-open-fin"
+keywords: []
 ---

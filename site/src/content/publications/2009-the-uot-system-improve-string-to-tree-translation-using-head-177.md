@@ -8,4 +8,8 @@ venueType: workshop
 year: 2009
 url: "http://mastarpj.nict.go.jp/IWSLT2009/proceedings/EC_14_tokyo.pdf"
 aigaionId: 177
+pubType: "Inproceedings"
+bibtexKey: "wu:2010b"
+pages: "99--106"
+keywords: []
 ---

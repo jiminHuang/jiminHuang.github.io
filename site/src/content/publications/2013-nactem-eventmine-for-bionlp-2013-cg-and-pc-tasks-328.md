@@ -8,4 +8,8 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/W13-2012"
 aigaionId: 328
+pubType: "Inproceedings"
+bibtexKey: "Miwa_Ananiadou:2013:BioNLP-ST"
+pages: "94-98"
+keywords: []
 ---

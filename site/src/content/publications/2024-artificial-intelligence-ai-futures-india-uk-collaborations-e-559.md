@@ -4,9 +4,13 @@ authors: ["Dwivedi, Y. K.", "Hughes, L.", "Bhadeshia, H. K. D. H.", "Ananiadou, 
 authorSlugs: ["", "", "", "sophia-ananiadou", "", "", "", "", "xinkai-wang-alum-2011"]
 venue: "in: International Journal of Information Management(102725)"
 venueShort: "in: International Journal of Information Management(102725)"
-venueType: other
+venueType: journal
 year: 2024
 doi: "http://dx.doi.org/10.1016/j.ijinfomgt.2023.102725"
 url: "https://www.sciencedirect.com/science/article/pii/S0268401223001068"
 aigaionId: 559
+pubType: "Article"
+bibtexKey: "dwivedi:2024"
+pages: "102725"
+keywords: []
 ---

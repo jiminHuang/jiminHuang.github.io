@@ -8,4 +8,8 @@ venueType: conference
 year: 2018
 url: "https://www.aclweb.org/anthology/P18-2014/"
 aigaionId: 443
+pubType: "Inproceedings"
+bibtexKey: "Christopoulou:2018"
+pages: "81-88"
+keywords: []
 ---

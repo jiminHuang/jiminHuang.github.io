@@ -7,4 +7,9 @@ venueShort: "Proceedings of the of the 16th Annual International Conferen"
 venueType: conference
 year: 2008
 aigaionId: 20
+pubType: "Inproceedings"
+bibtexKey: "rebholz:2008"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/28"
+pdfName: "Rebholz_ISMB_2008.pdf"
 ---

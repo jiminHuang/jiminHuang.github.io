@@ -7,4 +7,10 @@ venueShort: "Proceedings of the 3rd International Joint Conference on Nat"
 venueType: conference
 year: 2008
 aigaionId: 4
+pubType: "Inproceedings"
+bibtexKey: "kano:2008b"
+pages: "859-864"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/8"
+pdfName: "Kano_IJCNLP_2008.pdf"
 ---

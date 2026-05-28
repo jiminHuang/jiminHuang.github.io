@@ -7,4 +7,10 @@ venueShort: "COLING 2006"
 venueType: conference
 year: 2006
 aigaionId: 92
+pubType: "Inproceedings"
+bibtexKey: "ohta:2006b"
+pages: "17-20"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/78"
+pdfName: "Ohta_ACL_2006.pdf"
 ---

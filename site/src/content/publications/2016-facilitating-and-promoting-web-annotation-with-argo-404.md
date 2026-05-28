@@ -7,4 +7,7 @@ venueShort: "Proceedings of I Annotate 2016"
 venueType: conference
 year: 2016
 aigaionId: 404
+pubType: "Inproceedings"
+bibtexKey: "shardlow16facilitating"
+keywords: []
 ---

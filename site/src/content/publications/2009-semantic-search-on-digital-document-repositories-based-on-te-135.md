@@ -7,4 +7,10 @@ venueShort: "International Conferences on Digital Libraries and the Seman"
 venueType: conference
 year: 2009
 aigaionId: 135
+pubType: "Inproceedings"
+bibtexKey: "nobata:2009"
+pages: "34--48"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/118"
+pdfName: "Nobata_ICSD_2009.pdf"
 ---

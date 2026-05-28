@@ -8,4 +8,8 @@ venueType: conference
 year: 2017
 url: "http://www.aclweb.org/anthology/D17-1001"
 aigaionId: 439
+pubType: "Inproceedings"
+bibtexKey: "arase:2017"
+pages: "1-11"
+keywords: []
 ---

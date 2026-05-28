@@ -8,4 +8,7 @@ venueType: conference
 year: 2009
 url: "http://www.star.uclan.ac.uk/~ft/papers/Firat_Tekiner_ICSSCW_2009.pdf"
 aigaionId: 161
+pubType: "Inproceedings"
+bibtexKey: "tekiner:2009"
+keywords: []
 ---

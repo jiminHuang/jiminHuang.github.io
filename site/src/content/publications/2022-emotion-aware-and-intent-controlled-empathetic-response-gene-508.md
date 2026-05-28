@@ -9,4 +9,8 @@ year: 2022
 doi: "http://dx.doi.org/10.1109/IJCNN55064.2022.9892592"
 url: "https://ieeexplore.ieee.org/document/9892592"
 aigaionId: 508
+pubType: "Inproceedings"
+bibtexKey: "saha:2022"
+pages: "1-8"
+keywords: []
 ---

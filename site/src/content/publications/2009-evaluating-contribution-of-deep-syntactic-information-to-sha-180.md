@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www-tsujii.is.s.u-tokyo.ac.jp/%7Euematsu/papers/iwpt2009-short.pdf"
 aigaionId: 180
+pubType: "Inproceedings"
+bibtexKey: "uematsu:2009b"
+pages: "85--88"
+keywords: []
 ---

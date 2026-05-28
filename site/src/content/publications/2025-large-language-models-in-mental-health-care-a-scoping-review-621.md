@@ -4,9 +4,13 @@ authors: ["Hua, Y.", "Liu, F.", "Yang, K", "Li, Z.", "Na, H.", "Sheu, Y.-H.", "Z
 authorSlugs: ["", "", "", "", "", "", "", "", "sophia-ananiadou", "", "", ""]
 venue: "in: Current Treatment Options in Psychiatry, 12(27)"
 venueShort: "in: Current Treatment Options in Psychiatry"
-venueType: other
+venueType: journal
 year: 2025
 doi: "http://dx.doi.org/10.1007/s40501-025-00363-y"
 url: "https://link.springer.com/article/10.1007/s40501-025-00363-y#citeas"
 aigaionId: 621
+pubType: "Article"
+bibtexKey: "hua:2025"
+pages: "27"
+keywords: []
 ---

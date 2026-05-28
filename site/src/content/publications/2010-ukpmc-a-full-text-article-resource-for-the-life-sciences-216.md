@@ -4,8 +4,12 @@ authors: ["McEntyre, J. R.", "Ananiadou, S.", "Andrews, S.", "Black, W.J.", "Bou
 authorSlugs: ["", "sophia-ananiadou", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "john-mcnaught", "", "", "", "", "", "", "", "", "", ""]
 venue: "in: Nucleic Acids Research, 39:Suppl. 1(D58-D65)"
 venueShort: "in: Nucleic Acids Research"
-venueType: other
+venueType: journal
 year: 2010
 doi: "http://dx.doi.org/10.1093/nar/gkq1063"
 aigaionId: 216
+pubType: "Article"
+bibtexKey: "McEntyre2010"
+pages: "D58-D65"
+keywords: []
 ---

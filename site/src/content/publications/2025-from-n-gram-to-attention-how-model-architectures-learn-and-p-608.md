@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.findings-emnlp.1003"
 url: "https://aclanthology.org/2025.findings-emnlp.1003/"
 aigaionId: 608
+pubType: "Inproceedings"
+bibtexKey: "kabir:2025b"
+pages: "18478–18498"
+keywords: []
 ---

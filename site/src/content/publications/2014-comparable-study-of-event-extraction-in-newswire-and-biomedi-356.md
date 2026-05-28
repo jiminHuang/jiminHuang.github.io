@@ -8,4 +8,8 @@ venueType: conference
 year: 2014
 url: "http://www.aclweb.org/anthology/C/C14/C14-1214.pdf"
 aigaionId: 356
+pubType: "Inproceedings"
+bibtexKey: "Miwa:2014coling"
+pages: "2270 -2279"
+keywords: ["ebph"]
 ---

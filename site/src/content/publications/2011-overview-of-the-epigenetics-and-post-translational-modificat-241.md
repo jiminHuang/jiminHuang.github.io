@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-1803"
 aigaionId: 241
+pubType: "Inproceedings"
+bibtexKey: "ohta-pyysalo-tsujii:2011:BioNLP-ST"
+pages: "16--25"
+keywords: []
 ---

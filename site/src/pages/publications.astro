@@ -213,7 +213,28 @@ const typeCounts = Object.fromEntries(
                   <div class="serif text-sm text-[color:var(--color-ink-700)] leading-snug mb-3">{p.data.venue}</div>
                 )}
 
+                {p.data.keywords && p.data.keywords.length > 0 && (
+                  <ul class="flex flex-wrap gap-1.5 mb-3">
+                    {p.data.keywords.map((k) => (
+                      <li class="sans text-[10px] uppercase tracking-wider text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] border hairline rounded-full px-2 py-0.5">{k}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {p.data.abstract && (
+                  <details class="mb-3 group/abs">
+                    <summary class="cursor-pointer sans text-xs text-[color:var(--color-ink-500)] hover:text-[color:var(--color-ink-900)] inline-flex items-center gap-1">
+                      <span class="group-open/abs:hidden">▸ Show abstract</span>
+                      <span class="hidden group-open/abs:inline">▾ Hide abstract</span>
+                    </summary>
+                    <p class="mt-2 serif text-sm text-[color:var(--color-ink-700)] leading-[1.6] border-l-2 pl-4" style="border-color: var(--color-ink-100)">{p.data.abstract}</p>
+                  </details>
+                )}
+
                 <div class="flex flex-wrap gap-2 sans text-xs">
+                  {p.data.pdfUrl && (
+                    <a href={p.data.pdfUrl} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 bg-[color:var(--color-amber-100)] text-[color:var(--color-amber-600)] border-[color:var(--color-amber-500)] hover:bg-[color:var(--color-amber-500)] hover:text-[color:var(--color-paper)] transition-colors font-medium">PDF ↓</a>
+                  )}
                   {p.data.doi && (
                     <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] transition-colors">DOI ↗</a>
                   )}
@@ -227,6 +248,9 @@ const typeCounts = Object.fromEntries(
                       rel="noopener"
                       class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] transition-colors"
                     >BibTeX ↗</a>
+                  )}
+                  {p.data.pages && (
+                    <span class="sans text-xs text-[color:var(--color-ink-500)] self-center ml-2">pp. {p.data.pages}</span>
                   )}
                 </div>
               </div>

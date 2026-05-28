@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.1007/978-3-031-97144-0_6"
 url: "https://link.springer.com/chapter/10.1007/978-3-031-97144-0_6"
 aigaionId: 620
+pubType: "Inproceedings"
+bibtexKey: "yano:2025b"
+pages: "58-69"
+keywords: []
 ---

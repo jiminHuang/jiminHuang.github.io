@@ -8,4 +8,8 @@ venueType: workshop
 year: 2016
 url: "http://www.aclweb.org/anthology/S16-1093"
 aigaionId: 405
+pubType: "Inproceedings"
+bibtexKey: "przybyla16nactem"
+pages: "614-620"
+keywords: []
 ---

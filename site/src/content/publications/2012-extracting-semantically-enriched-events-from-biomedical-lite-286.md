@@ -4,9 +4,13 @@ authors: ["Miwa, M.", "Thompson, P.", "McNaught, J.", "Kell, D. B.", "Ananiadou,
 authorSlugs: ["", "paul-thompson", "john-mcnaught", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 13(108)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2012
 doi: "http://dx.doi.org/10.1186/1471-2105-13-108"
 url: "http://www.biomedcentral.com/1471-2105/13/108/"
 aigaionId: 286
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "108"
+keywords: ["eventmine"]
 ---

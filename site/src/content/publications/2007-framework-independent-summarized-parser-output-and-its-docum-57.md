@@ -7,4 +7,8 @@ venueShort: "Proceedings of grammar engineering across framework 2007 (GE"
 venueType: conference
 year: 2007
 aigaionId: 57
+pubType: "Inproceedings"
+bibtexKey: "tam:2007"
+pages: "319--331"
+keywords: []
 ---

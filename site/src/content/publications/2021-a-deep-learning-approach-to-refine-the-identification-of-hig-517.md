@@ -4,9 +4,13 @@ authors: ["Navarro, T.", "Parrish, R.", "Cotoi, C.", "Germini, F.", "Linkins, L.
 authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou", ""]
 venue: "in: JMIR Research Protocols, 10:11(e29398)"
 venueShort: "in: JMIR Research Protocols"
-venueType: other
+venueType: journal
 year: 2021
 doi: "http://dx.doi.org/10.2196/29398"
 url: "https://www.researchprotocols.org/2021/11/e29398/"
 aigaionId: 517
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "e29398"
+keywords: []
 ---

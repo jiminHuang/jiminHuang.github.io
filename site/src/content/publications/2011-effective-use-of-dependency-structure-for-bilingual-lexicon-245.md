@@ -8,4 +8,8 @@ venueType: conference
 year: 2011
 url: "http://portal.acm.org/citation.cfm?id=1964750.1964758"
 aigaionId: 245
+pubType: "Inproceedings"
+bibtexKey: "Andrade:2011:EUD:1964750.1964758"
+pages: "80--92"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: workshop
 year: 2010
 url: "http://www.biocreative.org/media/store/files/2011/BioCreative_III_Proceedings_.pdf"
 aigaionId: 295
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "142-147"
+keywords: []
 ---

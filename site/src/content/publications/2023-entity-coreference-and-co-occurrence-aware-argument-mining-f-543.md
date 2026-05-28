@@ -8,4 +8,7 @@ venueType: workshop
 year: 2023
 url: "https://aclanthology.org/2023.codi-1.6/"
 aigaionId: 543
+pubType: "Inproceedings"
+bibtexKey: "liu:2023"
+keywords: []
 ---

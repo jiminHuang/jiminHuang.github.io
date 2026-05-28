@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-0218.pdf"
 aigaionId: 237
+pubType: "Inproceedings"
+bibtexKey: "pontus:2011a"
+pages: "136-145"
+keywords: []
 ---

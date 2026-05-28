@@ -8,4 +8,8 @@ venueType: workshop
 year: 2018
 url: "http://aclweb.org/anthology/W18-2324"
 aigaionId: 449
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "183-188"
+keywords: []
 ---

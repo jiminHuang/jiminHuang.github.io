@@ -8,4 +8,8 @@ venueType: conference
 year: 2017
 url: "http://www.aclweb.org/anthology/W17-2314"
 aigaionId: 431
+pubType: "Inproceedings"
+bibtexKey: "li-nguyen-ananiadou:2017:BioNLP17"
+pages: "117--125"
+keywords: []
 ---

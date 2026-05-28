@@ -8,4 +8,8 @@ venueType: conference
 year: 2013
 url: "http://lbm2013.biopathway.org/lbm2013proceedings.pdf"
 aigaionId: 339
+pubType: "Inproceedings"
+bibtexKey: "Pyysalo:2013b"
+pages: "39-44"
+keywords: []
 ---

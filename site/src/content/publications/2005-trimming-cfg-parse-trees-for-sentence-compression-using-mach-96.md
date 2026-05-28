@@ -7,4 +7,10 @@ venueShort: "COLING 2006"
 venueType: conference
 year: 2005
 aigaionId: 96
+pubType: "Inproceedings"
+bibtexKey: "unno:2006"
+pages: "850--857"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/82"
+pdfName: "Unno_ACL_2006.pdf"
 ---

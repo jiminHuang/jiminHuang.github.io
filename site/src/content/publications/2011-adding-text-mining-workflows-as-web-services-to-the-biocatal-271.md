@@ -8,4 +8,7 @@ venueType: workshop
 year: 2011
 url: "http://dl.acm.org/citation.cfm?id=2166913"
 aigaionId: 271
+pubType: "Inproceedings"
+bibtexKey: "kontonatsios:2011"
+keywords: ["isher", "ucompare"]
 ---

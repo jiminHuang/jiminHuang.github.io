@@ -142,6 +142,14 @@ const publications = defineCollection({
     doi: z.string().optional(),
     url: z.string().optional(),
     aigaionId: z.number().int().optional(),
+    /** Extra fields from /publications/show/N */
+    pubType: z.string().optional(),        // Inproceedings / Article / Misc / ...
+    bibtexKey: z.string().optional(),      // e.g. yu:2025b
+    pages: z.string().optional(),
+    abstract: z.string().optional(),
+    keywords: z.array(z.string()).default([]),
+    pdfUrl: z.string().optional(),         // Aigaion-hosted PDF attachment
+    pdfName: z.string().optional(),
   }),
 });
 

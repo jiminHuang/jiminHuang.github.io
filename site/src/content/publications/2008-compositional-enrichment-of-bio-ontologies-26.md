@@ -7,4 +7,7 @@ venueShort: "Proceedings of 11th Annual Bio-Ontologies Meeting"
 venueType: conference
 year: 2008
 aigaionId: 26
+pubType: "Inproceedings"
+bibtexKey: "splendiani:2008"
+keywords: []
 ---

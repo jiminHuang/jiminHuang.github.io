@@ -4,9 +4,13 @@ authors: ["Rehm, G.", "Uszkoreit, H.", "Ananiadou, S.", "Bel, N.", "Bieleviciene
 authorSlugs: ["", "", "sophia-ananiadou", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "john-mcnaught", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "paul-thompson", "", "", "", "", ""]
 venue: "in: Language Resources and Evaluation, 50:2(351-374)"
 venueShort: "in: Language Resources and Evaluation"
-venueType: other
+venueType: journal
 year: 2016
 doi: "http://dx.doi.org/10.1007/s10579-015-9333-4"
 url: "http://link.springer.com/article/10.1007/s10579-015-9333-4"
 aigaionId: 398
+pubType: "Article"
+bibtexKey: "rehm:2016"
+pages: "351-374"
+keywords: []
 ---

@@ -7,4 +7,10 @@ venueShort: "Computational Linguistics"
 venueType: conference
 year: 2007
 aigaionId: 70
+pubType: "Inproceedings"
+bibtexKey: "sagae:2007"
+pages: "624--631"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/62"
+pdfName: "Sagae_ACL_2007.pdf"
 ---

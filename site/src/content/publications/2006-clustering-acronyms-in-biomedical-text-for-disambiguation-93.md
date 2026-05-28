@@ -7,4 +7,10 @@ venueShort: "LREC 2006"
 venueType: conference
 year: 2006
 aigaionId: 93
+pubType: "Inproceedings"
+bibtexKey: "okazaki:2006"
+pages: "959-962"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/79"
+pdfName: "Okazaki_LREC_2006.pdf"
 ---

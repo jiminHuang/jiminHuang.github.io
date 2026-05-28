@@ -7,4 +7,8 @@ venueShort: "Proceedings of The Third Workshop on Treebanks and Lingustic"
 venueType: workshop
 year: 2004
 aigaionId: 124
+pubType: "Inproceedings"
+bibtexKey: "nakanishi:2004"
+pages: "103--114"
+keywords: []
 ---

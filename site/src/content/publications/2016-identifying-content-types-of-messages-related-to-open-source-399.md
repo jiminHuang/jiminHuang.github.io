@@ -8,4 +8,8 @@ venueType: conference
 year: 2016
 url: "http://www.lrec-conf.org/proceedings/lrec2016/pdf/384_Paper.pdf"
 aigaionId: 399
+pubType: "Inproceedings"
+bibtexKey: "korkontzelos:2016a"
+pages: "1837-1844"
+keywords: []
 ---

@@ -4,8 +4,12 @@ authors: ["Kazama, J.", "Tsujii, J."]
 authorSlugs: ["", "junichi-tsujii"]
 venue: "in: Machine Learning, 60:1-3(169-194)"
 venueShort: "in: Machine Learning"
-venueType: other
+venueType: journal
 year: 2005
 url: "http://www.springerlink.com/content/v6mn41027420jp56/"
 aigaionId: 101
+pubType: "Article"
+bibtexKey: "kazama:2005"
+pages: "169-194"
+keywords: []
 ---

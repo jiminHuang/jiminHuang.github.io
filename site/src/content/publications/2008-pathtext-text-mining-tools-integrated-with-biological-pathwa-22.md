@@ -7,4 +7,8 @@ venueShort: "Science"
 venueType: conference
 year: 2008
 aigaionId: 22
+pubType: "Inproceedings"
+bibtexKey: "saetre:2008b"
+pages: "65"
+keywords: []
 ---

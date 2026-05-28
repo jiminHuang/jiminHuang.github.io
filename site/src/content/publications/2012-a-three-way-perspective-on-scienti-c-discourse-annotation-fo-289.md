@@ -8,4 +8,8 @@ venueType: workshop
 year: 2012
 url: "http://aclweb.org/anthology-new/W/W12/W12-4305.pdf"
 aigaionId: 289
+pubType: "Inproceedings"
+bibtexKey: "liakata:2012"
+pages: "37-46"
+keywords: ["metaknowledge"]
 ---

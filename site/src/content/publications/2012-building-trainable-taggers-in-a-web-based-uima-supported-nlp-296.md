@@ -8,4 +8,8 @@ venueType: conference
 year: 2012
 url: "http://aclweb.org/anthology-new/P/P12/P12-3021.pdf"
 aigaionId: 296
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "121-126"
+keywords: []
 ---

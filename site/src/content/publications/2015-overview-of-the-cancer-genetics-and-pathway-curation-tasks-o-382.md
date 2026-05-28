@@ -4,9 +4,13 @@ authors: ["Pyysalo, S.", "Ohta, T.", "Rak, R.", "Rowley, A.", "Chun, H.-W.", "Ju
 authorSlugs: ["", "", "", "", "", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: BMC BioInformatics, 16(Suppl 10):Suppl 10(S2)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2015
 doi: "http://dx.doi.org/10.1186/1471-2105-16-S10-S2"
 url: "http://www.biomedcentral.com/1471-2105/16/S10/S2"
 aigaionId: 382
+pubType: "Article"
+bibtexKey: "pyysalo:2015"
+pages: "S2"
+keywords: []
 ---

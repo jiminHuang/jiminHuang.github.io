@@ -8,4 +8,8 @@ venueType: workshop
 year: 2009
 url: "http://www.aclweb.org/anthology/W/W09/W09-1321.pdf"
 aigaionId: 149
+pubType: "Inproceedings"
+bibtexKey: "uematsu:2009"
+pages: "162--170"
+keywords: []
 ---

@@ -7,4 +7,9 @@ venueShort: "Science"
 venueType: conference
 year: 2007
 aigaionId: 51
+pubType: "Inproceedings"
+bibtexKey: "ananiadou:2007b"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/47"
+pdfName: "Ananiadou_ESS_2007.pdf"
 ---

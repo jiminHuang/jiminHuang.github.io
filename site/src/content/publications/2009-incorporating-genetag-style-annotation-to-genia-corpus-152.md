@@ -8,4 +8,8 @@ venueType: workshop
 year: 2009
 url: "http://www.aclweb.org/anthology/W/W09/W09-1313.pdf"
 aigaionId: 152
+pubType: "Inproceedings"
+bibtexKey: "ohta:2009"
+pages: "106--107"
+keywords: []
 ---

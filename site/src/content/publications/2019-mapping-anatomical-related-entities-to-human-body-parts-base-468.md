@@ -4,8 +4,12 @@ authors: ["Wang, Y.", "Fan, X.", "Chen, L.", "Chang, E. I-C.", "Ananiadou, S.", 
 authorSlugs: ["yuyan-wang", "", "", "", "sophia-ananiadou", "junichi-tsujii", ""]
 venue: "in: BMC Bioinformatics, 20(430)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2019
 url: "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3005-0"
 aigaionId: 468
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "430"
+keywords: []
 ---

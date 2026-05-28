@@ -8,4 +8,7 @@ venueType: workshop
 year: 2011
 url: "http://psb.stanford.edu/psb11/conference-materials/wkshp-pharma/ananiadou.pdf"
 aigaionId: 220
+pubType: "Inproceedings"
+bibtexKey: "Soldatova:2011"
+keywords: []
 ---

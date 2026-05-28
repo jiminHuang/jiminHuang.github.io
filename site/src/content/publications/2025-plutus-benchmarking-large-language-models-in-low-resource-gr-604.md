@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.emnlp-main.1535"
 url: "https://aclanthology.org/2025.emnlp-main.1535/"
 aigaionId: 604
+pubType: "Inproceedings"
+bibtexKey: "peng:2025"
+pages: "30176–30202"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: journal
 year: 2009
 url: "http://bioinformatics.oxfordjournals.org/cgi/content/abstract/25/15/1997"
 aigaionId: 45
+pubType: "Article"
+bibtexKey: "kano:2009b"
+pages: "1997--1998"
+keywords: ["ucompare"]
 ---

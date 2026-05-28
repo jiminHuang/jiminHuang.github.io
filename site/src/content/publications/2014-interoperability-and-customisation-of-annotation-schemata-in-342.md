@@ -8,4 +8,8 @@ venueType: conference
 year: 2014
 url: "http://www.lrec-conf.org/proceedings/lrec2014/pdf/1086_Paper.pdf"
 aigaionId: 342
+pubType: "Inproceedings"
+bibtexKey: "rak14interoperability"
+pages: "3837-3842"
+keywords: []
 ---

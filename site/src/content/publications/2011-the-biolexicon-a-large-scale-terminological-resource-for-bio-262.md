@@ -4,9 +4,13 @@ authors: ["Thompson, P.", "McNaught, J.", "Montemagni, S.", "Calzolari, N.", "de
 authorSlugs: ["paul-thompson", "john-mcnaught", "", "", "", "", "", "", "", "", "", "", "", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 12(397)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2011
 doi: "http://dx.doi.org/10.1186/1471-2105-12-397"
 url: "http://www.biomedcentral.com/1471-2105/12/397/"
 aigaionId: 262
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "397"
+keywords: []
 ---

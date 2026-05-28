@@ -8,4 +8,7 @@ venueType: preprint
 year: 2025
 doi: "http://dx.doi.org/10.48550/arXiv.2506.02515"
 aigaionId: 619
+pubType: "Misc"
+bibtexKey: "xie:2025"
+keywords: []
 ---

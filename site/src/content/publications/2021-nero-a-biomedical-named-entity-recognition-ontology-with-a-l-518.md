@@ -4,9 +4,13 @@ authors: ["Wang, K.", "Stevens, R.", "Alachram, H.", "Li, Y.", "Soldatova, L. N.
 authorSlugs: ["", "", "", "", "", "", "sophia-ananiadou", "", "maolin-li-alum-2021", "fenia-christopoulou-alum-2020", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 venue: "in: npj systems biology and applications, 7(38)"
 venueShort: "in: npj systems biology and applications"
-venueType: other
+venueType: journal
 year: 2021
 doi: "http://dx.doi.org/10.1038/s41540-021-00200-x"
 url: "https://www.nature.com/articles/s41540-021-00200-x"
 aigaionId: 518
+pubType: "Article"
+bibtexKey: "Journal:"
+pages: "38"
+keywords: []
 ---

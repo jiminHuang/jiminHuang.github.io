@@ -8,4 +8,7 @@ venueType: workshop
 year: 2011
 url: "http://dl.acm.org/citation.cfm?id=2064706"
 aigaionId: 260
+pubType: "Inproceedings"
+bibtexKey: "kork:2011"
+keywords: []
 ---

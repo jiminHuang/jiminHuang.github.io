@@ -4,9 +4,13 @@ authors: ["Kano, Y.", "BjÃ¶rne, J.", "Ginter, F.", "Salakoski, T.", "Buyko, E.
 authorSlugs: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "sophia-ananiadou", "", "", "", "", "", "", "", "", "", "", "junichi-tsujii"]
 venue: "in: BMC Bioinformatics, 12(481)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2011
 doi: "http://dx.doi.org/10.1186/1471-2105-12-481"
 url: "http://www.biomedcentral.com/1471-2105/12/481/abstract"
 aigaionId: 272
+pubType: "Article"
+bibtexKey: "kano:2011b"
+pages: "481"
+keywords: ["ucompare"]
 ---

@@ -4,9 +4,13 @@ authors: ["Dengel, A.", "Etzioni, O.", "DeCario, N.", "Hoos, H.", "Li, F. -F.", 
 authorSlugs: ["", "", "", "", "", "junichi-tsujii", ""]
 venue: "pages 90-115, Springer"
 venueShort: "pages 90-115"
-venueType: journal
+venueType: other
 year: 2021
 doi: "http://dx.doi.org/10.1007/978-3-030-69128-8_7"
 url: "https://link.springer.com/chapter/10.1007/978-3-030-69128-8_7"
 aigaionId: 494
+pubType: "Inbook"
+bibtexKey: "Journal:"
+pages: "90-115"
+keywords: []
 ---

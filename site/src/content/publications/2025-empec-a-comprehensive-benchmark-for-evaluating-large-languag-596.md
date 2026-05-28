@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.findings-acl.518"
 url: "https://aclanthology.org/2025.findings-acl.518/"
 aigaionId: 596
+pubType: "Inproceedings"
+bibtexKey: "luo:2025"
+pages: "9945–9958"
+keywords: []
 ---

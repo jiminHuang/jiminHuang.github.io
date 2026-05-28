@@ -4,9 +4,13 @@ authors: ["Korkontzelos, I.", "Mu, T.", "Ananiadou, S."]
 authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: BMC Medical Informatics and Decision Making, 12:Suppl 1(S3)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2012
 doi: "http://dx.doi.org/10.1186/1472-6947-12-S1-S3"
 url: "http://www.biomedcentral.com/1472-6947/12/S1/S3"
 aigaionId: 288
+pubType: "Article"
+bibtexKey: "kork:2012"
+pages: "S3"
+keywords: []
 ---

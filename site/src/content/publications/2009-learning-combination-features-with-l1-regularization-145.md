@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www-tsujii.is.s.u-tokyo.ac.jp/%7Ehillbig/papers/naaclhlt2009_okanohara.pdf"
 aigaionId: 145
+pubType: "Inproceedings"
+bibtexKey: "okanohara:2009"
+pages: "97--100"
+keywords: []
 ---

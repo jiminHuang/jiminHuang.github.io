@@ -7,4 +7,8 @@ venueShort: "Proceedings of the 5th International Conference on Generativ"
 venueType: conference
 year: 2009
 aigaionId: 176
+pubType: "Inproceedings"
+bibtexKey: "matsubayashi:2009b"
+pages: "97--104"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-0407"
 aigaionId: 248
+pubType: "Inproceedings"
+bibtexKey: "iwasawa-EtAl:2011:LAW"
+pages: "56--64"
+keywords: []
 ---

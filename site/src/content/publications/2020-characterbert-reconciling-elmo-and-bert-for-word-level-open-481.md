@@ -8,4 +8,8 @@ venueType: conference
 year: 2020
 url: "https://www.aclweb.org/anthology/2020.coling-main.609/"
 aigaionId: 481
+pubType: "Inproceedings"
+bibtexKey: "elboukkouri:2020"
+pages: "6903–6915"
+keywords: []
 ---

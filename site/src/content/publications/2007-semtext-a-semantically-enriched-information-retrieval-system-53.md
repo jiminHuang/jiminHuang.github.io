@@ -7,4 +7,9 @@ venueShort: "Proceedings of the 8th International Conference on Systems B"
 venueType: conference
 year: 2007
 aigaionId: 53
+pubType: "Inproceedings"
+bibtexKey: "ananiadou:2007c"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/49"
+pdfName: "Ananiadou_ICSB_2007.pdf"
 ---

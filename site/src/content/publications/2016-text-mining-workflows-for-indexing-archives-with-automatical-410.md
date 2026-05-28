@@ -8,4 +8,8 @@ venueType: conference
 year: 2016
 url: "http://link.springer.com/book/10.1007%2F978-3-319-43997-6"
 aigaionId: 410
+pubType: "Inproceedings"
+bibtexKey: "batista16tmtutorial"
+pages: "471â€“473"
+keywords: []
 ---

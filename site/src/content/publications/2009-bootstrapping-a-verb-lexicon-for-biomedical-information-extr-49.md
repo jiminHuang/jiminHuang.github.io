@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.springerlink.com/content/r6rmh706r8108l25/fulltext.pdf"
 aigaionId: 49
+pubType: "Inproceedings"
+bibtexKey: "venturi:2009"
+pages: "137--148"
+keywords: []
 ---

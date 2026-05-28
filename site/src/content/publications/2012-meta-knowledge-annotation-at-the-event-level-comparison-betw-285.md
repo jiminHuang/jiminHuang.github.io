@@ -8,4 +8,8 @@ venueType: workshop
 year: 2012
 url: "http://www.nactem.ac.uk/papers/Nawaz_BioTxtM_2012.pdf"
 aigaionId: 285
+pubType: "Inproceedings"
+bibtexKey: "nawaz:2012b"
+pages: "24-31"
+keywords: ["metaknowledge"]
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2014
 url: "http://www.lrec-conf.org/proceedings/lrec2014/pdf/405_Paper.pdf"
 aigaionId: 380
+pubType: "Inproceedings"
+bibtexKey: "rehm2014"
+pages: "1517-1524"
+keywords: []
 ---

@@ -7,4 +7,10 @@ venueShort: "Bioinformatics"
 venueType: conference
 year: 2008
 aigaionId: 8
+pubType: "Inproceedings"
+bibtexKey: "kim:2008b"
+pages: "165-176"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/15"
+pdfName: "Kim_APBC_2008.pdf"
 ---

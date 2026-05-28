@@ -8,4 +8,7 @@ venueType: preprint
 year: 2025
 url: "https://arxiv.org/abs/2502.05878"
 aigaionId: 595
+pubType: "Misc"
+bibtexKey: "xiao:2025"
+keywords: []
 ---

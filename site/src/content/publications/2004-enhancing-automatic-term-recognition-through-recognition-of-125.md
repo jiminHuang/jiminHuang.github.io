@@ -7,4 +7,10 @@ venueShort: "COLING 2004"
 venueType: conference
 year: 2004
 aigaionId: 125
+pubType: "Inproceedings"
+bibtexKey: "nenadic:2004"
+pages: "604--610"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/108"
+pdfName: "Nenadic_Coling_2004.pdf"
 ---

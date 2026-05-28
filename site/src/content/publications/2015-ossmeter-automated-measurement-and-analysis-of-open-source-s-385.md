@@ -8,4 +8,7 @@ venueType: conference
 year: 2015
 url: "http://reposto.di.univaq.it/aigon2/index.php/attachments/single/182"
 aigaionId: 385
+pubType: "Inproceedings"
+bibtexKey: "almeida:2015"
+keywords: []
 ---

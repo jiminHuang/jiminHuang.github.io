@@ -9,4 +9,10 @@ year: 2013
 doi: "http://dx.doi.org/10.1109/DigitalHeritage.2013.6743801"
 url: "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6743801"
 aigaionId: 331
+pubType: "Inproceedings"
+bibtexKey: "thompson:2013"
+pages: "597-604"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/128"
+pdfName: "thompson:2013.pdf"
 ---

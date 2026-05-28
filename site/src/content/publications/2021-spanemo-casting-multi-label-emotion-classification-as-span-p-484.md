@@ -4,8 +4,12 @@ authors: ["Alhuzali, H.", "Ananiadou, S."]
 authorSlugs: ["hassan-alhuzali-alum-2021", "sophia-ananiadou"]
 venue: "Proceedings 16th conference of the European Chapter of the Association for Computational Linguistics (EACL 2021), pages 1573–1584"
 venueShort: "EACL 2021"
-venueType: other
+venueType: conference
 year: 2021
 url: "https://www.aclweb.org/anthology/2021.eacl-main.135/"
 aigaionId: 484
+pubType: "Inproceedings"
+bibtexKey: "alhuzali:2021"
+pages: "1573–1584"
+keywords: []
 ---

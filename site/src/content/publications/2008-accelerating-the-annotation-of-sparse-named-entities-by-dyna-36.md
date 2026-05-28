@@ -7,4 +7,10 @@ venueShort: "BioNLP 2008"
 venueType: workshop
 year: 2008
 aigaionId: 36
+pubType: "Inproceedings"
+bibtexKey: "tsuruoka:2008d"
+pages: "30--37"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/45"
+pdfName: "Tsuruoka_BioNLP_2008.pdf"
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "https://aclanthology.org/2022.coling-1.546/"
 aigaionId: 532
+pubType: "Inproceedings"
+bibtexKey: "xie:2022b"
+pages: "6259–6269"
+keywords: []
 ---

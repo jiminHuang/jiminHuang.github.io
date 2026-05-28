@@ -4,8 +4,11 @@ authors: ["Alhuzali, H.", "Zhang, T.", "Ananiadou, S."]
 authorSlugs: ["hassan-alhuzali-alum-2021", "tianlin-zhang-alum-2024", "sophia-ananiadou"]
 venue: "in: Journal of Medical Internet Research"
 venueShort: "in: Journal of Medical Internet Research"
-venueType: other
+venueType: journal
 year: 2022
 doi: "http://dx.doi.org/10.2196/40323"
 aigaionId: 522
+pubType: "Article"
+bibtexKey: "alhuzali:2022"
+keywords: []
 ---

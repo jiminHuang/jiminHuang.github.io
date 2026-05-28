@@ -7,4 +7,10 @@ venueShort: "LREC 2006"
 venueType: conference
 year: 2006
 aigaionId: 91
+pubType: "Inproceedings"
+bibtexKey: "ohta:2006"
+pages: "1402--1405"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/80"
+pdfName: "Ohta_LREC_2006.pdf"
 ---

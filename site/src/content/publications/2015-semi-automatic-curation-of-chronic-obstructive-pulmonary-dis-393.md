@@ -8,4 +8,8 @@ venueType: workshop
 year: 2015
 url: "http://www.biocreative.org/media/store/files/2015/IAT_argo_3.pdf"
 aigaionId: 393
+pubType: "Inproceedings"
+bibtexKey: "batista15semi"
+pages: "403-408"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: workshop
 year: 2022
 url: "https://aclanthology.org/2022.tsar-1.18/"
 aigaionId: 534
+pubType: "Inproceedings"
+bibtexKey: "vasquez-rodriguez-2022-b"
+pages: "188–198"
+keywords: []
 ---

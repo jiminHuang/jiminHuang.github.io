@@ -8,4 +8,8 @@ venueType: conference
 year: 2012
 url: "http://www.springerlink.com/content/j270846617436311/"
 aigaionId: 284
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "82 - 93"
+keywords: ["isher", "ucompare"]
 ---

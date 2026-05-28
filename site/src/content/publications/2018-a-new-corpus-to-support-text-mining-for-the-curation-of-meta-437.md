@@ -8,4 +8,8 @@ venueType: conference
 year: 2018
 url: "http://www.lrec-conf.org/proceedings/lrec2018/pdf/229.pdf"
 aigaionId: 437
+pubType: "Inproceedings"
+bibtexKey: "shardlow:2018"
+pages: "280-285"
+keywords: []
 ---

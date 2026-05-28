@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.icsb-2009.org/fullprogram.pdf"
 aigaionId: 158
+pubType: "Inproceedings"
+bibtexKey: "matsuoka:2009"
+pages: "139-140"
+keywords: []
 ---

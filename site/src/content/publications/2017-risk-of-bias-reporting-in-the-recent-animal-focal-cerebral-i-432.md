@@ -4,9 +4,14 @@ authors: ["Bahor, Z.", "Liao, J.", "Macleod, M. R.", "Bannach-Brown, A.", "McCan
 authorSlugs: ["", "", "", "", "", "", "", "", "", "", "sophia-ananiadou", ""]
 venue: "in: Clinical Science, 131:20(2525--2532)"
 venueShort: "Science"
-venueType: other
+venueType: journal
 year: 2017
 doi: "http://dx.doi.org/10.1042/cs20160722"
 url: "http://www.clinsci.org/content/131/20/2525"
 aigaionId: 432
+pubType: "Article"
+bibtexKey: "Bahor:2017"
+pages: "2525--2532"
+abstract: "\"\""
+keywords: []
 ---

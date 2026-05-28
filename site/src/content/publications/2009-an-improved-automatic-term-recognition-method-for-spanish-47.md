@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.springerlink.com/content/1125pjq1l126nk74/fulltext.pdf"
 aigaionId: 47
+pubType: "Inproceedings"
+bibtexKey: "barron:2009"
+pages: "125--136"
+keywords: []
 ---

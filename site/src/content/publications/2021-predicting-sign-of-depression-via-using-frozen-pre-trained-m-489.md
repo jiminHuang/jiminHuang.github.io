@@ -4,8 +4,11 @@ authors: ["Alhuzali, H.", "Zhang, T.", "Ananiadou, S."]
 authorSlugs: ["hassan-alhuzali-alum-2021", "tianlin-zhang-alum-2024", "sophia-ananiadou"]
 venue: "CLEF (Working Notes)"
 venueShort: "CLEF (Working Notes)"
-venueType: journal
+venueType: conference
 year: 2021
 url: "http://ceur-ws.org/Vol-2936/paper-73.pdf"
 aigaionId: 489
+pubType: "Inproceedings"
+bibtexKey: "alhuzali:2021clef"
+keywords: []
 ---

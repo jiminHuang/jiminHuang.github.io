@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-1804"
 aigaionId: 242
+pubType: "Inproceedings"
+bibtexKey: "pyysalo-EtAl:2011:BioNLP-ST"
+pages: "26--35"
+keywords: []
 ---

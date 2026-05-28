@@ -4,8 +4,12 @@ authors: ["MihÄƒilÄƒ, C.", "Ananiadou, S."]
 authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: Journal of Bioinformatics and Computational Biology, 11:6(1343008)"
 venueShort: "Bioinformatics"
-venueType: other
+venueType: journal
 year: 2013
 doi: "http://dx.doi.org/10.1142/S0219720013430087"
 aigaionId: 330
+pubType: "Article"
+bibtexKey: "mihaila13f"
+pages: "1343008"
+keywords: ["biocause"]
 ---

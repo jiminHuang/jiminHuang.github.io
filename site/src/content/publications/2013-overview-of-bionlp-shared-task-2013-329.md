@@ -8,4 +8,8 @@ venueType: workshop
 year: 2013
 url: "http://www.aclweb.org/anthology/W13-2001"
 aigaionId: 329
+pubType: "Inproceedings"
+bibtexKey: "nedellec13"
+pages: "1--7"
+keywords: []
 ---

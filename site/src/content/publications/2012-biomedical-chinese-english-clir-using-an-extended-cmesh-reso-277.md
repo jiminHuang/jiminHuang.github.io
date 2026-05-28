@@ -8,4 +8,8 @@ venueType: conference
 year: 2012
 url: "http://www.lrec-conf.org/proceedings/lrec2012/pdf/316_Paper.pdf"
 aigaionId: 277
+pubType: "Inproceedings"
+bibtexKey: "wang:2012"
+pages: "1148-1155"
+keywords: []
 ---

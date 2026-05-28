@@ -8,4 +8,8 @@ venueType: conference
 year: 2009
 url: "http://www.aclweb.org/anthology/P/P09/P09-1003.pdf"
 aigaionId: 142
+pubType: "Inproceedings"
+bibtexKey: "matsubayashi:2009"
+pages: "19--27"
+keywords: []
 ---

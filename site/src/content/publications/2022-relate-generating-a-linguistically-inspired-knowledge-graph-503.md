@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.679.pdf"
 aigaionId: 503
+pubType: "Inproceedings"
+bibtexKey: "schoene:2022"
+pages: "6317-6327"
+keywords: []
 ---

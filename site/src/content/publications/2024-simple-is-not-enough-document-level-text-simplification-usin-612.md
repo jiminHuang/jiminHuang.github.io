@@ -8,4 +8,7 @@ venueType: preprint
 year: 2024
 url: "https://arxiv.org/abs/2412.18655"
 aigaionId: 612
+pubType: "Misc"
+bibtexKey: "Vasquez-Rodriguez:2024"
+keywords: []
 ---

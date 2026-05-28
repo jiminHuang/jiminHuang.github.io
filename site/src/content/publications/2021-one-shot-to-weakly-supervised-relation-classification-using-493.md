@@ -8,4 +8,7 @@ venueType: conference
 year: 2021
 url: "https://openreview.net/pdf?id=W0mr06PxTHp"
 aigaionId: 493
+pubType: "Inproceedings"
+bibtexKey: "tran:2021"
+keywords: []
 ---

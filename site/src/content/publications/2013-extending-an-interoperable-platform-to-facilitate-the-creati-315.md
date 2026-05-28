@@ -8,4 +8,10 @@ venueType: conference
 year: 2013
 url: "http://www.aclweb.org/anthology/P13-4008"
 aigaionId: 315
+pubType: "Inproceedings"
+bibtexKey: "kontonatsios13b"
+pages: "43-48"
+keywords: ["metanet", "ucompare"]
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/122"
+pdfName: "kontonatsios13b.pdf"
 ---

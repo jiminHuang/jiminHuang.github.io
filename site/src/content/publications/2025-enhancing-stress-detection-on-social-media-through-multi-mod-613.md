@@ -9,4 +9,8 @@ year: 2025
 doi: "http://dx.doi.org/10.18653/v1/2025.bionlp-1.4"
 url: "https://aclanthology.org/2025.bionlp-1.4/"
 aigaionId: 613
+pubType: "Inproceedings"
+bibtexKey: "soufleri:2025"
+pages: "34–43"
+keywords: []
 ---

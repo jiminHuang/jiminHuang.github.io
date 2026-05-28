@@ -8,4 +8,8 @@ venueType: conference
 year: 2010
 doi: "http://dx.doi.org/10.1109/escience.2010.43"
 aigaionId: 246
+pubType: "Inproceedings"
+bibtexKey: "Taura:2010:DIG:1932688.1933024"
+pages: "214--221"
+keywords: []
 ---

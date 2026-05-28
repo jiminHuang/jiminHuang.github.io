@@ -7,4 +7,7 @@ venueShort: "Proceedings of the 5th Language & Technology Conference (LTC"
 venueType: conference
 year: 2011
 aigaionId: 269
+pubType: "Inproceedings"
+bibtexKey: "rosner:2011"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2024
 url: "https://aclanthology.org/2024.finnlp-2.11/"
 aigaionId: 577
+pubType: "Inproceedings"
+bibtexKey: "xie:2024-fin"
+pages: "119- 126"
+keywords: []
 ---

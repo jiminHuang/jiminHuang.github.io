@@ -8,4 +8,7 @@ venueType: workshop
 year: 2013
 url: "http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/publikationen/2013/SemEval2013-Task5.pdf"
 aigaionId: 340
+pubType: "Inproceedings"
+bibtexKey: "korkontzelos:2013semeval"
+keywords: []
 ---

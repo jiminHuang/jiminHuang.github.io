@@ -8,4 +8,8 @@ venueType: workshop
 year: 2015
 url: "http://aclweb.org/anthology/W/W15/W15-3804.pdf"
 aigaionId: 383
+pubType: "Inproceedings"
+bibtexKey: "zerva2015"
+pages: "31-41"
+keywords: []
 ---

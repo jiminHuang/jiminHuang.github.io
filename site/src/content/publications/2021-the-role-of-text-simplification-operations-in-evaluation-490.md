@@ -8,4 +8,8 @@ venueType: workshop
 year: 2021
 url: "http://ceur-ws.org/Vol-2944/paper4.pdf"
 aigaionId: 490
+pubType: "Inproceedings"
+bibtexKey: "Vásquez-Rodríguez:2021b"
+pages: "57-69"
+keywords: []
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2020
 url: "https://www.aclweb.org/anthology/2020.coling-main.507"
 aigaionId: 480
+pubType: "Inproceedings"
+bibtexKey: "li:2020coling"
+pages: "5760-5773"
+keywords: []
 ---

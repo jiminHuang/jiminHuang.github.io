@@ -8,4 +8,8 @@ venueType: conference
 year: 2022
 url: "https://aclanthology.org/2022.bionlp-1.22/"
 aigaionId: 505
+pubType: "Inproceedings"
+bibtexKey: "bishop:2022"
+pages: "220–240"
+keywords: []
 ---

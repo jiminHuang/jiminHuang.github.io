@@ -7,4 +7,10 @@ venueShort: "EMNLP 2006"
 venueType: conference
 year: 2006
 aigaionId: 90
+pubType: "Inproceedings"
+bibtexKey: "ninomiya:2006"
+pages: "155--163"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/77"
+pdfName: "Niniomiya_EMNLP_2006.pdf"
 ---

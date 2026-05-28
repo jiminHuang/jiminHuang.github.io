@@ -7,4 +7,10 @@ venueShort: "Computational Linguistics"
 venueType: conference
 year: 2005
 aigaionId: 116
+pubType: "Inproceedings"
+bibtexKey: "tsuruoka:2005d"
+pages: "467--474"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/100"
+pdfName: "Tsuruoka_emnlp_2005.pdf"
 ---

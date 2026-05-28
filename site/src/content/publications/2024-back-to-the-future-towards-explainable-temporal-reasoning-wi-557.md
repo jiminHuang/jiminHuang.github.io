@@ -8,4 +8,8 @@ venueType: conference
 year: 2024
 url: "https://dl.acm.org/doi/abs/10.1145/3589334.3645376"
 aigaionId: 557
+pubType: "Inproceedings"
+bibtexKey: "yuan:2024b"
+pages: "1963 - 1974"
+keywords: []
 ---

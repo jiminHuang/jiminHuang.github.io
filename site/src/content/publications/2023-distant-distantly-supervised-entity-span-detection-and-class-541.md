@@ -8,4 +8,8 @@ venueType: conference
 year: 2023
 url: "https://aclanthology.org/2023.bionlp-1.14/"
 aigaionId: 541
+pubType: "Inproceedings"
+bibtexKey: "yano:2023"
+pages: "171–177"
+keywords: []
 ---

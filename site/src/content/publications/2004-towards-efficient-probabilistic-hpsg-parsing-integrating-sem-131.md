@@ -7,4 +7,9 @@ venueShort: "Proceedings of IJCNLP-04 Workshop: Beyond shallow analyses -"
 venueType: workshop
 year: 2004
 aigaionId: 131
+pubType: "Inproceedings"
+bibtexKey: "tsuruoka:2004b"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/113"
+pdfName: "Tsuruoka_ijcnlp_2004.pdf"
 ---

@@ -8,4 +8,7 @@ venueType: workshop
 year: 2011
 url: "http://psb.stanford.edu/psb11/conference-materials/wkshp-pharma/batista-navarro.pdf"
 aigaionId: 219
+pubType: "Inproceedings"
+bibtexKey: "Batista:2011"
+keywords: []
 ---

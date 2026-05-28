@@ -8,4 +8,8 @@ venueType: conference
 year: 2019
 url: "https://www.aclweb.org/anthology/D19-1381/"
 aigaionId: 467
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "3670-3677"
+keywords: []
 ---

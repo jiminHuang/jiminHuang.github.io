@@ -8,4 +8,8 @@ venueType: workshop
 year: 2009
 url: "http://www.biocreative.org/"
 aigaionId: 163
+pubType: "Inproceedings"
+bibtexKey: "satre:2009c"
+pages: "33"
+keywords: []
 ---

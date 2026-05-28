@@ -8,4 +8,8 @@ venueType: conference
 year: 2023
 url: "https://aclanthology.org/2023.bionlp-1.9/"
 aigaionId: 538
+pubType: "Inproceedings"
+bibtexKey: "zhang:2023b"
+pages: "114–126"
+keywords: []
 ---

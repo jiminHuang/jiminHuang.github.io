@@ -7,4 +7,10 @@ venueShort: "EMNLP 2006"
 venueType: conference
 year: 2006
 aigaionId: 97
+pubType: "Inproceedings"
+bibtexKey: "yakushiji:2006"
+pages: "284--292"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/83"
+pdfName: "Yakushiji_emnlp_2006.pdf"
 ---

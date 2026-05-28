@@ -8,4 +8,8 @@ venueType: workshop
 year: 2011
 url: "http://www.aclweb.org/anthology/W11-1203"
 aigaionId: 249
+pubType: "Inproceedings"
+bibtexKey: "andrade-matsuzaki-tsujii:2011:BUCC"
+pages: "10--18"
+keywords: []
 ---

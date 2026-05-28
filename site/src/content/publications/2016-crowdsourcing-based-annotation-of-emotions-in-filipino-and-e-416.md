@@ -7,4 +7,7 @@ venueShort: "Proceedings of the 6th Workshop on South and Southeast Asian"
 venueType: workshop
 year: 2016
 aigaionId: 416
+pubType: "Inproceedings"
+bibtexKey: "lapitan16crowdsourcing"
+keywords: []
 ---

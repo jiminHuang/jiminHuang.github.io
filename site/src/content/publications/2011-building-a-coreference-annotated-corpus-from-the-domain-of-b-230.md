@@ -8,4 +8,8 @@ venueType: conference
 year: 2011
 url: "http://aclweb.org/anthology-new/W/W11/W11-0210.pdf"
 aigaionId: 230
+pubType: "Inproceedings"
+bibtexKey: "Booktitle:"
+pages: "83-91"
+keywords: []
 ---

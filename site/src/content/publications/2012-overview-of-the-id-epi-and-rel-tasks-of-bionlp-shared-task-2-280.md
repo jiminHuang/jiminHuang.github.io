@@ -4,9 +4,13 @@ authors: ["Pyysalo, S.", "Ohta, T.", "Rak, R.", "Sullivan, D.", "Mao, C.", "Wang
 authorSlugs: ["", "", "", "", "", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 13:Suppl. 11(S2)"
 venueShort: "BMC"
-venueType: other
+venueType: journal
 year: 2012
 doi: "http://dx.doi.org/10.1186/1471-2105-13-S11-S2"
 url: "http://www.biomedcentral.com/1471-2105/13/S11/S2"
 aigaionId: 280
+pubType: "Article"
+bibtexKey: "pyysalo:2012"
+pages: "S2"
+keywords: []
 ---

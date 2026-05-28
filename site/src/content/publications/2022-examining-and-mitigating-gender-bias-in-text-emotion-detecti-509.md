@@ -4,9 +4,13 @@ authors: ["Odbal, G. Z.", "Ananiadou, S."]
 authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: Neurocomputing, 493(422-434)"
 venueShort: "in: Neurocomputing"
-venueType: other
+venueType: journal
 year: 2022
 doi: "http://dx.doi.org/10.1016/j.neucom.2022.04.057"
 url: "https://www.sciencedirect.com/science/article/abs/pii/S0925231222004374"
 aigaionId: 509
+pubType: "Article"
+bibtexKey: "Publication status:"
+pages: "422-434"
+keywords: []
 ---

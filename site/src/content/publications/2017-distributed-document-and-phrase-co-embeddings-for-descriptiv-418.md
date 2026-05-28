@@ -8,4 +8,8 @@ venueType: conference
 year: 2017
 url: "http://aclweb.org/anthology/E/E17/E17-1093.pdf"
 aigaionId: 418
+pubType: "Inproceedings"
+bibtexKey: "sato:2017"
+pages: "991-1001"
+keywords: []
 ---

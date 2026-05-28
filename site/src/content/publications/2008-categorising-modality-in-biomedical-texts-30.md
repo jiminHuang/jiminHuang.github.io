@@ -7,4 +7,10 @@ venueShort: "LREC 2008"
 venueType: workshop
 year: 2008
 aigaionId: 30
+pubType: "Inproceedings"
+bibtexKey: "thompson:2008b"
+pages: "27--34"
+keywords: []
+pdfUrl: "https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/39"
+pdfName: "Thompson_LREC_2008_b.pdf"
 ---

@@ -8,4 +8,8 @@ venueType: conference
 year: 2021
 url: "https://link.springer.com/chapter/10.1007/978-3-030-72240-1_57"
 aigaionId: 483
+pubType: "Inproceedings"
+bibtexKey: "inan:2021"
+pages: "514-519"
+keywords: []
 ---
