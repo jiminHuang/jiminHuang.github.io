@@ -1,0 +1,167 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Meander from "../components/Meander.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
+
+const pubs = (await getCollection("publications")).sort((a, b) =>
+  (b.data.year ?? 0) - (a.data.year ?? 0) ||
+  a.data.title.localeCompare(b.data.title),
+);
+
+// Group by year
+const byYear = new Map<number, typeof pubs>();
+for (const p of pubs) {
+  const y = p.data.year ?? 0;
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(p);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+
+const total = pubs.length;
+const peopleCount = new Set(pubs.flatMap((p) => p.data.authors)).size;
+const yearRange = pubs.length ? `${years[years.length - 1]}–${years[0]}` : "—";
+
+const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.html";
+---
+
+<Layout
+  title="Publications — NaCTeM"
+  description="Recent publications from the National Centre for Text Mining, drawn from the Aigaion bibliography database."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">Publications</span>
+      </nav>
+
+      <SectionEyebrow letter="Β" label="Bibliography" />
+
+      <h1 class="antique text-[clamp(2.6rem,5.6vw,5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-4xl mb-8">
+        Two decades of <em class="italic text-[color:var(--color-amber-600)]">text-mining research</em> in print.
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+        NaCTeM's full bibliography — over 580 papers — lives in our Aigaion
+        database. The most recent twenty-five appear below. Use the link at
+        the bottom of the page for the complete archive.
+      </p>
+
+      <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">580+</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Total papers</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Most recent</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{yearRange}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Year range</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- BY YEAR -->
+  {years.map((y, idx) => (
+    <section class={`border-b hairline ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
+      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
+        <div class="flex items-baseline gap-6 mb-10 flex-wrap">
+          <div class="antique text-6xl md:text-7xl text-[color:var(--color-ink-900)] leading-none">{y || "Undated"}</div>
+          <div class="smallcaps text-[color:var(--color-ink-500)]">
+            {byYear.get(y)!.length} {byYear.get(y)!.length === 1 ? "paper" : "papers"}
+          </div>
+        </div>
+
+        <ul class="space-y-7">
+          {byYear.get(y)!.map((p) => (
+            <li class="grid md:grid-cols-[1fr_auto] gap-6 items-baseline">
+              <div>
+                <div class="serif italic text-base text-[color:var(--color-ink-500)] mb-1.5 leading-snug">
+                  {p.data.authors.join(", ")}
+                </div>
+                <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
+                  {p.data.url || p.data.doi ? (
+                    <a
+                      href={p.data.url ?? p.data.doi!}
+                      target="_blank"
+                      rel="noopener"
+                      class="hover:text-[color:var(--color-amber-600)] transition-colors"
+                    >
+                      {p.data.title}
+                    </a>
+                  ) : (
+                    p.data.title
+                  )}
+                </div>
+                {p.data.venue && (
+                  <div class="serif italic text-base text-[color:var(--color-ink-700)] leading-snug">{p.data.venue}</div>
+                )}
+              </div>
+              <div class="flex flex-wrap gap-2 sans text-xs items-baseline">
+                {p.data.doi && (
+                  <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">DOI ↗</a>
+                )}
+                {p.data.url && (
+                  <a href={p.data.url} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">URL ↗</a>
+                )}
+                {p.data.aigaionId && (
+                  <a
+                    href={`https://www.nactem.ac.uk/aigaion2/index.php/publications/show/${p.data.aigaionId}`}
+                    target="_blank"
+                    rel="noopener"
+                    class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors"
+                  >BibTeX ↗</a>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <!-- CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="The full archive" tone="dark" />
+        <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
+          All <em class="italic text-[color:var(--color-amber-400)]">580+ papers</em> in Aigaion.
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          The complete bibliography, searchable by author, topic, keyword, and
+          venue, lives in our Aigaion database. Export to BibTeX, browse by
+          topic, or follow individual authors.
+        </p>
+      </div>
+      <a
+        href={aigaionAll}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Open Aigaion <span aria-hidden>↗</span>
+      </a>
+    </div>
+  </section>
+</Layout>

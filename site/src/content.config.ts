@@ -128,4 +128,17 @@ const corpora = defineCollection({
   }),
 });
 
-export const collections = { projects, tools, people, press, seminars, corpora };
+const publications = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/publications" }),
+  schema: z.object({
+    title: z.string(),
+    authors: z.array(z.string()).default([]),
+    venue: z.string().optional(),
+    year: z.number().int().optional(),
+    doi: z.string().optional(),
+    url: z.string().url().optional(),
+    aigaionId: z.number().int().optional(),
+  }),
+});
+
+export const collections = { projects, tools, people, press, seminars, corpora, publications };
