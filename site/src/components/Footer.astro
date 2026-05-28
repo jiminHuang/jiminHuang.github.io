@@ -40,38 +40,70 @@ const cols = [
     ],
   },
 ];
+
+const funders = [
+  { name: "University of Manchester", logo: "/funders/manchesterlogo.gif", href: "https://www.manchester.ac.uk" },
+  { name: "JISC",            logo: "/funders/jisc.gif",             href: "https://www.jisc.ac.uk" },
+  { name: "BBSRC",           logo: "/funders/new-bbsrc-colour.gif", href: "https://www.bbsrc.ac.uk/" },
+  { name: "EPSRC",           logo: "/funders/epsrc.gif",            href: "https://www.epsrc.ac.uk/" },
+  { name: "ESRC",            logo: "/funders/ESRC.jpg",             href: "https://www.esrc.ac.uk/" },
+  { name: "MRC",             logo: "/funders/MRC.jpg",              href: "https://www.mrc.ac.uk" },
+  { name: "Wellcome Trust",  logo: "/funders/wellcome_trust.jpg",   href: "https://wellcome.org/" },
+  { name: "NIH",             logo: "/funders/NIH_logo.gif",         href: "https://www.nih.gov/" },
+  { name: "European Union",  logo: "/funders/euflag.gif",           href: "https://european-union.europa.eu" },
+  { name: "Europe PMC",      logo: "/funders/EuropePMC.png",        href: "https://europepmc.org/" },
+  { name: "META-NET",        logo: "/funders/metanet.png",          href: "http://www.meta-net.eu/" },
+];
 ---
 
 <footer class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-ink-100)] relative overflow-hidden">
-  <div class="opacity-30">
+  <!-- Funder logo strip — white background card so the multi-coloured logos read -->
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-10">
+      <div class="smallcaps text-[color:var(--color-ink-500)] mb-6">Funders & partners</div>
+      <ul class="flex flex-wrap items-center gap-x-10 gap-y-5">
+        {funders.map((f) => (
+          <li>
+            <a href={f.href} target="_blank" rel="noopener" title={f.name} class="block opacity-70 hover:opacity-100 transition-opacity">
+              <img src={f.logo} alt={f.name} class="h-9 md:h-10 w-auto" style="filter: grayscale(0.15);" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Greek meander divider -->
+  <div class="opacity-25">
     <Meander tone="amber" />
   </div>
+
   <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
     <div class="grid grid-cols-2 md:grid-cols-6 gap-10">
       <div class="col-span-2">
         <img src="/nactem-logo.png" alt="NaCTeM" class="h-9 w-auto mb-5 brightness-0 invert opacity-90" />
-        <p class="serif text-base text-[color:var(--color-ink-300)] max-w-xs leading-relaxed">
+        <p class="serif text-[15px] text-[color:var(--color-ink-300)] max-w-xs leading-relaxed">
           The world's first publicly-funded text-mining centre, hosted at the
           University of Manchester since <span class="antique italic">MMIV</span>.
         </p>
-        <div class="mt-6 flex items-center gap-3 smallcaps text-[color:var(--color-ink-300)]">
-          <span class="antique italic normal-case tracking-normal text-base text-[color:var(--color-amber-400)]">λόγος</span>
+        <div class="mt-6 flex items-center gap-3 smallcaps text-[color:var(--color-ink-400)]">
+          <span class="antique italic normal-case tracking-normal text-base text-[color:var(--color-amber-300)]">λόγος</span>
           <span class="opacity-50">·</span>
           <span>word · reason · text</span>
         </div>
       </div>
       {cols.map((col) => (
         <div>
-          <div class="smallcaps text-[color:var(--color-ink-300)] mb-5">{col.title}</div>
+          <div class="smallcaps text-[color:var(--color-ink-400)] mb-5">{col.title}</div>
           <ul class="space-y-2.5">
             {col.links.map((l) => (
-              <li><a href={l.href} class="serif text-base text-[color:var(--color-ink-100)] hover:text-[color:var(--color-amber-400)] transition-colors">{l.label}</a></li>
+              <li><a href={l.href} class="sans text-sm text-[color:var(--color-ink-100)] hover:text-[color:var(--color-amber-300)] transition-colors">{l.label}</a></li>
             ))}
           </ul>
         </div>
       ))}
     </div>
-    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sans text-xs text-[color:var(--color-ink-300)]">
+    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sans text-xs text-[color:var(--color-ink-400)]">
       <div>© {new Date().getFullYear()} National Centre for Text Mining · University of Manchester</div>
       <div class="flex gap-6">
         <a href="#" class="hover:text-[color:var(--color-paper)]">Terms</a>
