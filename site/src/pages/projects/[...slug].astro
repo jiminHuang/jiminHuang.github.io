@@ -1,0 +1,222 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Meander from "../../components/Meander.astro";
+import SectionEyebrow from "../../components/SectionEyebrow.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((p) => ({ params: { slug: p.id }, props: { project: p } }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const d = project.data;
+
+const yearLabel = d.yearEnd ? `${d.yearStart}–${d.yearEnd}` : `${d.yearStart}–present`;
+
+const meta = [
+  { label: "Status", value: d.status },
+  { label: "Domain", value: d.domain },
+  { label: "Years", value: yearLabel },
+  d.funder ? { label: "Funder", value: d.funder } : null,
+  d.lead ? { label: "Lead", value: d.lead } : null,
+].filter(Boolean) as { label: string; value: string }[];
+---
+
+<Layout title={`${d.name} — NaCTeM`} description={d.tagline}>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-20">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <a href="/#research" class="hover:text-[color:var(--color-amber-600)]">Projects</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">{d.name}</span>
+      </nav>
+
+      <div class="grid lg:grid-cols-[2fr_1fr] gap-12 items-start">
+        <div>
+          <SectionEyebrow letter="Π" label={`Project · ${d.domain}`} />
+          <h1 class="antique text-[clamp(3rem,6vw,5.5rem)] font-normal leading-[1.02] tracking-[-0.01em] text-[color:var(--color-ink-900)] mb-8">
+            {d.name}
+          </h1>
+          <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+            {d.tagline}
+          </p>
+        </div>
+
+        <aside class="border hairline rounded-2xl bg-[color:var(--color-paper)]/70 backdrop-blur p-6 space-y-4">
+          {meta.map((m) => (
+            <div>
+              <div class="smallcaps text-[color:var(--color-ink-500)]">{m.label}</div>
+              <div class="antique italic text-xl text-[color:var(--color-ink-900)] mt-1">{m.value}</div>
+            </div>
+          ))}
+          {d.website && (
+            <a
+              href={d.website}
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-1.5 sans text-sm font-medium text-[color:var(--color-amber-600)] hover:text-[color:var(--color-ink-900)] mt-2"
+            >
+              Project site <span aria-hidden>↗</span>
+            </a>
+          )}
+        </aside>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="border-b hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid lg:grid-cols-[2fr_1fr] gap-16">
+      <article class="prose-project serif text-lg leading-[1.7] text-[color:var(--color-ink-800)] max-w-none">
+        <Content />
+      </article>
+
+      <aside class="space-y-10 sans">
+        {d.partners.length > 0 && (
+          <div>
+            <SectionEyebrow letter="Σ" label="Partners" />
+            <ul class="space-y-2.5 serif text-base text-[color:var(--color-ink-700)]">
+              {d.partners.map((p) => <li>{p}</li>)}
+            </ul>
+          </div>
+        )}
+
+        {d.tools.length > 0 && (
+          <div>
+            <SectionEyebrow letter="Τ" label="Tools used" />
+            <ul class="flex flex-wrap gap-2">
+              {d.tools.map((t) => (
+                <li>
+                  <a href={`/tools/${t.toLowerCase()}`} class="inline-block border hairline rounded-full px-3 py-1 antique text-base text-[color:var(--color-ink-900)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)]">
+                    {t}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </aside>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  {d.publications.length > 0 && (
+    <section class="border-b hairline bg-[color:var(--color-paper-2)]">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+        <SectionEyebrow letter="Φ" label="Selected publications" />
+        <h2 class="antique text-4xl md:text-5xl font-normal tracking-tight text-[color:var(--color-ink-900)] leading-[1.05] mb-12">
+          From this project.
+        </h2>
+        <ul class="border-t hairline">
+          {d.publications.map((pub) => (
+            <li class="border-b hairline py-7 grid grid-cols-12 gap-4 items-baseline">
+              <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">{pub.year ?? "—"}</div>
+              <div class="col-span-9">
+                <div class="antique text-2xl text-[color:var(--color-ink-900)] leading-snug">
+                  {pub.url ? <a href={pub.url} class="hover:text-[color:var(--color-amber-600)]">{pub.title}</a> : pub.title}
+                </div>
+                {pub.venue && <div class="serif italic text-base text-[color:var(--color-ink-500)] mt-1">{pub.venue}</div>}
+              </div>
+              <div class="col-span-1 text-right text-[color:var(--color-ink-300)]" aria-hidden>↗</div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- CONTACT CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="Collaborate" tone="dark" />
+        <h2 class="antique text-4xl md:text-5xl font-normal tracking-tight leading-[1.05]">
+          Working on something <em class="italic text-[color:var(--color-amber-400)]">adjacent?</em>
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          We're always interested in extending tooling and corpora to new
+          domains. If your project would benefit from this work, get in touch.
+        </p>
+      </div>
+      <a
+        href="mailto:nactem@manchester.ac.uk"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Get in touch <span aria-hidden>→</span>
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .prose-project :global(h2) {
+    font-family: var(--font-antique);
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-ink-900);
+  }
+  .prose-project :global(h3) {
+    font-family: var(--font-antique);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-ink-900);
+  }
+  .prose-project :global(p) {
+    margin-bottom: 1.25rem;
+  }
+  .prose-project :global(strong) {
+    color: var(--color-ink-900);
+    font-weight: 600;
+  }
+  .prose-project :global(em) {
+    color: var(--color-amber-600);
+  }
+  .prose-project :global(ul) {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  .prose-project :global(ul li) {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose-project :global(ul li::before) {
+    content: "❦";
+    position: absolute;
+    left: 0;
+    color: var(--color-amber-600);
+    font-size: 1rem;
+  }
+  .prose-project :global(a) {
+    color: var(--color-amber-600);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .prose-project :global(a:hover) {
+    color: var(--color-ink-900);
+  }
+</style>

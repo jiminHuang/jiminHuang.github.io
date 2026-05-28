@@ -1,0 +1,22 @@
+---
+interface Props {
+  /** Greek chapter letter, e.g. "Α", "Β", "Γ" */
+  letter?: string;
+  label: string;
+  tone?: "dark" | "light";
+}
+const { letter, label, tone = "light" } = Astro.props;
+const fg = tone === "dark" ? "var(--color-ink-300)" : "var(--color-ink-500)";
+const accent = "var(--color-amber-600)";
+---
+
+<div class="flex items-center gap-3 mb-5">
+  {letter && (
+    <span
+      class="antique italic text-2xl leading-none"
+      style={`color: ${accent}`}
+      aria-hidden="true"
+    >{letter}.</span>
+  )}
+  <span class="smallcaps" style={`color: ${fg}`}>{label}</span>
+</div>

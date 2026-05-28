@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Meander from "../components/Meander.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
 
 const stats = [
-  { value: "2004", label: "Established" },
+  { value: "MMIV", label: "Established" },
   { value: "50+", label: "Research projects" },
   { value: "120+", label: "Publications" },
   { value: "20+", label: "Open tools & corpora" },
@@ -10,21 +12,25 @@ const stats = [
 
 const focusAreas = [
   {
+    greek: "Α",
     tag: "Biomedicine",
     title: "Mining the biomedical literature",
     body: "Extracting structured knowledge from millions of papers — genes, proteins, diseases, drug interactions — to accelerate discovery.",
   },
   {
+    greek: "Β",
     tag: "Public health",
     title: "Evidence at population scale",
     body: "Surfacing actionable signals from clinical notes, systematic reviews, and surveillance data for the NHS, WHO, and partners.",
   },
   {
+    greek: "Γ",
     tag: "Biodiversity",
     title: "Reading the natural world",
     body: "Mining the Biodiversity Heritage Library and modern ecology corpora to map species, habitats, and historical change.",
   },
   {
+    greek: "Δ",
     tag: "Industry",
     title: "Domain-tuned NLP, in production",
     body: "Customised pipelines built with partners across pharma, finance, insurance, and government.",
@@ -35,17 +41,17 @@ const tools = [
   { name: "TerMine", desc: "Automatic term recognition over scientific text.", tag: "Terminology" },
   { name: "Argo", desc: "Workflow editor for composable NLP pipelines.", tag: "Platform" },
   { name: "U-Compare", desc: "Benchmarking framework for NLP components.", tag: "Evaluation" },
-  { name: "EventMine", desc: "Event extraction for biomedical literature.", tag: "IE" },
+  { name: "EventMine", desc: "Event extraction for biomedical literature.", tag: "Extraction" },
   { name: "Thalia", desc: "Semantic search over PubMed and beyond.", tag: "Search" },
-  { name: "Cheshire", desc: "Information retrieval system at scale.", tag: "IR" },
+  { name: "Cheshire", desc: "Information retrieval system at scale.", tag: "Retrieval" },
 ];
 
 const projects = [
-  { name: "EPHOR", scope: "Occupational exposure & worker health", status: "Active" },
-  { name: "BHF", scope: "British Heart Foundation — cardiovascular evidence mining", status: "Active" },
-  { name: "AIRC", scope: "AI Research Centre collaboration", status: "Active" },
-  { name: "Mental Health", scope: "Mining clinical notes for early intervention", status: "Active" },
-  { name: "NEDO-AIRC", scope: "Japan–UK AI for industry", status: "Active" },
+  { slug: "ephor", name: "EPHOR", scope: "Occupational exposure & worker health", status: "Active" },
+  { slug: "bhf", name: "BHF", scope: "British Heart Foundation — cardiovascular evidence mining", status: "Active" },
+  { slug: "airc", name: "AIRC", scope: "AI Research Centre collaboration", status: "Active" },
+  { slug: "mental-health", name: "Mental Health", scope: "Mining clinical notes for early intervention", status: "Active" },
+  { slug: "nedo-airc", name: "NEDO-AIRC", scope: "Japan–UK AI for industry", status: "Active" },
 ];
 
 const news = [
@@ -53,19 +59,37 @@ const news = [
   { date: "Apr 2026", title: "EventMine v3 released — 18% gains on the BioNLP shared task" },
   { date: "Mar 2026", title: "Sophia Ananiadou awarded honorary fellowship by the BCS" },
 ];
+
+const partners = [
+  ["University of Manchester", "Host institution"],
+  ["UKRI", "Research funder"],
+  ["NIHR", "Health research"],
+  ["European Commission", "EU collaborations"],
+  ["AIRC, Japan", "Industrial AI"],
+  ["BHF", "Cardiovascular"],
+];
 ---
 
 <Layout>
+  <!-- HERO -->
   <section class="relative overflow-hidden paper-grain">
     <div class="absolute inset-0 -z-10">
-      <div class="absolute -top-40 -right-40 w-[720px] h-[720px] rounded-full blur-3xl opacity-[0.22]" style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"></div>
-      <div class="absolute -bottom-56 -left-32 w-[560px] h-[560px] rounded-full blur-3xl opacity-[0.12]" style="background: radial-gradient(closest-side, var(--color-amber-600), transparent 70%)"></div>
+      <div
+        class="absolute -top-40 -right-40 w-[720px] h-[720px] rounded-full blur-3xl opacity-[0.22]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+      <div
+        class="absolute -bottom-56 -left-32 w-[560px] h-[560px] rounded-full blur-3xl opacity-[0.12]"
+        style="background: radial-gradient(closest-side, var(--color-amber-600), transparent 70%)"
+      ></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-24 pb-28">
-      <div class="flex items-center gap-2 smallcaps text-[color:var(--color-ink-500)] mb-10">
+      <div class="flex items-center gap-3 smallcaps text-[color:var(--color-ink-500)] mb-10">
         <span class="w-2 h-2 rounded-full bg-[color:var(--color-amber-500)]"></span>
         <span>Est. MMIV · The University of Manchester</span>
+        <span class="opacity-40">·</span>
+        <span class="antique italic normal-case tracking-normal text-base text-[color:var(--color-amber-600)]">λόγος</span>
       </div>
 
       <h1 class="antique text-[clamp(2.8rem,6.4vw,6rem)] font-normal leading-[1.05] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-5xl">
@@ -82,10 +106,16 @@ const news = [
       </p>
 
       <div class="mt-12 flex flex-wrap gap-3 sans">
-        <a href="#research" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors">
+        <a
+          href="#research"
+          class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors"
+        >
           Explore our research <span aria-hidden>→</span>
         </a>
-        <a href="#tools" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors">
+        <a
+          href="#tools"
+          class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors"
+        >
           Browse tools
         </a>
       </div>
@@ -99,27 +129,38 @@ const news = [
         ))}
       </div>
     </div>
+
+    <!-- Greek meander divider -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
   </section>
 
+  <!-- FOCUS AREAS -->
   <section id="research" class="border-t hairline bg-[color:var(--color-paper-2)]">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
       <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
         <div>
-          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">What we do</div>
-          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] max-w-2xl leading-tight">
-            Four domains. One method: read everything, structure what matters.
+          <SectionEyebrow letter="Ι" label="What we do" />
+          <h2 class="antique text-4xl md:text-6xl font-normal tracking-tight text-[color:var(--color-ink-900)] max-w-3xl leading-[1.05]">
+            Four domains.
+            <em class="italic text-[color:var(--color-amber-600)]">One method:</em>
+            read everything, structure what matters.
           </h2>
         </div>
-        <a href="#" class="text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-accent-600)]">All research areas →</a>
+        <a href="#" class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]">All research areas →</a>
       </div>
 
       <div class="grid md:grid-cols-2 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden">
         {focusAreas.map((area) => (
-          <article class="bg-[color:var(--color-paper)] p-8 md:p-10 group hover:bg-white transition-colors">
-            <div class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-accent-600)] mb-4">{area.tag}</div>
-            <h3 class="serif text-2xl font-medium text-[color:var(--color-ink-900)] mb-3 leading-snug">{area.title}</h3>
-            <p class="text-[color:var(--color-ink-700)] leading-relaxed text-[15px]">{area.body}</p>
-            <a href="#" class="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-[color:var(--color-ink-900)] group-hover:text-[color:var(--color-accent-600)]">
+          <article class="bg-[color:var(--color-paper)] p-8 md:p-10 group hover:bg-[color:var(--color-paper)]/60 transition-colors">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="antique italic text-3xl leading-none text-[color:var(--color-amber-600)]" aria-hidden="true">{area.greek}.</span>
+              <span class="smallcaps text-[color:var(--color-ink-500)]">{area.tag}</span>
+            </div>
+            <h3 class="antique text-3xl font-normal text-[color:var(--color-ink-900)] mb-4 leading-snug">{area.title}</h3>
+            <p class="serif text-[color:var(--color-ink-700)] leading-relaxed text-lg">{area.body}</p>
+            <a href="#" class="inline-flex items-center gap-1.5 mt-6 sans text-sm font-medium text-[color:var(--color-ink-900)] group-hover:text-[color:var(--color-amber-600)]">
               Read more <span aria-hidden class="transition-transform group-hover:translate-x-0.5">→</span>
             </a>
           </article>
@@ -128,16 +169,17 @@ const news = [
     </div>
   </section>
 
+  <!-- TOOLS -->
   <section id="tools" class="border-t hairline">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
       <div class="grid md:grid-cols-[1fr_2fr] gap-12 mb-14">
         <div>
-          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">Tools</div>
-          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight">
-            Open infrastructure for text mining.
+          <SectionEyebrow letter="ΙΙ" label="Tools" />
+          <h2 class="antique text-4xl md:text-6xl font-normal tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+            Open infrastructure for <em class="italic text-[color:var(--color-amber-600)]">text mining.</em>
           </h2>
         </div>
-        <p class="text-lg text-[color:var(--color-ink-700)] leading-relaxed self-end">
+        <p class="serif text-xl text-[color:var(--color-ink-700)] leading-[1.55] self-end max-w-2xl">
           Two decades of methods packaged as services, libraries, and
           interactive platforms — used in over 60 countries by clinicians,
           librarians, and computational researchers.
@@ -146,97 +188,106 @@ const news = [
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {tools.map((t) => (
-          <a href="#" class="group block border hairline rounded-xl p-6 hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all bg-[color:var(--color-paper)]">
+          <a href={`/tools/${t.name.toLowerCase()}`} class="group block border hairline rounded-xl p-6 hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all bg-[color:var(--color-paper)]">
             <div class="flex items-start justify-between mb-4">
-              <span class="text-[10px] uppercase tracking-[0.2em] text-[color:var(--color-ink-500)] bg-[color:var(--color-ink-100)] rounded-full px-2.5 py-1">{t.tag}</span>
-              <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-accent-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
+              <span class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">{t.tag}</span>
+              <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
             </div>
-            <div class="serif text-2xl font-medium text-[color:var(--color-ink-900)] mb-2">{t.name}</div>
-            <p class="text-sm text-[color:var(--color-ink-700)] leading-relaxed">{t.desc}</p>
+            <div class="antique text-3xl font-normal text-[color:var(--color-ink-900)] mb-2">{t.name}</div>
+            <p class="serif text-base text-[color:var(--color-ink-700)] leading-relaxed">{t.desc}</p>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)]">
+  <!-- ACTIVE PROJECTS (dark) -->
+  <section class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
       <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
         <div>
-          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-300)] mb-4">Active projects</div>
-          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight max-w-2xl leading-tight">
-            Currently in flight.
+          <SectionEyebrow letter="ΙΙΙ" label="Active projects" tone="dark" />
+          <h2 class="antique text-4xl md:text-6xl font-normal tracking-tight max-w-2xl leading-[1.05]">
+            Currently <em class="italic text-[color:var(--color-amber-400)]">in flight.</em>
           </h2>
         </div>
-        <a href="#" class="text-sm font-medium hover:text-[color:var(--color-accent-500)]">Project archive →</a>
+        <a href="#" class="sans text-sm font-medium hover:text-[color:var(--color-amber-400)]">Project archive →</a>
       </div>
 
       <ul class="divide-y divide-white/10">
         {projects.map((p) => (
-          <li class="py-6 grid grid-cols-12 gap-4 items-center group cursor-pointer">
-            <div class="col-span-2 serif text-2xl font-medium">{p.name}</div>
-            <div class="col-span-8 text-[color:var(--color-ink-300)]">{p.scope}</div>
-            <div class="col-span-2 flex items-center justify-end gap-3">
-              <span class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-accent-500)]">{p.status}</span>
-              <span class="text-[color:var(--color-ink-300)] group-hover:translate-x-0.5 transition-transform" aria-hidden>→</span>
-            </div>
+          <li class="group">
+            <a href={`/projects/${p.slug}`} class="py-7 grid grid-cols-12 gap-4 items-baseline">
+              <div class="col-span-2 antique text-3xl font-normal text-[color:var(--color-paper)]">{p.name}</div>
+              <div class="col-span-8 serif text-lg text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-paper)] transition-colors">{p.scope}</div>
+              <div class="col-span-2 flex items-center justify-end gap-3">
+                <span class="smallcaps text-[color:var(--color-amber-400)]">{p.status}</span>
+                <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-400)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</span>
+              </div>
+            </a>
           </li>
         ))}
       </ul>
     </div>
+    <div class="absolute bottom-0 left-0 right-0 opacity-30 rotate-180">
+      <Meander tone="amber" />
+    </div>
   </section>
 
+  <!-- NEWS -->
   <section id="news" class="border-t hairline">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
       <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
         <div>
-          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">News</div>
-          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight">
-            What's happening.
+          <SectionEyebrow letter="ΙV" label="News" />
+          <h2 class="antique text-4xl md:text-6xl font-normal tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+            What's <em class="italic text-[color:var(--color-amber-600)]">happening.</em>
           </h2>
         </div>
-        <a href="#" class="text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-accent-600)]">All news →</a>
+        <a href="#" class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]">All news →</a>
       </div>
 
       <ul class="border-t hairline">
         {news.map((n) => (
-          <li class="py-7 border-b hairline grid grid-cols-12 gap-4 items-baseline group">
-            <div class="col-span-2 text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-500)]">{n.date}</div>
-            <div class="col-span-9 serif text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-accent-600)] transition-colors">{n.title}</div>
-            <div class="col-span-1 text-right text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-accent-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</div>
+          <li class="border-b hairline">
+            <a href="#" class="py-7 grid grid-cols-12 gap-4 items-baseline group">
+              <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">{n.date}</div>
+              <div class="col-span-9 antique text-2xl md:text-3xl font-normal text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-amber-600)] transition-colors">{n.title}</div>
+              <div class="col-span-1 text-right text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</div>
+            </a>
           </li>
         ))}
       </ul>
     </div>
   </section>
 
+  <!-- PARTNERS / CTA -->
   <section id="contact" class="border-t hairline bg-[color:var(--color-paper-2)]">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24 grid md:grid-cols-2 gap-16">
       <div>
-        <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">Work with us</div>
-        <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight mb-6">
-          Have a corpus too big to read?
+        <SectionEyebrow letter="V" label="Work with us" />
+        <h2 class="antique text-4xl md:text-6xl font-normal tracking-tight text-[color:var(--color-ink-900)] leading-[1.05] mb-6">
+          Have a corpus <em class="italic text-[color:var(--color-amber-600)]">too big to read?</em>
         </h2>
-        <p class="text-lg text-[color:var(--color-ink-700)] leading-relaxed mb-8">
+        <p class="serif text-xl text-[color:var(--color-ink-700)] leading-[1.55] mb-8 max-w-xl">
           We partner with research groups, the NHS, charities, and industry to
           build custom text-mining pipelines, from prototype to production.
         </p>
-        <a href="mailto:nactem@manchester.ac.uk" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-accent-600)] transition-colors">
+        <a
+          href="mailto:nactem@manchester.ac.uk"
+          class="inline-flex items-center gap-2 sans bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors"
+        >
           Start a conversation <span aria-hidden>→</span>
         </a>
       </div>
       <div class="grid grid-cols-2 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden">
-        {[
-          ["University of Manchester", "Host institution"],
-          ["UKRI", "Research funder"],
-          ["NIHR", "Health research"],
-          ["European Commission", "EU collaborations"],
-          ["AIRC, Japan", "Industrial AI"],
-          ["BHF", "Cardiovascular"],
-        ].map(([name, role]) => (
+        {partners.map(([name, role]) => (
           <div class="bg-[color:var(--color-paper)] p-6">
-            <div class="font-medium text-[color:var(--color-ink-900)]">{name}</div>
-            <div class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-500)] mt-1.5">{role}</div>
+            <div class="antique text-xl font-normal text-[color:var(--color-ink-900)] leading-snug">{name}</div>
+            <div class="smallcaps text-[color:var(--color-ink-500)] mt-2">{role}</div>
           </div>
         ))}
       </div>
