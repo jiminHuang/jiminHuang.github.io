@@ -42,26 +42,26 @@ const cols = [
 ];
 
 const funders = [
-  { name: "University of Manchester", logo: "/funders/manchesterlogo.gif", href: "https://www.manchester.ac.uk" },
-  { name: "JISC",            logo: "/funders/jisc.gif",             href: "https://www.jisc.ac.uk" },
-  { name: "BBSRC",           logo: "/funders/new-bbsrc-colour.gif", href: "https://www.bbsrc.ac.uk/" },
-  { name: "EPSRC",           logo: "/funders/epsrc.gif",            href: "https://www.epsrc.ac.uk/" },
-  { name: "ESRC",            logo: "/funders/ESRC.jpg",             href: "https://www.esrc.ac.uk/" },
-  { name: "MRC",             logo: "/funders/MRC.jpg",              href: "https://www.mrc.ac.uk" },
-  { name: "Wellcome Trust",  logo: "/funders/wellcome_trust.jpg",   href: "https://wellcome.org/" },
-  { name: "NIH",             logo: "/funders/NIH_logo.gif",         href: "https://www.nih.gov/" },
-  { name: "European Union",  logo: "/funders/euflag.gif",           href: "https://european-union.europa.eu" },
-  { name: "Europe PMC",      logo: "/funders/EuropePMC.png",        href: "https://europepmc.org/" },
-  { name: "META-NET",        logo: "/funders/metanet.png",          href: "http://www.meta-net.eu/" },
+  { name: "University of Manchester", logo: "/funders/manchesterlogo_white.png",   href: "https://www.manchester.ac.uk" },
+  { name: "JISC",            logo: "/funders/jisc_white.png",             href: "https://www.jisc.ac.uk" },
+  { name: "BBSRC",           logo: "/funders/new-bbsrc-colour_white.png", href: "https://www.bbsrc.ac.uk/" },
+  { name: "EPSRC",           logo: "/funders/epsrc_white.png",            href: "https://www.epsrc.ac.uk/" },
+  { name: "ESRC",            logo: "/funders/ESRC_white.png",             href: "https://www.esrc.ac.uk/" },
+  { name: "MRC",             logo: "/funders/MRC_white.png",              href: "https://www.mrc.ac.uk" },
+  { name: "Wellcome Trust",  logo: "/funders/wellcome_trust_white.png",   href: "https://wellcome.org/" },
+  { name: "NIH",             logo: "/funders/NIH_logo_white.png",         href: "https://www.nih.gov/" },
+  { name: "European Union",  logo: "/funders/euflag_white.png",           href: "https://european-union.europa.eu" },
+  { name: "Europe PMC",      logo: "/funders/EuropePMC_white.png",        href: "https://europepmc.org/" },
+  { name: "META-NET",        logo: "/funders/metanet_white.png",          href: "http://www.meta-net.eu/" },
 ];
 ---
 
 <footer class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-ink-100)] relative overflow-hidden">
-  <!-- Funder strip — sits on the dark footer; logos masked to white silhouettes -->
+  <!-- Funder strip on dark; logos are pre-rendered as white-on-transparent -->
   <div class="border-b border-white/10">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-10">
       <div class="smallcaps text-[color:var(--color-ink-400)] mb-6">Funders & partners</div>
-      <ul class="flex flex-wrap items-center gap-x-10 gap-y-5">
+      <ul class="flex flex-wrap items-center gap-x-10 gap-y-6">
         {funders.map((f) => (
           <li>
             <a
@@ -69,14 +69,9 @@ const funders = [
               target="_blank"
               rel="noopener"
               title={f.name}
-              class="block opacity-55 hover:opacity-90 transition-opacity"
+              class="block opacity-65 hover:opacity-100 transition-opacity"
             >
-              <img
-                src={f.logo}
-                alt={f.name}
-                class="h-7 md:h-8 w-auto"
-                style="filter: brightness(0) invert(1);"
-              />
+              <img src={f.logo} alt={f.name} class="h-9 md:h-10 w-auto" />
             </a>
           </li>
         ))}
