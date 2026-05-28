@@ -106,4 +106,26 @@ const seminars = defineCollection({
   }),
 });
 
-export const collections = { projects, tools, people, press, seminars };
+const corpora = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/corpora" }),
+  schema: z.object({
+    name: z.string(),
+    tagline: z.string(),
+    category: z.enum([
+      "Biomedical events",
+      "Anatomy & physiology",
+      "Disease-specific",
+      "Terminologies",
+      "Other",
+    ]),
+    status: z.string().default("Available"),
+    year: z.number().int().optional(),
+    size: z.string().optional(),
+    license: z.string().optional(),
+    paper: z.string().optional(),
+    url: z.string().url().optional(),
+    order: z.number().int().default(100),
+  }),
+});
+
+export const collections = { projects, tools, people, press, seminars, corpora };
