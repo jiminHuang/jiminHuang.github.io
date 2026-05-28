@@ -10,23 +10,26 @@ const nav = [
 ---
 
 <header class="sticky top-0 z-40 backdrop-blur bg-[color:var(--color-paper)]/85 border-b hairline">
-  <div class="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-16">
-    <a href="/" class="flex items-center gap-3">
-      <span class="w-8 h-8 rounded-sm bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] grid place-items-center font-bold text-sm tracking-tight">N</span>
-      <span class="hidden sm:flex flex-col leading-tight">
-        <span class="text-[11px] uppercase tracking-[0.18em] text-[color:var(--color-ink-500)]">National Centre for</span>
-        <span class="font-semibold text-[color:var(--color-ink-900)] -mt-0.5">Text Mining</span>
-      </span>
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
+    <a href="/" class="flex items-center gap-4">
+      <img src="/nactem-logo.gif" alt="NaCTeM — National Centre for Text Mining" class="h-10 w-auto" />
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm">
+    <nav class="hidden md:flex items-center gap-8 sans text-sm">
       {nav.map((item) => (
-        <a href={item.href} class="text-[color:var(--color-ink-700)] hover:text-[color:var(--color-accent-600)] transition-colors">{item.label}</a>
+        <a
+          href={item.href}
+          class="text-[color:var(--color-ink-700)] hover:text-[color:var(--color-amber-600)] transition-colors"
+        >
+          {item.label}
+        </a>
       ))}
     </nav>
     <div class="flex items-center gap-3">
-      <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-[color:var(--color-ink-900)] border hairline rounded-full px-4 py-1.5 hover:bg-[color:var(--color-ink-900)] hover:text-[color:var(--color-paper)] transition-colors">
-        Contact
-        <span aria-hidden>→</span>
+      <a
+        href="#contact"
+        class="hidden sm:inline-flex items-center gap-1.5 sans text-sm font-medium text-[color:var(--color-ink-900)] border hairline rounded-full px-4 py-1.5 hover:bg-[color:var(--color-ink-900)] hover:text-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] transition-colors"
+      >
+        Contact <span aria-hidden>→</span>
       </a>
     </div>
   </div>

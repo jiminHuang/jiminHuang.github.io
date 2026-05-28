@@ -1,32 +1,66 @@
 @import "tailwindcss";
 
 @theme {
+  /* UI sans (buttons, nav, small caps tags) */
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
-  --font-serif: "Fraunces", "Iowan Old Style", "Apple Garamond", "Palatino Linotype", "Times New Roman", serif;
+  /* Headlines + body — 16c. Garamond revival */
+  --font-serif: "EB Garamond", "Iowan Old Style", "Apple Garamond", "Palatino Linotype", "Times New Roman", serif;
+  /* Display + antique flavor — 17c. English revival */
+  --font-antique: "IM Fell English", "EB Garamond", "Iowan Old Style", serif;
 
-  --color-ink-950: #07101e;
-  --color-ink-900: #0d1b2e;
-  --color-ink-700: #1f3047;
-  --color-ink-500: #4a5b73;
-  --color-ink-300: #a8b3c2;
-  --color-ink-100: #e7ebf0;
-  --color-paper: #fbfaf6;
-  --color-paper-2: #f2efe6;
+  /* Ink + paper */
+  --color-ink-950: #0b0b09;
+  --color-ink-900: #14130f;
+  --color-ink-700: #2b2922;
+  --color-ink-500: #5b5648;
+  --color-ink-300: #a8a190;
+  --color-ink-100: #e6e0d0;
+  --color-paper: #fbf7ec;
+  --color-paper-2: #f1ead4;
 
-  --color-accent-600: #6f2da8;
-  --color-accent-500: #8a3fd1;
-  --color-accent-100: #efe3fb;
+  /* NaCTeM logo-derived amber */
+  --color-amber-600: #c47200;
+  --color-amber-500: #fe9a01;
+  --color-amber-400: #ffb500;
+  --color-amber-300: #fece29;
+  --color-amber-100: #fef0b8;
 
-  --color-rust-500: #b85a2e;
+  --color-accent-600: #c47200;
+  --color-accent-500: #fe9a01;
 }
 
 html {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   background: var(--color-paper);
   color: var(--color-ink-900);
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern", "liga", "onum", "ss01";
 }
 
-.serif { font-family: var(--font-serif); font-feature-settings: "ss01", "ss02"; }
+body {
+  font-feature-settings: "kern", "liga", "onum";
+}
 
-.hairline { border-color: rgba(13, 27, 46, 0.12); }
+.sans { font-family: var(--font-sans); font-feature-settings: "kern", "liga", "tnum"; }
+.serif { font-family: var(--font-serif); }
+.antique { font-family: var(--font-antique); font-feature-settings: "kern", "liga", "onum"; }
+
+.hairline { border-color: rgba(20, 19, 15, 0.14); }
+
+/* Subtle paper grain for hero / dark sections */
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(91, 86, 72, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(91, 86, 72, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px, 36px 36px;
+  background-position: 0 0, 12px 18px;
+}
+
+/* Smallcaps utility for old-style labels */
+.smallcaps {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
