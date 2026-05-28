@@ -1,0 +1,267 @@
+backend:
+  name: github
+  repo: jiminHuang/jiminHuang.github.io
+  branch: main
+  commit_messages:
+    create: 'cms: add {{collection}} "{{slug}}"'
+    update: 'cms: update {{collection}} "{{slug}}"'
+    delete: 'cms: delete {{collection}} "{{slug}}"'
+    uploadMedia: 'cms: upload "{{path}}"'
+    deleteMedia: 'cms: delete media "{{path}}"'
+
+site_url: https://jiminhuang.github.io
+display_url: https://jiminhuang.github.io
+logo_url: https://jiminhuang.github.io/nactem-logo.png
+
+media_folder: site/public/photos
+public_folder: /photos
+
+collections:
+  # ─────────────────────────── NEWS ───────────────────────────
+  - name: news
+    label: News
+    folder: site/src/content/news
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{year}}-{{slug}}'
+    summary: '{{date}} · {{title}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title,   label: Title,   widget: string,   required: true }
+      - { name: date,    label: Date,    widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: true }
+      - { name: tag,     label: Tag,     widget: string,   required: false, hint: 'Short category, e.g. "Publications", "Release", "Partnership"' }
+      - { name: summary, label: Summary, widget: text,     required: false }
+      - { name: href,    label: Link,    widget: string,   required: false, hint: 'Optional internal or external URL' }
+      - { name: body,    label: Body,    widget: markdown, required: false }
+
+  # ─────────────────────────── PEOPLE ───────────────────────────
+  - name: people
+    label: People
+    folder: site/src/content/people
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{slug}}'
+    summary: '{{name}} · {{group}}'
+    sortable_fields: [name, group, order]
+    view_groups:
+      - { label: 'By role', field: group }
+    fields:
+      - { name: name,        label: Full name,      widget: string, required: true }
+      - { name: title,       label: Title / role,   widget: string, required: false, hint: 'e.g. "Research staff", "Deputy Director"' }
+      - name: group
+        label: Group
+        widget: select
+        required: true
+        options: [Director, Deputy, Scientific Advisor, Staff, Visiting, Associated, PhD, MPhil, Alumni]
+      - { name: affiliation, label: Affiliation,    widget: string, required: false }
+      - { name: email,       label: Email,          widget: string, required: false }
+      - { name: photo,       label: Photo,          widget: image,  required: false, multiple: false, media_folder: '/site/public/photos', public_folder: '/photos' }
+      - name: topics
+        label: Topics (research interests)
+        widget: list
+        required: false
+        field: { name: topic, label: Topic, widget: string }
+      - { name: supervisor,   label: Supervisor,     widget: string, required: false, hint: 'Only for PhD / MPhil students' }
+      - { name: coSupervisor, label: Co-supervisor,  widget: string, required: false }
+      - { name: funding,      label: Funding,        widget: string, required: false }
+      - { name: yearGraduated, label: 'Year graduated', widget: number, required: false, value_type: int, hint: 'Alumni only' }
+      - { name: degree,       label: Degree,         widget: string, required: false, hint: 'Alumni only, e.g. "PhD", "MPhil"' }
+      - { name: currentPosition, label: 'Current position', widget: string, required: false, hint: 'Alumni only' }
+      - { name: order,        label: 'Display order', widget: number, required: false, value_type: int, default: 100 }
+      - name: aigaionKeywords
+        label: 'Aigaion keywords (auto)'
+        widget: list
+        required: false
+        hint: 'Auto-imported from Aigaion. Edit only if needed.'
+        field: { name: keyword, label: Keyword, widget: string }
+      - { name: body, label: Bio, widget: markdown, required: false }
+
+  # ─────────────────────────── PROJECTS ───────────────────────────
+  - name: projects
+    label: Projects
+    folder: site/src/content/projects
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{slug}}'
+    summary: '{{name}} · {{status}} · {{domain}}'
+    sortable_fields: [name, status, yearStart]
+    view_groups:
+      - { label: 'By status', field: status }
+      - { label: 'By domain', field: domain }
+    fields:
+      - { name: name,    label: Project name, widget: string, required: true }
+      - { name: tagline, label: Tagline,      widget: text,   required: true }
+      - name: status
+        label: Status
+        widget: select
+        required: true
+        options: [Active, Completed, Paused]
+      - name: domain
+        label: Domain
+        widget: select
+        required: true
+        options: [Biomedicine, Public health, Biodiversity, Industry, Other]
+      - { name: yearStart, label: 'Start year', widget: number, value_type: int, required: true }
+      - { name: yearEnd,   label: 'End year',   widget: number, value_type: int, required: false, hint: 'Leave blank for ongoing' }
+      - { name: funder,    label: Funder,       widget: string, required: false }
+      - name: partners
+        label: Partners
+        widget: list
+        required: false
+        field: { name: partner, label: Partner, widget: string }
+      - { name: lead, label: 'Lead researcher', widget: string, required: false }
+      - name: tools
+        label: 'Tools used'
+        widget: list
+        required: false
+        field: { name: tool, label: Tool, widget: string }
+      - name: publications
+        label: 'Project publications'
+        widget: list
+        required: false
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: venue, label: Venue, widget: string, required: false }
+          - { name: year,  label: Year,  widget: number, value_type: int, required: false }
+          - { name: url,   label: URL,   widget: string, required: false }
+      - { name: website, label: 'Project website', widget: string, required: false }
+      - { name: body,    label: Description,       widget: markdown, required: false }
+
+  # ─────────────────────────── TOOLS ───────────────────────────
+  - name: tools
+    label: Tools
+    folder: site/src/content/tools
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{slug}}'
+    summary: '{{name}} · {{category}}'
+    sortable_fields: [name, category, order]
+    view_groups:
+      - { label: 'By category', field: category }
+    fields:
+      - { name: name,    label: 'Tool name', widget: string, required: true }
+      - { name: tag,     label: 'Short tag', widget: string, required: true, hint: 'e.g. "Platform", "Search", "Extraction"' }
+      - { name: tagline, label: Tagline,     widget: text,   required: true }
+      - name: category
+        label: Category
+        widget: select
+        required: true
+        options: ['Platform', 'Search & retrieval', 'Entity & term recognition', 'Parsing & tagging', 'Annotation', 'Information extraction', 'Other']
+      - name: status
+        label: Status
+        widget: select
+        required: true
+        default: Available
+        options: [Available, 'Web service', Demo, Archived]
+      - { name: url,   label: 'Live URL',      widget: string, required: false }
+      - { name: repo,  label: 'Source repo',   widget: string, required: false }
+      - { name: paper, label: 'Citation paper', widget: string, required: false }
+      - { name: order, label: 'Display order', widget: number, value_type: int, default: 100 }
+      - { name: body,  label: Description,     widget: markdown, required: false }
+
+  # ─────────────────────────── CORPORA ───────────────────────────
+  - name: corpora
+    label: Resources & Corpora
+    folder: site/src/content/corpora
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{slug}}'
+    summary: '{{name}} · {{category}} · {{year}}'
+    sortable_fields: [name, category, year]
+    fields:
+      - { name: name,    label: 'Corpus name', widget: string, required: true }
+      - { name: tagline, label: Tagline,       widget: text,   required: true }
+      - name: category
+        label: Category
+        widget: select
+        required: true
+        options: ['Biomedical events', 'Anatomy & physiology', 'Disease-specific', 'Terminologies', 'Other']
+      - { name: status,  label: Status,        widget: string, required: false, default: Available }
+      - { name: year,    label: 'Release year', widget: number, value_type: int, required: false }
+      - { name: size,    label: Size,          widget: string, required: false, hint: 'e.g. "7,200 sentences"' }
+      - { name: license, label: Licence,       widget: string, required: false }
+      - { name: paper,   label: 'Citation paper', widget: string, required: false }
+      - { name: url,     label: 'Download URL', widget: string, required: false }
+      - { name: order,   label: 'Display order', widget: number, value_type: int, default: 100 }
+      - { name: body,    label: Description,   widget: markdown, required: false }
+
+  # ─────────────────────────── PRESS ───────────────────────────
+  - name: press
+    label: Press mentions
+    folder: site/src/content/press
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{year}}-{{month}}-{{slug}}'
+    summary: '{{publication}} · {{date}} · {{title}}'
+    sortable_fields: [date, publication]
+    fields:
+      - { name: publication, label: Publication,  widget: string, required: true, hint: 'e.g. "Nature", "The Guardian"' }
+      - { name: title,       label: Article title, widget: string, required: true }
+      - { name: date,        label: Date,          widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: true }
+      - { name: url,         label: 'Article URL', widget: string,  required: false }
+
+  # ─────────────────────────── SEMINARS ───────────────────────────
+  - name: seminars
+    label: Seminars
+    folder: site/src/content/seminars
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{year}}-{{slug}}'
+    summary: '{{date}} · {{speaker}}'
+    sortable_fields: [date, year, speaker]
+    fields:
+      - { name: speaker,     label: Speaker,        widget: string, required: true }
+      - { name: affiliation, label: Affiliation,    widget: string, required: false }
+      - { name: date,        label: Date,           widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false }
+      - { name: year,        label: Year,           widget: number, value_type: int, required: false }
+      - { name: legacyUrl,   label: 'Seminar page URL', widget: string, required: false }
+
+  # ─────────────────────────── PUBLICATIONS (preview-only) ───────────────────────────
+  - name: publications
+    label: Publications (read-only)
+    folder: site/src/content/publications
+    create: false
+    delete: false
+    format: frontmatter
+    extension: md
+    slug: '{{slug}}'
+    summary: '{{year}} · {{title}}'
+    sortable_fields: [year, title, venueType]
+    view_filters:
+      - { label: 'Recent (2024+)', field: year, pattern: '202[4-9]' }
+      - { label: 'Conferences', field: venueType, pattern: conference }
+      - { label: 'Journals',    field: venueType, pattern: journal }
+      - { label: 'Preprints',   field: venueType, pattern: preprint }
+    fields:
+      - { name: title,       label: Title,       widget: string,  required: true }
+      - { name: authors,     label: Authors,     widget: list, field: { name: author, label: Author, widget: string } }
+      - { name: authorSlugs, label: 'Author slugs (internal)', widget: list, required: false, field: { name: slug, label: Slug, widget: string } }
+      - { name: venue,       label: Venue,       widget: string,  required: false }
+      - { name: venueShort,  label: 'Venue short', widget: string, required: false }
+      - name: venueType
+        label: 'Venue type'
+        widget: select
+        required: false
+        options: [conference, journal, workshop, preprint, thesis, other]
+      - { name: year,      label: Year,      widget: number, value_type: int, required: false }
+      - { name: doi,       label: DOI,       widget: string, required: false }
+      - { name: url,       label: URL,       widget: string, required: false }
+      - { name: aigaionId, label: 'Aigaion ID', widget: number, value_type: int, required: false }
+      - { name: pubType,   label: 'Pub type', widget: string, required: false }
+      - { name: bibtexKey, label: 'BibTeX key', widget: string, required: false }
+      - { name: pages,     label: Pages,     widget: string, required: false }
+      - { name: abstract,  label: Abstract,  widget: text,   required: false }
+      - name: keywords
+        label: Keywords
+        widget: list
+        required: false
+        field: { name: keyword, label: Keyword, widget: string }
+      - { name: pdfUrl,    label: 'PDF URL', widget: string, required: false }
+      - { name: pdfName,   label: 'PDF filename', widget: string, required: false }
