@@ -4,19 +4,40 @@ import Meander from "./Meander.astro";
 const cols = [
   {
     title: "Research",
-    links: ["Current projects", "Past projects", "Collaborations", "PhD opportunities"],
+    links: [
+      { label: "Active projects", href: "/research#active" },
+      { label: "Project archive", href: "/research#archive" },
+      { label: "Publications", href: "/publications" },
+    ],
   },
   {
     title: "Tools",
-    links: ["TerMine", "Argo", "U-Compare", "EventMine", "Thalia"],
+    links: [
+      { label: "TerMine", href: "/tools/termine" },
+      { label: "Argo", href: "/tools/argo" },
+      { label: "U-Compare", href: "/tools/u-compare" },
+      { label: "EventMine", href: "/tools/eventmine" },
+      { label: "Thalia", href: "/tools/thalia" },
+      { label: "All tools", href: "/tools" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Corpora", "Terminologies", "Lexica", "Evaluation sets"],
+    links: [
+      { label: "Corpora", href: "/resources" },
+      { label: "GENIA", href: "/resources/genia" },
+      { label: "PHAEDRA", href: "/resources/phaedra" },
+      { label: "Bio-Lexicon", href: "/resources/bio-lexicon" },
+    ],
   },
   {
     title: "About",
-    links: ["People", "Publications", "Seminars", "Press", "Contact"],
+    links: [
+      { label: "People", href: "/people" },
+      { label: "Press", href: "/news#press" },
+      { label: "Seminars", href: "/news#seminars" },
+      { label: "Contact", href: "mailto:nactem@manchester.ac.uk" },
+    ],
   },
 ];
 ---
@@ -44,7 +65,7 @@ const cols = [
           <div class="smallcaps text-[color:var(--color-ink-300)] mb-5">{col.title}</div>
           <ul class="space-y-2.5">
             {col.links.map((l) => (
-              <li><a href="#" class="serif text-base text-[color:var(--color-ink-100)] hover:text-[color:var(--color-amber-400)] transition-colors">{l}</a></li>
+              <li><a href={l.href} class="serif text-base text-[color:var(--color-ink-100)] hover:text-[color:var(--color-amber-400)] transition-colors">{l.label}</a></li>
             ))}
           </ul>
         </div>

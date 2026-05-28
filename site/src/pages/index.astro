@@ -7,6 +7,24 @@ import SectionEyebrow from "../components/SectionEyebrow.astro";
 const press = (await getCollection("press"))
   .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
   .slice(0, 4);
+
+const allTools = await getCollection("tools");
+const FEATURED_TOOLS = ["termine", "argo", "u-compare", "eventmine", "thalia", "robotanalyst"];
+const tools = FEATURED_TOOLS
+  .map((id) => allTools.find((t) => t.id === id))
+  .filter(Boolean);
+
+const allProjects = await getCollection("projects");
+const projects = allProjects
+  .filter((p) => p.data.status === "Active")
+  .sort((a, b) => (a.data.yearStart ?? 0) - (b.data.yearStart ?? 0));
+
+const allPublications = await getCollection("publications");
+const projectsCount = allProjects.length;
+const pubsCount = allPublications.length;
+const toolsCount = allTools.length;
+const corporaCount = (await getCollection("corpora")).length;
+const peopleCount = (await getCollection("people")).filter((p) => p.data.group !== "Alumni").length;
 const formatPressDate = (iso?: string) => {
   if (!iso) return "";
   const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -17,9 +35,9 @@ const formatPressDate = (iso?: string) => {
 
 const stats = [
   { value: "MMIV", label: "Established" },
-  { value: "50+", label: "Research projects" },
-  { value: "120+", label: "Publications" },
-  { value: "20+", label: "Open tools & corpora" },
+  { value: String(projectsCount), label: "Research projects" },
+  { value: String(pubsCount), label: "Publications" },
+  { value: String(toolsCount + corporaCount), label: "Open tools & corpora" },
 ];
 
 const focusAreas = [
@@ -49,22 +67,6 @@ const focusAreas = [
   },
 ];
 
-const tools = [
-  { name: "TerMine", desc: "Automatic term recognition over scientific text.", tag: "Terminology" },
-  { name: "Argo", desc: "Workflow editor for composable NLP pipelines.", tag: "Platform" },
-  { name: "U-Compare", desc: "Benchmarking framework for NLP components.", tag: "Evaluation" },
-  { name: "EventMine", desc: "Event extraction for biomedical literature.", tag: "Extraction" },
-  { name: "Thalia", desc: "Semantic search over PubMed and beyond.", tag: "Search" },
-  { name: "Cheshire", desc: "Information retrieval system at scale.", tag: "Retrieval" },
-];
-
-const projects = [
-  { slug: "ephor", name: "EPHOR", scope: "Occupational exposure & worker health", status: "Active" },
-  { slug: "bhf", name: "BHF", scope: "British Heart Foundation — cardiovascular evidence mining", status: "Active" },
-  { slug: "airc", name: "AIRC", scope: "AI Research Centre collaboration", status: "Active" },
-  { slug: "mental-health", name: "Mental Health", scope: "Mining clinical notes for early intervention", status: "Active" },
-  { slug: "nedo-airc", name: "NEDO-AIRC", scope: "Japan–UK AI for industry", status: "Active" },
-];
 
 
 const partners = [
@@ -193,17 +195,20 @@ const partners = [
         </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {tools.map((t) => (
-          <a href={`/tools/${t.name.toLowerCase()}`} class="group block border hairline rounded-xl p-6 hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all bg-[color:var(--color-paper)]">
+          <a href={`/tools/${t!.id}`} class="group block border hairline rounded-xl p-6 hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all bg-[color:var(--color-paper)]">
             <div class="flex items-start justify-between mb-4">
-              <span class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">{t.tag}</span>
+              <span class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">{t!.data.tag}</span>
               <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
             </div>
-            <div class="display text-3xl font-normal text-[color:var(--color-ink-900)] mb-2">{t.name}</div>
-            <p class="serif text-base text-[color:var(--color-ink-700)] leading-relaxed">{t.desc}</p>
+            <div class="display text-3xl font-normal text-[color:var(--color-ink-900)] mb-2">{t!.data.name}</div>
+            <p class="serif text-base text-[color:var(--color-ink-700)] leading-relaxed">{t!.data.tagline}</p>
           </a>
         ))}
+      </div>
+      <div class="mt-8 text-right">
+        <a href="/tools" class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]">All {toolsCount} tools →</a>
       </div>
     </div>
   </section>
@@ -221,17 +226,17 @@ const partners = [
             Currently <em class="italic text-[color:var(--color-amber-400)]">in flight.</em>
           </h2>
         </div>
-        <a href="#" class="sans text-sm font-medium hover:text-[color:var(--color-amber-400)]">Project archive →</a>
+        <a href="/research" class="sans text-sm font-medium hover:text-[color:var(--color-amber-400)]">Project archive →</a>
       </div>
 
       <ul class="divide-y divide-white/10">
         {projects.map((p) => (
           <li class="group">
-            <a href={`/projects/${p.slug}`} class="py-7 grid grid-cols-12 gap-4 items-baseline">
-              <div class="col-span-2 display text-3xl font-normal text-[color:var(--color-paper)]">{p.name}</div>
-              <div class="col-span-8 serif text-lg text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-paper)] transition-colors">{p.scope}</div>
+            <a href={`/projects/${p.id}`} class="py-7 grid grid-cols-12 gap-4 items-baseline">
+              <div class="col-span-2 display text-3xl font-normal text-[color:var(--color-paper)]">{p.data.name}</div>
+              <div class="col-span-8 serif text-lg text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-paper)] transition-colors">{p.data.tagline}</div>
               <div class="col-span-2 flex items-center justify-end gap-3">
-                <span class="smallcaps text-[color:var(--color-amber-400)]">{p.status}</span>
+                <span class="smallcaps text-[color:var(--color-amber-400)]">{p.data.status}</span>
                 <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-400)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</span>
               </div>
             </a>
