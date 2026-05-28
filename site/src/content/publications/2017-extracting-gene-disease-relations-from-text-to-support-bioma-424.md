@@ -1,6 +1,7 @@
 ---
 title: "Extracting Gene-Disease Relations from Text to Support Biomarker Discovery"
 authors: ["Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "sophia-ananiadou"]
 venue: "Proceedings of the 7th International conference on Digital Health, pages 180-189"
 venueShort: "Proceedings of the 7th International conference on Digital H"
 venueType: conference

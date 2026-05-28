@@ -1,6 +1,7 @@
 ---
 title: "How do Large Language Models Learn In-Context? Query and Key Matrices of In-Context Heads are Two Towers for Metric Learning"
 authors: ["Yu, Z.", "Ananiadou, S."]
+authorSlugs: ["zeping-yu", "sophia-ananiadou"]
 venue: "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, pages 3281–3292"
 venueShort: "Proceedings of the 2024 Conference on Empirical Methods in N"
 venueType: conference

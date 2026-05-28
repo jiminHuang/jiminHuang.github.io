@@ -1,6 +1,7 @@
 ---
 title: "Monolingual Phrase Alignment on Parse Forests"
 authors: ["Arase, Y.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 1-11"
 venueShort: "Proceedings of the 2017 Conference on Empirical Methods in N"
 venueType: conference

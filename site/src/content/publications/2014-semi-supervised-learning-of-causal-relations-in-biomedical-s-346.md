@@ -1,6 +1,7 @@
 ---
 title: "Semi-supervised learning of causal relations in biomedical scientific discourse"
 authors: ["MihÄƒilÄƒ, C.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: BioMedical Engineering OnLine, 13:Suppl 2(S1)"
 venueShort: "in: BioMedical Engineering OnLine"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Descriptive Clustering via Discriminant Learning in a Coembedded Space of Multi-level Similarities"
 authors: ["Mu, T.", "Goulermas, J. Y", "Korkontzelos, I.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Journal of the Association for Information Science and Technology, 67:1(106-133)"
 venueShort: "Science"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs"
 authors: ["Kabir, M.", "Abrar, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 24–51"
 venueShort: "EMNLP 2025"
 venueType: conference

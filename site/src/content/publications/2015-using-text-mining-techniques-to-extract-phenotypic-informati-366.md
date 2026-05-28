@@ -1,6 +1,7 @@
 ---
 title: "Using text mining techniques to extract phenotypic information from the PhenoCHF corpus"
 authors: ["Alnazzawi, N.", "Thompson, P.", "Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["noha-alnazzawi-alum-2016", "paul-thompson", "", "sophia-ananiadou"]
 venue: "in: BMC Medical Informatics and Decision Making, 15:Suppl. 2(S3)"
 venueShort: "BMC"
 venueType: other

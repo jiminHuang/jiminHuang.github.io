@@ -1,6 +1,7 @@
 ---
 title: "An ontology-based disambiguation of terms"
 authors: ["Soldatova, L. N.", "Kolluru, B.", "King, R. D.", "Qi, D.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the Workshop on Mining the Pharmacogenomics Literature, Pacific Symopsium on Biocomputing"
 venueShort: "Proceedings of the Workshop on Mining the Pharmacogenomics L"
 venueType: workshop

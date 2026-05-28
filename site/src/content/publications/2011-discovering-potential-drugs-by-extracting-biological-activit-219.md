@@ -1,6 +1,7 @@
 ---
 title: "Discovering Potential Drugs by Extracting Biological Activities of Natural Products"
 authors: ["Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "Proceedings of the Workshop on Mining the Pharmacogenomics Literature, Pacific Symopsium on Biocomputing"
 venueShort: "Proceedings of the Workshop on Mining the Pharmacogenomics L"
 venueType: workshop

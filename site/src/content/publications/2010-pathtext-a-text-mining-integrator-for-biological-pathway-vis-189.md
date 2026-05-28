@@ -1,6 +1,7 @@
 ---
 title: "PathText: A Text Mining Integrator for Biological Pathway Visualizations"
 authors: ["Kemper, B.", "Matsuzaki, T.", "Matsuoka, Y.", "Tsuruoka, Y.", "Kitano, H.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "", "sophia-ananiadou", "junichi-tsujii"]
 venue: "in: Bioinformatics, 26:12(i374-i381)"
 venueShort: "Bioinformatics"
 venueType: other

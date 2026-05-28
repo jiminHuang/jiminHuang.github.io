@@ -1,6 +1,7 @@
 ---
 title: "Development and Analysis of NLP Pipelines in Argo"
 authors: ["Rak, R.", "Rowley, A.", "Carter, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics: System Demonstrations, Association for Computational Linguistics, Sofia, Bulgaria, pages 115-120"
 venueShort: "Computational Linguistics"
 venueType: conference

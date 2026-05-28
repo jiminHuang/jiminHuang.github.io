@@ -1,6 +1,7 @@
 ---
 title: "A re-evaluation of biomedical named entity-term relations"
 authors: ["Ohta, T.", "Pyysalo, S.", "Kim, J.-D.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "in: Journal of Bioinformatics and Computational Biology (JBCB), 8:5(917--928)"
 venueShort: "Bioinformatics"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Global information-aware argument mining based on a top-down multi-turn QA model"
 authors: ["Liu, B", "Schlegel, V.", "Thompson, P.", "Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "", "paul-thompson", "", "sophia-ananiadou"]
 venue: "in: Information Processing & Management, 60:5(103445)"
 venueShort: "Information Processing"
 venueType: other

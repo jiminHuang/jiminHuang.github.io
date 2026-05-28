@@ -1,6 +1,7 @@
 ---
 title: "Disentangled VAD Representations via a Variational Framework for Political Stance Detection"
 authors: ["Xu, B.", "Liu, Z.", "Ananiadou, S."]
+authorSlugs: ["", "zhiwei-liu", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

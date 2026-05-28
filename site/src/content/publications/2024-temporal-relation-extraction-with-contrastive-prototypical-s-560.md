@@ -1,6 +1,7 @@
 ---
 title: "Temporal relation extraction with contrastive prototypical sampling"
 authors: ["Yuan, C.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["chenhan-yuan-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "in: Knowledge-based Systems, 286(111410)"
 venueShort: "Knowledge-Based Systems"
 venueType: other

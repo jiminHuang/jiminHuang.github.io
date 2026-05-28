@@ -1,6 +1,7 @@
 ---
 title: "Women’s health in The BMJ: a data science history"
 authors: ["Hamulyak, E. N.", "Brockmeier, A. J.", "Killas, J. D.", "Ananiadou, S.", "Middeldorp, S.", "Leroi, A. M."]
+authorSlugs: ["", "", "", "sophia-ananiadou", "", ""]
 venue: "in: BMJ Open, 10(e039759)"
 venueShort: "in: BMJ Open"
 venueType: other

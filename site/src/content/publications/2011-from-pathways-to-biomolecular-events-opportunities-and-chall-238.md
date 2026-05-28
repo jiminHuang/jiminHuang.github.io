@@ -1,6 +1,7 @@
 ---
 title: "From Pathways to Biomolecular Events: Opportunities and Challenges"
 authors: ["Ohta, T.", "Pyysalo, S.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "Proceedings of the BioNLP 2011 Workshop, pages 105--113, Association for Computational Linguistics"
 venueShort: "BioNLP 2011"
 venueType: workshop

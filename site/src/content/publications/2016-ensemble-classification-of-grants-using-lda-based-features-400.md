@@ -1,6 +1,7 @@
 ---
 title: "Ensemble Classification of Grants using LDA-based features"
 authors: ["Korkontzelos, I.", "Thomas, B.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Proceedings of LREC 2016(1288-1294)"
 venueShort: "LREC 2016"
 venueType: other

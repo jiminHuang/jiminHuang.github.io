@@ -1,6 +1,7 @@
 ---
 title: "Prioritising references for systematic reviews with RobotAnalyst: a user study"
 authors: ["Przybyɫa, P.", "Brockmeier, A. J.", "Kontonatsios, G.", "Le Pogam, M. -A.", "McNaught, J.", "von Elm, E.", "Nolan, K.", "Ananiadou, S."]
+authorSlugs: ["", "", "georgios-kontonatsios-alum-2014", "", "john-mcnaught", "", "", "sophia-ananiadou"]
 venue: "in: Research Synthesis Methods, 9:3(470-488)"
 venueShort: "in: Research Synthesis Methods"
 venueType: thesis

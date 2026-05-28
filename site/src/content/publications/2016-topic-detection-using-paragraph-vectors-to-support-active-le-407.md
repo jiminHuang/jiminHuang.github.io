@@ -1,6 +1,7 @@
 ---
 title: "Topic Detection Using Paragraph Vectors to Support Active Learning in Systematic Reviews"
 authors: ["Hashimoto, K.", "Kontonatsios, G.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "georgios-kontonatsios-alum-2014", "", "sophia-ananiadou"]
 venue: "in: Journal of Biomedical Informatics, 62(59â€“65)"
 venueShort: "JBI"
 venueType: other

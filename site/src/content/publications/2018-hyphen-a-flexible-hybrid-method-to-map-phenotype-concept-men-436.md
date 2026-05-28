@@ -1,6 +1,7 @@
 ---
 title: "HYPHEN: A flexible, hybrid method to map phenotype concept mentions to terminological resources"
 authors: ["Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "sophia-ananiadou"]
 venue: "in: Terminology, 24:1(91-121)"
 venueShort: "in: Terminology"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Subjective Logic Encodings"
 authors: ["Vasilakes, J.", "Zerva, C.", "Ananiadou, S."]
+authorSlugs: ["jake-vasilakes-alum-2024", "chrysoula-zerva-alum-2018", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

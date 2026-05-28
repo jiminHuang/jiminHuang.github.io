@@ -1,6 +1,7 @@
 ---
 title: "FinAudio: A Benchmark for Audio Large Language Models in Financial Applications"
 authors: ["Cao, Y.", "Li, H.", "Yu, Y.", "Reddy Javaji, S.", "He, Y.", "Huang, J.", "Zhu, Z.", "Xie, Q.", "Liu, X. -Y.", "Subbalakshmi, K.", "Qiu, M.", "Ananiadou, S.", "Nie., J. -Y."]
+authorSlugs: ["", "", "", "", "", "jimin-huang-phd", "", "qianqian-xie", "", "", "", "sophia-ananiadou", ""]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

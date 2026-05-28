@@ -1,6 +1,7 @@
 ---
 title: "Semantic Label Drift in Cross-Cultural Translation"
 authors: ["Kabir, M.", "Ahmed, T.", "Rahman, M. M.", "Giannouris, P.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "polydoros-giannouris", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

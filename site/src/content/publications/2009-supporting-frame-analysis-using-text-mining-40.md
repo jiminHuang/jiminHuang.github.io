@@ -1,6 +1,7 @@
 ---
 title: "Supporting Frame Analysis using Text Mining"
 authors: ["Ananiadou, S.", "Weissenbacher, D.", "Rea, B.", "Pieri, E.", "Lin, Y.", "Vis, F.", "Procter, R.", "Halfpenny, P."]
+authorSlugs: ["sophia-ananiadou", "", "", "", "", "", "", ""]
 venue: "Proceedings of the 5th International Conference on e-Social Science"
 venueShort: "Science"
 venueType: conference

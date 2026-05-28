@@ -1,6 +1,7 @@
 ---
 title: "Collaborative Development and Evaluation of Text-processing Workflows in a UIMA-supported Web-based Workbench"
 authors: ["Rak, R.", "Rowley, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the Eighth International Conference on Language Resources and Evaluation (LREC 2012), pages 2971-2976"
 venueShort: "LREC 2012"
 venueType: conference

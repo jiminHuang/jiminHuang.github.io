@@ -1,6 +1,7 @@
 ---
 title: "MentaLLaMA: Interpretable Mental Health Analysis on Social Media with Large Language Models"
 authors: ["Yang, K", "Zhang, T.", "Kuang, Z.", "Xie, Q.", "Huang, J.", "Ananiadou, S."]
+authorSlugs: ["", "tianlin-zhang-alum-2024", "", "qianqian-xie", "jimin-huang-phd", "sophia-ananiadou"]
 venue: "Proceedings of WWW 2024, pages 4489 - 4500"
 venueShort: "WWW 2024"
 venueType: conference

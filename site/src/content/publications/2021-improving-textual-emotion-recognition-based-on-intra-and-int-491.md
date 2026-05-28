@@ -1,6 +1,7 @@
 ---
 title: "Improving Textual Emotion Recognition Based on Intra- and Inter-Class Variation"
 authors: ["Alhuzali, H.", "Ananiadou, S."]
+authorSlugs: ["hassan-alhuzali-alum-2021", "sophia-ananiadou"]
 venue: "in: IEEE Transactions on Affective Computing"
 venueShort: "in: IEEE Transactions on Affective Computing"
 venueType: other

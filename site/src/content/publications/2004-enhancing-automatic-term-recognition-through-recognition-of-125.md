@@ -1,6 +1,7 @@
 ---
 title: "Enhancing automatic term recognition through recognition of variation"
 authors: ["NenadiÄ‡, G.", "Ananiadou, S.", "McNaught, J."]
+authorSlugs: ["", "sophia-ananiadou", "john-mcnaught"]
 venue: "Proceedings of COLING 2004, pages 604--610, Association for Computational Linguistics"
 venueShort: "COLING 2004"
 venueType: conference

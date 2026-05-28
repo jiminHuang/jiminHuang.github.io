@@ -1,6 +1,7 @@
 ---
 title: "Bilingual Dictionary Extraction from Wikipedia"
 authors: ["Yu, K.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of Machine Translation Summit XII"
 venueShort: "Proceedings of Machine Translation Summit XII"
 venueType: conference

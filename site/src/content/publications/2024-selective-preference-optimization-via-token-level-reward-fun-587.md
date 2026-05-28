@@ -1,6 +1,7 @@
 ---
 title: "Selective Preference Optimization via Token-Level Reward Function Estimation"
 authors: ["Yang, K", "Liu, Z.", "Xie, Q.", "Huang, J.", "Min, E.", "Ananiadou, S."]
+authorSlugs: ["", "zhiwei-liu", "qianqian-xie", "jimin-huang-phd", "erxue-min-alum-2022", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

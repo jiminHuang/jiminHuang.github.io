@@ -1,6 +1,7 @@
 ---
 title: "On revolutions"
 authors: ["Leroi, A. M.", "Lambert, B. C.", "Mauch, M.", "Papadopoulou, M.", "Ananiadou, S.", "Lindberg, S. I. I.", "Lindenfors, P."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou", "", ""]
 venue: "in: Palgrave Communications, 6(4)"
 venueShort: "in: Palgrave Communications"
 venueType: other

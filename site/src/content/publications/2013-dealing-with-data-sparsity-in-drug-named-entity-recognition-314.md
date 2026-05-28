@@ -1,6 +1,7 @@
 ---
 title: "Dealing with data sparsity in Drug Named Entity Recognition"
 authors: ["Piliouras, D.", "Korkontzelos, I.", "Dowsey, A.", "Ananiadou, S."]
+authorSlugs: ["dimitris-piliouras-alum-2014", "", "", "sophia-ananiadou"]
 venue: "Proceedings of IEEE International Conference on Healthcare Informatics, Philadelhia, PA, pages 14-21"
 venueShort: "Proceedings of IEEE International Conference on Healthcare I"
 venueType: conference

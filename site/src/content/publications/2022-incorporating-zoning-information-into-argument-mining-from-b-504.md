@@ -1,6 +1,7 @@
 ---
 title: "Incorporating Zoning Information into Argument Mining from Biomedical Literature"
 authors: ["Liu, B", "Schlegel, V.", "Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "Proceedings of LREC 2022, pages 6162-6169"
 venueShort: "LREC 2022"
 venueType: conference

@@ -1,6 +1,7 @@
 ---
 title: "Automatic Extraction of Angiogenesis Bio-Process from Text"
 authors: ["Wang, X.", "McKendrick, I.", "Barrett, I.", "Dix, I.", "French, T.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["xinkai-wang-alum-2011", "", "", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 27:19(2730-2737)"
 venueShort: "Bioinformatics"
 venueType: other

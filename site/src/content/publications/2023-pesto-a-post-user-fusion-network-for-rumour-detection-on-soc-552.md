@@ -1,6 +1,7 @@
 ---
 title: "PESTO: A Post-User Fusion Network for Rumour Detection on Social Media"
 authors: ["Min, E.", "Ananiadou, S."]
+authorSlugs: ["erxue-min-alum-2022", "sophia-ananiadou"]
 venue: "Proceedings of the 13th Workshop on Computational Approaches to Subjectivity, Sentiment, & Social Media Analysis, pages 1-10"
 venueShort: "Proceedings of the 13th Workshop on Computational Approaches"
 venueType: workshop

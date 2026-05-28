@@ -1,6 +1,7 @@
 ---
 title: "Adaptable, high recall, event extraction system with minimal configuration"
 authors: ["Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 16:Suppl 10.(S7)"
 venueShort: "BMC"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Examining and mitigating gender bias in text emotion detection task"
 authors: ["Odbal, G. Z.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: Neurocomputing, 493(422-434)"
 venueShort: "in: Neurocomputing"
 venueType: other

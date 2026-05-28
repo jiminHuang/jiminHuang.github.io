@@ -1,6 +1,7 @@
 ---
 title: "SpanEmo: Casting Multi-label Emotion Classification as Span-prediction"
 authors: ["Alhuzali, H.", "Ananiadou, S."]
+authorSlugs: ["hassan-alhuzali-alum-2021", "sophia-ananiadou"]
 venue: "Proceedings 16th conference of the European Chapter of the Association for Computational Linguistics (EACL 2021), pages 1573–1584"
 venueShort: "EACL 2021"
 venueType: other

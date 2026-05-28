@@ -1,6 +1,7 @@
 ---
 title: "Named Entity Recognition for Bacterial Type IV Secretion Systems"
 authors: ["Ananiadou, S.", "Sullivan, D.", "Black, W.J.", "Levow, G.", "Gillespie, J.", "Mao, C.", "Pyysalo, S.", "Kolluru, B.", "Tsujii, J.", "Sobral, B."]
+authorSlugs: ["sophia-ananiadou", "", "", "", "", "", "", "", "junichi-tsujii", ""]
 venue: "in: PLoS ONE, 6:3(e14780)"
 venueShort: "PLOS ONE"
 venueType: other

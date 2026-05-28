@@ -1,6 +1,7 @@
 ---
 title: "Domain-specific Continued Pretraining of Language Models for Capturing Long Context in Mental Health"
 authors: ["Ji, S.", "Zhang, T.", "Yang, K", "Ananiadou, S."]
+authorSlugs: ["", "tianlin-zhang-alum-2024", "", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

@@ -1,6 +1,7 @@
 ---
 title: "The UOT System: Improve String-to-Tree Translation Using Head-Driven Phrase Structure Grammar and Predicate-Argument Structures"
 authors: ["Wu, X.", "Matsuzaki, T.", "Okazaki, N.", "Miyao, Y.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "junichi-tsujii"]
 venue: "Proceedings on the International Workshop on Spoken Language Translation (IWSLT), pages 99--106"
 venueShort: "Proceedings on the International Workshop on Spoken Language"
 venueType: workshop

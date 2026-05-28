@@ -1,6 +1,7 @@
 ---
 title: "A hybrid approach to compiling bilingual dictionaries of medical terms from parallel corpora"
 authors: ["Kontonatsios, G.", "MihÄƒilÄƒ, C.", "Korkontzelos, I.", "Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["georgios-kontonatsios-alum-2014", "", "", "paul-thompson", "sophia-ananiadou"]
 venue: "Statistical Language and Speech Processing, Second International Conference, SLSP 2014, pages 57-69, Springer"
 venueShort: "Statistical Language and Speech Processing"
 venueType: conference

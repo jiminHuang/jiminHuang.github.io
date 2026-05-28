@@ -1,6 +1,7 @@
 ---
 title: "DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel Translation"
 authors: ["Zhang, E.", "Wang, J.", "Xiao, M.", "Liu, J.", "Kuang, Z.", "Dong, R.", "Dong, E.", "Ananiadou, S.", "Peng, M.", "Xie, Q."]
+authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou", "", "qianqian-xie"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

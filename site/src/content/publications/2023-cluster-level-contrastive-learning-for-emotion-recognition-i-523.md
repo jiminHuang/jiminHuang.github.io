@@ -1,6 +1,7 @@
 ---
 title: "Cluster-Level Contrastive Learning for Emotion Recognition in Conversations"
 authors: ["Yang, K", "Zhang, T.", "Alhuzali, H.", "Ananiadou, S."]
+authorSlugs: ["", "tianlin-zhang-alum-2024", "hassan-alhuzali-alum-2021", "sophia-ananiadou"]
 venue: "in: IEEE Transactions on Affective Computing(1-12)"
 venueShort: "in: IEEE Transactions on Affective Computing(1-12)"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Investigating Domain-Specific Information for Neural Coreference Resolution on Biomedical Texts"
 authors: ["Trieu, H-L.", "Nguyen, N. T. H.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the BioNLP 2018 workshop, pages 183-188"
 venueShort: "BioNLP 2018"
 venueType: workshop

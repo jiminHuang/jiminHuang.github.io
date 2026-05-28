@@ -1,6 +1,7 @@
 ---
 title: "Text Mining Workflows for Indexing Archives with Automatically Extracted Semantic Metadata"
 authors: ["Batista-Navarro, R.", "Soto, A.", "Ulate, W.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the 20th International Conference on Theory and Practice of Digital Libraries (TPDL 2016), pages 471â€“473, Springer"
 venueShort: "Proceedings of the 20th International Conference on Theory a"
 venueType: conference

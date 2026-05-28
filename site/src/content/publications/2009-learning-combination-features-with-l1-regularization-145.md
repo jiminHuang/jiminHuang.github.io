@@ -1,6 +1,7 @@
 ---
 title: "Learning Combination Features with L1 Regularization"
 authors: ["Okanohara, D.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of NAACL-HLT, short papers, pages 97--100"
 venueShort: "NAACL"
 venueType: conference

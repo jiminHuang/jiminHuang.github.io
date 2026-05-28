@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT as a Factual Inconsistency Evaluator for Text Summarization"
 authors: ["Luo, Z.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

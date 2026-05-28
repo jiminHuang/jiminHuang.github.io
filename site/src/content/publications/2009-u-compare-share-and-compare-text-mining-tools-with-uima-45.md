@@ -1,6 +1,7 @@
 ---
 title: "U-Compare: share and compare text mining tools with UIMA"
 authors: ["Kano, Y.", "Baumgartner Jr., W. A", "McCrochon, L.", "Ananiadou, S.", "Cohen, K. B.", "Hunter, L.", "Tsujii, J."]
+authorSlugs: ["", "", "", "sophia-ananiadou", "", "", "junichi-tsujii"]
 venue: "Bioinformatics, 25:15, pp.1997–1998"
 venueShort: "Bioinformatics"
 venueType: journal

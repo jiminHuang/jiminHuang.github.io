@@ -1,6 +1,7 @@
 ---
 title: "Gaussian Distributed Prototypical Network for Few-shot Genomic Variant Detection"
 authors: ["Cao, J.", "Peek, N.", "Renehan, A. G", "Ananiadou, S."]
+authorSlugs: ["jiarun-cao-alum-2024", "", "", "sophia-ananiadou"]
 venue: "Proceedings of BioNLP 2023, pages 26–36"
 venueShort: "BioNLP 2023"
 venueType: conference

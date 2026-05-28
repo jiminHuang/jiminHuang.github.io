@@ -1,6 +1,7 @@
 ---
 title: "Text Mining Resources for the Life Sciences"
 authors: ["Przybyɫa, P.", "Shardlow, M.", "Aubin, S.", "Bossy, R.", "{Eckart de Castilho}, R.", "Piperidis, S.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: Database: The Journal of Biological Databases and Curation(baw145)"
 venueShort: "Database"
 venueType: other

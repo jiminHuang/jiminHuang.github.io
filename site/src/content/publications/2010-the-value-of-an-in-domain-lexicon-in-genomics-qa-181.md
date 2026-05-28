@@ -1,6 +1,7 @@
 ---
 title: "The value of an in-domain lexicon in genomics qa"
 authors: ["Sasaki, Y.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: Journal of bioinformatics and computational biology, 8:1(147--161)"
 venueShort: "Bioinformatics"
 venueType: other

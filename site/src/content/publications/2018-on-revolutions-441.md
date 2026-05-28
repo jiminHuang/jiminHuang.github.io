@@ -1,6 +1,7 @@
 ---
 title: "On Revolutions"
 authors: ["Leroi, A. M.", "Lambert, B. C.", "Mauch, M.", "Papadopoulou, M.", "Ananiadou, S.", "Lindberg, S. I. I.", "Lindenfors, P."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou", "", ""]
 venue: "in: V-Dem Working Paper(63)"
 venueShort: "in: V-Dem Working Paper(63)"
 venueType: other

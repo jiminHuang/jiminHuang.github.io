@@ -1,6 +1,7 @@
 ---
 title: "BioVAE: a pre-trained latent variable language model for biomedical text mining"
 authors: ["Trieu, H-L.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "38:3(872-874)"
 venueShort: "38:3(872-874)"
 venueType: journal

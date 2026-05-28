@@ -1,6 +1,7 @@
 ---
 title: "The pace of modern culture"
 authors: ["Lambert, B. C.", "Kontonatsios, G.", "Mauch, M.", "Kokkoris, T.", "Jockers, M.", "Ananiadou, S.", "Leroi, A. M."]
+authorSlugs: ["", "georgios-kontonatsios-alum-2014", "", "", "", "sophia-ananiadou", ""]
 venue: "in: Nature Human Behaviour"
 venueShort: "Nature"
 venueType: other

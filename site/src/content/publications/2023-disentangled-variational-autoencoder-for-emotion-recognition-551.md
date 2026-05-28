@@ -1,6 +1,7 @@
 ---
 title: "Disentangled Variational Autoencoder for Emotion Recognition in Conversations"
 authors: ["Yang, K", "Zhang, T.", "Ananiadou, S."]
+authorSlugs: ["", "tianlin-zhang-alum-2024", "sophia-ananiadou"]
 venue: "in: IEEE Transactions on Affective Computing(1-12)"
 venueShort: "in: IEEE Transactions on Affective Computing(1-12)"
 venueType: other

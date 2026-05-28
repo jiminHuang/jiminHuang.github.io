@@ -1,6 +1,7 @@
 ---
 title: "Compositional Phrase Alignment and Beyond"
 authors: ["Arase, Y.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of EMNLP 2020, pages 1611–1623"
 venueShort: "EMNLP 2020"
 venueType: conference

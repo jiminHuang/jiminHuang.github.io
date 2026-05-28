@@ -1,6 +1,7 @@
 ---
 title: "GenerativeRE: Incorporating a Novel Copy Mechanism and Pretrained Model for Joint Entity and Relation Extraction"
 authors: ["Cao, J.", "Ananiadou, S."]
+authorSlugs: ["jiarun-cao-alum-2024", "sophia-ananiadou"]
 venue: "Findings of EMNLP, pages 2119–2126"
 venueShort: "EMNLP"
 venueType: conference

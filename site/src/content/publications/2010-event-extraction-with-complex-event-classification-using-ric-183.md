@@ -1,6 +1,7 @@
 ---
 title: "Event Extraction with Complex Event Classification Using Rich Features"
 authors: ["Miwa, M.", "SÃ¦tre, R.", "Kim, J.-D.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "in: Journal of Bioinformatics and Computational Biology, 8:1(131--146)"
 venueShort: "Bioinformatics"
 venueType: other

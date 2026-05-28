@@ -1,6 +1,7 @@
 ---
 title: "LitPathExplorer: A Confidence-based Visual Text Analytics Tool for Exploring Literature-Enriched Pathway Models"
 authors: ["Soto, A.", "Zerva, C.", "Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "chrysoula-zerva-alum-2018", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 34:8(1389-1397)"
 venueShort: "Bioinformatics"
 venueType: other

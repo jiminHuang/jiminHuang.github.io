@@ -1,6 +1,7 @@
 ---
 title: "THCM-CAL: Temporal-Hierarchical Causal Modelling with Conformal Calibration for Clinical Risk Prediction"
 authors: ["Zhang, X.", "Wei, Q.", "Zhu, Y.", "Wu, F.", "Ananiadou, S."]
+authorSlugs: ["xin-zhang", "", "", "", "sophia-ananiadou"]
 venue: "Findings of the Association for Computational Linguistics: EMNLP 2024, pages 916–928"
 venueShort: "EMNLP 2024"
 venueType: conference

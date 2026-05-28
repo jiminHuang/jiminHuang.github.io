@@ -1,6 +1,7 @@
 ---
 title: "BioCause: Annotating and Analysing Causality in the Biomedical Domain"
 authors: ["MihÄƒilÄƒ, C.", "Ohta, T.", "Pyysalo, S.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 14:1(2)"
 venueShort: "BMC"
 venueType: other

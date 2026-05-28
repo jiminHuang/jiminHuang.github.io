@@ -1,6 +1,7 @@
 ---
 title: "Negated BioEvents: Analysis and Identification"
 authors: ["Nawaz, R.", "Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["raheel-nawaz-alum-2012", "paul-thompson", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 14:1(14)"
 venueShort: "BMC"
 venueType: other

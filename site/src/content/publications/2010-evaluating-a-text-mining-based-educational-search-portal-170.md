@@ -1,6 +1,7 @@
 ---
 title: "Evaluating a text mining based educational search portal"
 authors: ["Ananiadou, S.", "McNaught, J.", "Thomas, J.", "Oliver, S."]
+authorSlugs: ["sophia-ananiadou", "john-mcnaught", "", ""]
 venue: "Proceedings of the Seventh International Conference on Language Resources and Evaluation (LREC 2010), pages 3344--3350"
 venueShort: "LREC 2010"
 venueType: conference

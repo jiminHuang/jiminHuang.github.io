@@ -1,6 +1,7 @@
 ---
 title: "Anatomical entity recognition with a hierarchical framework augmented by external resources"
 authors: ["Xu, Y.", "Hua, J.", "Ni, Z.", "Chen, Q.", "Fan, Y.", "Ananiadou, S.", "Chang, E. I-C.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "", "sophia-ananiadou", "", "junichi-tsujii"]
 venue: "in: PLOS ONE, 9:10(e108396)"
 venueShort: "PLOS ONE"
 venueType: other

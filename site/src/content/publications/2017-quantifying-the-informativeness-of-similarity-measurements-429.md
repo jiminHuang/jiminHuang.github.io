@@ -1,6 +1,7 @@
 ---
 title: "Quantifying the Informativeness of Similarity Measurements"
 authors: ["Brockmeier, A. J.", "Mu, T.", "Ananiadou, S.", "Goulermas, J. Y"]
+authorSlugs: ["", "", "sophia-ananiadou", ""]
 venue: "in: Journal of Machine Learning Research, 18(1-61)"
 venueShort: "in: Journal of Machine Learning Research"
 venueType: other

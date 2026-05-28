@@ -1,6 +1,7 @@
 ---
 title: "Developing visualization-based decision support tools for epidemiology"
 authors: ["Sutcliffe, A.", "de Bruijn, O.", "Thew, S.", "Buchan, I.", "Jarvis, P.", "McNaught, J.", "Procter, R."]
+authorSlugs: ["", "", "", "", "", "john-mcnaught", ""]
 venue: "in: Information Visualization"
 venueShort: "in: Information Visualization"
 venueType: other

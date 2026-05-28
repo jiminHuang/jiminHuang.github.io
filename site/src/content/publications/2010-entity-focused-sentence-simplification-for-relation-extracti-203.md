@@ -1,6 +1,7 @@
 ---
 title: "Entity-Focused Sentence Simplification for Relation Extraction"
 authors: ["Miwa, M.", "Miyao, Y.", "SÃ¦tre, R.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "Proceedings of the 23rd International Conference on Computational Linguistics (COLING 2010), pages 788-796"
 venueShort: "COLING 2010"
 venueType: conference

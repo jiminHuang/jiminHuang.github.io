@@ -1,6 +1,7 @@
 ---
 title: "Automatic identification of suicide notes with a transformer-based deep learning model"
 authors: ["Zhang, T.", "Schoene, A", "Ananiadou, S."]
+authorSlugs: ["tianlin-zhang-alum-2024", "", "sophia-ananiadou"]
 venue: "in: Internet Interventions(100422)"
 venueShort: "in: Internet Interventions(100422)"
 venueType: other

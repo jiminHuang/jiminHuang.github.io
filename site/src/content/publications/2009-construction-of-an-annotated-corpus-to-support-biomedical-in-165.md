@@ -1,6 +1,7 @@
 ---
 title: "Construction of an annotated corpus to support biomedical information extraction"
 authors: ["Thompson, P.", "Iqbal, S. A.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 10(349)"
 venueShort: "BMC"
 venueType: other

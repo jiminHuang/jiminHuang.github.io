@@ -1,6 +1,7 @@
 ---
 title: "Using text mining for study identification in systematic reviews: A systematic review of current approaches"
 authors: ["O'Mara-Eves, A.", "Thomas, J.", "McNaught, J.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "john-mcnaught", "", "sophia-ananiadou"]
 venue: "in: Systematic Reviews, 4:1"
 venueShort: "in: Systematic Reviews"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Optimising chemical named entity recognition with pre-processing analytics, knowledge-rich features and heuristics"
 authors: ["Batista-Navarro, R.", "Rak, R.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: Journal of Cheminformatics, 7:Suppl 1(S6)"
 venueShort: "in: Journal of Cheminformatics"
 venueType: other

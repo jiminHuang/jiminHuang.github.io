@@ -1,6 +1,7 @@
 ---
 title: "Overview of the Cancer Genetics and Pathway Curation tasks of BioNLP Shared Task 2013"
 authors: ["Pyysalo, S.", "Ohta, T.", "Rak, R.", "Rowley, A.", "Chun, H.-W.", "Jung, S. -J.", "Choi, S. -P.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: BMC BioInformatics, 16(Suppl 10):Suppl 10(S2)"
 venueShort: "BMC"
 venueType: other

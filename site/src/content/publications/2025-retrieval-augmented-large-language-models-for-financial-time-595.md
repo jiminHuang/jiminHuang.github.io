@@ -1,6 +1,7 @@
 ---
 title: "Retrieval-augmented Large Language Models for Financial Time Series Forecasting"
 authors: ["Xiao, M.", "Jiang, Z.", "Qian, L.", "Chen, Z.", "He, Y.", "Xu, Y.", "Jiang, Y.", "Li, D.", "Weng, R. -L.", "Peng, M.", "Huang, J.", "Ananiadou, S.", "Xie, Q."]
+authorSlugs: ["", "", "", "", "", "", "yuechen-jiang", "", "", "", "jimin-huang-phd", "sophia-ananiadou", "qianqian-xie"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

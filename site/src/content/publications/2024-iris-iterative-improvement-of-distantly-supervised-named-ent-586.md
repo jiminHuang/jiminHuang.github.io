@@ -1,6 +1,7 @@
 ---
 title: "IRIS: Iterative Improvement of Distantly Supervised Named Entity Annotations"
 authors: ["Yano, K.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Research Square"
 venueShort: "Research Square"
 venueType: journal

@@ -1,6 +1,7 @@
 ---
 title: "Understanding and Mitigating Gender Bias in LLMs via Interpretable Neuron Editing"
 authors: ["Yu, Z.", "Ananiadou, S."]
+authorSlugs: ["zeping-yu", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

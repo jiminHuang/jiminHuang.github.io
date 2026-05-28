@@ -1,6 +1,7 @@
 ---
 title: "Readability Controllable Biomedical Document Summarization"
 authors: ["Luo, Z.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "Findings of the Association for Computational Linguistics: EMNLP 2022, pages 4667–4680"
 venueShort: "EMNLP 2022"
 venueType: conference

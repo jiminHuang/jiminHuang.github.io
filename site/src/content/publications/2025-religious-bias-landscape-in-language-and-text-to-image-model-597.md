@@ -1,6 +1,7 @@
 ---
 title: "Religious Bias Landscape in Language and Text-to-Image Models: Analysis, Detection, and Debiasing Strategies"
 authors: ["Abrar, A.", "Tabassum Oeshy, N.", "Kabir, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: AI & SOCIETY"
 venueShort: "in: AI & SOCIETY"
 venueType: other

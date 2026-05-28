@@ -1,6 +1,7 @@
 ---
 title: "Semantically Enhanced Search System for Historical Medical Archives"
 authors: ["Thompson, P.", "Carter, J.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "Proceedings of DigitalHeritage 2015, pages 387 - 390"
 venueShort: "Proceedings of DigitalHeritage 2015"
 venueType: conference

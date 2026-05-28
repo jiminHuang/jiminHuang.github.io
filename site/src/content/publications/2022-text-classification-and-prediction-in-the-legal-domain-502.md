@@ -1,6 +1,7 @@
 ---
 title: "Text Classification and Prediction in the Legal Domain"
 authors: ["Nghiem, M-. Q.", "Baylis, P.", "Freitas, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "pages 4717-4722"
 venueShort: "pages 4717-4722"
 venueType: journal

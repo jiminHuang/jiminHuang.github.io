@@ -1,6 +1,7 @@
 ---
 title: "Event Based Text Mining for Biology and Functional Genomics"
 authors: ["Ananiadou, S.", "Thompson, P.", "Nawaz, R.", "McNaught, J.", "Kell, D. B."]
+authorSlugs: ["sophia-ananiadou", "paul-thompson", "raheel-nawaz-alum-2012", "john-mcnaught", ""]
 venue: "in: Briefings in Functional Genomics, 14:3(213-230)"
 venueShort: "in: Briefings in Functional Genomics"
 venueType: other

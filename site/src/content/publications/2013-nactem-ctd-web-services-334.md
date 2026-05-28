@@ -1,6 +1,7 @@
 ---
 title: "NaCTeM CTD Web Services"
 authors: ["Batista-Navarro, R.", "Rak, R.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the Fourth BioCreative Challenge Evaluation Workshop, Bethesda, Maryland, USA, pages 85-89"
 venueShort: "Proceedings of the Fourth BioCreative Challenge Evaluation W"
 venueType: workshop

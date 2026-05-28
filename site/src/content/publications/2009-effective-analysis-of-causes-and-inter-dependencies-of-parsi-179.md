@@ -1,6 +1,7 @@
 ---
 title: "Effective Analysis of Causes and Inter-dependencies of Parsing Errors"
 authors: ["Hara, T.", "Miyao, Y.", "Tsujii, J."]
+authorSlugs: ["taiki-hara", "", "junichi-tsujii"]
 venue: "Proceedings of the 11th International Conference on Parsing Technologies (IWPT-09)., pages 180--191"
 venueShort: "Proceedings of the 11th International Conference on Parsing"
 venueType: conference

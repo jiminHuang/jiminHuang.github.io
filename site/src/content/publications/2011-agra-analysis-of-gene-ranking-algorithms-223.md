@@ -1,6 +1,7 @@
 ---
 title: "AGRA: Analysis of Gene Ranking Algorithms"
 authors: ["Kocbek, S.", "SÃ¦tre, R.", "Stiglic, G.", "Kim, J.-D.", "Pernek, I.", "Tsuruoka, Y.", "Kokol, P.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou", "junichi-tsujii"]
 venue: "in: Bioinformatics, 27:8(1185-1186)"
 venueShort: "Bioinformatics"
 venueType: other

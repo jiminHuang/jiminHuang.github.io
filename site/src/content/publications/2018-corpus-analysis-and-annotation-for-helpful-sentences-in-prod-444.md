@@ -1,6 +1,7 @@
 ---
 title: "Corpus Analysis and Annotation for Helpful Sentences in Product Reviews"
 authors: ["Almagrabi, H.", "Malibari, A.", "McNaught, J."]
+authorSlugs: ["", "", "john-mcnaught"]
 venue: "in: Computer and Information Science, 11:2(76-87)"
 venueShort: "Science"
 venueType: other

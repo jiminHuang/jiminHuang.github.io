@@ -1,6 +1,7 @@
 ---
 title: "Promoting Interoperability of Resources in META-SHARE"
 authors: ["Thompson, P.", "Kano, Y.", "McNaught, J.", "Pettifer, S.", "Attwood, T. K.", "Keane, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "", "john-mcnaught", "", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the IJCNLP Workshop on Language Resources, Technology and Services in the Sharing Paradigm (LRTS), pages 50-58"
 venueShort: "Proceedings of the IJCNLP Workshop on Language Resources"
 venueType: workshop

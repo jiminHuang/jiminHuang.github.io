@@ -1,6 +1,7 @@
 ---
 title: "Thalia: Semantic search engine for biomedical abstracts"
 authors: ["Soto, A.", "Przybyɫa, P.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 35:10(1799â€“1801)"
 venueShort: "Bioinformatics"
 venueType: other

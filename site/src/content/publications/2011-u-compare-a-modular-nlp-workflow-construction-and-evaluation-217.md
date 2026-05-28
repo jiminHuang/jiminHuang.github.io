@@ -1,6 +1,7 @@
 ---
 title: "U-Compare: a modular NLP workflow construction and evaluation system"
 authors: ["Kano, Y.", "Miwa, M.", "Cohen, K. B.", "Hunter, L.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou", "junichi-tsujii"]
 venue: "in: IBM Journal of Research and Development, 55:3(11:1 - 11:10)"
 venueShort: "in: IBM Journal of Research and Development"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Next Big Challenges in Core AI Technology"
 authors: ["Dengel, A.", "Etzioni, O.", "DeCario, N.", "Hoos, H.", "Li, F. -F.", "Tsujii, J.", "Traverso, P."]
+authorSlugs: ["", "", "", "", "", "junichi-tsujii", ""]
 venue: "pages 90-115, Springer"
 venueShort: "pages 90-115"
 venueType: journal

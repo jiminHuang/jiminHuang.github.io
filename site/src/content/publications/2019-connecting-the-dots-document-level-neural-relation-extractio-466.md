@@ -1,6 +1,7 @@
 ---
 title: "Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs"
 authors: ["Christopoulou, F.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["fenia-christopoulou-alum-2020", "", "sophia-ananiadou"]
 venue: "Proceedings of EMNLP 2019, pages 4927-4938"
 venueShort: "EMNLP 2019"
 venueType: conference

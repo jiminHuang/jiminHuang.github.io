@@ -1,6 +1,7 @@
 ---
 title: "ASCOT: a text mining-based web-service for efficient search and assisted creation of clinical trials"
 authors: ["Korkontzelos, I.", "Mu, T.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: BMC Medical Informatics and Decision Making, 12:Suppl 1(S3)"
 venueShort: "BMC"
 venueType: other

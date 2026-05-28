@@ -1,6 +1,7 @@
 ---
 title: "A Cross-lingual Similarity Measure for Detecting Biomedical Term Translations"
 authors: ["Bollegala, D.", "Kontonatsios, G.", "Ananiadou, S."]
+authorSlugs: ["", "georgios-kontonatsios-alum-2014", "sophia-ananiadou"]
 venue: "in: PLOS ONE, 10:6(e0126196)"
 venueShort: "PLOS ONE"
 venueType: other

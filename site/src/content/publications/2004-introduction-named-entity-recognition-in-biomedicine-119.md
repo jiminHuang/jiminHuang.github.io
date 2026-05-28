@@ -1,6 +1,7 @@
 ---
 title: "Introduction: named entity recognition in biomedicine"
 authors: ["Ananiadou, S.", "Friedman, C.", "Tsujii, J."]
+authorSlugs: ["sophia-ananiadou", "", "junichi-tsujii"]
 venue: "in: Journal of Biomedical Informatics, 37:6(393--395)"
 venueShort: "JBI"
 venueType: other

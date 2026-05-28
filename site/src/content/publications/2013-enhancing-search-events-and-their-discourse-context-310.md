@@ -1,6 +1,7 @@
 ---
 title: "Enhancing Search: Events and their Discourse Context"
 authors: ["Ananiadou, S.", "Thompson, P.", "Nawaz, R."]
+authorSlugs: ["sophia-ananiadou", "paul-thompson", "raheel-nawaz-alum-2012"]
 venue: "Computational Linguistics and Intelligent Text Processing, pages 318-334, Springer"
 venueShort: "Computational Linguistics"
 venueType: journal

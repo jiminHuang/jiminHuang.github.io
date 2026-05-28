@@ -1,6 +1,7 @@
 ---
 title: "A Simple Approach for HPSG Supertagging Using Dependency Information"
 authors: ["Zhang, Y.", "Matsuzaki, T.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "Proceedings of NAACL-HLT 2010"
 venueShort: "NAACL 2010"
 venueType: conference

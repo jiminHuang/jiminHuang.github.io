@@ -1,6 +1,7 @@
 ---
 title: "Clinical Text Classification under the Open and Closed Topic Assumptions"
 authors: ["Sasaki, Y.", "Rea, B.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: International Journal on Data Mining and Bioinformatics (IJDMB), 3:3(299--313)"
 venueShort: "Bioinformatics"
 venueType: other

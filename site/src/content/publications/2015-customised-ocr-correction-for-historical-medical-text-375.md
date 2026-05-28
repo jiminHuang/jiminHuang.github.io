@@ -1,6 +1,7 @@
 ---
 title: "Customised OCR Correction for Historical Medical Text"
 authors: ["Thompson, P.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "john-mcnaught", "sophia-ananiadou"]
 venue: "Proceedings of DigitalHeritage 2015, pages 35 - 42"
 venueShort: "Proceedings of DigitalHeritage 2015"
 venueType: conference

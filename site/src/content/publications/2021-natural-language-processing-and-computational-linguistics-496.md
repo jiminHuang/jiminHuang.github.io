@@ -1,6 +1,7 @@
 ---
 title: "Natural Language Processing and Computational Linguistics"
 authors: ["Tsujii, J."]
+authorSlugs: ["junichi-tsujii"]
 venue: "in: Computational Linguistics, 47:4(707-727)"
 venueShort: "Computational Linguistics"
 venueType: other

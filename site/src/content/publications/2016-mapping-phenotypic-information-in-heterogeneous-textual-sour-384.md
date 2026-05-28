@@ -1,6 +1,7 @@
 ---
 title: "Mapping Phenotypic Information in Heterogeneous Textual Sources to a Domain-Specific Terminological Resource"
 authors: ["Alnazzawi, N.", "Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["noha-alnazzawi-alum-2016", "paul-thompson", "sophia-ananiadou"]
 venue: "in: PLOS ONE, 11:9(e0162287)"
 venueShort: "PLOS ONE"
 venueType: other

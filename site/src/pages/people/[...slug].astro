@@ -38,6 +38,13 @@ const allPeople = await getCollection("people");
 const related = allPeople
   .filter((p) => p.id !== person.id && p.data.group === d.group)
   .slice(0, 6);
+
+// Publications by this person
+const allPubs = await getCollection("publications");
+const personPubs = allPubs
+  .filter((p) => (p.data.authorSlugs ?? []).includes(person.id))
+  .sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+const pubYears = [...new Set(personPubs.map((p) => p.data.year).filter(Boolean))] as number[];
 ---
 
 <Layout title={`${d.name} — NaCTeM`} description={d.title ?? d.group}>
@@ -117,6 +124,51 @@ const related = allPeople
       <Meander tone="ink" />
     </div>
   </section>
+
+  {personPubs.length > 0 && (
+    <section class="border-b hairline">
+      <div class="mx-auto max-w-6xl px-6 lg:px-10 py-16">
+        <div class="flex items-end justify-between mb-10 flex-wrap gap-4">
+          <div>
+            <SectionEyebrow letter="Β" label="Publications" />
+            <h2 class="display text-3xl md:text-4xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+              {personPubs.length} {personPubs.length === 1 ? "paper" : "papers"}
+              {pubYears.length > 0 && <span class="serif italic text-xl text-[color:var(--color-ink-500)] ml-3">{pubYears[pubYears.length - 1]}–{pubYears[0]}</span>}
+            </h2>
+          </div>
+          <a
+            href={`/publications?author=${person.id}`}
+            class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]"
+          >See in full bibliography →</a>
+        </div>
+
+        <ul class="space-y-6">
+          {personPubs.slice(0, 20).map((p) => (
+            <li class="grid grid-cols-[60px_1fr] gap-x-5 gap-y-2 items-baseline">
+              <div class="antique text-2xl text-[color:var(--color-ink-700)] tabular-nums leading-none">{p.data.year ?? "—"}</div>
+              <div>
+                <div class="display text-lg md:text-xl text-[color:var(--color-ink-900)] leading-snug">
+                  {p.data.url || p.data.doi ? (
+                    <a href={p.data.url ?? p.data.doi!} target="_blank" rel="noopener" class="hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.title}</a>
+                  ) : (
+                    p.data.title
+                  )}
+                </div>
+                {p.data.venueShort && (
+                  <div class="display italic text-sm text-[color:var(--color-amber-600)] mt-1">{p.data.venueShort}</div>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+        {personPubs.length > 20 && (
+          <div class="mt-8 sans text-sm text-[color:var(--color-ink-500)]">
+            Showing 20 of {personPubs.length}. <a href={`/publications?author=${person.id}`} class="text-[color:var(--color-amber-600)] hover:underline">See all →</a>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
 
   {related.length > 0 && (
     <section class="border-b hairline bg-[color:var(--color-paper-2)]">

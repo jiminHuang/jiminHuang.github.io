@@ -1,6 +1,7 @@
 ---
 title: "Annotating and Detecting Phenotypic Information for Chronic Obstructive Pulmonary Disease"
 authors: ["Ju., M.", "Short, A.D.", "Thompson, P.", "Bakerly, N. D.", "Gkoutos, G.", "Tsaprouni, L.", "Ananiadou, S."]
+authorSlugs: ["", "", "paul-thompson", "", "", "", "sophia-ananiadou"]
 venue: "in: JAMIA Open, 2:2(261-271)"
 venueShort: "in: JAMIA Open"
 venueType: other

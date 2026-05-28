@@ -1,6 +1,7 @@
 ---
 title: "Mining Metabolites: Extracting the Yeast Metabolome from the Literature"
 authors: ["Nobata, C.", "Dobson, P.", "Iqbal, S. A.", "Mendes, P.", "Tsujii, J.", "Kell, D. B.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "junichi-tsujii", "", "sophia-ananiadou"]
 venue: "in: Metabolomics, 7:1(94-101)"
 venueShort: "in: Metabolomics"
 venueType: other

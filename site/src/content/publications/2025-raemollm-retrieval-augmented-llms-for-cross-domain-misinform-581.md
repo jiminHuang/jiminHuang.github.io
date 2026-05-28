@@ -1,6 +1,7 @@
 ---
 title: "RAEmoLLM: Retrieval Augmented LLMs for Cross-Domain Misinformation Detection Using In-Context Learning based on Emotional Information"
 authors: ["Liu, Z.", "Yang, K", "Xie, Q.", "de Kock, C.", "Ananiadou, S.", "Hovy, E."]
+authorSlugs: ["zhiwei-liu", "", "qianqian-xie", "", "sophia-ananiadou", ""]
 venue: "Proceedings of ACL 2025, pages 16508–16523"
 venueShort: "ACL 2025"
 venueType: conference

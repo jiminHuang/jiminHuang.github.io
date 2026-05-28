@@ -1,6 +1,7 @@
 ---
 title: "Text Mining for Biomedicine"
 authors: ["Ananiadou, S."]
+authorSlugs: ["sophia-ananiadou"]
 venue: "in: Information Retrieval in Biomedicine: Natural Language Processing for Knowledge Integration(1--11)"
 venueShort: "in: Information Retrieval in Biomedicine: Natural Language P"
 venueType: other

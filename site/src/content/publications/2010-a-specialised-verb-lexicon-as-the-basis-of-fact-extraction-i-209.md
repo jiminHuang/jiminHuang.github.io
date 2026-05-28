@@ -1,6 +1,7 @@
 ---
 title: "A Specialised Verb Lexicon as the Basis of Fact Extraction in the Biomedical Domain"
 authors: ["Rupp, C. J.", "Thompson, P.", "Black, W.J.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "Proceedings of Interdisciplinary Workshop on Verbs: The Identification and Representation of Verb Features (Verb 2010)"
 venueShort: "Proceedings of Interdisciplinary Workshop on Verbs: The Iden"
 venueType: workshop

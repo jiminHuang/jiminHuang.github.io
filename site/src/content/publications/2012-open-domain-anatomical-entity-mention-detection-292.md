@@ -1,6 +1,7 @@
 ---
 title: "Open-domain Anatomical Entity Mention Detection"
 authors: ["Ohta, T.", "Pyysalo, S.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "Proceedings of the ACL Workshop on Detecting Stucture in Scholarly Discourse (DSSD), pages 27-36"
 venueShort: "ACL"
 venueType: workshop

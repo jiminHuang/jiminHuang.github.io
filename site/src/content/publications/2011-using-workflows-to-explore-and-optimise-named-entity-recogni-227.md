@@ -1,6 +1,7 @@
 ---
 title: "Using Workflows to Explore and Optimise Named Entity Recognition for Chemistry"
 authors: ["Kolluru, B.", "Hawizy, L.", "Murray-Rust, P.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: PLoS ONE, 6:5(e20181)"
 venueShort: "PLOS ONE"
 venueType: other

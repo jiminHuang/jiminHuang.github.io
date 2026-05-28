@@ -1,6 +1,7 @@
 ---
 title: "Mining events from the literature for bioinformatics applications"
 authors: ["Ananiadou, S.", "Thompson, P.", "Nawaz, R."]
+authorSlugs: ["sophia-ananiadou", "paul-thompson", "raheel-nawaz-alum-2012"]
 venue: "in: ACM SIGWEB Newsletter, Autumn"
 venueShort: "in: ACM SIGWEB Newsletter"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Investigating heterogeneous protein annotations toward cross-corpora utilization"
 authors: ["Wang, Y.", "Kim, J.-D.", "SÃ¦tre, R.", "Pyysalo, S.", "Tsujii, J."]
+authorSlugs: ["yuyan-wang", "", "", "", "junichi-tsujii"]
 venue: "in: BMC Bioinformatics, 10(403)"
 venueShort: "BMC"
 venueType: other

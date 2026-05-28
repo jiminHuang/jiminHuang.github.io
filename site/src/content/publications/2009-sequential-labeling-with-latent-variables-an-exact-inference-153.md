@@ -1,6 +1,7 @@
 ---
 title: "Sequential Labeling with Latent Variables: An Exact Inference Algorithm and An Efficient Approximation"
 authors: ["Sun, X.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of EACL 2009, pages 772-780"
 venueShort: "EACL 2009"
 venueType: conference

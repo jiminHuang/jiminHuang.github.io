@@ -1,6 +1,7 @@
 ---
 title: "RELATE: Generating a linguistically inspired Knowledge Graph for fine-grained emotion classification"
 authors: ["Schoene, A", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "Proceedings of LREC 2022, pages 6317-6327"
 venueShort: "LREC 2022"
 venueType: conference

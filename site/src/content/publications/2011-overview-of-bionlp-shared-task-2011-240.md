@@ -1,6 +1,7 @@
 ---
 title: "Overview of BioNLP Shared Task 2011"
 authors: ["Kim, J.-D.", "Pyysalo, S.", "Ohta, T.", "Bossy, R.", "Nguyen, N. T. H.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "", "junichi-tsujii"]
 venue: "Proceedings of the BioNLP Shared Task 2011 Workshop, pages 1--6, Association for Computational Linguistics"
 venueShort: "BioNLP 2011"
 venueType: workshop

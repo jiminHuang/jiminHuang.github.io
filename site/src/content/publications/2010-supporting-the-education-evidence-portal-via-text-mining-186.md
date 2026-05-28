@@ -1,6 +1,7 @@
 ---
 title: "Supporting the Education Evidence Portal via Text Mining"
 authors: ["Ananiadou, S.", "Thompson, P.", "Thomas, J.", "Mu, T.", "Oliver, S.", "Rickinson, M.", "Sasaki, Y.", "Weissenbacher, D.", "McNaught, J."]
+authorSlugs: ["sophia-ananiadou", "paul-thompson", "", "", "", "", "", "", "john-mcnaught"]
 venue: "in: Philosophical Transactions of the Royal Society A, 368:1925(3829-3844)"
 venueShort: "in: Philosophical Transactions of the Royal Society A"
 venueType: other

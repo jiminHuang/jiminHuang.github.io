@@ -1,6 +1,7 @@
 ---
 title: "Knowledge Graph Enrichment of a Semantic Search System for Construction Safety"
 authors: ["Inan, E.", "Thompson, P.", "Christopoulou, F.", "Yates, T.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "fenia-christopoulou-alum-2020", "", "sophia-ananiadou"]
 venue: "Intelligent Systems and Applications. IntelliSys 2022., pages 33-52, Springer, Cham"
 venueShort: "Intelligent Systems and Applications. IntelliSys 2022."
 venueType: journal

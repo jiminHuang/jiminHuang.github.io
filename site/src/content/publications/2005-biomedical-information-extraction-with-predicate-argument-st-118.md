@@ -1,6 +1,7 @@
 ---
 title: "Biomedical Information Extraction with Predicate-Argument Structure Patterns"
 authors: ["Yakushiji, A.", "Miyao, Y.", "Tateisi, Y.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "Proceedings of the First International Symposium on Semantic Mining in Biomedicine (SMBM), pages 60--69"
 venueShort: "Proceedings of the First International Symposium on Semantic"
 venueType: workshop

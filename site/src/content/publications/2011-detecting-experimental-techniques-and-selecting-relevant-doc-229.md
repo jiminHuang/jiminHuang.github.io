@@ -1,6 +1,7 @@
 ---
 title: "Detecting Experimental Techniques and Selecting Relevant Documents for Protein-Protein Interactions from Biomedical Literature"
 authors: ["Wang, X.", "Rak, R.", "Restificar, A.", "Nobata, C.", "Rupp, C. J.", "Batista-Navarro, R.", "Nawaz, R.", "Ananiadou, S."]
+authorSlugs: ["xinkai-wang-alum-2011", "", "", "", "", "", "raheel-nawaz-alum-2012", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 12:Suppl 8(S11)"
 venueShort: "BMC"
 venueType: other

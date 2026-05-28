@@ -1,6 +1,7 @@
 ---
 title: "Improving the Inter-corpora Compatibility for Protein Annotations"
 authors: ["Wang, Y.", "Kim, J.-D.", "SÃ¦tre, R.", "Pyysalo, S.", "Ohta, T.", "Tsujii, J."]
+authorSlugs: ["yuyan-wang", "", "", "", "", "junichi-tsujii"]
 venue: "in: Journal of Bioinformatics and Computational Biology (JBCB), 8:5(901-916)"
 venueShort: "Bioinformatics"
 venueType: other

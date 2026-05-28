@@ -1,6 +1,7 @@
 ---
 title: "Improve Syntax-based Translation Using Deep Syntactic Structures"
 authors: ["Wu, X.", "Matsuzaki, T.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "in: Machine Translation (Special Issue : Pushing the frontiers of SMT)"
 venueShort: "in: Machine Translation (Special Issue : Pushing the frontie"
 venueType: other

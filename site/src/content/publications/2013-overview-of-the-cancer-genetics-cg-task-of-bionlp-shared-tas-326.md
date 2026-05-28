@@ -1,6 +1,7 @@
 ---
 title: "Overview of the Cancer Genetics (CG) task of BioNLP Shared Task 2013"
 authors: ["Pyysalo, S.", "Ohta, T.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the BioNLP Shared Task 2013 Workshop, Sofia, Bulgaria, pages 58-66, Association for Computational Linguistics"
 venueShort: "BioNLP 2013"
 venueType: workshop

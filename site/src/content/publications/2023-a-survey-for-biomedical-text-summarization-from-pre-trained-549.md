@@ -1,6 +1,7 @@
 ---
 title: "A Survey for Biomedical Text Summarization: From Pre-trained to Large Language Models"
 authors: ["Xie, Q.", "Luo, Z.", "Ananiadou, S."]
+authorSlugs: ["qianqian-xie", "zheheng-luo-alum-2025", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

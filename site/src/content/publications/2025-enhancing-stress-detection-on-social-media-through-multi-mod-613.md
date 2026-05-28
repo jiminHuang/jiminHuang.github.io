@@ -1,6 +1,7 @@
 ---
 title: "Enhancing Stress Detection on Social Media Through Multi-Modal Fusion of Text and Synthesized Visuals"
 authors: ["Soufleri, E.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "Proceedings of the 24th Workshop on Biomedical Language Processing (BioNLP), pages 34–43"
 venueShort: "BioNLP"
 venueType: workshop

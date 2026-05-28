@@ -1,6 +1,7 @@
 ---
 title: "Complex event extraction at PubMed scale"
 authors: ["BjÃ¶rne, J.", "Ginter, F.", "Pyysalo, S.", "Tsujii, J.", "Salakoski, T."]
+authorSlugs: ["", "", "", "junichi-tsujii", ""]
 venue: "in: Bioinformatics, 26:12(i382-i390)"
 venueShort: "Bioinformatics"
 venueType: other

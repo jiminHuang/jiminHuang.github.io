@@ -1,6 +1,7 @@
 ---
 title: "Supporting Biological Pathway Curation Through Text Mining"
 authors: ["Ananiadou, S.", "Thompson, P."]
+authorSlugs: ["sophia-ananiadou", "paul-thompson"]
 venue: "Data Analytics and Management in Data Intensive Domains, pages 59-73, Springer"
 venueShort: "Data Analytics and Management in Data Intensive Domains"
 venueType: journal

@@ -1,6 +1,7 @@
 ---
 title: "Text Mining for Semantic Search in Europe PubMed Central Labs"
 authors: ["Black, W.J.", "Rowley, A.", "Miwa, M.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "Working with Text: Tools, Techniques and Approaches for Text Mining, pages 111-132, Elsevier"
 venueShort: "Working with Text: Tools"
 venueType: journal

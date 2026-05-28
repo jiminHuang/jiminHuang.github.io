@@ -1,6 +1,7 @@
 ---
 title: "A Text Mining-Based Framework for Constructing an RDF-Compliant Biodiversity Knowledge Repository"
 authors: ["Batista-Navarro, R.", "Zerva, C.", "Nguyen, N. T. H.", "Ananiadou, S."]
+authorSlugs: ["", "chrysoula-zerva-alum-2018", "", "sophia-ananiadou"]
 venue: "pages 30-42, Springer, Communications in Computer and Information Science, volume 656"
 venueShort: "Science"
 venueType: journal

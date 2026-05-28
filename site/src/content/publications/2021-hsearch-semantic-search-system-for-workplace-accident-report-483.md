@@ -1,6 +1,7 @@
 ---
 title: "HSEarch: semantic search system for workplace accident reports"
 authors: ["Inan, E.", "Thompson, P.", "Yates, T.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "", "sophia-ananiadou"]
 venue: "Proceedings of the 43rd European Confererence on Information Retrieval (ECIR 2021), pages 514-519"
 venueShort: "Proceedings of the 43rd European Confererence on Information"
 venueType: conference

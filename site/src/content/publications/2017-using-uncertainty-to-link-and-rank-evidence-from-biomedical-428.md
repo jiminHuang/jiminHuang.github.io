@@ -1,6 +1,7 @@
 ---
 title: "Using uncertainty to link and rank evidence from biomedical literature for model curation"
 authors: ["Zerva, C.", "Batista-Navarro, R.", "Day, P. J. R.", "Ananiadou, S."]
+authorSlugs: ["chrysoula-zerva-alum-2018", "", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics"
 venueShort: "Bioinformatics"
 venueType: other

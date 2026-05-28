@@ -1,6 +1,7 @@
 ---
 title: "Term Extraction"
 authors: ["Korkontzelos, I.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: Oxford Handbook of Computational Linguistics (2nd Ed.)"
 venueShort: "Computational Linguistics"
 venueType: other

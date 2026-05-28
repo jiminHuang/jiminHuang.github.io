@@ -1,6 +1,7 @@
 ---
 title: "Revisiting Unsupervised Relation Extraction"
 authors: ["Tran, T. T.", "Le, P.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of ACL 2020, pages 7498–7505"
 venueShort: "ACL 2020"
 venueType: conference

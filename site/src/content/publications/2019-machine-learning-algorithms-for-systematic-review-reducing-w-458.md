@@ -1,6 +1,7 @@
 ---
 title: "Machine learning algorithms for systematic review: reducing workload in a preclinical review of animal studies and reducing human screening error"
 authors: ["Bannach-Brown, A.", "Przybyɫa, P.", "Thomas, J.", "Rice, A.", "Ananiadou, S.", "Liao, J.", "Macleod, M. R."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou", "", ""]
 venue: "in: Systematic Reviews, 8(23)"
 venueShort: "in: Systematic Reviews"
 venueType: other

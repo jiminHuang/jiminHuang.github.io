@@ -1,6 +1,7 @@
 ---
 title: "Discovering Robust Embeddings in (Dis)Similarity Space for High-Dimensional Lingustic Features"
 authors: ["Mu, T.", "Miwa, M.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Computatational Intelligence"
 venueShort: "in: Computatational Intelligence"
 venueType: other

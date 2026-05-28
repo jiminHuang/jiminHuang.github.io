@@ -1,6 +1,7 @@
 ---
 title: "Natural Language Processing for Cardiology: A Narrative Review"
 authors: ["Yang, K", "Leng, Y.", "Zhang, X.", "Zhang, T.", "Thompson, P.", "Keavney, B.", "Tomaszewski, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "xin-zhang", "tianlin-zhang-alum-2024", "paul-thompson", "", "", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

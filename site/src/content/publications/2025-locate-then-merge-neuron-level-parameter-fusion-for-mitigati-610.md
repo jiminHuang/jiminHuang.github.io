@@ -1,6 +1,7 @@
 ---
 title: "Locate-then-Merge: Neuron-Level Parameter Fusion for Mitigating Catastrophic Forgetting in Multimodal LLMs"
 authors: ["Yu, Z.", "Ananiadou, S."]
+authorSlugs: ["zeping-yu", "sophia-ananiadou"]
 venue: "Findings of the Association for Computational Linguistics: EMNLP 2024, pages 7065–7078"
 venueShort: "EMNLP 2024"
 venueType: conference

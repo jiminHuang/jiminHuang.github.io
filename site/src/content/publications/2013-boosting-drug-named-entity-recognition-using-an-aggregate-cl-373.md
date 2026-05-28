@@ -1,6 +1,7 @@
 ---
 title: "Boosting Drug Named Entity Recognition using an Aggregate Classifier"
 authors: ["Korkontzelos, I.", "Piliouras, D.", "Dowsey, A.", "Ananiadou, S."]
+authorSlugs: ["", "dimitris-piliouras-alum-2014", "", "sophia-ananiadou"]
 venue: "in: Artificial Intelligence in Medicine (AIIM), Special issue of ICHI 2013 conference"
 venueShort: "AI in Medicine"
 venueType: other

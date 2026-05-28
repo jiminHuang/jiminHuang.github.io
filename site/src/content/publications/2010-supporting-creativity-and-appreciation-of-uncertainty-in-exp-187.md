@@ -1,6 +1,7 @@
 ---
 title: "Supporting Creativity and Appreciation of Uncertainty in Exploring Geo-coded Public Health Data"
 authors: ["Thew, S.", "Sutcliffe, A.", "de Bruijn, O.", "McNaught, J.", "Procter, R.", "Buchan, I."]
+authorSlugs: ["", "", "", "john-mcnaught", "", ""]
 venue: "in: Methods of Information in Medicine, 49"
 venueShort: "in: Methods of Information in Medicine"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Extracting Bilingual Dictionary from Comparable Corpora with Dependency Heterogeneity"
 authors: ["Yu, K.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of NAACL-HLT 2009, pages 121--124"
 venueShort: "NAACL 2009"
 venueType: conference

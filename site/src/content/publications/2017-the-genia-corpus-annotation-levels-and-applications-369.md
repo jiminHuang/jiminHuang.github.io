@@ -1,6 +1,7 @@
 ---
 title: "The GENIA Corpus: Annotation Levels and Applications"
 authors: ["Thompson, P.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["paul-thompson", "sophia-ananiadou", "junichi-tsujii"]
 venue: "Handbook of Linguistic Annotation, pages 1395-1432, Springer"
 venueShort: "Handbook of Linguistic Annotation"
 venueType: other

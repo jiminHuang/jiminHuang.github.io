@@ -1,6 +1,7 @@
 ---
 title: "Classifying Relations for Biomedical Named Entity Disambiguation"
 authors: ["Wang, X.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["xinkai-wang-alum-2011", "junichi-tsujii", "sophia-ananiadou"]
 venue: "Procedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP'09), pages 1513--1522"
 venueShort: "EMNLP"
 venueType: conference

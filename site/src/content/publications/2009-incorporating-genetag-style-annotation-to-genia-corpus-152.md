@@ -1,6 +1,7 @@
 ---
 title: "Incorporating GENETAG-style annotation to GENIA corpus"
 authors: ["Ohta, T.", "Kim, J.-D.", "Pyysalo, S.", "Wang, Y.", "Tsujii, J."]
+authorSlugs: ["", "", "", "yuyan-wang", "junichi-tsujii"]
 venue: "Proceedings of BioNLP 2009 Workshop, pages 106--107"
 venueShort: "BioNLP 2009"
 venueType: workshop

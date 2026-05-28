@@ -1,6 +1,7 @@
 ---
 title: "Generalising semantic category disambiguation with large lexical resources for fun and profit"
 authors: ["Stenetorp, P.", "Pyysalo, S.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "", "sophia-ananiadou", "junichi-tsujii"]
 venue: "in: Journal of Biomedical Semantics, 5(26)"
 venueShort: "in: Journal of Biomedical Semantics"
 venueType: other

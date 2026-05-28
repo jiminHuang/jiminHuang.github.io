@@ -1,6 +1,7 @@
 ---
 title: "Semantic Annotation for Improved Safety in Construction Work"
 authors: ["Thompson, P.", "Yates, T.", "Inan, E.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "", "", "sophia-ananiadou"]
 venue: "Proceedings of LREC 2020, pages 1983‑1992"
 venueShort: "LREC 2020"
 venueType: conference

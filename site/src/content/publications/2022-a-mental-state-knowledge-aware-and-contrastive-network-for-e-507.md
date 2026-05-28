@@ -1,6 +1,7 @@
 ---
 title: "A Mental State Knowledge-Aware and Contrastive Network for Early Stress and Depression Detection on Social Media"
 authors: ["Yang, K", "Zhang, T.", "Ananiadou, S."]
+authorSlugs: ["", "tianlin-zhang-alum-2024", "sophia-ananiadou"]
 venue: "in: Information Processing and Management, 59:4(102961)"
 venueShort: "Information Processing"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Self-Tuned Descriptive Document Clustering using a Predictive Network"
 authors: ["Brockmeier, A. J.", "Mu, T.", "Ananiadou, S.", "Goulermas, J. Y"]
+authorSlugs: ["", "", "sophia-ananiadou", ""]
 venue: "in: Transactions on Knowledge and Data Engineering"
 venueShort: "in: Transactions on Knowledge and Data Engineering"
 venueType: other

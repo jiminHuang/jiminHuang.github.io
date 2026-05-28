@@ -1,6 +1,7 @@
 ---
 title: "A Rich Feature Vector for Protein-Protein Interaction Extraction from Multiple Corpora"
 authors: ["Miwa, M.", "SÃ¦tre, R.", "Miyao, Y.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "Proceedings of EMNLP 2009, pages 121--130"
 venueShort: "EMNLP 2009"
 venueType: conference

@@ -1,6 +1,7 @@
 ---
 title: "Event extraction across multiple levels of biological organization"
 authors: ["Pyysalo, S.", "Ohta, T.", "Miwa, M.", "Cho, H. -C.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 28:18(i575-i581)"
 venueShort: "Bioinformatics"
 venueType: other

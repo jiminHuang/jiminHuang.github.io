@@ -133,6 +133,8 @@ const publications = defineCollection({
   schema: z.object({
     title: z.string(),
     authors: z.array(z.string()).default([]),
+    /** Per-author slug into the people collection, "" if unmatched. Same length as authors. */
+    authorSlugs: z.array(z.string()).default([]),
     venue: z.string().optional(),
     venueShort: z.string().optional(),
     venueType: z.enum(["conference", "journal", "workshop", "preprint", "thesis", "other"]).default("other"),

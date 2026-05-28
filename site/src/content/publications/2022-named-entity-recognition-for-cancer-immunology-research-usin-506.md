@@ -1,6 +1,7 @@
 ---
 title: "Named Entity Recognition for Cancer Immunology Research Using Distant Supervision"
 authors: ["Trieu, H-L.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of BioNLP 2022, pages 171-177"
 venueShort: "BioNLP 2022"
 venueType: conference

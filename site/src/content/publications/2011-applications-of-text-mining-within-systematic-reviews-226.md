@@ -1,6 +1,7 @@
 ---
 title: "Applications of text mining within systematic reviews"
 authors: ["Thomas, J.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: Research Synthesis Methods, 2:1(1-14)"
 venueShort: "in: Research Synthesis Methods"
 venueType: thesis

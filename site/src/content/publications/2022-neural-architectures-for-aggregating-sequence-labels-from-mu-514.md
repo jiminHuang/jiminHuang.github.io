@@ -1,6 +1,7 @@
 ---
 title: "Neural Architectures for Aggregating Sequence Labels from Multiple Annotators"
 authors: ["Li, M.", "Ananiadou, S."]
+authorSlugs: ["maolin-li-alum-2021", "sophia-ananiadou"]
 venue: "in: Neurocomputing"
 venueShort: "in: Neurocomputing"
 venueType: other

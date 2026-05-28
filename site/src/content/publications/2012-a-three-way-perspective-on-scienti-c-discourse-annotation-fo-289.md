@@ -1,6 +1,7 @@
 ---
 title: "A three-way perspective on scientiï¬c discourse annotation for knowledge extraction"
 authors: ["Liakata, M.", "Thompson, P.", "de Waard, A.", "Nawaz, R.", "Pander Maat, H.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "", "raheel-nawaz-alum-2012", "", "sophia-ananiadou"]
 venue: "Proceedings of the ACL Workshop on Detecting Structure in Scholarly Discourse (DSSD), pages 37-46"
 venueShort: "ACL"
 venueType: workshop

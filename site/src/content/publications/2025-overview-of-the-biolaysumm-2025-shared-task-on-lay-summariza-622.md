@@ -1,6 +1,7 @@
 ---
 title: "Overview of the BioLaySumm 2025 Shared Task on Lay Summarization of Biomedical Research Articles and Radiology Reports"
 authors: ["Xiao, C.", "Zhao, K.", "Wang, X.", "Wu, S.", "Goldsack, T.", "Ananiadou, S.", "Al Moubayed, N.", "Zhan, L.", "Cheung, W. K.", "Lin, C."]
+authorSlugs: ["", "", "xinkai-wang-alum-2011", "", "", "sophia-ananiadou", "", "", "", ""]
 venue: "Proceedings of the 24th Workshop on Biomedical Language Processing, pages 365–377"
 venueShort: "Proceedings of the 24th Workshop on Biomedical Language Proc"
 venueType: workshop

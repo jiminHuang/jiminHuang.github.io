@@ -1,6 +1,7 @@
 ---
 title: "Large Language Models in Mental Health Care: a Scoping Review"
 authors: ["Hua, Y.", "Liu, F.", "Yang, K", "Li, Z.", "Sheu, Y.", "Zhou, P.", "Moran, L. V.", "Ananiadou, S.", "Beam, A."]
+authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou", ""]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

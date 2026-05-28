@@ -1,6 +1,7 @@
 ---
 title: "The Lay Person’s Guide to Biomedicine: Orchestrating Large Language Models"
 authors: ["Luo, Z.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

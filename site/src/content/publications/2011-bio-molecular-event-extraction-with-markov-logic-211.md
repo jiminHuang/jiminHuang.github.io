@@ -1,6 +1,7 @@
 ---
 title: "Bio-Molecular Event Extraction with Markov Logic"
 authors: ["Riedel, S.", "SÃ¦tre, R.", "Chun, H.-W.", "Takagi, T.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "junichi-tsujii"]
 venue: "in: Computational Intelligence, 27:4(558-582)"
 venueShort: "in: Computational Intelligence"
 venueType: other

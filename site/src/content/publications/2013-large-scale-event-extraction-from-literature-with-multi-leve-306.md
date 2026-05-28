@@ -1,6 +1,7 @@
 ---
 title: "Large-scale event extraction from literature with multi-level gene normalization"
 authors: ["Van Landeghem, S.", "BjÃ¶rne, J.", "Wei, C-. H", "Hakala, K.", "Pyysalo, S.", "Ananiadou, S.", "Kao, H. -Y.", "Lu, Z.", "Salakoski, T.", "Van de Peer, Y.", "Ginter, F."]
+authorSlugs: ["", "", "", "", "", "sophia-ananiadou", "", "", "", "", ""]
 venue: "in: PLOS ONE, 8:4(e55814)"
 venueShort: "PLOS ONE"
 venueType: other

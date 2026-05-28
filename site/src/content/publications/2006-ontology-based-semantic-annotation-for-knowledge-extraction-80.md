@@ -1,6 +1,7 @@
 ---
 title: "Ontology based Semantic Annotation for Knowledge Extraction"
 authors: ["Kim, J.-D.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "sophia-ananiadou", "junichi-tsujii"]
 venue: "2nd International Digital Curation Conference"
 venueShort: "2nd International Digital Curation Conference"
 venueType: conference

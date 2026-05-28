@@ -1,6 +1,7 @@
 ---
 title: "Highly Scalable Text Mining Parallel Tagging Application"
 authors: ["Tekiner, F.", "Ananiadou, S.", "Tsuruoka, Y.", "Tsujii, J."]
+authorSlugs: ["", "sophia-ananiadou", "", "junichi-tsujii"]
 venue: "Proceedings of ICSSCW2009, Famgusta, Cyprus"
 venueShort: "Proceedings of ICSSCW2009"
 venueType: conference

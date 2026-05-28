@@ -1,6 +1,7 @@
 ---
 title: "Something old, something new: identifying knowledge source in bio-events"
 authors: ["Nawaz, R.", "Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["raheel-nawaz-alum-2012", "paul-thompson", "sophia-ananiadou"]
 venue: "in: International Journal of Computational Linguistics and Applications, 4:1(129-144)"
 venueShort: "Computational Linguistics"
 venueType: other

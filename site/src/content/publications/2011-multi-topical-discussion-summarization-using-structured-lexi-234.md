@@ -1,6 +1,7 @@
 ---
 title: "Multi-Topical Discussion Summarization using Structured Lexical Chains and Cue Words"
 authors: ["Hatori, J.", "Murakami, A.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "Proceedings of CICLing 2011, Lecture Notes in Computer Science, pages 313-327, Springer"
 venueShort: "Science"
 venueType: conference

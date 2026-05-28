@@ -1,6 +1,7 @@
 ---
 title: "Extracting Secondary Bio-Event Arguments with Extraction Constraints"
 authors: ["Sasaki, Y.", "Wang, X.", "Ananiadou, S."]
+authorSlugs: ["", "xinkai-wang-alum-2011", "sophia-ananiadou"]
 venue: "in: Computational Intelligence, 27:4(702-721)"
 venueShort: "in: Computational Intelligence"
 venueType: other

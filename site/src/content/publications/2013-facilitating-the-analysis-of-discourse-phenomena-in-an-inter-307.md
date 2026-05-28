@@ -1,6 +1,7 @@
 ---
 title: "Facilitating the Analysis of Discourse Phenomena in an Interoperable NLP Platform"
 authors: ["Batista-Navarro, R.", "Kontonatsios, G.", "MihÄƒilÄƒ, C.", "Thompson, P.", "Rak, R.", "Nawaz, R.", "Korkontzelos, I.", "Ananiadou, S."]
+authorSlugs: ["", "georgios-kontonatsios-alum-2014", "", "paul-thompson", "", "raheel-nawaz-alum-2012", "", "sophia-ananiadou"]
 venue: "Computational Linguistics and Intelligent Text Processing, pages 559-571, Springer Berlin Heidelberg"
 venueShort: "Computational Linguistics"
 venueType: journal

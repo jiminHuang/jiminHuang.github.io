@@ -1,6 +1,7 @@
 ---
 title: "CitationSum: Citation-aware Graph Contrastive Learning for Scientific Paper Summarization"
 authors: ["Luo, Z.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "Proceedings of the ACM Web Conference, pages 1843–1852"
 venueShort: "Proceedings of the ACM Web Conference"
 venueType: conference

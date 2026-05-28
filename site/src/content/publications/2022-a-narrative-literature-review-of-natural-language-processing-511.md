@@ -1,6 +1,7 @@
 ---
 title: "A Narrative Literature Review of Natural Language Processing Applied to the Occupational Exposome"
 authors: ["Schoene, A", "Basinas, I.", "van Tongeren, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Int. J. Environ. Res. Public Health, 19:14(8544)"
 venueShort: "in: Int. J. Environ. Res. Public Health"
 venueType: other

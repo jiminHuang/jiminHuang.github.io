@@ -1,6 +1,7 @@
 ---
 title: "Pre-trained language models with domain knowledge for biomedical extractive summarization"
 authors: ["Xie, Q.", "Bishop, J.", "Tiwari, P.", "Ananiadou, S."]
+authorSlugs: ["qianqian-xie", "jenny-bishop-alum-2023", "", "sophia-ananiadou"]
 venue: "in: Knowledge-Based Systems, 252(109460)"
 venueShort: "Knowledge-Based Systems"
 venueType: other

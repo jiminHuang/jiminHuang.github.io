@@ -1,6 +1,7 @@
 ---
 title: "Fast Full Parsing by Linear-Chain Conditional Random Fields"
 authors: ["Tsuruoka, Y.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "junichi-tsujii", "sophia-ananiadou"]
 venue: "Proceedings of the 12th Conference of European Chapter of the Association for Computational Linguistics (EACL-09), pages 790--798"
 venueShort: "EACL"
 venueType: other

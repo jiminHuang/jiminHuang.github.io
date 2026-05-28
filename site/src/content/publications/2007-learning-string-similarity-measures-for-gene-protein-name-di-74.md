@@ -1,6 +1,7 @@
 ---
 title: "Learning string similarity measures for gene/protein name dictionary look-up using logistic regression"
 authors: ["Tsuruoka, Y.", "McNaught, J.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "john-mcnaught", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 23:20(2768-2774)"
 venueShort: "Bioinformatics"
 venueType: other

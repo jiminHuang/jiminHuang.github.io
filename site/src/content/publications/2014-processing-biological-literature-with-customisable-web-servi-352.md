@@ -1,6 +1,7 @@
 ---
 title: "Processing Biological Literature with Customisable Web Services Supporting Interoperable Formats"
 authors: ["Rak, R.", "Batista-Navarro, R.", "Carter, J.", "Rowley, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou"]
 venue: "in: Database: The Journal of Biological Databases and Curation"
 venueShort: "Database"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "A semi-supervised approach using label propagation to support citation screening"
 authors: ["Kontonatsios, G.", "Brockmeier, A. J.", "Przybyɫa, P.", "McNaught, J.", "Mu, T.", "Goulermas, J. Y", "Ananiadou, S."]
+authorSlugs: ["georgios-kontonatsios-alum-2014", "", "", "john-mcnaught", "", "", "sophia-ananiadou"]
 venue: "in: Journal of Biomedical Informatics, 72(67-76)"
 venueShort: "JBI"
 venueType: other

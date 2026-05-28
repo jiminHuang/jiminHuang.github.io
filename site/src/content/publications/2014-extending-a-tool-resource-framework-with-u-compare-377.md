@@ -1,6 +1,7 @@
 ---
 title: "Extending a Tool Resource Framework with U-Compare"
 authors: ["Rosner, M.", "Attard, A.", "Thompson, P.", "Gatt, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "paul-thompson", "", "sophia-ananiadou"]
 venue: "Human Language Technology Challenges for Computer Science and Linguistics, pages 315-326, Springer"
 venueShort: "Science"
 venueType: journal

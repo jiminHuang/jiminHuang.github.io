@@ -1,6 +1,7 @@
 ---
 title: "IRIS: Rapid Curation Framework for Iterative Improvement of Noisy Named Entity Annotations"
 authors: ["Yano, K.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the International Conference on Applications of Natural Language to Information Systems, pages 58-69"
 venueShort: "Proceedings of the International Conference on Applications"
 venueType: conference

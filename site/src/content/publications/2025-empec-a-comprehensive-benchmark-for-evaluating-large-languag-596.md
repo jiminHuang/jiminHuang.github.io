@@ -1,6 +1,7 @@
 ---
 title: "EMPEC: A Comprehensive Benchmark for Evaluating Large Language Models Across Diverse Healthcare Professions"
 authors: ["Luo, Z.", "Yuan, C.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "chenhan-yuan-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "Findings of the Association for Computational Linguistics: ACL 2025, pages 9945–9958"
 venueShort: "ACL 2025"
 venueType: conference

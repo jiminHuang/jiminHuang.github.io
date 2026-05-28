@@ -1,6 +1,7 @@
 ---
 title: "Paths for uncertainty: Exploring the intricacies of uncertainty identification for news"
 authors: ["Zerva, C.", "Ananiadou, S."]
+authorSlugs: ["chrysoula-zerva-alum-2018", "sophia-ananiadou"]
 venue: "Proceedings of the NAACL Workshop on Computational Semantics Beyond Events and Roles (SemBEaR), pages 6-20"
 venueShort: "NAACL"
 venueType: workshop

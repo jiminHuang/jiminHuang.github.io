@@ -1,6 +1,7 @@
 ---
 title: "The Value of an In-Domain Lexicon in Genomics QA"
 authors: ["Sasaki, Y.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["", "john-mcnaught", "sophia-ananiadou"]
 venue: "Proceedings of 3rd International Symposium on Languages in Biology and Medicine (LBM-2009), pages 47--55"
 venueShort: "Proceedings of 3rd International Symposium on Languages in B"
 venueType: workshop

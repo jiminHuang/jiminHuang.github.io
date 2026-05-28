@@ -1,6 +1,7 @@
 ---
 title: "Constructing a Biodiversity Terminological Inventory"
 authors: ["Nguyen, N. T. H.", "Soto, A.", "Kontonatsios, G.", "Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "", "georgios-kontonatsios-alum-2014", "", "sophia-ananiadou"]
 venue: "in: PLOS ONE, 12:4(e0175277)"
 venueShort: "PLOS ONE"
 venueType: other

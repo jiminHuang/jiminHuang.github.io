@@ -9,25 +9,30 @@ const pubs = (await getCollection("publications")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title),
 );
 
-// Group by year
-const byYear = new Map<number, typeof pubs>();
-for (const p of pubs) {
-  const y = p.data.year ?? 0;
-  if (!byYear.has(y)) byYear.set(y, []);
-  byYear.get(y)!.push(p);
-}
-const years = [...byYear.keys()].sort((a, b) => b - a);
-
 const total = pubs.length;
 const peopleCount = new Set(pubs.flatMap((p) => p.data.authors)).size;
-const yearRange = pubs.length ? `${years[years.length - 1]}–${years[0]}` : "—";
+const allYears = [...new Set(pubs.map((p) => p.data.year ?? 0))].filter((y) => y > 0).sort((a, b) => b - a);
+const yearRange = allYears.length ? `${allYears[allYears.length - 1]}–${allYears[0]}` : "—";
 
 const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.html";
+
+const typeMeta: Record<string, { label: string; fg: string; bg: string }> = {
+  conference: { label: "Conference", fg: "var(--color-amber-600)", bg: "var(--color-amber-100)" },
+  workshop:   { label: "Workshop",   fg: "#b85a2e",                 bg: "var(--color-paper-2)" },
+  journal:    { label: "Journal",    fg: "var(--color-ink-900)",    bg: "var(--color-ink-100)" },
+  preprint:   { label: "Preprint",   fg: "var(--color-ink-500)",    bg: "var(--color-paper-2)" },
+  thesis:     { label: "Thesis",     fg: "var(--color-ink-700)",    bg: "var(--color-paper-2)" },
+  other:      { label: "Other",      fg: "var(--color-ink-500)",    bg: "var(--color-paper-2)" },
+};
+
+const typeCounts = Object.fromEntries(
+  Object.keys(typeMeta).map((t) => [t, pubs.filter((p) => p.data.venueType === t).length]),
+) as Record<string, number>;
 ---
 
 <Layout
   title="Publications — NaCTeM"
-  description="Recent publications from the National Centre for Text Mining, drawn from the Aigaion bibliography database."
+  description="The full NaCTeM bibliography — every paper since 2004, filterable by year, type, and author."
 >
   <!-- HERO -->
   <section class="relative overflow-hidden paper-grain border-b hairline">
@@ -52,9 +57,8 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
       </h1>
 
       <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
-        NaCTeM's full bibliography — every paper since the centre opened in
-        2004 — mirrored from our Aigaion database. Grouped by year below,
-        most recent first; jump to a specific year with the index.
+        Every NaCTeM paper since 2004, mirrored from our Aigaion database.
+        Filter by year, venue type, or author below.
       </p>
 
       <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
@@ -71,23 +75,6 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Unique authors</div>
         </div>
       </div>
-
-      {/* Year ToC */}
-      <div class="mt-12">
-        <div class="smallcaps text-[color:var(--color-ink-500)] mb-4">Jump to year</div>
-        <ul class="flex flex-wrap gap-2 sans text-sm">
-          {years.filter((y) => y > 0).map((y) => (
-            <li>
-              <a
-                href={`#y${y}`}
-                class="inline-block border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] tabular-nums transition-colors"
-              >
-                {y} <span class="text-[color:var(--color-amber-600)] ml-0.5">{byYear.get(y)!.length}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
 
     <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
@@ -95,96 +82,171 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
     </div>
   </section>
 
-  <!-- BY YEAR -->
-  {years.map((y, idx) => (
-    <section id={`y${y}`} class={`border-b hairline scroll-mt-20 ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
-      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
-        <div class="flex items-baseline gap-6 mb-10 flex-wrap">
-          <div class="antique text-6xl md:text-7xl text-[color:var(--color-ink-900)] leading-none">{y || "Undated"}</div>
-          <div class="smallcaps text-[color:var(--color-ink-500)]">
-            {byYear.get(y)!.length} {byYear.get(y)!.length === 1 ? "paper" : "papers"}
-          </div>
+  <!-- CONTROLS -->
+  <section class="border-b hairline sticky top-20 z-30 bg-[color:var(--color-paper)]/95 backdrop-blur" id="pub-controls">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-6 grid lg:grid-cols-[1fr_auto] gap-4 items-end">
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="flex items-center border hairline rounded-full px-4 py-2 gap-2 bg-[color:var(--color-paper-2)]">
+          <span aria-hidden class="text-[color:var(--color-ink-500)]">⌕</span>
+          <input
+            id="pub-search"
+            type="search"
+            placeholder="Search title or author…"
+            class="bg-transparent outline-none text-sm w-64 placeholder-[color:var(--color-ink-500)]"
+          />
         </div>
 
-        <ul class="space-y-8">
-          {byYear.get(y)!.map((p) => {
-            const typeStyle = {
-              conference: { fg: "var(--color-amber-600)", bg: "var(--color-amber-100)", label: "Conference" },
-              workshop:   { fg: "var(--color-rust-500, #b85a2e)", bg: "var(--color-paper-2)", label: "Workshop" },
-              journal:    { fg: "var(--color-ink-900)", bg: "var(--color-ink-100)", label: "Journal" },
-              preprint:   { fg: "var(--color-ink-500)", bg: "var(--color-paper-2)", label: "Preprint" },
-              thesis:     { fg: "var(--color-ink-700)", bg: "var(--color-paper-2)", label: "Thesis" },
-              other:      { fg: "var(--color-ink-500)", bg: "var(--color-paper-2)", label: "Other" },
-            }[p.data.venueType ?? "other"];
-            return (
-              <li class="grid grid-cols-[80px_1fr] md:grid-cols-[110px_1fr] gap-x-6 gap-y-3">
-                {/* Left rail: year + type chip */}
-                <div class="flex flex-col items-start gap-3">
-                  <div class="antique text-3xl md:text-4xl text-[color:var(--color-ink-900)] leading-none tabular-nums">{p.data.year ?? "—"}</div>
-                  <span
-                    class="smallcaps rounded-full px-2.5 py-1 border hairline"
-                    style={`color: ${typeStyle.fg}; background: ${typeStyle.bg};`}
-                  >{typeStyle.label}</span>
-                </div>
-
-                {/* Right: title + venue + authors + actions */}
-                <div>
-                  <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
-                    {p.data.url || p.data.doi ? (
-                      <a
-                        href={p.data.url ?? p.data.doi!}
-                        target="_blank"
-                        rel="noopener"
-                        class="hover:text-[color:var(--color-amber-600)] transition-colors"
-                      >
-                        {p.data.title}
-                      </a>
-                    ) : (
-                      p.data.title
-                    )}
-                  </div>
-
-                  {p.data.venueShort && (
-                    <div class="flex items-center gap-2 mb-2 flex-wrap">
-                      <span
-                        class="display italic text-base text-[color:var(--color-amber-600)] border-l-2 pl-3"
-                        style="border-color: var(--color-amber-500);"
-                      >{p.data.venueShort}</span>
-                    </div>
-                  )}
-
-                  <div class="serif italic text-sm text-[color:var(--color-ink-500)] leading-snug mb-3">
-                    {p.data.authors.join(", ")}
-                  </div>
-
-                  {p.data.venue && p.data.venue !== p.data.venueShort && (
-                    <div class="serif text-sm text-[color:var(--color-ink-700)] leading-snug mb-3">{p.data.venue}</div>
-                  )}
-
-                  <div class="flex flex-wrap gap-2 sans text-xs">
-                    {p.data.doi && (
-                      <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">DOI ↗</a>
-                    )}
-                    {p.data.url && (
-                      <a href={p.data.url} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">URL ↗</a>
-                    )}
-                    {p.data.aigaionId && (
-                      <a
-                        href={`https://www.nactem.ac.uk/aigaion2/index.php/publications/show/${p.data.aigaionId}`}
-                        target="_blank"
-                        rel="noopener"
-                        class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors"
-                      >BibTeX ↗</a>
-                    )}
-                  </div>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+        <div class="flex items-center gap-2 sans text-xs">
+          <span class="smallcaps text-[color:var(--color-ink-500)]">Type</span>
+          {Object.entries(typeMeta).map(([key, m]) => (
+            <button
+              type="button"
+              data-type-filter={key}
+              class="pub-type-btn border hairline rounded-full px-2.5 py-1 transition-colors"
+              style={`color: ${m.fg};`}
+            >{m.label} <span class="opacity-60">{typeCounts[key]}</span></button>
+          ))}
+        </div>
       </div>
-    </section>
-  ))}
+
+      <div class="flex items-center gap-3 sans text-sm">
+        <label class="smallcaps text-[color:var(--color-ink-500)]" for="pub-sort">Sort</label>
+        <select
+          id="pub-sort"
+          class="border hairline rounded-full px-3 py-1.5 bg-[color:var(--color-paper)]"
+        >
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title A→Z</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Year filter row -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-5 -mt-2 flex flex-wrap gap-1.5 sans text-xs items-center" id="pub-year-row">
+      <span class="smallcaps text-[color:var(--color-ink-500)] mr-2">Year</span>
+      <button type="button" data-year-all class="pub-year-btn border hairline rounded-full px-2.5 py-1 tabular-nums">All</button>
+      {allYears.map((y) => (
+        <button
+          type="button"
+          data-year={y}
+          class="pub-year-btn border hairline rounded-full px-2.5 py-1 tabular-nums"
+        >{y}</button>
+      ))}
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-12">
+      <div class="flex items-baseline justify-between mb-8 flex-wrap gap-4">
+        <div class="serif text-lg text-[color:var(--color-ink-700)]" id="pub-result-count"></div>
+        <div class="sans text-xs text-[color:var(--color-ink-500)]">Showing <span id="pub-shown">0</span> of <span id="pub-shown-total">0</span></div>
+      </div>
+
+      <ul id="pub-list" class="space-y-10">
+        {pubs.map((p, idx) => {
+          const t = typeMeta[p.data.venueType ?? "other"];
+          const authorPairs = p.data.authors.map((a, i) => ({
+            name: a,
+            slug: p.data.authorSlugs?.[i] || "",
+          }));
+          return (
+            <li
+              class="pub-item grid grid-cols-[80px_1fr] md:grid-cols-[110px_1fr] gap-x-6 gap-y-3"
+              data-year={p.data.year ?? ""}
+              data-type={p.data.venueType ?? "other"}
+              data-title={p.data.title.toLowerCase()}
+              data-authors={p.data.authors.join(" ").toLowerCase()}
+              data-author-slugs={(p.data.authorSlugs ?? []).filter(Boolean).join(" ")}
+              data-idx={idx}
+              data-pub-index
+            >
+              <div class="flex flex-col items-start gap-3">
+                <div class="antique text-3xl md:text-4xl text-[color:var(--color-ink-900)] leading-none tabular-nums">{p.data.year ?? "—"}</div>
+                <span
+                  class="smallcaps rounded-full px-2.5 py-1 border hairline"
+                  style={`color: ${t.fg}; background: ${t.bg};`}
+                >{t.label}</span>
+              </div>
+
+              <div>
+                <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
+                  {p.data.url || p.data.doi ? (
+                    <a
+                      href={p.data.url ?? p.data.doi!}
+                      target="_blank"
+                      rel="noopener"
+                      class="hover:text-[color:var(--color-amber-600)] transition-colors"
+                    >{p.data.title}</a>
+                  ) : (
+                    p.data.title
+                  )}
+                </div>
+
+                {p.data.venueShort && (
+                  <div class="flex items-center gap-2 mb-2 flex-wrap">
+                    <span
+                      class="display italic text-base text-[color:var(--color-amber-600)] border-l-2 pl-3"
+                      style="border-color: var(--color-amber-500);"
+                    >{p.data.venueShort}</span>
+                  </div>
+                )}
+
+                <div class="serif italic text-sm text-[color:var(--color-ink-500)] leading-snug mb-3">
+                  {authorPairs.map((a, i) => (
+                    <>
+                      {a.slug ? (
+                        <a
+                          href={`/people/${a.slug}`}
+                          class="hover:text-[color:var(--color-amber-600)] transition-colors"
+                        >{a.name}</a>
+                      ) : (
+                        <span>{a.name}</span>
+                      )}
+                      {i < authorPairs.length - 1 && ", "}
+                    </>
+                  ))}
+                </div>
+
+                {p.data.venue && p.data.venue !== p.data.venueShort && (
+                  <div class="serif text-sm text-[color:var(--color-ink-700)] leading-snug mb-3">{p.data.venue}</div>
+                )}
+
+                <div class="flex flex-wrap gap-2 sans text-xs">
+                  {p.data.doi && (
+                    <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] transition-colors">DOI ↗</a>
+                  )}
+                  {p.data.url && (
+                    <a href={p.data.url} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] transition-colors">URL ↗</a>
+                  )}
+                  {p.data.aigaionId && (
+                    <a
+                      href={`https://www.nactem.ac.uk/aigaion2/index.php/publications/show/${p.data.aigaionId}`}
+                      target="_blank"
+                      rel="noopener"
+                      class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] transition-colors"
+                    >BibTeX ↗</a>
+                  )}
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+
+      <!-- Pagination -->
+      <nav class="mt-12 flex items-center justify-between gap-4 sans text-sm" id="pub-pagination" style="display:none">
+        <button type="button" id="pub-prev" class="border hairline rounded-full px-4 py-2 text-[color:var(--color-ink-700)] hover:bg-[color:var(--color-paper-2)] disabled:opacity-40 disabled:cursor-not-allowed">← Previous</button>
+        <div id="pub-pagelabel" class="smallcaps text-[color:var(--color-ink-500)] tabular-nums"></div>
+        <button type="button" id="pub-next" class="border hairline rounded-full px-4 py-2 text-[color:var(--color-ink-700)] hover:bg-[color:var(--color-paper-2)] disabled:opacity-40 disabled:cursor-not-allowed">Next →</button>
+      </nav>
+
+      <div id="pub-empty" class="serif italic text-lg text-[color:var(--color-ink-500)] py-16 text-center hidden">
+        No papers match these filters.
+      </div>
+    </div>
+  </section>
 
   <!-- CTA -->
   <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
@@ -193,14 +255,13 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
       <div>
-        <SectionEyebrow letter="Ω" label="The full archive" tone="dark" />
+        <SectionEyebrow letter="Ω" label="The original" tone="dark" />
         <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
           Browse the <em class="italic text-[color:var(--color-amber-400)]">original Aigaion</em>.
         </h2>
         <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
-          Want to search by author, topic, or keyword? The source-of-truth
-          Aigaion database lives at nactem.ac.uk. Export to BibTeX, follow
-          individual authors, or read each entry's full record.
+          Each paper here links back to its Aigaion record via the BibTeX
+          button. The source-of-truth database lives at nactem.ac.uk.
         </p>
       </div>
       <a
@@ -214,3 +275,189 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
     </div>
   </section>
 </Layout>
+
+<script is:inline>
+(() => {
+  const PAGE = 25;
+  const list = document.getElementById("pub-list");
+  if (!list) return;
+  const items = [...list.querySelectorAll("[data-pub-index]")];
+  const searchEl = document.getElementById("pub-search");
+  const sortEl = document.getElementById("pub-sort");
+  const yearRow = document.getElementById("pub-year-row");
+  const typeBtns = [...document.querySelectorAll(".pub-type-btn")];
+  const resultEl = document.getElementById("pub-result-count");
+  const shownEl = document.getElementById("pub-shown");
+  const shownTotalEl = document.getElementById("pub-shown-total");
+  const paginationEl = document.getElementById("pub-pagination");
+  const prevBtn = document.getElementById("pub-prev");
+  const nextBtn = document.getElementById("pub-next");
+  const pageLabel = document.getElementById("pub-pagelabel");
+  const emptyEl = document.getElementById("pub-empty");
+
+  let state = {
+    search: "",
+    types: new Set(),       // empty = all
+    year: null,             // null = all
+    sort: "newest",
+    page: 0,
+    authorSlug: null,       // null = all
+  };
+
+  // Pre-compute item meta for sorting
+  const meta = items.map((el) => ({
+    el,
+    year: parseInt(el.dataset.year || "0", 10),
+    type: el.dataset.type,
+    title: el.dataset.title,
+    authors: el.dataset.authors,
+    authorSlugs: (el.dataset.authorSlugs || "").split(" ").filter(Boolean),
+  }));
+
+  // URL ?author=<slug> presets the filter
+  const params = new URLSearchParams(location.search);
+  if (params.get("author")) {
+    state.authorSlug = params.get("author");
+    // Find author name from one of the items for the result label
+  }
+  if (params.get("year")) {
+    const y = parseInt(params.get("year"), 10);
+    if (y > 0) state.year = y;
+  }
+
+  function applyFilters() {
+    const q = state.search.trim().toLowerCase();
+    return meta.filter((m) => {
+      if (state.types.size > 0 && !state.types.has(m.type)) return false;
+      if (state.year != null && m.year !== state.year) return false;
+      if (state.authorSlug && !m.authorSlugs.includes(state.authorSlug)) return false;
+      if (q && !m.title.includes(q) && !m.authors.includes(q)) return false;
+      return true;
+    });
+  }
+
+  function applySort(filtered) {
+    const sorted = filtered.slice();
+    if (state.sort === "newest") sorted.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+    else if (state.sort === "oldest") sorted.sort((a, b) => a.year - b.year || a.title.localeCompare(b.title));
+    else if (state.sort === "title") sorted.sort((a, b) => a.title.localeCompare(b.title));
+    return sorted;
+  }
+
+  function render() {
+    const filtered = applyFilters();
+    const sorted = applySort(filtered);
+    const total = sorted.length;
+
+    // Hide everything first
+    for (const m of meta) m.el.style.display = "none";
+
+    if (total === 0) {
+      emptyEl.classList.remove("hidden");
+      paginationEl.style.display = "none";
+    } else {
+      emptyEl.classList.add("hidden");
+    }
+
+    const pages = Math.max(1, Math.ceil(total / PAGE));
+    if (state.page >= pages) state.page = 0;
+
+    // Reorder + show current page
+    const start = state.page * PAGE;
+    const end = Math.min(start + PAGE, total);
+    for (let i = start; i < end; i++) {
+      const m = sorted[i];
+      m.el.style.display = "";
+      list.appendChild(m.el); // re-append to reorder
+    }
+
+    shownEl.textContent = total === 0 ? "0" : `${start + 1}–${end}`;
+    shownTotalEl.textContent = String(total);
+    resultEl.textContent = describeFilters(total);
+
+    if (total > PAGE) {
+      paginationEl.style.display = "flex";
+      pageLabel.textContent = `Page ${state.page + 1} of ${pages}`;
+      prevBtn.disabled = state.page === 0;
+      nextBtn.disabled = state.page >= pages - 1;
+    } else {
+      paginationEl.style.display = "none";
+    }
+  }
+
+  function describeFilters(n) {
+    const parts = [];
+    if (state.authorSlug) parts.push(`author ${state.authorSlug}`);
+    if (state.types.size) parts.push([...state.types].map((t) => t).join(" · "));
+    if (state.year != null) parts.push(String(state.year));
+    if (state.search) parts.push(`"${state.search}"`);
+    const filterText = parts.length ? ` matching ${parts.join(" · ")}` : "";
+    return `${n} ${n === 1 ? "paper" : "papers"}${filterText}`;
+  }
+
+  function updateYearButtons() {
+    [...yearRow.querySelectorAll(".pub-year-btn")].forEach((b) => {
+      const yr = b.dataset.year ? parseInt(b.dataset.year, 10) : null;
+      const active = (state.year === null && b.hasAttribute("data-year-all")) ||
+                     (state.year != null && yr === state.year);
+      b.style.background = active ? "var(--color-ink-900)" : "";
+      b.style.color = active ? "var(--color-paper)" : "";
+      b.style.borderColor = active ? "var(--color-ink-900)" : "";
+    });
+  }
+
+  function updateTypeButtons() {
+    for (const b of typeBtns) {
+      const active = state.types.has(b.dataset.typeFilter);
+      b.style.background = active ? "var(--color-ink-900)" : "";
+      b.style.color = active ? "var(--color-paper)" : b.style.color;
+      b.style.borderColor = active ? "var(--color-ink-900)" : "";
+    }
+  }
+
+  searchEl.addEventListener("input", (e) => {
+    state.search = e.target.value;
+    state.page = 0;
+    render();
+  });
+  sortEl.addEventListener("change", (e) => {
+    state.sort = e.target.value;
+    state.page = 0;
+    render();
+  });
+  yearRow.addEventListener("click", (e) => {
+    const btn = e.target.closest(".pub-year-btn");
+    if (!btn) return;
+    if (btn.hasAttribute("data-year-all")) {
+      state.year = null;
+    } else {
+      const yr = parseInt(btn.dataset.year, 10);
+      state.year = state.year === yr ? null : yr;
+    }
+    state.page = 0;
+    updateYearButtons();
+    render();
+  });
+  for (const b of typeBtns) {
+    b.addEventListener("click", () => {
+      const key = b.dataset.typeFilter;
+      if (state.types.has(key)) state.types.delete(key); else state.types.add(key);
+      state.page = 0;
+      updateTypeButtons();
+      render();
+    });
+  }
+  prevBtn.addEventListener("click", () => {
+    if (state.page > 0) { state.page--; render(); window.scrollTo({ top: list.offsetTop - 240, behavior: "smooth" }); }
+  });
+  nextBtn.addEventListener("click", () => {
+    state.page++;
+    render();
+    window.scrollTo({ top: list.offsetTop - 240, behavior: "smooth" });
+  });
+
+  updateYearButtons();
+  updateTypeButtons();
+  render();
+})();
+</script>

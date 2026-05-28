@@ -1,6 +1,7 @@
 ---
 title: "Reducing systematic review workload through certainty-based screening"
 authors: ["Miwa, M.", "Thomas, J.", "O'Mara-Eves, A.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Journal of Biomedical Informatics"
 venueShort: "JBI"
 venueType: other

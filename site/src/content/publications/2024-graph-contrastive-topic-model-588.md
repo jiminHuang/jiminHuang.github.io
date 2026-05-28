@@ -1,6 +1,7 @@
 ---
 title: "Graph Contrastive Topic Model"
 authors: ["Luo, Z.", "Liu, L.", "Ananiadou, S.", "Xie, Q."]
+authorSlugs: ["zheheng-luo-alum-2025", "", "sophia-ananiadou", "qianqian-xie"]
 venue: "in: Expert Systems with Applications, 255:Part C(124631)"
 venueShort: "in: Expert Systems with Applications"
 venueType: other

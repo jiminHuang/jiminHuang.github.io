@@ -1,6 +1,7 @@
 ---
 title: "Disambiguating the Species of Biomedical Named Entities Using Natural Language Parsers"
 authors: ["Wang, X.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["xinkai-wang-alum-2011", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 26:5(661--667)"
 venueShort: "Bioinformatics"
 venueType: other

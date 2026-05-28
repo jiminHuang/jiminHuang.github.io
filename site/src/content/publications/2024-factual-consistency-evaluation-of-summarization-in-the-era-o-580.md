@@ -1,6 +1,7 @@
 ---
 title: "Factual consistency evaluation of summarization in the Era of large language models"
 authors: ["Luo, Z.", "Xie, Q.", "Ananiadou, S."]
+authorSlugs: ["zheheng-luo-alum-2025", "qianqian-xie", "sophia-ananiadou"]
 venue: "in: Expert Systems with Applications, 254(124456)"
 venueShort: "in: Expert Systems with Applications"
 venueType: other

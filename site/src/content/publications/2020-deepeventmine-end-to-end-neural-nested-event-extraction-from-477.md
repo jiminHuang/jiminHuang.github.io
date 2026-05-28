@@ -1,6 +1,7 @@
 ---
 title: "DeepEventMine: End-to-end Neural Nested Event Extraction from Biomedical Texts"
 authors: ["Trieu, H-L.", "Tran, T. T.", "Duong, K. N. A.", "Nguyen, A.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics(btaa540)"
 venueShort: "Bioinformatics"
 venueType: other

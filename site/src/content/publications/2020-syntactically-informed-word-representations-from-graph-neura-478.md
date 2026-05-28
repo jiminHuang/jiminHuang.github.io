@@ -1,6 +1,7 @@
 ---
 title: "Syntactically-Informed Word Representations from Graph Neural Network"
 authors: ["Tran, T. T.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: Neurocomputing, 413(431-443)"
 venueShort: "in: Neurocomputing"
 venueType: other

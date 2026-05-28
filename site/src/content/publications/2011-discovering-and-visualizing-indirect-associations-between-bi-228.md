@@ -1,6 +1,7 @@
 ---
 title: "Discovering and visualizing indirect associations between biomedical concepts"
 authors: ["Tsuruoka, Y.", "Miwa, M.", "Hamamoto, K.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 27:13(i111-i119)"
 venueShort: "Bioinformatics"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Knowledge-enhanced Graph Topic Transformer for Explainable Biomedical Text Summarization"
 authors: ["Xie, Q.", "Tiwari, P.", "Ananiadou, S."]
+authorSlugs: ["qianqian-xie", "", "sophia-ananiadou"]
 venue: "in: IEEE Journal of Biomedical and Health Informatics"
 venueShort: "in: IEEE Journal of Biomedical and Health Informatics"
 venueType: other

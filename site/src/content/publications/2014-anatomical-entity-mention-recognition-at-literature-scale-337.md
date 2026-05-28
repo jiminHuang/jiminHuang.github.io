@@ -1,6 +1,7 @@
 ---
 title: "Anatomical Entity Mention Recognition at Literature Scale"
 authors: ["Pyysalo, S.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 30:6(868-875)"
 venueShort: "Bioinformatics"
 venueType: other

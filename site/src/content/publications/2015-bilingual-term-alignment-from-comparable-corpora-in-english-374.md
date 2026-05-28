@@ -1,6 +1,7 @@
 ---
 title: "Bilingual term alignment from comparable corpora in English discharge summary and Chinese discharge summary"
 authors: ["Xu, Y.", "Chen, L.", "Wei, J.", "Ananiadou, S.", "Fan, Y.", "Qian, Y.", "Chang, E. I-C.", "Tsujii, J."]
+authorSlugs: ["", "", "", "sophia-ananiadou", "", "", "", "junichi-tsujii"]
 venue: "in: BMC Bioinformatics, 16(149)"
 venueShort: "BMC"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "SemEval-2013 Task 5: Evaluating Phrasal Semantics."
 authors: ["Korkontzelos, I.", "Zesch, T.", "Zanzotto, F. M.", "Biemann, C."]
+authorSlugs: ["", "", "", ""]
 venue: "Proceedings of the 6th International Workshop on Semantic Evaluation (SemEval 2013)"
 venueShort: "SemEval 2013"
 venueType: workshop

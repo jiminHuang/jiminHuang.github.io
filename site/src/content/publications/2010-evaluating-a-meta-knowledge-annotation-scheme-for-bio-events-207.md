@@ -1,6 +1,7 @@
 ---
 title: "Evaluating a meta-knowledge annotation scheme for bio-events"
 authors: ["Nawaz, R.", "Thompson, P.", "Ananiadou, S."]
+authorSlugs: ["raheel-nawaz-alum-2012", "paul-thompson", "sophia-ananiadou"]
 venue: "Proceedings of the Workshop on Negation and Speculation in Natural Language Processing, pages 69--77"
 venueShort: "Proceedings of the Workshop on Negation and Speculation in N"
 venueType: workshop

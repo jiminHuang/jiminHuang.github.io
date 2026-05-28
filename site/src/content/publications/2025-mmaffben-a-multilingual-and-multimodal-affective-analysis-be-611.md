@@ -1,6 +1,7 @@
 ---
 title: "MMAFFBen: A Multilingual and Multimodal Affective Analysis Benchmark for Evaluating LLMs and VLMs"
 authors: ["Liu, Z.", "Qian, L.", "Xie, Q.", "Huang, J.", "Yang, K", "Ananiadou, S."]
+authorSlugs: ["zhiwei-liu", "", "qianqian-xie", "jimin-huang-phd", "", "sophia-ananiadou"]
 venue: "arXiv"
 venueShort: "arXiv"
 venueType: preprint

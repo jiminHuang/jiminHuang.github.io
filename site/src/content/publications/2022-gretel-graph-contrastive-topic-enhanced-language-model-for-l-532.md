@@ -1,6 +1,7 @@
 ---
 title: "GRETEL: Graph Contrastive Topic Enhanced Language Model for Long Document Extractive Summarization"
 authors: ["Xie, Q.", "Huang, J.", "Saha, T", "Ananiadou, S."]
+authorSlugs: ["qianqian-xie", "jimin-huang-phd", "", "sophia-ananiadou"]
 venue: "Proceedings of COLING, pages 6259–6269"
 venueShort: "COLING"
 venueType: conference

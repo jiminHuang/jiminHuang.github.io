@@ -1,6 +1,7 @@
 ---
 title: "Emotion fusion for mental illness detection from social media: A survey"
 authors: ["Zhang, T.", "Yang, K", "Shaoxiong, J.", "Ananiadou, S."]
+authorSlugs: ["tianlin-zhang-alum-2024", "", "", "sophia-ananiadou"]
 venue: "in: Information Fusion, 92(231-246)"
 venueShort: "in: Information Fusion"
 venueType: other

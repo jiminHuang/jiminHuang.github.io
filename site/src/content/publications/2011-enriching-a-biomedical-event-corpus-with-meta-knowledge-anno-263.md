@@ -1,6 +1,7 @@
 ---
 title: "Enriching a biomedical event corpus with meta-knowledge annotation"
 authors: ["Thompson, P.", "Nawaz, R.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "raheel-nawaz-alum-2012", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 12(393)"
 venueShort: "BMC"
 venueType: other

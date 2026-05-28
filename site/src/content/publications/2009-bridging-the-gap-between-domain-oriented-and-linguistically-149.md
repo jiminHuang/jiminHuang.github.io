@@ -1,6 +1,7 @@
 ---
 title: "Bridging the Gap between Domain-Oriented and Linguistically-Oriented Semantics"
 authors: ["Uematsu, S.", "Kim, J.-D.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "Proceedings of BioNLP 2009 Workshop, pages 162--170"
 venueShort: "BioNLP 2009"
 venueType: workshop

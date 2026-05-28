@@ -1,6 +1,7 @@
 ---
 title: "Improve Chinese Clinical Named Entity Recognition Performance by Using the Graphical and Phonetic Feature"
 authors: ["Wang, Y.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["yuyan-wang", "sophia-ananiadou", "junichi-tsujii"]
 venue: "Proceedings of the 2018 International Workshop on Biomedical and Health Informatics"
 venueShort: "Proceedings of the 2018 International Workshop on Biomedical"
 venueType: workshop

@@ -1,6 +1,7 @@
 ---
 title: "Towards Interpretable Mental Health Analysis with Large Language Models"
 authors: ["Yang, K", "Ji, S.", "Zhang, T.", "Xie, Q.", "Kuang, Z.", "Ananiadou, S."]
+authorSlugs: ["", "", "tianlin-zhang-alum-2024", "qianqian-xie", "", "sophia-ananiadou"]
 venue: "Proceedings of EMNLP 2023, pages 6056–6077"
 venueShort: "EMNLP 2023"
 venueType: conference

@@ -1,6 +1,7 @@
 ---
 title: "A method for integrating and ranking the evidence for biochemical pathways by mining reactions from text"
 authors: ["Miwa, M.", "Ohta, T.", "Rak, R.", "Rowley, A.", "Kell, D. B.", "Pyysalo, S.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "", "", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 29:13(i44-i52)"
 venueShort: "Bioinformatics"
 venueType: other

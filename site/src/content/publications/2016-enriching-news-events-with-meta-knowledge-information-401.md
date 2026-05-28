@@ -1,6 +1,7 @@
 ---
 title: "Enriching News Events with Meta-knowledge Information"
 authors: ["Thompson, P.", "Nawaz, R.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "raheel-nawaz-alum-2012", "john-mcnaught", "sophia-ananiadou"]
 venue: "in: Language Resources and Evaluation, 51:2(409-438)"
 venueShort: "in: Language Resources and Evaluation"
 venueType: other

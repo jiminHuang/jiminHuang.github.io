@@ -1,6 +1,7 @@
 ---
 title: "Overview of the Pathway Curation (PC) task of BioNLP Shared Task 2013"
 authors: ["Ohta, T.", "Pyysalo, S.", "Rak, R.", "Rowley, A.", "Chun, H.-W.", "Jung, S. -J.", "Choi, S. -P.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the BioNLP Shared Task 2013 Workshop, Sofia, Bulgaria, pages 67-75, Association for Computational Linguistics"
 venueShort: "BioNLP 2013"
 venueType: workshop

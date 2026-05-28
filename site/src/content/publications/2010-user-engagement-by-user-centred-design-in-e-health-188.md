@@ -1,6 +1,7 @@
 ---
 title: "User Engagement by User-Centred Design in e-Health"
 authors: ["Sutcliffe, A.", "Thew, S.", "de Bruijn, O.", "Buchan, I.", "Jarvis, P.", "McNaught, J.", "Procter, R."]
+authorSlugs: ["", "", "", "", "", "john-mcnaught", ""]
 venue: "in: Philosophical Transactions of the Royal Society A, 368:1926(4209-4224)"
 venueShort: "in: Philosophical Transactions of the Royal Society A"
 venueType: other

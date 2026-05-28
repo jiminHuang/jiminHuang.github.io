@@ -1,6 +1,7 @@
 ---
 title: "Medie and Info-pubmed: 2010 update"
 authors: ["Ohta, T.", "Matsuzaki, T.", "Okazaki, N.", "Miwa, M.", "SÃ¦tre, R.", "Pyysalo, S.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "", "", "junichi-tsujii"]
 venue: "in: BMC Bioinformatics, 11:Suppl 5(P7)"
 venueShort: "BMC"
 venueType: other

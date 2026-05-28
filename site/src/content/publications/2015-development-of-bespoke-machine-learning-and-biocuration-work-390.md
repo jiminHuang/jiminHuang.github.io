@@ -1,6 +1,7 @@
 ---
 title: "Development of bespoke machine learning and biocuration workflows in a BioC-supporting text mining workbench"
 authors: ["Batista-Navarro, R.", "Carter, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the Fifth BioCreative Challenge Evaluation Workshop, Seville, Spain, pages 51-56"
 venueShort: "Proceedings of the Fifth BioCreative Challenge Evaluation Wo"
 venueType: workshop

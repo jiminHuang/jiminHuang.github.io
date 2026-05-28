@@ -1,6 +1,7 @@
 ---
 title: "Adapting ChER for the recognition of chemical mentions in patents"
 authors: ["Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "Proceedings of the Fifth BioCreative Challenge Evaluation Workshop, Seville, Spain, pages 149-153"
 venueShort: "Proceedings of the Fifth BioCreative Challenge Evaluation Wo"
 venueType: workshop

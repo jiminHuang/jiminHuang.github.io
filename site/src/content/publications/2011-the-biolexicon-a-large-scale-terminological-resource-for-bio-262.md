@@ -1,6 +1,7 @@
 ---
 title: "The BioLexicon: a large-scale terminological resource for biomedical text mining"
 authors: ["Thompson, P.", "McNaught, J.", "Montemagni, S.", "Calzolari, N.", "del Gratta, R.", "Lee, V.", "Marchi, S.", "Monachini, M.", "Pezik, P.", "Quochi, V.", "Rupp, C. J.", "Sasaki, Y.", "Venturi, G.", "Rebholz-Schuhmann, D.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "john-mcnaught", "", "", "", "", "", "", "", "", "", "", "", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 12(397)"
 venueShort: "BMC"
 venueType: other

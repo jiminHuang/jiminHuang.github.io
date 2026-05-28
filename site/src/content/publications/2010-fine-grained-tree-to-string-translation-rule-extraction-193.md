@@ -1,6 +1,7 @@
 ---
 title: "Fine-grained Tree-to-String Translation Rule Extraction"
 authors: ["Wu, X.", "Matsuzaki, T.", "Tsujii, J."]
+authorSlugs: ["", "", "junichi-tsujii"]
 venue: "Proceedings of The 48th Annual Meeting of the Association for Computational Linguistics (ACL 2010), pages 325--334"
 venueShort: "ACL 2010"
 venueType: conference

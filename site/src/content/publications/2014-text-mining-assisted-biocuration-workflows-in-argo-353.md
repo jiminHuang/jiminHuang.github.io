@@ -1,6 +1,7 @@
 ---
 title: "Text Mining-assisted Biocuration Workflows in Argo"
 authors: ["Rak, R.", "Batista-Navarro, R.", "Rowley, A.", "Carter, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "", "sophia-ananiadou"]
 venue: "in: Database: The Journal of Biological Databases and Curation"
 venueShort: "Database"
 venueType: other

@@ -1,6 +1,7 @@
 ---
 title: "Mining Opinion Polarity Relations of Citations"
 authors: ["Piao, S.", "Ananiadou, S.", "Tsuruoka, Y.", "Sasaki, Y.", "McNaught, J."]
+authorSlugs: ["", "sophia-ananiadou", "", "", "john-mcnaught"]
 venue: "Proceedings of the 7th International Workshop on Computational Semantics, pages 366-371"
 venueShort: "Proceedings of the 7th International Workshop on Computation"
 venueType: workshop

@@ -1,6 +1,7 @@
 ---
 title: "FMDLlama: Financial Misinformation Detection Based on Large Language Models"
 authors: ["Liu, Z.", "Zhang, X.", "Yang, K", "Xie, Q.", "Huang, J.", "Ananiadou, S."]
+authorSlugs: ["zhiwei-liu", "xin-zhang", "", "qianqian-xie", "jimin-huang-phd", "sophia-ananiadou"]
 venue: "Proceedings of the ACM on Web Conference 2025, pages 1153 - 1157"
 venueShort: "Proceedings of the ACM on Web Conference 2025"
 venueType: conference

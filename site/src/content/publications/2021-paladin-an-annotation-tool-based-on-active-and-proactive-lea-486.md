@@ -1,6 +1,7 @@
 ---
 title: "Paladin: an annotation tool based on active and proactive learning"
 authors: ["Nghiem, M-. Q.", "Baylis, P.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "Proceedings of the 16th conference of the European Chapter of the Association for Computational Linguistics (EACL 2021): System Demonstrations, pages 238–243"
 venueShort: "EACL 2021"
 venueType: other

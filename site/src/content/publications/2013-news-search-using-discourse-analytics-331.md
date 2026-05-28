@@ -1,6 +1,7 @@
 ---
 title: "News Search Using Discourse Analytics"
 authors: ["Thompson, P.", "Nawaz, R.", "Korkontzelos, I.", "Black, W.J.", "McNaught, J.", "Ananiadou, S."]
+authorSlugs: ["paul-thompson", "raheel-nawaz-alum-2012", "", "", "john-mcnaught", "sophia-ananiadou"]
 venue: "Proceedings of the 2013 Digital Heritage International Congress, Marseille, France, pages 597-604, IEEE"
 venueShort: "Proceedings of the 2013 Digital Heritage International Congr"
 venueType: conference

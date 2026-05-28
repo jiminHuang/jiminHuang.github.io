@@ -1,6 +1,7 @@
 ---
 title: "Text Mining Meets Workflow: Linking U-Compare with Taverna"
 authors: ["Kano, Y.", "Dobson, P.", "Nakanishi, M.", "Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Bioinformatics, 26:19(2486-2487)"
 venueShort: "Bioinformatics"
 venueType: other

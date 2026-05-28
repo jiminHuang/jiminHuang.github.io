@@ -1,6 +1,7 @@
 ---
 title: "Wide coverage biomedical event extraction using multiple partially overlapping corpora"
 authors: ["Miwa, M.", "Pyysalo, S.", "Ohta, T.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 14:175"
 venueShort: "BMC"
 venueType: other

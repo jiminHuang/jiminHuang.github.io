@@ -1,6 +1,7 @@
 ---
 title: "Latent Variable Perceptron Algorithm for Structured Classification"
 authors: ["Sun, X.", "Matsuzaki, T.", "Okanohara, D.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "Proceedings of International Joint Conferences on Artificial Intelligence (IJCAI), pages 1236--1242"
 venueShort: "IJCAI"
 venueType: conference

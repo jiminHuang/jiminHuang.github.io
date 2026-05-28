@@ -1,6 +1,7 @@
 ---
 title: "The National Centre for Text Mining: Aims and Objectives"
 authors: ["Ananiadou, S.", "Chruszcz, J.", "Keane, J.", "McNaught, J.", "Watry, P."]
+authorSlugs: ["sophia-ananiadou", "", "", "john-mcnaught", ""]
 venue: "in: Ariadne, 42"
 venueShort: "in: Ariadne"
 venueType: other

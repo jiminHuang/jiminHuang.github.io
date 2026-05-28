@@ -1,6 +1,7 @@
 ---
 title: "Natural Language Processing Applied to Mental Illness Detection: A Narrative Review"
 authors: ["Zhang, T.", "Schoene, A", "Ananiadou, S."]
+authorSlugs: ["tianlin-zhang-alum-2024", "", "sophia-ananiadou"]
 venue: "in: n p j Digital Medicine, 5(46)"
 venueShort: "in: n p j Digital Medicine"
 venueType: other

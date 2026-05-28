@@ -1,6 +1,7 @@
 ---
 title: "Supporting Systematic Reviews using Text Mining"
 authors: ["Ananiadou, S.", "Okazaki, N.", "Procter, R.", "Rea, B.", "Thomas, J."]
+authorSlugs: ["sophia-ananiadou", "", "", "", ""]
 venue: "in: Social Science Computer Review, 27:4(509-523)"
 venueShort: "Science"
 venueType: other

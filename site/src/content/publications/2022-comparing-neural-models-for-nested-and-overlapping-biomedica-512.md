@@ -1,6 +1,7 @@
 ---
 title: "Comparing neural models for nested and overlapping biomedical event detection"
 authors: ["Espinosa, K.", "Georgiadis, P.", "Christopoulou, F.", "Ju., M.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["", "panagiotis-georgiadis-alum-2024", "fenia-christopoulou-alum-2020", "", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 23(211)"
 venueShort: "BMC"
 venueType: other

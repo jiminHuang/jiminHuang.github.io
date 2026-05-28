@@ -1,6 +1,7 @@
 ---
 title: "Contextualized Medication Event Extraction with Levitated Markers"
 authors: ["Vasilakes, J.", "Georgiadis, P.", "Nguyen, N. T. H.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["jake-vasilakes-alum-2024", "panagiotis-georgiadis-alum-2024", "", "", "sophia-ananiadou"]
 venue: "in: Journal of Biomedical Informatics(104347)"
 venueShort: "JBI"
 venueType: other

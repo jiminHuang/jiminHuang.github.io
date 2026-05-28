@@ -1,6 +1,7 @@
 ---
 title: "Comparable Study of Event Extraction in Newswire and Biomedical Domains"
 authors: ["Miwa, M.", "Thompson, P.", "Korkontzelos, I.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "", "sophia-ananiadou"]
 venue: "Proceedings of Coling 2014, pages 2270 -2279"
 venueShort: "Proceedings of Coling 2014"
 venueType: conference

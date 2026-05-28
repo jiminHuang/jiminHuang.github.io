@@ -1,6 +1,7 @@
 ---
 title: "Thesaurus or Logical Ontology, Which One Do We Need for Text Mining?"
 authors: ["Tsujii, J.", "Ananiadou, S."]
+authorSlugs: ["junichi-tsujii", "sophia-ananiadou"]
 venue: "in: Language Resources and Evaluation, 39:1(77-90)"
 venueShort: "in: Language Resources and Evaluation"
 venueType: other

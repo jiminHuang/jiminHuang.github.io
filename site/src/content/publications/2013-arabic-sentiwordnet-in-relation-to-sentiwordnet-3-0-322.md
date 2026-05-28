@@ -1,6 +1,7 @@
 ---
 title: "Arabic SentiWordNet in Relation to SentiWordNet 3.0"
 authors: ["Alhazmi, S.", "Black, W.J.", "McNaught, J."]
+authorSlugs: ["", "", "john-mcnaught"]
 venue: "in: International Journal of Computational Linguistics, 4:1(1-11)"
 venueShort: "Computational Linguistics"
 venueType: other

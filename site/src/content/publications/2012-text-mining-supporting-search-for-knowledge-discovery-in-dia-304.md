@@ -1,6 +1,7 @@
 ---
 title: "Text Mining supporting Search for Knowledge Discovery in Diabetes"
 authors: ["Ananiadou, S.", "Ohta, T.", "Rutter, M."]
+authorSlugs: ["sophia-ananiadou", "", ""]
 venue: "in: Current Cardiovascular Risk Reports"
 venueShort: "in: Current Cardiovascular Risk Reports"
 venueType: other

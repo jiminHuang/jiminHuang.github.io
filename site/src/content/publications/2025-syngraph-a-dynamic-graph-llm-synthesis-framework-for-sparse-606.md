@@ -1,6 +1,7 @@
 ---
 title: "SynGraph: A Dynamic Graph-LLM Synthesis Framework for Sparse Streaming User Sentiment Modeling"
 authors: ["Zhang, X.", "Wei, Q.", "Zhu, Y.", "Zhang, L.", "Zhou, D.", "Ananiadou, S."]
+authorSlugs: ["xin-zhang", "", "", "", "", "sophia-ananiadou"]
 venue: "Findings of the Association for Computational Linguistics: ACL 2025, pages 16338–16356"
 venueShort: "ACL 2025"
 venueType: conference

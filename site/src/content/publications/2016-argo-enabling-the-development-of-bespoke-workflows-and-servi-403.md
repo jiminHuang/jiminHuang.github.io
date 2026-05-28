@@ -1,6 +1,7 @@
 ---
 title: "Argo: Enabling the development of bespoke workflows and services for disease annotation"
 authors: ["Batista-Navarro, R.", "Carter, J.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: Database: The Journal of Biological Databases and Curation"
 venueShort: "Database"
 venueType: other

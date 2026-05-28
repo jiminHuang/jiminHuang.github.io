@@ -1,6 +1,7 @@
 ---
 title: "Augmenting the Medical Subject Headings vocabulary with semantically rich variants to improve disease mention normalisation"
 authors: ["Batista-Navarro, R.", "Ananiadou, S."]
+authorSlugs: ["", "sophia-ananiadou"]
 venue: "Proceedings of the Fifth BioCreative Challenge Evaluation Workshop, Seville, Spain, pages 311-316"
 venueShort: "Proceedings of the Fifth BioCreative Challenge Evaluation Wo"
 venueType: workshop

@@ -1,6 +1,7 @@
 ---
 title: "Supporting Systematic Reviews Using LDA-based Document Representations"
 authors: ["Mo, Y.", "Kontonatsios, G.", "Ananiadou, S."]
+authorSlugs: ["", "georgios-kontonatsios-alum-2014", "sophia-ananiadou"]
 venue: "in: Systematic Reviews, 4(172)"
 venueShort: "in: Systematic Reviews"
 venueType: other

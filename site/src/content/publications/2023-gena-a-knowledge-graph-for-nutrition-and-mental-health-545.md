@@ -1,6 +1,7 @@
 ---
 title: "GENA: A knowledge graph for nutrition and mental health"
 authors: ["Dang, L. D.", "Phan, U. T. P.", "Nguyen, N. T. H."]
+authorSlugs: ["", "", ""]
 venue: "in: Journal of Biomedical Informatics, 145(10446)"
 venueShort: "JBI"
 venueType: other

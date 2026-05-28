@@ -1,6 +1,7 @@
 ---
 title: "Role of in silico tools and text mining in the safety assessment of selected plant coumarins"
 authors: ["Raitano, G.", "Benfenati, E.", "Ananiadou, S.", "Nguyen, N. T. H.", "Do, Q. T.", "Rat, P.", "Sousselier, L."]
+authorSlugs: ["", "", "sophia-ananiadou", "", "", "", ""]
 venue: "in: Toxicology Letters, 280:Supplement 1(S96)"
 venueShort: "in: Toxicology Letters"
 venueType: other

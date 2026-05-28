@@ -1,6 +1,7 @@
 ---
 title: "Feature Forest Models for Probabilistic HPSG Parsing"
 authors: ["Miyao, Y.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "in: Computational Linguistics, 34:1(35â€“80)"
 venueShort: "Computational Linguistics"
 venueType: other

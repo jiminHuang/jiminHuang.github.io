@@ -1,6 +1,7 @@
 ---
 title: "Extracting semantically enriched events from biomedical literature"
 authors: ["Miwa, M.", "Thompson, P.", "McNaught, J.", "Kell, D. B.", "Ananiadou, S."]
+authorSlugs: ["", "paul-thompson", "john-mcnaught", "", "sophia-ananiadou"]
 venue: "in: BMC Bioinformatics, 13(108)"
 venueShort: "BMC"
 venueType: other

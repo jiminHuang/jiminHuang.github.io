@@ -1,6 +1,7 @@
 ---
 title: "Data Visualization with Structural Control of Global Cohort and Local Data Neighborhoods"
 authors: ["Mu, T.", "Goulermas, J. Y", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: IEEE Transactions on Pattern Analysis and Machine Intelligence, 99"
 venueShort: "in: IEEE Transactions on Pattern Analysis and Machine Intell"
 venueType: other

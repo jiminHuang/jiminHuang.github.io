@@ -1,6 +1,7 @@
 ---
 title: "Towards Exhaustive Event Extraction for Protein Modifications"
 authors: ["Pyysalo, S.", "Ohta, T.", "Miwa, M.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "Proceedings of the BioNLP 2011 Workshop, pages 114--123, Association for Computational Linguistics"
 venueShort: "BioNLP 2011"
 venueType: workshop

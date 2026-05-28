@@ -1,6 +1,7 @@
 ---
 title: "A method for discovering and inferring appropriate eligibility criteria in clinical trial protocols without labeled data"
 authors: ["Restificar, A.", "Korkontzelos, I.", "Ananiadou, S."]
+authorSlugs: ["", "", "sophia-ananiadou"]
 venue: "in: BMC Medical Informatics and Decision Making, 13:Suppl 1(S6)"
 venueShort: "BMC"
 venueType: other

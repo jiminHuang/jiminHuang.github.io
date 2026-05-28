@@ -1,6 +1,7 @@
 ---
 title: "A Walk-based Model on Entity Graphs for Relation Extraction"
 authors: ["Christopoulou, F.", "Miwa, M.", "Ananiadou, S."]
+authorSlugs: ["fenia-christopoulou-alum-2020", "", "sophia-ananiadou"]
 venue: "Proceedings of ACL, pages 81-88"
 venueShort: "ACL"
 venueType: conference

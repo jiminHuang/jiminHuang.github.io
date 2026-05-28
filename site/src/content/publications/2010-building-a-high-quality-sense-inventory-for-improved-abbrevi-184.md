@@ -1,6 +1,7 @@
 ---
 title: "Building a High Quality Sense Inventory for Improved Abbreviation Disambiguation"
 authors: ["Okazaki, N.", "Ananiadou, S.", "Tsujii, J."]
+authorSlugs: ["", "sophia-ananiadou", "junichi-tsujii"]
 venue: "in: Bioinformatics, 26:9(1246-1253)"
 venueShort: "Bioinformatics"
 venueType: other

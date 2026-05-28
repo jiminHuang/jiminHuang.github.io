@@ -1,6 +1,7 @@
 ---
 title: "Argo: an integrative, interactive, text mining-based workbench supporting curation"
 authors: ["Rak, R.", "Rowley, A.", "Black, W.J.", "Ananiadou, S."]
+authorSlugs: ["", "", "", "sophia-ananiadou"]
 venue: "in: Database: The Journal of Biological Databases and Curation"
 venueShort: "Database"
 venueType: other

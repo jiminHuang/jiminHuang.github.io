@@ -1,6 +1,7 @@
 ---
 title: "Supervised Learning of a Probabilistic Lexicon of Verb Semantic Classes"
 authors: ["Miyao, Y.", "Tsujii, J."]
+authorSlugs: ["", "junichi-tsujii"]
 venue: "Proceedings of EMNLP 2009, pages 1328--1337"
 venueShort: "EMNLP 2009"
 venueType: conference

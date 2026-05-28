@@ -1,6 +1,7 @@
 ---
 title: "UK Institutional Repository Search: Innovation and Discovery"
 authors: ["Lyte, V.", "Jones, S.", "Ananiadou, S.", "Kerr, L."]
+authorSlugs: ["", "", "sophia-ananiadou", ""]
 venue: "in: Ariadne, 61"
 venueShort: "in: Ariadne"
 venueType: other

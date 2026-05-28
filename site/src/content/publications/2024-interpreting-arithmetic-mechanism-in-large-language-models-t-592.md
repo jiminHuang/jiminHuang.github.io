@@ -1,6 +1,7 @@
 ---
 title: "Interpreting Arithmetic Mechanism in Large Language Models through Comparative Neuron Analysis"
 authors: ["Yu, Z.", "Ananiadou, S."]
+authorSlugs: ["zeping-yu", "sophia-ananiadou"]
 venue: "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, pages 3293–3306"
 venueShort: "Proceedings of the 2024 Conference on Empirical Methods in N"
 venueType: conference

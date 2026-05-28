@@ -1,6 +1,7 @@
 ---
 title: "The English Language in the Digital Age"
 authors: ["Ananiadou, S.", "McNaught, J.", "Thompson, P."]
+authorSlugs: ["sophia-ananiadou", "john-mcnaught", "paul-thompson"]
 venue: "White Paper Series, Springer"
 venueShort: "White Paper Series"
 venueType: journal

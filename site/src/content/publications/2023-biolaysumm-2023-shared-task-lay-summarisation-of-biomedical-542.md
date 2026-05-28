@@ -1,6 +1,7 @@
 ---
 title: "BioLaySumm 2023 Shared Task: Lay Summarisation of Biomedical Research Articles"
 authors: ["Goldsack, T.", "Luo, Z.", "Xie, Q.", "Scarton, C.", "Shardlow, M.", "Ananiadou, S.", "Lin, C."]
+authorSlugs: ["", "zheheng-luo-alum-2025", "qianqian-xie", "", "", "sophia-ananiadou", ""]
 venue: "Proceedings of BioNLP 2023, pages 468–477"
 venueShort: "BioNLP 2023"
 venueType: conference

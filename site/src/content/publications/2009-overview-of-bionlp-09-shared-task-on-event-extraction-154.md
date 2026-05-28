@@ -1,6 +1,7 @@
 ---
 title: "Overview of BioNLP'09 Shared Task on Event Extraction"
 authors: ["Kim, J.-D.", "Ohta, T.", "Pyysalo, S.", "Kano, Y.", "Tsujii, J."]
+authorSlugs: ["", "", "", "", "junichi-tsujii"]
 venue: "Proceedings of the BioNLP 2009 Workshop Companion Volume for Shared Task, pages 1--9"
 venueShort: "BioNLP 2009"
 venueType: workshop

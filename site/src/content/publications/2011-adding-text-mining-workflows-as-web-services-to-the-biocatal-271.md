@@ -1,6 +1,7 @@
 ---
 title: "Adding Text Mining Workflows as Web Services to the BioCatalogue"
 authors: ["Kontonatsios, G.", "Korkontzelos, I.", "Kolluru, B.", "Ananiadou, S."]
+authorSlugs: ["georgios-kontonatsios-alum-2014", "", "", "sophia-ananiadou"]
 venue: "Proceedings of the 4th International Workshop on Semantic Web Aplications and Tools for the Life Sciences (SWAT4LS)"
 venueShort: "Science"
 venueType: workshop

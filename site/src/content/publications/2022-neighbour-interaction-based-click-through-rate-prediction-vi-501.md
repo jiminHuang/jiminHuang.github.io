@@ -1,6 +1,7 @@
 ---
 title: "Neighbour Interaction based Click-Through Rate Prediction via Graph-masked Transformer"
 authors: ["Min, E.", "Rong, Y", "Xu, T.", "Bian, Y.", "Zhao, Y.", "Da, L.", "Lin, K.", "Ananiadou, S.", "Huang, J."]
+authorSlugs: ["erxue-min-alum-2022", "", "", "", "", "", "", "sophia-ananiadou", "jimin-huang-phd"]
 venue: "Proceedings of SIGIR 2022, pages 353-362"
 venueShort: "SIGIR 2022"
 venueType: conference

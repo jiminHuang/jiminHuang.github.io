@@ -1,6 +1,7 @@
 ---
 title: "A Chinese-Japanese Lexical Machine Translation through a Pivot Language"
 authors: ["Tsunakawa, T.", "Okazaki, N.", "Liu, X.", "Tsujii, J."]
+authorSlugs: ["", "", "", "junichi-tsujii"]
 venue: "in: ACM Transactions on Asian Language Information Processing, 8:2(9:1--9:21)"
 venueShort: "Information Processing"
 venueType: other
