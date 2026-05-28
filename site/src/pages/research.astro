@@ -1,0 +1,191 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Meander from "../components/Meander.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
+
+const projects = await getCollection("projects");
+
+const active = projects
+  .filter((p) => p.data.status === "Active")
+  .sort((a, b) => (b.data.yearStart ?? 0) - (a.data.yearStart ?? 0) || a.data.name.localeCompare(b.data.name));
+
+const completed = projects
+  .filter((p) => p.data.status === "Completed")
+  .sort((a, b) => (b.data.yearEnd ?? b.data.yearStart ?? 0) - (a.data.yearEnd ?? a.data.yearStart ?? 0));
+
+const DOMAINS: Array<{ key: string; greek: string; label: string; blurb: string }> = [
+  { key: "Biomedicine",   greek: "Α", label: "Biomedicine",   blurb: "Genes, proteins, diseases, pathways — the long arc of the centre." },
+  { key: "Public health", greek: "Β", label: "Public health", blurb: "Evidence at population scale — NHS, charities, occupational health." },
+  { key: "Biodiversity",  greek: "Γ", label: "Biodiversity",  blurb: "Reading the natural-history literature for species, habitats, change." },
+  { key: "Industry",      greek: "Δ", label: "Industry",      blurb: "Custom pipelines for pharma, finance, insurance, government." },
+  { key: "Other",         greek: "Ε", label: "Other",         blurb: "Cross-disciplinary work — humanities, infrastructure, methodology." },
+];
+
+const activeByDomain = DOMAINS.map((d) => ({
+  ...d,
+  items: active.filter((p) => p.data.domain === d.key),
+})).filter((d) => d.items.length > 0);
+
+const yearOf = (p: typeof projects[number]) => p.data.yearEnd ?? p.data.yearStart ?? 0;
+---
+
+<Layout
+  title="Research — NaCTeM"
+  description="Two decades of NaCTeM research projects, in flight and in archive."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">Research</span>
+      </nav>
+
+      <SectionEyebrow letter="Ρ" label="Research" />
+
+      <h1 class="antique text-[clamp(2.6rem,5.6vw,5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-4xl mb-8">
+        Two decades, <em class="italic text-[color:var(--color-amber-600)]">forty-plus projects.</em>
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+        Funded by UKRI, the European Commission, charities like the BHF, and a
+        long list of industry partners. Each project leaves behind tools,
+        corpora, and a stronger understanding of what text mining can do for
+        a domain.
+      </p>
+
+      <div class="mt-14 flex gap-3 sans">
+        <a href="#active" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors">
+          {active.length} active
+        </a>
+        <a href="#archive" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors">
+          {completed.length} in the archive
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- ACTIVE -->
+  <section id="active" class="border-b hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+      <div class="grid md:grid-cols-[1fr_2fr] gap-10 mb-12 items-end">
+        <div>
+          <SectionEyebrow letter="Ι" label="Currently in flight" />
+          <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+            Active projects.
+          </h2>
+        </div>
+        <p class="serif text-lg text-[color:var(--color-ink-700)] leading-[1.55] max-w-2xl self-end">
+          Grouped by the domain where each lives — biomedicine, public health,
+          biodiversity, industry. Most run two to four years.
+        </p>
+      </div>
+
+      {activeByDomain.map((d) => (
+        <div class="mb-12 last:mb-0">
+          <div class="flex items-baseline gap-3 mb-6">
+            <span class="antique italic text-2xl leading-none text-[color:var(--color-amber-600)]" aria-hidden="true">{d.greek}.</span>
+            <span class="smallcaps text-[color:var(--color-ink-500)]">{d.label}</span>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {d.items.map((p) => (
+              <a
+                href={`/projects/${p.id}`}
+                class="group block border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all"
+              >
+                <div class="flex items-start justify-between mb-4 gap-3">
+                  <span class="smallcaps text-[color:var(--color-amber-600)]">{p.data.yearStart}{p.data.yearEnd ? ` – ${p.data.yearEnd}` : " – now"}</span>
+                  <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
+                </div>
+                <div class="display text-2xl font-medium text-[color:var(--color-ink-900)] mb-2 group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.name}</div>
+                <p class="serif text-base text-[color:var(--color-ink-700)] leading-snug">{p.data.tagline}</p>
+                {p.data.funder && (
+                  <div class="sans text-xs text-[color:var(--color-ink-500)] mt-4">{p.data.funder}</div>
+                )}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section id="archive" class="border-b hairline bg-[color:var(--color-paper-2)]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+      <div class="grid md:grid-cols-[1fr_2fr] gap-10 mb-12 items-end">
+        <div>
+          <SectionEyebrow letter="ΙΙ" label="The archive" />
+          <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05] max-w-3xl">
+            Past projects.
+          </h2>
+        </div>
+        <p class="serif text-lg text-[color:var(--color-ink-700)] leading-[1.55] max-w-2xl self-end">
+          From the early NaCTeM days — BOOTStrep, BBC, INTUTE — through the
+          large H2020 consortia, to industrial collaborations and the Alan
+          Turing Institute. The list is long.
+        </p>
+      </div>
+
+      <ul class="border-t hairline">
+        <li class="hidden md:grid grid-cols-12 gap-4 py-3 border-b hairline">
+          <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">Years</div>
+          <div class="col-span-3 smallcaps text-[color:var(--color-ink-500)]">Project</div>
+          <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">Domain</div>
+          <div class="col-span-5 smallcaps text-[color:var(--color-ink-500)]">Brief</div>
+        </li>
+        {completed.map((p) => (
+          <li class="border-b hairline">
+            <a href={`/projects/${p.id}`} class="py-5 grid grid-cols-12 gap-4 items-baseline group">
+              <div class="col-span-3 md:col-span-2 antique text-lg text-[color:var(--color-ink-700)] tabular-nums">
+                {p.data.yearStart}{p.data.yearEnd ? `–${String(p.data.yearEnd).slice(-2)}` : ""}
+              </div>
+              <div class="col-span-9 md:col-span-3 display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.name}</div>
+              <div class="col-span-12 md:col-span-2 smallcaps text-[color:var(--color-ink-500)]">{p.data.domain}</div>
+              <div class="col-span-12 md:col-span-5 serif italic text-base text-[color:var(--color-ink-700)] leading-snug">{p.data.tagline}</div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="Bring us a problem" tone="dark" />
+        <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
+          Got a corpus and a <em class="italic text-[color:var(--color-amber-400)]">research question?</em>
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          Most of the projects on this page started with someone outside the
+          centre asking a question. Some became multi-year EU consortia; some
+          stayed small. Get in touch with the Director.
+        </p>
+      </div>
+      <a
+        href="mailto:sophia.ananiadou@manchester.ac.uk"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Email the Director <span aria-hidden>→</span>
+      </a>
+    </div>
+  </section>
+</Layout>
