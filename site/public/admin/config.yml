@@ -235,11 +235,6 @@ collections:
     slug: '{{slug}}'
     summary: '{{year}} · {{title}}'
     sortable_fields: [year, title, venueType]
-    view_filters:
-      - { label: 'Recent (2024+)', field: year, pattern: '202[4-9]' }
-      - { label: 'Conferences', field: venueType, pattern: conference }
-      - { label: 'Journals',    field: venueType, pattern: journal }
-      - { label: 'Preprints',   field: venueType, pattern: preprint }
     fields:
       - { name: title,       label: Title,       widget: string,  required: true }
       - { name: authors,     label: Authors,     widget: list, field: { name: author, label: Author, widget: string } }
