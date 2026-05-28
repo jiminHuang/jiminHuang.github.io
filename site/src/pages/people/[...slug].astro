@@ -1,0 +1,158 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Meander from "../../components/Meander.astro";
+import SectionEyebrow from "../../components/SectionEyebrow.astro";
+
+export async function getStaticPaths() {
+  const people = await getCollection("people");
+  return people.map((p) => ({ params: { slug: p.id }, props: { person: p } }));
+}
+
+const { person } = Astro.props;
+const d = person.data;
+
+const obfuscate = (email?: string) =>
+  email ? email.replace("@", " {at} ") : undefined;
+
+const initials = d.name
+  .split(" ")
+  .map((n) => n[0])
+  .join("")
+  .slice(0, 2)
+  .toUpperCase();
+
+const meta: { label: string; value: string }[] = [];
+if (d.group) meta.push({ label: "Role", value: d.group });
+if (d.title) meta.push({ label: "Title", value: d.title });
+if (d.affiliation) meta.push({ label: "Affiliation", value: d.affiliation });
+if (d.supervisor) meta.push({ label: "Supervisor", value: d.supervisor });
+if (d.coSupervisor) meta.push({ label: "Co-supervisor", value: d.coSupervisor });
+if (d.funding) meta.push({ label: "Funding", value: d.funding });
+if (d.yearGraduated) meta.push({ label: "Year graduated", value: String(d.yearGraduated) });
+if (d.degree) meta.push({ label: "Degree", value: d.degree });
+if (d.currentPosition) meta.push({ label: "Current position", value: d.currentPosition });
+
+// Related people: others in same group
+const allPeople = await getCollection("people");
+const related = allPeople
+  .filter((p) => p.id !== person.id && p.data.group === d.group)
+  .slice(0, 6);
+---
+
+<Layout title={`${d.name} — NaCTeM`} description={d.title ?? d.group}>
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-6xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <a href="/people" class="hover:text-[color:var(--color-amber-600)]">People</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">{d.name}</span>
+      </nav>
+
+      <div class="grid md:grid-cols-[280px_1fr] gap-12 items-start">
+        <div>
+          {d.photo ? (
+            <img
+              src={d.photo}
+              alt={d.name}
+              class="w-full aspect-square object-cover rounded-2xl border hairline shadow-[0_8px_28px_rgba(20,19,15,0.10)]"
+              style="filter: sepia(0.08) saturate(0.95);"
+            />
+          ) : (
+            <div
+              class="w-full aspect-square rounded-2xl border hairline grid place-items-center bg-[color:var(--color-paper-2)] antique text-7xl text-[color:var(--color-amber-600)]"
+              aria-hidden="true"
+            >{initials}</div>
+          )}
+        </div>
+
+        <div>
+          <SectionEyebrow letter="Ξ" label={d.group} />
+          <h1 class="antique text-[clamp(2.4rem,5vw,4.5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] mb-4">
+            {d.name}
+          </h1>
+          {d.title && (
+            <p class="serif italic text-2xl text-[color:var(--color-ink-700)] mb-8 leading-snug">{d.title}</p>
+          )}
+
+          {d.topics.length > 0 && (
+            <ul class="flex flex-wrap gap-2 mb-8">
+              {d.topics.map((t) => (
+                <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] border hairline rounded-full px-3 py-1.5">
+                  {t}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <dl class="grid sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+            {meta.map((m) => (
+              <div>
+                <dt class="smallcaps text-[color:var(--color-ink-500)] mb-1">{m.label}</dt>
+                <dd class="display italic text-lg text-[color:var(--color-ink-900)]">{m.value}</dd>
+              </div>
+            ))}
+          </dl>
+
+          {d.email && (
+            <div class="sans text-sm text-[color:var(--color-ink-500)] tracking-wide">
+              <span class="smallcaps text-[color:var(--color-ink-500)] mr-3">Email</span>
+              {obfuscate(d.email)}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-6xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="border-b hairline bg-[color:var(--color-paper-2)]">
+      <div class="mx-auto max-w-6xl px-6 lg:px-10 py-16">
+        <SectionEyebrow letter="Σ" label={`Other ${d.group.toLowerCase()}${d.group.endsWith("s") ? "" : "s"}`} />
+        <h2 class="display text-3xl md:text-4xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05] mb-10">
+          Same group, different work.
+        </h2>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {related.map((p) => (
+            <li>
+              <a href={`/people/${p.id}`} class="flex gap-4 items-start border hairline rounded-xl p-4 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
+                {p.data.photo ? (
+                  <img src={p.data.photo} alt={p.data.name} class="w-14 h-14 rounded-full object-cover border hairline shrink-0" style="filter: sepia(0.08) saturate(0.95);" />
+                ) : (
+                  <div class="w-14 h-14 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-xl text-[color:var(--color-amber-600)]" aria-hidden="true">
+                    {p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+                  </div>
+                )}
+                <div class="min-w-0">
+                  <div class="display text-lg font-medium text-[color:var(--color-ink-900)] leading-tight truncate">{p.data.name}</div>
+                  {p.data.title && <div class="serif italic text-sm text-[color:var(--color-ink-500)] mt-0.5 truncate">{p.data.title}</div>}
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section>
+    <div class="mx-auto max-w-6xl px-6 lg:px-10 py-12">
+      <a href="/people" class="inline-flex items-center gap-2 sans text-sm font-medium text-[color:var(--color-ink-700)] hover:text-[color:var(--color-amber-600)]">
+        <span aria-hidden>←</span> Back to all people
+      </a>
+    </div>
+  </section>
+</Layout>

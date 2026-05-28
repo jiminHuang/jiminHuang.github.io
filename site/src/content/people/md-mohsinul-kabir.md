@@ -6,7 +6,7 @@ affiliation: University of Manchester
 email: mdmohsinul.kabir@postgrad.manchester.ac.uk
 topics: [Bias in LLMs]
 supervisor: Sophia Ananiadou
-coSupervisor: Jun'ichi Tsujii
+coSupervisor: "Jun'ichi Tsujii"
 funding: UoM & ELLIS
 order: 6
 photo: /photos/kabir_face.png

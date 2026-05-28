@@ -1,13 +1,12 @@
 ---
-name: Zhiwei Liu
+name: Chenhan Yuan
 title: PhD Student
 group: PhD
 affiliation: University of Manchester
-email: zhiwei.liu-2@postgrad.manchester.ac.uk
-topics: [Sentiment Analysis]
+email: chenhan.yuan@postgrad.manchester.ac.uk
+topics: [TBD]
 supervisor: Sophia Ananiadou
-coSupervisor: "Jun'ichi Tsujii"
 funding: University of Manchester CS Department Scholarship
-order: 9
-photo: /photos/zhiwei.jpg
+order: 13
+photo: /photos/chenhan.jpg
 ---

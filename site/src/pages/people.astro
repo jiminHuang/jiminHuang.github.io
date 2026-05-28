@@ -113,27 +113,78 @@ const obfuscate = (email?: string) =>
               </li>
             ))}
           </ul>
+        ) : ["Director", "Deputy", "Scientific Advisor"].includes(g.key) ? (
+          // LEADER LAYOUT — one wide horizontal card per person, much bigger photo
+          <div class="space-y-6">
+            {g.members.map((p) => (
+              <a
+                href={`/people/${p.id}`}
+                class="group grid sm:grid-cols-[200px_1fr] md:grid-cols-[240px_1fr] gap-8 border hairline rounded-2xl p-6 md:p-8 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-md transition-all"
+              >
+                {p.data.photo ? (
+                  <img
+                    src={p.data.photo}
+                    alt={p.data.name}
+                    loading="lazy"
+                    class="w-full aspect-square object-cover rounded-xl border hairline shadow-[0_6px_24px_rgba(20,19,15,0.10)]"
+                    style="filter: sepia(0.08) saturate(0.95);"
+                  />
+                ) : (
+                  <div
+                    class="w-full aspect-square rounded-xl border hairline grid place-items-center bg-[color:var(--color-paper-2)] antique text-6xl text-[color:var(--color-amber-600)]"
+                    aria-hidden="true"
+                  >{p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}</div>
+                )}
+                <div class="self-center">
+                  <div class="smallcaps text-[color:var(--color-amber-600)] mb-3">{g.label}</div>
+                  <h3 class="antique text-4xl md:text-5xl font-normal text-[color:var(--color-ink-900)] leading-[1.05] mb-3 group-hover:text-[color:var(--color-amber-600)] transition-colors">
+                    {p.data.name}
+                  </h3>
+                  {p.data.title && (
+                    <p class="serif italic text-xl text-[color:var(--color-ink-700)] leading-snug mb-4">{p.data.title}</p>
+                  )}
+                  {p.data.affiliation && (
+                    <div class="sans text-sm text-[color:var(--color-ink-500)] mb-4">{p.data.affiliation}</div>
+                  )}
+                  {p.data.topics.length > 0 && (
+                    <ul class="flex flex-wrap gap-2 mb-4">
+                      {p.data.topics.map((t) => (
+                        <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-3 py-1.5">{t}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {p.data.email && (
+                    <div class="sans text-xs text-[color:var(--color-ink-500)] tracking-wide">{obfuscate(p.data.email)}</div>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
         ) : (
+          // STANDARD CARD GRID — bigger photo than before (was 80px → now 112px)
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {g.members.map((p) => (
-              <article class="border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
-                <div class="flex gap-4 items-start">
+              <a
+                href={`/people/${p.id}`}
+                class="group block border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all"
+              >
+                <div class="flex gap-5 items-start">
                   {p.data.photo ? (
                     <img
                       src={p.data.photo}
                       alt={p.data.name}
                       loading="lazy"
-                      class="w-20 h-20 rounded-full object-cover border hairline shrink-0 shadow-[0_2px_8px_rgba(20,19,15,0.08)]"
+                      class="w-28 h-28 rounded-full object-cover border hairline shrink-0 shadow-[0_3px_12px_rgba(20,19,15,0.08)]"
                       style="filter: sepia(0.08) saturate(0.95);"
                     />
                   ) : (
                     <div
-                      class="w-20 h-20 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-3xl text-[color:var(--color-amber-600)]"
+                      class="w-28 h-28 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-4xl text-[color:var(--color-amber-600)]"
                       aria-hidden="true"
                     >{p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}</div>
                   )}
-                  <div class="min-w-0">
-                    <div class="display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
+                  <div class="min-w-0 pt-1">
+                    <div class="display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.name}</div>
                     {p.data.title && (
                       <div class="serif italic text-sm text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
                     )}
@@ -181,7 +232,7 @@ const obfuscate = (email?: string) =>
                     {obfuscate(p.data.email)}
                   </div>
                 )}
-              </article>
+              </a>
             ))}
           </div>
         )}
