@@ -89,49 +89,81 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
           </div>
         </div>
 
-        <ul class="space-y-7">
-          {byYear.get(y)!.map((p) => (
-            <li class="grid md:grid-cols-[1fr_auto] gap-6 items-baseline">
-              <div>
-                <div class="serif italic text-base text-[color:var(--color-ink-500)] mb-1.5 leading-snug">
-                  {p.data.authors.join(", ")}
+        <ul class="space-y-8">
+          {byYear.get(y)!.map((p) => {
+            const typeStyle = {
+              conference: { fg: "var(--color-amber-600)", bg: "var(--color-amber-100)", label: "Conference" },
+              workshop:   { fg: "var(--color-rust-500, #b85a2e)", bg: "var(--color-paper-2)", label: "Workshop" },
+              journal:    { fg: "var(--color-ink-900)", bg: "var(--color-ink-100)", label: "Journal" },
+              preprint:   { fg: "var(--color-ink-500)", bg: "var(--color-paper-2)", label: "Preprint" },
+              thesis:     { fg: "var(--color-ink-700)", bg: "var(--color-paper-2)", label: "Thesis" },
+              other:      { fg: "var(--color-ink-500)", bg: "var(--color-paper-2)", label: "Other" },
+            }[p.data.venueType ?? "other"];
+            return (
+              <li class="grid grid-cols-[80px_1fr] md:grid-cols-[110px_1fr] gap-x-6 gap-y-3">
+                {/* Left rail: year + type chip */}
+                <div class="flex flex-col items-start gap-3">
+                  <div class="antique text-3xl md:text-4xl text-[color:var(--color-ink-900)] leading-none tabular-nums">{p.data.year ?? "—"}</div>
+                  <span
+                    class="smallcaps rounded-full px-2.5 py-1 border hairline"
+                    style={`color: ${typeStyle.fg}; background: ${typeStyle.bg};`}
+                  >{typeStyle.label}</span>
                 </div>
-                <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
-                  {p.data.url || p.data.doi ? (
-                    <a
-                      href={p.data.url ?? p.data.doi!}
-                      target="_blank"
-                      rel="noopener"
-                      class="hover:text-[color:var(--color-amber-600)] transition-colors"
-                    >
-                      {p.data.title}
-                    </a>
-                  ) : (
-                    p.data.title
+
+                {/* Right: title + venue + authors + actions */}
+                <div>
+                  <div class="display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug mb-2">
+                    {p.data.url || p.data.doi ? (
+                      <a
+                        href={p.data.url ?? p.data.doi!}
+                        target="_blank"
+                        rel="noopener"
+                        class="hover:text-[color:var(--color-amber-600)] transition-colors"
+                      >
+                        {p.data.title}
+                      </a>
+                    ) : (
+                      p.data.title
+                    )}
+                  </div>
+
+                  {p.data.venueShort && (
+                    <div class="flex items-center gap-2 mb-2 flex-wrap">
+                      <span
+                        class="display italic text-base text-[color:var(--color-amber-600)] border-l-2 pl-3"
+                        style="border-color: var(--color-amber-500);"
+                      >{p.data.venueShort}</span>
+                    </div>
                   )}
+
+                  <div class="serif italic text-sm text-[color:var(--color-ink-500)] leading-snug mb-3">
+                    {p.data.authors.join(", ")}
+                  </div>
+
+                  {p.data.venue && p.data.venue !== p.data.venueShort && (
+                    <div class="serif text-sm text-[color:var(--color-ink-700)] leading-snug mb-3">{p.data.venue}</div>
+                  )}
+
+                  <div class="flex flex-wrap gap-2 sans text-xs">
+                    {p.data.doi && (
+                      <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">DOI ↗</a>
+                    )}
+                    {p.data.url && (
+                      <a href={p.data.url} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">URL ↗</a>
+                    )}
+                    {p.data.aigaionId && (
+                      <a
+                        href={`https://www.nactem.ac.uk/aigaion2/index.php/publications/show/${p.data.aigaionId}`}
+                        target="_blank"
+                        rel="noopener"
+                        class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors"
+                      >BibTeX ↗</a>
+                    )}
+                  </div>
                 </div>
-                {p.data.venue && (
-                  <div class="serif italic text-base text-[color:var(--color-ink-700)] leading-snug">{p.data.venue}</div>
-                )}
-              </div>
-              <div class="flex flex-wrap gap-2 sans text-xs items-baseline">
-                {p.data.doi && (
-                  <a href={p.data.doi} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">DOI ↗</a>
-                )}
-                {p.data.url && (
-                  <a href={p.data.url} target="_blank" rel="noopener" class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors">URL ↗</a>
-                )}
-                {p.data.aigaionId && (
-                  <a
-                    href={`https://www.nactem.ac.uk/aigaion2/index.php/publications/show/${p.data.aigaionId}`}
-                    target="_blank"
-                    rel="noopener"
-                    class="border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-500)] hover:border-[color:var(--color-ink-900)] hover:text-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper)] transition-colors"
-                  >BibTeX ↗</a>
-                )}
-              </div>
-            </li>
-          ))}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

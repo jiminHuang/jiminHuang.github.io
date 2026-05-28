@@ -134,6 +134,8 @@ const publications = defineCollection({
     title: z.string(),
     authors: z.array(z.string()).default([]),
     venue: z.string().optional(),
+    venueShort: z.string().optional(),
+    venueType: z.enum(["conference", "journal", "workshop", "preprint", "thesis", "other"]).default("other"),
     year: z.number().int().optional(),
     doi: z.string().optional(),
     url: z.string().url().optional(),
