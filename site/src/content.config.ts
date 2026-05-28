@@ -85,4 +85,25 @@ const people = defineCollection({
   }),
 });
 
-export const collections = { projects, tools, people };
+const press = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/press" }),
+  schema: z.object({
+    publication: z.string(),
+    title: z.string(),
+    date: z.string().optional(),
+    url: z.string().url().optional(),
+  }),
+});
+
+const seminars = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/seminars" }),
+  schema: z.object({
+    speaker: z.string(),
+    affiliation: z.string().optional(),
+    date: z.string().optional(),
+    year: z.number().int().optional(),
+    legacyUrl: z.string().url().optional(),
+  }),
+});
+
+export const collections = { projects, tools, people, press, seminars };

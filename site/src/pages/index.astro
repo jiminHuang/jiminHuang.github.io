@@ -1,7 +1,19 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Meander from "../components/Meander.astro";
 import SectionEyebrow from "../components/SectionEyebrow.astro";
+
+const press = (await getCollection("press"))
+  .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+  .slice(0, 4);
+const formatPressDate = (iso?: string) => {
+  if (!iso) return "";
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return iso;
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${months[parseInt(m[2]) - 1]} ${m[1]}`;
+};
 
 const stats = [
   { value: "MMIV", label: "Established" },
@@ -54,11 +66,6 @@ const projects = [
   { slug: "nedo-airc", name: "NEDO-AIRC", scope: "Japan–UK AI for industry", status: "Active" },
 ];
 
-const news = [
-  { date: "May 2026", title: "NaCTeM joins UKRI consortium on responsible AI for healthcare evidence" },
-  { date: "Apr 2026", title: "EventMine v3 released — 18% gains on the BioNLP shared task" },
-  { date: "Mar 2026", title: "Sophia Ananiadou awarded honorary fellowship by the BCS" },
-];
 
 const partners = [
   ["University of Manchester", "Host institution"],
@@ -237,26 +244,32 @@ const partners = [
     </div>
   </section>
 
-  <!-- NEWS -->
+  <!-- PRESS -->
   <section id="news" class="border-t hairline">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
       <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
         <div>
-          <SectionEyebrow letter="ΙV" label="News" />
+          <SectionEyebrow letter="ΙV" label="In the press" />
           <h2 class="display text-4xl md:text-6xl font-normal tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
-            What's <em class="italic text-[color:var(--color-amber-600)]">happening.</em>
+            Where the <em class="italic text-[color:var(--color-amber-600)]">work shows up.</em>
           </h2>
         </div>
-        <a href="#" class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]">All news →</a>
+        <a href="/news" class="sans text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)]">All press & seminars →</a>
       </div>
 
       <ul class="border-t hairline">
-        {news.map((n) => (
+        {press.map((p) => (
           <li class="border-b hairline">
-            <a href="#" class="py-7 grid grid-cols-12 gap-4 items-baseline group">
-              <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">{n.date}</div>
-              <div class="col-span-9 display text-2xl md:text-3xl font-normal text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-amber-600)] transition-colors">{n.title}</div>
-              <div class="col-span-1 text-right text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</div>
+            <a
+              href={p.data.url ?? "/news"}
+              target={p.data.url ? "_blank" : undefined}
+              rel="noopener"
+              class="py-7 grid grid-cols-12 gap-4 items-baseline group"
+            >
+              <div class="col-span-12 md:col-span-2 smallcaps text-[color:var(--color-ink-500)]">{formatPressDate(p.data.date)}</div>
+              <div class="col-span-12 md:col-span-2 display italic text-base text-[color:var(--color-amber-600)] leading-snug">{p.data.publication}</div>
+              <div class="col-span-11 md:col-span-7 display text-2xl md:text-3xl font-normal text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.title}</div>
+              <div class="col-span-1 text-right text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</div>
             </a>
           </li>
         ))}

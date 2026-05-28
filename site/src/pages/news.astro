@@ -1,0 +1,197 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Meander from "../components/Meander.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
+
+const press = (await getCollection("press")).sort((a, b) =>
+  (b.data.date ?? "").localeCompare(a.data.date ?? ""),
+);
+const seminars = (await getCollection("seminars")).sort((a, b) =>
+  (b.data.date ?? `${b.data.year ?? 0}-12-31`).localeCompare(
+    a.data.date ?? `${a.data.year ?? 0}-12-31`,
+  ),
+);
+
+const formatDate = (iso?: string) => {
+  if (!iso) return "";
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return iso;
+  const [_, y, mm, d] = m;
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${months[parseInt(mm) - 1]} ${parseInt(d)}, ${y}`;
+};
+
+const formatYear = (iso?: string, fallback?: number) => {
+  if (iso) return iso.slice(0, 4);
+  return fallback ? String(fallback) : "—";
+};
+---
+
+<Layout
+  title="News & Events — NaCTeM"
+  description="Press mentions and the seminar series from the National Centre for Text Mining."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">News &amp; Events</span>
+      </nav>
+
+      <SectionEyebrow letter="Ν" label="News & Events" />
+
+      <h1 class="antique text-[clamp(2.6rem,5.6vw,5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-4xl mb-8">
+        Press, <em class="italic text-[color:var(--color-amber-600)]">seminars,</em> and a few words about us.
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+        Two decades of NaCTeM in the public conversation — from <em>Nature</em>
+        and the <em>Lancet</em> to the seminar series we host at the Manchester
+        Interdisciplinary Biocentre.
+      </p>
+
+      <div class="mt-14 flex gap-3 sans">
+        <a href="#press" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-amber-600)] transition-colors">
+          {press.length} press mentions
+        </a>
+        <a href="#seminars" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-5 py-2.5 text-sm font-medium hover:bg-[color:var(--color-paper-2)] transition-colors">
+          {seminars.length} seminars
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section id="press" class="border-b hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+      <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+        <div>
+          <SectionEyebrow letter="Α" label="Press & journal mentions" />
+          <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+            In the headlines.
+          </h2>
+        </div>
+        <div class="smallcaps text-[color:var(--color-ink-500)]">
+          {press.length} mentions
+        </div>
+      </div>
+
+      <ul class="border-t hairline">
+        <li class="hidden md:grid grid-cols-12 gap-4 py-3 border-b hairline">
+          <div class="col-span-3 smallcaps text-[color:var(--color-ink-500)]">Publication</div>
+          <div class="col-span-7 smallcaps text-[color:var(--color-ink-500)]">Title</div>
+          <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)] text-right">Date</div>
+        </li>
+        {press.map((p) => (
+          <li class="border-b hairline">
+            <a
+              href={p.data.url ?? "#"}
+              target={p.data.url ? "_blank" : undefined}
+              rel="noopener"
+              class="py-6 grid grid-cols-12 gap-4 items-baseline group"
+            >
+              <div class="col-span-12 md:col-span-3 display italic text-lg text-[color:var(--color-amber-600)]">{p.data.publication}</div>
+              <div class="col-span-12 md:col-span-7 display text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-amber-600)] transition-colors">
+                {p.data.title}
+                {p.data.url && <span class="ml-2 text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-amber-600)] group-hover:translate-x-0.5 transition-all inline-block" aria-hidden>↗</span>}
+              </div>
+              <div class="col-span-12 md:col-span-2 sans text-xs text-[color:var(--color-ink-500)] md:text-right tabular-nums">
+                {formatDate(p.data.date)}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEMINARS -->
+  <section id="seminars" class="border-b hairline bg-[color:var(--color-paper-2)]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+      <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+        <div>
+          <SectionEyebrow letter="Β" label="Seminar series" />
+          <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05] max-w-3xl">
+            Talks hosted at the <em class="italic text-[color:var(--color-amber-600)]">Manchester Interdisciplinary Biocentre.</em>
+          </h2>
+        </div>
+        <div class="smallcaps text-[color:var(--color-ink-500)]">
+          {seminars.length} talks
+        </div>
+      </div>
+
+      <p class="serif text-lg text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl mb-12">
+        For two decades NaCTeM has hosted leaders in text mining, computational
+        linguistics, and biomedical NLP. The series is open to anyone.
+      </p>
+
+      <ul class="border-t hairline">
+        <li class="hidden md:grid grid-cols-12 gap-4 py-3 border-b hairline">
+          <div class="col-span-1 smallcaps text-[color:var(--color-ink-500)]">Year</div>
+          <div class="col-span-4 smallcaps text-[color:var(--color-ink-500)]">Speaker</div>
+          <div class="col-span-7 smallcaps text-[color:var(--color-ink-500)]">Affiliation</div>
+        </li>
+        {seminars.map((s) => (
+          <li class="border-b hairline">
+            <a
+              href={s.data.legacyUrl ?? "#"}
+              target={s.data.legacyUrl ? "_blank" : undefined}
+              rel="noopener"
+              class="py-5 grid grid-cols-12 gap-4 items-baseline group"
+            >
+              <div class="col-span-3 md:col-span-1 antique text-lg text-[color:var(--color-ink-700)] tabular-nums">
+                {formatYear(s.data.date, s.data.year)}
+              </div>
+              <div class="col-span-9 md:col-span-4 display text-lg md:text-xl text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">
+                {s.data.speaker}
+              </div>
+              <div class="col-span-12 md:col-span-7 serif italic text-base text-[color:var(--color-ink-700)] leading-snug">
+                {s.data.affiliation ?? ""}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- RSS / Subscribe CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="Stay close" tone="dark" />
+        <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
+          Want to <em class="italic text-[color:var(--color-amber-400)]">give a talk?</em>
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          We program the seminar series every term. If you have something to
+          share on text mining, language models, biomedical NLP, or related
+          topics, the Director would love to hear from you.
+        </p>
+      </div>
+      <a
+        href="mailto:sophia.ananiadou@manchester.ac.uk"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Propose a talk <span aria-hidden>→</span>
+      </a>
+    </div>
+  </section>
+</Layout>
