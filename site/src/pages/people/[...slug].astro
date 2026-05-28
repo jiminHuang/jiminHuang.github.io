@@ -92,13 +92,26 @@ const pubYears = [...new Set(personPubs.map((p) => p.data.year).filter(Boolean))
           )}
 
           {d.topics.length > 0 && (
-            <ul class="flex flex-wrap gap-2 mb-8">
+            <ul class="flex flex-wrap gap-2 mb-6">
               {d.topics.map((t) => (
                 <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] border hairline rounded-full px-3 py-1.5">
                   {t}
                 </li>
               ))}
             </ul>
+          )}
+
+          {d.aigaionKeywords && d.aigaionKeywords.length > 0 && (
+            <div class="mb-8">
+              <div class="smallcaps text-[color:var(--color-ink-500)] mb-2">Recurring topics in their work</div>
+              <ul class="flex flex-wrap gap-1.5">
+                {d.aigaionKeywords.map((k) => (
+                  <li class="sans text-[11px] tracking-wide text-[color:var(--color-amber-600)] bg-[color:var(--color-amber-100)] border hairline rounded-full px-2.5 py-1" style="border-color: var(--color-amber-500);">
+                    {k}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
 
           <dl class="grid sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">

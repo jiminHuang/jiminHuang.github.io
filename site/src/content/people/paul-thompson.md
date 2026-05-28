@@ -7,4 +7,5 @@ email: paul.thompson@manchester.ac.uk
 topics: [Corpus annotation, Information extraction]
 order: 1
 photo: /photos/Paul_face_2018.jpg
+aigaionKeywords: ["biocause", "ebph", "eventmine", "events", "metaknowledge", "metanet", "negation", "ucompare"]
 ---

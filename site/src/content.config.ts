@@ -82,6 +82,8 @@ const people = defineCollection({
     order: z.number().int().default(100),
     /** Path under /public, e.g. /photos/sophia_2023.jpg */
     photo: z.string().optional(),
+    /** Aggregated keywords from the author's Aigaion record */
+    aigaionKeywords: z.array(z.string()).default([]),
   }),
 });
 

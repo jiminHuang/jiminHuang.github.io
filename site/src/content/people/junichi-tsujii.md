@@ -6,4 +6,5 @@ affiliation: "AIST, Japan · University of Manchester"
 email: j.tsujii@manchester.ac.uk
 order: 1
 photo: /photos/Tsujii_2021.png
+aigaionKeywords: ["eventmine", "ucompare"]
 ---
