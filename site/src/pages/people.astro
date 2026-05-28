@@ -117,12 +117,30 @@ const obfuscate = (email?: string) =>
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {g.members.map((p) => (
               <article class="border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
-                <div class="display text-2xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
-                {p.data.title && (
-                  <div class="serif italic text-base text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
-                )}
+                <div class="flex gap-4 items-start">
+                  {p.data.photo ? (
+                    <img
+                      src={p.data.photo}
+                      alt={p.data.name}
+                      loading="lazy"
+                      class="w-20 h-20 rounded-full object-cover border hairline shrink-0 shadow-[0_2px_8px_rgba(20,19,15,0.08)]"
+                      style="filter: sepia(0.08) saturate(0.95);"
+                    />
+                  ) : (
+                    <div
+                      class="w-20 h-20 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-3xl text-[color:var(--color-amber-600)]"
+                      aria-hidden="true"
+                    >{p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}</div>
+                  )}
+                  <div class="min-w-0">
+                    <div class="display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
+                    {p.data.title && (
+                      <div class="serif italic text-sm text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
+                    )}
+                  </div>
+                </div>
                 {p.data.affiliation && (
-                  <div class="sans text-xs text-[color:var(--color-ink-500)] mt-3 leading-relaxed">{p.data.affiliation}</div>
+                  <div class="sans text-xs text-[color:var(--color-ink-500)] mt-4 leading-relaxed">{p.data.affiliation}</div>
                 )}
 
                 {p.data.topics.length > 0 && (

@@ -8,4 +8,5 @@ topics: [Multi-modal LLM for scientific content generation]
 supervisor: Sophia Ananiadou
 funding: UoM and A*STAR PhD Studentship
 order: 3
+photo: /photos/hanhua.jpg
 ---

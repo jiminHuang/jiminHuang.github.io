@@ -5,4 +5,5 @@ group: Associated
 affiliation: School of Artificial Intelligence, Wuhan University, China
 email: xqq.sincere@gmail.com
 order: 1
+photo: /photos/qq_face.png
 ---

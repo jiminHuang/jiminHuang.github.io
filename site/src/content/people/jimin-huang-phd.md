@@ -9,4 +9,5 @@ supervisor: Sophia Ananiadou
 coSupervisor: Jingyuan Sun
 funding: Dean's Doctoral Scholarship
 order: 5
+photo: /photos/jimin_face.png
 ---

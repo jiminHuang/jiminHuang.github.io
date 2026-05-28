@@ -9,4 +9,5 @@ supervisor: Sophia Ananiadou
 coSupervisor: Jun'ichi Tsujii
 funding: University of Manchester CS Department Scholarship
 order: 8
+photo: /photos/zhiwei.jpg
 ---

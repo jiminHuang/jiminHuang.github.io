@@ -6,4 +6,5 @@ affiliation: Archimedes, Athens, Greece
 email: j.ahmeti@athenarc.gr
 topics: [Neurolinguistics, Psycholinguistics]
 order: 3
+photo: /photos/joana.jpg
 ---

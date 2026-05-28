@@ -68,6 +68,8 @@ const people = defineCollection({
     currentPosition: z.string().optional(),
     /** Display ordering inside a group (lower = earlier) */
     order: z.number().int().default(100),
+    /** Path under /public, e.g. /photos/sophia_2023.jpg */
+    photo: z.string().optional(),
   }),
 });
 

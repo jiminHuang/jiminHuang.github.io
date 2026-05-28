@@ -9,4 +9,5 @@ supervisor: Sophia Ananiadou
 coSupervisor: Jun'ichi Tsujii
 funding: UoM & ELLIS
 order: 6
+photo: /photos/kabir_face.png
 ---
