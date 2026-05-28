@@ -1,0 +1,11 @@
+---
+title: "Developing visualization-based decision support tools for epidemiology"
+authors: ["Sutcliffe, A.", "de Bruijn, O.", "Thew, S.", "Buchan, I.", "Jarvis, P.", "McNaught, J.", "Procter, R."]
+venue: "in: Information Visulization, 13:1(3 -17)"
+venueShort: "in: Information Visulization"
+venueType: other
+year: 2014
+doi: "http://dx.doi.org/10.1177/1473871612445832"
+url: "http://intl-ivi.sagepub.com/content/13/1/3.full.pdf+html"
+aigaionId: 348
+---

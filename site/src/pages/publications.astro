@@ -52,24 +52,41 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
       </h1>
 
       <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
-        NaCTeM's full bibliography — over 580 papers — lives in our Aigaion
-        database. The most recent twenty-five appear below. Use the link at
-        the bottom of the page for the complete archive.
+        NaCTeM's full bibliography — every paper since the centre opened in
+        2004 — mirrored from our Aigaion database. Grouped by year below,
+        most recent first; jump to a specific year with the index.
       </p>
 
       <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">580+</div>
-          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Total papers</div>
-        </div>
-        <div class="bg-[color:var(--color-paper)] p-5">
           <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
-          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Most recent</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Papers</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
           <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{yearRange}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Year range</div>
         </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{peopleCount}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Unique authors</div>
+        </div>
+      </div>
+
+      {/* Year ToC */}
+      <div class="mt-12">
+        <div class="smallcaps text-[color:var(--color-ink-500)] mb-4">Jump to year</div>
+        <ul class="flex flex-wrap gap-2 sans text-sm">
+          {years.filter((y) => y > 0).map((y) => (
+            <li>
+              <a
+                href={`#y${y}`}
+                class="inline-block border hairline rounded-full px-3 py-1.5 text-[color:var(--color-ink-700)] hover:border-[color:var(--color-ink-900)] hover:bg-[color:var(--color-paper-2)] tabular-nums transition-colors"
+              >
+                {y} <span class="text-[color:var(--color-amber-600)] ml-0.5">{byYear.get(y)!.length}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
 
@@ -80,7 +97,7 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
 
   <!-- BY YEAR -->
   {years.map((y, idx) => (
-    <section class={`border-b hairline ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
+    <section id={`y${y}`} class={`border-b hairline scroll-mt-20 ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
       <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
         <div class="flex items-baseline gap-6 mb-10 flex-wrap">
           <div class="antique text-6xl md:text-7xl text-[color:var(--color-ink-900)] leading-none">{y || "Undated"}</div>
@@ -178,12 +195,12 @@ const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.htm
       <div>
         <SectionEyebrow letter="Ω" label="The full archive" tone="dark" />
         <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
-          All <em class="italic text-[color:var(--color-amber-400)]">580+ papers</em> in Aigaion.
+          Browse the <em class="italic text-[color:var(--color-amber-400)]">original Aigaion</em>.
         </h2>
         <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
-          The complete bibliography, searchable by author, topic, keyword, and
-          venue, lives in our Aigaion database. Export to BibTeX, browse by
-          topic, or follow individual authors.
+          Want to search by author, topic, or keyword? The source-of-truth
+          Aigaion database lives at nactem.ac.uk. Export to BibTeX, follow
+          individual authors, or read each entry's full record.
         </p>
       </div>
       <a

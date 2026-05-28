@@ -138,7 +138,7 @@ const publications = defineCollection({
     venueType: z.enum(["conference", "journal", "workshop", "preprint", "thesis", "other"]).default("other"),
     year: z.number().int().optional(),
     doi: z.string().optional(),
-    url: z.string().url().optional(),
+    url: z.string().optional(),
     aigaionId: z.number().int().optional(),
   }),
 });

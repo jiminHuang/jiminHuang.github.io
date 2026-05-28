@@ -1,0 +1,10 @@
+---
+title: "Rumor Detection by Multi-task Suffix Learning based on Time-series Dual Sentiments"
+authors: ["Liu, Z.", "Yang, K", "Hovy, E.", "Ananiadou, S."]
+venue: "arXiv"
+venueShort: "arXiv"
+venueType: preprint
+year: 2025
+url: "https://arxiv.org/abs/2502.14383"
+aigaionId: 603
+---

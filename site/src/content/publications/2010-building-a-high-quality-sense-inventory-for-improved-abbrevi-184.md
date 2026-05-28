@@ -1,0 +1,11 @@
+---
+title: "Building a High Quality Sense Inventory for Improved Abbreviation Disambiguation"
+authors: ["Okazaki, N.", "Ananiadou, S.", "Tsujii, J."]
+venue: "in: Bioinformatics, 26:9(1246-1253)"
+venueShort: "Bioinformatics"
+venueType: other
+year: 2010
+doi: "http://dx.doi.org/10.1093/bioinformatics/btq129"
+url: "http://bioinformatics.oxfordjournals.org/cgi/content/short/26/9/1246"
+aigaionId: 184
+---

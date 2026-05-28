@@ -1,0 +1,10 @@
+---
+title: "Proactive Learning for Named Entity Recognition"
+authors: ["Li, M.", "Nguyen, N. T. H.", "Ananiadou, S."]
+venue: "Proceedings of BioNLP 2017, pages 117--125, Association for Computational Linguistics"
+venueShort: "BioNLP 2017"
+venueType: conference
+year: 2017
+url: "http://www.aclweb.org/anthology/W17-2314"
+aigaionId: 431
+---

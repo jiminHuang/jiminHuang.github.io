@@ -1,0 +1,11 @@
+---
+title: "Enhancing Search: Events and their Discourse Context"
+authors: ["Ananiadou, S.", "Thompson, P.", "Nawaz, R."]
+venue: "Computational Linguistics and Intelligent Text Processing, pages 318-334, Springer"
+venueShort: "Computational Linguistics"
+venueType: journal
+year: 2013
+doi: "http://dx.doi.org/10.1007/978-3-642-37256-8_27"
+url: "http://link.springer.com/chapter/10.1007/978-3-642-37256-8_27"
+aigaionId: 310
+---

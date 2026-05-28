@@ -1,0 +1,11 @@
+---
+title: "Improving reference prioritisation with PICO recognition"
+authors: ["Brockmeier, A. J.", "Ju., M.", "Przybyɫa, P.", "Ananiadou, S."]
+venue: "in: BMC Medical Informatics and Decision Making, 19(256)"
+venueShort: "BMC"
+venueType: other
+year: 2019
+doi: "http://dx.doi.org/10.1186/s12911-019-0992-8"
+url: "https://rdcu.be/bYrUL"
+aigaionId: 470
+---

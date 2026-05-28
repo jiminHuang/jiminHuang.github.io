@@ -1,0 +1,10 @@
+---
+title: "A Text Mining Pipeline Using Active and Deep Learning for Curating Information in Computational Neuroscience"
+authors: ["Shardlow, M.", "Ju., M.", "Li, M.", "O'Reilly, C.", "Iavarone, E.", "McNaught, J.", "Ananiadou, S."]
+venue: "in: Neuroinformatics"
+venueShort: "in: Neuroinformatics"
+venueType: other
+year: 2018
+doi: "http://dx.doi.org/10.1007/s12021-018-9404-y"
+aigaionId: 454
+---

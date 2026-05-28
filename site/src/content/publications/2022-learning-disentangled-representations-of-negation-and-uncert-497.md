@@ -1,0 +1,10 @@
+---
+title: "Learning Disentangled Representations of Negation and Uncertainty"
+authors: ["Vasilakes, J.", "Zerva, C.", "Miwa, M.", "Ananiadou, S."]
+venue: "Proceedings of ACL 2022, pages 8380–8397"
+venueShort: "ACL 2022"
+venueType: conference
+year: 2022
+url: "https://aclanthology.org/2022.acl-long.574/"
+aigaionId: 497
+---

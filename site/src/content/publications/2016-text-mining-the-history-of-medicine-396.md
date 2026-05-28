@@ -1,0 +1,11 @@
+---
+title: "Text Mining the History of Medicine"
+authors: ["Thompson, P.", "Batista-Navarro, R.", "Kontonatsios, G.", "Carter, J.", "Toon, E.", "McNaught, J.", "Timmermann, C.", "Worboys, M.", "Ananiadou, S."]
+venue: "in: PLOS One, 11:1(e0144717)"
+venueShort: "PLOS ONE"
+venueType: other
+year: 2016
+doi: "http://dx.doi.org/10.1371/journal.pone.0144717"
+url: "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0144717"
+aigaionId: 396
+---

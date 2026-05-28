@@ -1,0 +1,10 @@
+---
+title: "Temporal relation extraction with contrastive prototypical sampling"
+authors: ["Yuan, C.", "Xie, Q.", "Ananiadou, S."]
+venue: "in: Knowledge-based Systems, 286(111410)"
+venueShort: "Knowledge-Based Systems"
+venueType: other
+year: 2024
+doi: "http://dx.doi.org/10.1016/j.knosys.2024.111410"
+aigaionId: 560
+---

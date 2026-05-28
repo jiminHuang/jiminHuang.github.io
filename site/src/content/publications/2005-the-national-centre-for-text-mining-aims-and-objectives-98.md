@@ -1,0 +1,10 @@
+---
+title: "The National Centre for Text Mining: Aims and Objectives"
+authors: ["Ananiadou, S.", "Chruszcz, J.", "Keane, J.", "McNaught, J.", "Watry, P."]
+venue: "in: Ariadne, 42"
+venueShort: "in: Ariadne"
+venueType: other
+year: 2005
+url: "http://www.ariadne.ac.uk/issue42/ananiadou/"
+aigaionId: 98
+---

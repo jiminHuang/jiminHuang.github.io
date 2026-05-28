@@ -1,0 +1,11 @@
+---
+title: "Knowledge Graph Enrichment of a Semantic Search System for Construction Safety"
+authors: ["Inan, E.", "Thompson, P.", "Christopoulou, F.", "Yates, T.", "Ananiadou, S."]
+venue: "Intelligent Systems and Applications. IntelliSys 2022., pages 33-52, Springer, Cham"
+venueShort: "Intelligent Systems and Applications. IntelliSys 2022."
+venueType: journal
+year: 2022
+doi: "http://dx.doi.org/https://doi.org/10.1007/978-3-031-16075-2_3"
+url: "https://link.springer.com/chapter/10.1007/978-3-031-16075-2_3"
+aigaionId: 499
+---

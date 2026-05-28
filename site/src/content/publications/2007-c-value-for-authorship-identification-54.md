@@ -1,0 +1,9 @@
+---
+title: "C-value for Authorship Identification"
+authors: ["Frantzi, K.", "Ananiadou, S."]
+venue: "Proceedings of the 8th Conference on Forensic Linguistics, Language and Law, International Association of Forensic Linguistics"
+venueShort: "Proceedings of the 8th Conference on Forensic Linguistics"
+venueType: conference
+year: 2007
+aigaionId: 54
+---
