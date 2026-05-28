@@ -6,31 +6,44 @@ import SectionEyebrow from "../components/SectionEyebrow.astro";
 
 const people = await getCollection("people");
 
-const groupOrder: Record<string, { greek: string; label: string; order: number }> = {
-  Director:            { greek: "Α", label: "Director",            order: 1 },
-  Deputy:              { greek: "Β", label: "Deputy Director",     order: 2 },
-  "Scientific Advisor":{ greek: "Γ", label: "Scientific Advisor",  order: 3 },
-  Staff:               { greek: "Δ", label: "Research staff",      order: 4 },
-  Visiting:            { greek: "Ε", label: "Visiting researchers",order: 5 },
-  Associated:          { greek: "Ζ", label: "Associated members",  order: 6 },
-  PhD:                 { greek: "Η", label: "PhD students",        order: 7 },
-  MPhil:               { greek: "Θ", label: "MPhil students",      order: 8 },
-  Alumni:              { greek: "Ω", label: "Alumni",              order: 9 },
+// The legacy nactem.ac.uk page uses 5 sections. We mirror them.
+// Director / Deputy / Scientific Advisor / Staff all live under "Core Staff".
+const SECTIONS: Array<{ key: string; greek: string; label: string; groups: string[] }> = [
+  { key: "core",       greek: "Α", label: "Core Staff",          groups: ["Director", "Deputy", "Scientific Advisor", "Staff"] },
+  { key: "visiting",   greek: "Β", label: "Visiting Researchers",groups: ["Visiting"] },
+  { key: "associated", greek: "Γ", label: "Associated Members",  groups: ["Associated"] },
+  { key: "phd",        greek: "Δ", label: "PhD Students",        groups: ["PhD"] },
+  { key: "alumni",     greek: "Ω", label: "Alumni",              groups: ["Alumni"] },
+];
+
+const LEADER_ROLES = new Set(["Director", "Deputy", "Scientific Advisor"]);
+
+const sortMembers = (a: typeof people[number], b: typeof people[number]) => {
+  // Leaders (Director → Deputy → Scientific Advisor) come first, then by order then name
+  const leadRank = (g: string) =>
+    g === "Director" ? 0 : g === "Deputy" ? 1 : g === "Scientific Advisor" ? 2 : 3;
+  const r = leadRank(a.data.group) - leadRank(b.data.group);
+  if (r !== 0) return r;
+  return a.data.order - b.data.order || a.data.name.localeCompare(b.data.name);
 };
 
-const grouped = Object.keys(groupOrder).map((key) => ({
-  key,
-  ...groupOrder[key],
-  members: people
-    .filter((p) => p.data.group === key)
-    .sort((a, b) => a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)),
-})).filter((g) => g.members.length > 0);
+const sections = SECTIONS.map((s) => ({
+  ...s,
+  members: people.filter((p) => s.groups.includes(p.data.group)).sort(sortMembers),
+})).filter((s) => s.members.length > 0);
+
+const alumniSection = sections.find((s) => s.key === "alumni");
+const alumniSorted = alumniSection
+  ? [...alumniSection.members].sort((a, b) => (a.data.yearGraduated ?? 0) - (b.data.yearGraduated ?? 0))
+  : [];
 
 const total = people.length;
 const phdCount = people.filter((p) => p.data.group === "PhD").length;
 const alumniCount = people.filter((p) => p.data.group === "Alumni").length;
 const obfuscate = (email?: string) =>
   email ? email.replace("@", " {at} ") : undefined;
+const initials = (name: string) =>
+  name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase();
 ---
 
 <Layout
@@ -75,7 +88,7 @@ const obfuscate = (email?: string) =>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Current PhDs</div>
         </div>
         <div class="bg-[color:var(--color-paper)] p-5">
-          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{alumniCount}+</div>
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{alumniCount}</div>
           <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Alumni</div>
         </div>
       </div>
@@ -86,155 +99,168 @@ const obfuscate = (email?: string) =>
     </div>
   </section>
 
-  <!-- GROUPS -->
-  {grouped.map((g, idx) => (
+  <!-- SECTIONS -->
+  {sections.map((s, idx) => (
     <section class={`border-b hairline ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
       <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
         <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
           <div>
-            <SectionEyebrow letter={g.greek} label={g.label} />
+            <SectionEyebrow letter={s.greek} label={s.label} />
             <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
-              {g.label}
+              {s.label}
             </h2>
           </div>
           <div class="smallcaps text-[color:var(--color-ink-500)]">
-            {g.members.length} {g.members.length === 1 ? "person" : "people"}
+            {s.members.length} {s.members.length === 1 ? "person" : "people"}
           </div>
         </div>
 
-        {g.key === "Alumni" ? (
+        {s.key === "alumni" ? (
           <ul class="border-t hairline">
-            {g.members.map((p) => (
+            {/* Alumni header row */}
+            <li class="hidden md:grid grid-cols-12 gap-4 py-3 border-b hairline">
+              <div class="col-span-5 smallcaps text-[color:var(--color-ink-500)]">Name</div>
+              <div class="col-span-1 smallcaps text-[color:var(--color-ink-500)]">Year</div>
+              <div class="col-span-1 smallcaps text-[color:var(--color-ink-500)]">Degree</div>
+              <div class="col-span-5 smallcaps text-[color:var(--color-ink-500)]">Current position</div>
+            </li>
+            {alumniSorted.map((p) => (
               <li class="border-b hairline py-5 grid grid-cols-12 gap-4 items-baseline">
-                <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">{p.data.yearGraduated ?? "—"}</div>
-                <div class="col-span-3 display text-xl font-medium text-[color:var(--color-ink-900)]">{p.data.name}</div>
-                <div class="col-span-1 sans text-xs text-[color:var(--color-ink-500)]">{p.data.degree}</div>
-                <div class="col-span-6 serif text-base text-[color:var(--color-ink-700)] italic">{p.data.currentPosition}</div>
+                <div class="col-span-12 md:col-span-5 display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
+                <div class="col-span-3 md:col-span-1 antique text-lg text-[color:var(--color-ink-700)]">{p.data.yearGraduated ?? "—"}</div>
+                <div class="col-span-3 md:col-span-1 sans text-xs text-[color:var(--color-ink-500)] uppercase tracking-wider">{p.data.degree}</div>
+                <div class="col-span-6 md:col-span-5 serif text-base text-[color:var(--color-ink-700)] italic leading-snug">{p.data.currentPosition || "—"}</div>
               </li>
             ))}
           </ul>
-        ) : ["Director", "Deputy", "Scientific Advisor"].includes(g.key) ? (
-          // LEADER LAYOUT — one wide horizontal card per person, much bigger photo
-          <div class="space-y-6">
-            {g.members.map((p) => (
-              <a
-                href={`/people/${p.id}`}
-                class="group grid sm:grid-cols-[200px_1fr] md:grid-cols-[240px_1fr] gap-8 border hairline rounded-2xl p-6 md:p-8 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-md transition-all"
-              >
-                {p.data.photo ? (
-                  <img
-                    src={p.data.photo}
-                    alt={p.data.name}
-                    loading="lazy"
-                    class="w-full aspect-square object-cover rounded-xl border hairline shadow-[0_6px_24px_rgba(20,19,15,0.10)]"
-                    style="filter: sepia(0.08) saturate(0.95);"
-                  />
-                ) : (
-                  <div
-                    class="w-full aspect-square rounded-xl border hairline grid place-items-center bg-[color:var(--color-paper-2)] antique text-6xl text-[color:var(--color-amber-600)]"
-                    aria-hidden="true"
-                  >{p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}</div>
-                )}
-                <div class="self-center">
-                  <div class="smallcaps text-[color:var(--color-amber-600)] mb-3">{g.label}</div>
-                  <h3 class="antique text-4xl md:text-5xl font-normal text-[color:var(--color-ink-900)] leading-[1.05] mb-3 group-hover:text-[color:var(--color-amber-600)] transition-colors">
-                    {p.data.name}
-                  </h3>
-                  {p.data.title && (
-                    <p class="serif italic text-xl text-[color:var(--color-ink-700)] leading-snug mb-4">{p.data.title}</p>
-                  )}
-                  {p.data.affiliation && (
-                    <div class="sans text-sm text-[color:var(--color-ink-500)] mb-4">{p.data.affiliation}</div>
-                  )}
-                  {p.data.topics.length > 0 && (
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                      {p.data.topics.map((t) => (
-                        <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-3 py-1.5">{t}</li>
-                      ))}
-                    </ul>
-                  )}
-                  {p.data.email && (
-                    <div class="sans text-xs text-[color:var(--color-ink-500)] tracking-wide">{obfuscate(p.data.email)}</div>
-                  )}
-                </div>
-              </a>
-            ))}
-          </div>
         ) : (
-          // STANDARD CARD GRID — bigger photo than before (was 80px → now 112px)
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {g.members.map((p) => (
-              <a
-                href={`/people/${p.id}`}
-                class="group block border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all"
-              >
-                <div class="flex gap-5 items-start">
-                  {p.data.photo ? (
-                    <img
-                      src={p.data.photo}
-                      alt={p.data.name}
-                      loading="lazy"
-                      class="w-28 h-28 rounded-full object-cover border hairline shrink-0 shadow-[0_3px_12px_rgba(20,19,15,0.08)]"
-                      style="filter: sepia(0.08) saturate(0.95);"
-                    />
-                  ) : (
-                    <div
-                      class="w-28 h-28 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-4xl text-[color:var(--color-amber-600)]"
-                      aria-hidden="true"
-                    >{p.data.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}</div>
-                  )}
-                  <div class="min-w-0 pt-1">
-                    <div class="display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.name}</div>
-                    {p.data.title && (
-                      <div class="serif italic text-sm text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
+          <>
+            {/* Leader cards inside Core Staff */}
+            {s.members.filter((p) => LEADER_ROLES.has(p.data.group)).length > 0 && (
+              <div class="space-y-6 mb-10">
+                {s.members.filter((p) => LEADER_ROLES.has(p.data.group)).map((p) => (
+                  <a
+                    href={`/people/${p.id}`}
+                    class="group grid sm:grid-cols-[200px_1fr] md:grid-cols-[240px_1fr] gap-8 border hairline rounded-2xl p-6 md:p-8 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-md transition-all"
+                  >
+                    {p.data.photo ? (
+                      <img
+                        src={p.data.photo}
+                        alt={p.data.name}
+                        loading="lazy"
+                        class="w-full aspect-square object-cover rounded-xl border hairline shadow-[0_6px_24px_rgba(20,19,15,0.10)]"
+                        style="filter: sepia(0.08) saturate(0.95);"
+                      />
+                    ) : (
+                      <div
+                        class="w-full aspect-square rounded-xl border hairline grid place-items-center bg-[color:var(--color-paper-2)] antique text-6xl text-[color:var(--color-amber-600)]"
+                        aria-hidden="true"
+                      >{initials(p.data.name)}</div>
                     )}
-                  </div>
-                </div>
-                {p.data.affiliation && (
-                  <div class="sans text-xs text-[color:var(--color-ink-500)] mt-4 leading-relaxed">{p.data.affiliation}</div>
-                )}
+                    <div class="self-center">
+                      <div class="smallcaps text-[color:var(--color-amber-600)] mb-3">{p.data.group}</div>
+                      <h3 class="antique text-4xl md:text-5xl font-normal text-[color:var(--color-ink-900)] leading-[1.05] mb-3 group-hover:text-[color:var(--color-amber-600)] transition-colors">
+                        {p.data.name}
+                      </h3>
+                      {p.data.title && (
+                        <p class="serif italic text-xl text-[color:var(--color-ink-700)] leading-snug mb-4">{p.data.title}</p>
+                      )}
+                      {p.data.affiliation && (
+                        <div class="sans text-sm text-[color:var(--color-ink-500)] mb-4">{p.data.affiliation}</div>
+                      )}
+                      {p.data.topics.length > 0 && (
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                          {p.data.topics.map((t) => (
+                            <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-3 py-1.5">{t}</li>
+                          ))}
+                        </ul>
+                      )}
+                      {p.data.email && (
+                        <div class="sans text-xs text-[color:var(--color-ink-500)] tracking-wide">{obfuscate(p.data.email)}</div>
+                      )}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
 
-                {p.data.topics.length > 0 && (
-                  <ul class="mt-4 flex flex-wrap gap-1.5">
-                    {p.data.topics.map((t) => (
-                      <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+            {/* Standard cards for the rest of this section */}
+            {s.members.filter((p) => !LEADER_ROLES.has(p.data.group)).length > 0 && (
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {s.members.filter((p) => !LEADER_ROLES.has(p.data.group)).map((p) => (
+                  <a
+                    href={`/people/${p.id}`}
+                    class="group block border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all"
+                  >
+                    <div class="flex gap-5 items-start">
+                      {p.data.photo ? (
+                        <img
+                          src={p.data.photo}
+                          alt={p.data.name}
+                          loading="lazy"
+                          class="w-28 h-28 rounded-full object-cover border hairline shrink-0 shadow-[0_3px_12px_rgba(20,19,15,0.08)]"
+                          style="filter: sepia(0.08) saturate(0.95);"
+                        />
+                      ) : (
+                        <div
+                          class="w-28 h-28 rounded-full border hairline shrink-0 grid place-items-center bg-[color:var(--color-paper-2)] antique text-4xl text-[color:var(--color-amber-600)]"
+                          aria-hidden="true"
+                        >{initials(p.data.name)}</div>
+                      )}
+                      <div class="min-w-0 pt-1">
+                        <div class="display text-xl font-medium text-[color:var(--color-ink-900)] leading-tight group-hover:text-[color:var(--color-amber-600)] transition-colors">{p.data.name}</div>
+                        {p.data.title && (
+                          <div class="serif italic text-sm text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
+                        )}
+                      </div>
+                    </div>
+                    {p.data.affiliation && (
+                      <div class="sans text-xs text-[color:var(--color-ink-500)] mt-4 leading-relaxed">{p.data.affiliation}</div>
+                    )}
 
-                {(p.data.supervisor || p.data.coSupervisor || p.data.funding) && (
-                  <dl class="mt-4 pt-4 border-t hairline space-y-1.5 sans text-xs">
-                    {p.data.supervisor && (
-                      <div class="flex gap-2">
-                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Supervisor</dt>
-                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.supervisor}</dd>
+                    {p.data.topics.length > 0 && (
+                      <ul class="mt-4 flex flex-wrap gap-1.5">
+                        {p.data.topics.map((t) => (
+                          <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">
+                            {t}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {(p.data.supervisor || p.data.coSupervisor || p.data.funding) && (
+                      <dl class="mt-4 pt-4 border-t hairline space-y-1.5 sans text-xs">
+                        {p.data.supervisor && (
+                          <div class="flex gap-2">
+                            <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Supervisor</dt>
+                            <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.supervisor}</dd>
+                          </div>
+                        )}
+                        {p.data.coSupervisor && (
+                          <div class="flex gap-2">
+                            <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Co-supervisor</dt>
+                            <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.coSupervisor}</dd>
+                          </div>
+                        )}
+                        {p.data.funding && (
+                          <div class="flex gap-2">
+                            <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Funding</dt>
+                            <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.funding}</dd>
+                          </div>
+                        )}
+                      </dl>
+                    )}
+
+                    {p.data.email && (
+                      <div class="mt-4 sans text-xs text-[color:var(--color-ink-500)] tracking-wide">
+                        {obfuscate(p.data.email)}
                       </div>
                     )}
-                    {p.data.coSupervisor && (
-                      <div class="flex gap-2">
-                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Co-supervisor</dt>
-                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.coSupervisor}</dd>
-                      </div>
-                    )}
-                    {p.data.funding && (
-                      <div class="flex gap-2">
-                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Funding</dt>
-                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.funding}</dd>
-                      </div>
-                    )}
-                  </dl>
-                )}
-
-                {p.data.email && (
-                  <div class="mt-4 sans text-xs text-[color:var(--color-ink-500)] tracking-wide">
-                    {obfuscate(p.data.email)}
-                  </div>
-                )}
-              </a>
-            ))}
-          </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </>
         )}
       </div>
     </section>
