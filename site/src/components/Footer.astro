@@ -57,15 +57,26 @@ const funders = [
 ---
 
 <footer class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-ink-100)] relative overflow-hidden">
-  <!-- Funder logo strip — white background card so the multi-coloured logos read -->
-  <div class="bg-white">
+  <!-- Funder strip — sits on the dark footer; logos masked to white silhouettes -->
+  <div class="border-b border-white/10">
     <div class="mx-auto max-w-7xl px-6 lg:px-10 py-10">
-      <div class="smallcaps text-[color:var(--color-ink-500)] mb-6">Funders & partners</div>
+      <div class="smallcaps text-[color:var(--color-ink-400)] mb-6">Funders & partners</div>
       <ul class="flex flex-wrap items-center gap-x-10 gap-y-5">
         {funders.map((f) => (
           <li>
-            <a href={f.href} target="_blank" rel="noopener" title={f.name} class="block opacity-70 hover:opacity-100 transition-opacity">
-              <img src={f.logo} alt={f.name} class="h-9 md:h-10 w-auto" style="filter: grayscale(0.15);" />
+            <a
+              href={f.href}
+              target="_blank"
+              rel="noopener"
+              title={f.name}
+              class="block opacity-55 hover:opacity-90 transition-opacity"
+            >
+              <img
+                src={f.logo}
+                alt={f.name}
+                class="h-7 md:h-8 w-auto"
+                style="filter: brightness(0) invert(1);"
+              />
             </a>
           </li>
         ))}
@@ -74,7 +85,7 @@ const funders = [
   </div>
 
   <!-- Greek meander divider -->
-  <div class="opacity-25">
+  <div class="opacity-20">
     <Meander tone="amber" />
   </div>
 

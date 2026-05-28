@@ -9,10 +9,10 @@ const nav = [
 ];
 ---
 
-<header class="sticky top-0 z-40 backdrop-blur bg-[color:var(--color-paper)]/85 border-b hairline">
+<header class="sticky top-0 z-40 backdrop-blur bg-[color:var(--color-paper)]/90 border-b hairline">
   <div class="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
     <a href="/" class="flex items-center gap-4">
-      <img src="/nactem-logo.png" alt="NaCTeM — National Centre for Text Mining" class="h-10 w-auto" />
+      <img src="/nactem-logo.png" alt="NaCTeM — National Centre for Text Mining" class="h-9 md:h-10 w-auto" />
     </a>
     <nav class="hidden md:flex items-center gap-8 sans text-sm">
       {nav.map((item) => (
@@ -26,11 +26,57 @@ const nav = [
     </nav>
     <div class="flex items-center gap-3">
       <a
-        href="#contact"
+        href="mailto:nactem@manchester.ac.uk"
         class="hidden sm:inline-flex items-center gap-1.5 sans text-sm font-medium text-[color:var(--color-ink-900)] border hairline rounded-full px-4 py-1.5 hover:bg-[color:var(--color-ink-900)] hover:text-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] transition-colors"
       >
         Contact <span aria-hidden>→</span>
       </a>
+      <button
+        type="button"
+        id="mobile-nav-toggle"
+        class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 -mr-2"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span class="block w-5 h-px bg-[color:var(--color-ink-900)] transition-all"></span>
+        <span class="block w-5 h-px bg-[color:var(--color-ink-900)] transition-all"></span>
+      </button>
     </div>
   </div>
+
+  <!-- Mobile drawer -->
+  <div
+    id="mobile-nav-drawer"
+    class="md:hidden hidden border-t hairline bg-[color:var(--color-paper)]"
+  >
+    <nav class="px-6 py-4 flex flex-col gap-1 sans">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class="block py-2 text-[color:var(--color-ink-900)] hover:text-[color:var(--color-amber-600)] transition-colors text-base"
+        >
+          {item.label}
+        </a>
+      ))}
+      <a
+        href="mailto:nactem@manchester.ac.uk"
+        class="block py-2 mt-2 border-t hairline pt-3 text-[color:var(--color-amber-600)] text-base"
+      >
+        Contact →
+      </a>
+    </nav>
+  </div>
 </header>
+
+<script is:inline>
+  (() => {
+    const btn = document.getElementById("mobile-nav-toggle");
+    const drawer = document.getElementById("mobile-nav-drawer");
+    if (!btn || !drawer) return;
+    btn.addEventListener("click", () => {
+      const open = drawer.classList.toggle("hidden") === false;
+      btn.setAttribute("aria-expanded", String(open));
+      btn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    });
+  })();
+</script>
