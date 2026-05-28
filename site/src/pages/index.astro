@@ -1,0 +1,244 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const stats = [
+  { value: "2004", label: "Established" },
+  { value: "50+", label: "Research projects" },
+  { value: "120+", label: "Publications" },
+  { value: "20+", label: "Open tools & corpora" },
+];
+
+const focusAreas = [
+  {
+    tag: "Biomedicine",
+    title: "Mining the biomedical literature",
+    body: "Extracting structured knowledge from millions of papers — genes, proteins, diseases, drug interactions — to accelerate discovery.",
+  },
+  {
+    tag: "Public health",
+    title: "Evidence at population scale",
+    body: "Surfacing actionable signals from clinical notes, systematic reviews, and surveillance data for the NHS, WHO, and partners.",
+  },
+  {
+    tag: "Biodiversity",
+    title: "Reading the natural world",
+    body: "Mining the Biodiversity Heritage Library and modern ecology corpora to map species, habitats, and historical change.",
+  },
+  {
+    tag: "Industry",
+    title: "Domain-tuned NLP, in production",
+    body: "Customised pipelines built with partners across pharma, finance, insurance, and government.",
+  },
+];
+
+const tools = [
+  { name: "TerMine", desc: "Automatic term recognition over scientific text.", tag: "Terminology" },
+  { name: "Argo", desc: "Workflow editor for composable NLP pipelines.", tag: "Platform" },
+  { name: "U-Compare", desc: "Benchmarking framework for NLP components.", tag: "Evaluation" },
+  { name: "EventMine", desc: "Event extraction for biomedical literature.", tag: "IE" },
+  { name: "Thalia", desc: "Semantic search over PubMed and beyond.", tag: "Search" },
+  { name: "Cheshire", desc: "Information retrieval system at scale.", tag: "IR" },
+];
+
+const projects = [
+  { name: "EPHOR", scope: "Occupational exposure & worker health", status: "Active" },
+  { name: "BHF", scope: "British Heart Foundation — cardiovascular evidence mining", status: "Active" },
+  { name: "AIRC", scope: "AI Research Centre collaboration", status: "Active" },
+  { name: "Mental Health", scope: "Mining clinical notes for early intervention", status: "Active" },
+  { name: "NEDO-AIRC", scope: "Japan–UK AI for industry", status: "Active" },
+];
+
+const news = [
+  { date: "May 2026", title: "NaCTeM joins UKRI consortium on responsible AI for healthcare evidence" },
+  { date: "Apr 2026", title: "EventMine v3 released — 18% gains on the BioNLP shared task" },
+  { date: "Mar 2026", title: "Sophia Ananiadou awarded honorary fellowship by the BCS" },
+];
+---
+
+<Layout>
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute -top-40 -right-32 w-[680px] h-[680px] rounded-full blur-3xl opacity-[0.18]" style="background: radial-gradient(closest-side, var(--color-accent-500), transparent 70%)"></div>
+      <div class="absolute -bottom-40 -left-32 w-[520px] h-[520px] rounded-full blur-3xl opacity-[0.12]" style="background: radial-gradient(closest-side, var(--color-rust-500), transparent 70%)"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-24 pb-28">
+      <div class="flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-8">
+        <span class="w-2 h-2 rounded-full bg-[color:var(--color-accent-500)]"></span>
+        <span>Est. 2004 · University of Manchester</span>
+      </div>
+
+      <h1 class="serif text-[clamp(2.6rem,6vw,5.5rem)] font-medium leading-[1.02] tracking-[-0.02em] text-[color:var(--color-ink-900)] max-w-5xl">
+        Turning the world's
+        <span class="italic text-[color:var(--color-accent-600)]">scientific text</span>
+        into structured, searchable knowledge.
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-[color:var(--color-ink-700)] max-w-2xl leading-relaxed">
+        NaCTeM is the United Kingdom's national centre for text mining —
+        building tools, corpora, and methods that let researchers, clinicians,
+        and industry read at the scale of the modern literature.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a href="#research" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-accent-600)] transition-colors">
+          Explore our research <span aria-hidden>→</span>
+        </a>
+        <a href="#tools" class="inline-flex items-center gap-2 border hairline text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-white transition-colors">
+          Browse tools
+        </a>
+      </div>
+
+      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden">
+        {stats.map((s) => (
+          <div class="bg-[color:var(--color-paper)] p-6 md:p-8">
+            <div class="serif text-4xl md:text-5xl font-medium text-[color:var(--color-ink-900)]">{s.value}</div>
+            <div class="mt-2 text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-500)]">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="border-t hairline bg-[color:var(--color-paper-2)]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
+      <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
+        <div>
+          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">What we do</div>
+          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] max-w-2xl leading-tight">
+            Four domains. One method: read everything, structure what matters.
+          </h2>
+        </div>
+        <a href="#" class="text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-accent-600)]">All research areas →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden">
+        {focusAreas.map((area) => (
+          <article class="bg-[color:var(--color-paper)] p-8 md:p-10 group hover:bg-white transition-colors">
+            <div class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-accent-600)] mb-4">{area.tag}</div>
+            <h3 class="serif text-2xl font-medium text-[color:var(--color-ink-900)] mb-3 leading-snug">{area.title}</h3>
+            <p class="text-[color:var(--color-ink-700)] leading-relaxed text-[15px]">{area.body}</p>
+            <a href="#" class="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-[color:var(--color-ink-900)] group-hover:text-[color:var(--color-accent-600)]">
+              Read more <span aria-hidden class="transition-transform group-hover:translate-x-0.5">→</span>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="border-t hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
+      <div class="grid md:grid-cols-[1fr_2fr] gap-12 mb-14">
+        <div>
+          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">Tools</div>
+          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight">
+            Open infrastructure for text mining.
+          </h2>
+        </div>
+        <p class="text-lg text-[color:var(--color-ink-700)] leading-relaxed self-end">
+          Two decades of methods packaged as services, libraries, and
+          interactive platforms — used in over 60 countries by clinicians,
+          librarians, and computational researchers.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {tools.map((t) => (
+          <a href="#" class="group block border hairline rounded-xl p-6 hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all bg-[color:var(--color-paper)]">
+            <div class="flex items-start justify-between mb-4">
+              <span class="text-[10px] uppercase tracking-[0.2em] text-[color:var(--color-ink-500)] bg-[color:var(--color-ink-100)] rounded-full px-2.5 py-1">{t.tag}</span>
+              <span class="text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-accent-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>↗</span>
+            </div>
+            <div class="serif text-2xl font-medium text-[color:var(--color-ink-900)] mb-2">{t.name}</div>
+            <p class="text-sm text-[color:var(--color-ink-700)] leading-relaxed">{t.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
+      <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
+        <div>
+          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-300)] mb-4">Active projects</div>
+          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight max-w-2xl leading-tight">
+            Currently in flight.
+          </h2>
+        </div>
+        <a href="#" class="text-sm font-medium hover:text-[color:var(--color-accent-500)]">Project archive →</a>
+      </div>
+
+      <ul class="divide-y divide-white/10">
+        {projects.map((p) => (
+          <li class="py-6 grid grid-cols-12 gap-4 items-center group cursor-pointer">
+            <div class="col-span-2 serif text-2xl font-medium">{p.name}</div>
+            <div class="col-span-8 text-[color:var(--color-ink-300)]">{p.scope}</div>
+            <div class="col-span-2 flex items-center justify-end gap-3">
+              <span class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-accent-500)]">{p.status}</span>
+              <span class="text-[color:var(--color-ink-300)] group-hover:translate-x-0.5 transition-transform" aria-hidden>→</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section id="news" class="border-t hairline">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24">
+      <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
+        <div>
+          <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">News</div>
+          <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight">
+            What's happening.
+          </h2>
+        </div>
+        <a href="#" class="text-sm font-medium text-[color:var(--color-ink-900)] hover:text-[color:var(--color-accent-600)]">All news →</a>
+      </div>
+
+      <ul class="border-t hairline">
+        {news.map((n) => (
+          <li class="py-7 border-b hairline grid grid-cols-12 gap-4 items-baseline group">
+            <div class="col-span-2 text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-500)]">{n.date}</div>
+            <div class="col-span-9 serif text-xl md:text-2xl text-[color:var(--color-ink-900)] leading-snug group-hover:text-[color:var(--color-accent-600)] transition-colors">{n.title}</div>
+            <div class="col-span-1 text-right text-[color:var(--color-ink-300)] group-hover:text-[color:var(--color-accent-600)] group-hover:translate-x-0.5 transition-all" aria-hidden>→</div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="border-t hairline bg-[color:var(--color-paper-2)]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-24 grid md:grid-cols-2 gap-16">
+      <div>
+        <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--color-ink-500)] mb-4">Work with us</div>
+        <h2 class="serif text-4xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-tight mb-6">
+          Have a corpus too big to read?
+        </h2>
+        <p class="text-lg text-[color:var(--color-ink-700)] leading-relaxed mb-8">
+          We partner with research groups, the NHS, charities, and industry to
+          build custom text-mining pipelines, from prototype to production.
+        </p>
+        <a href="mailto:nactem@manchester.ac.uk" class="inline-flex items-center gap-2 bg-[color:var(--color-ink-900)] text-[color:var(--color-paper)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-accent-600)] transition-colors">
+          Start a conversation <span aria-hidden>→</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden">
+        {[
+          ["University of Manchester", "Host institution"],
+          ["UKRI", "Research funder"],
+          ["NIHR", "Health research"],
+          ["European Commission", "EU collaborations"],
+          ["AIRC, Japan", "Industrial AI"],
+          ["BHF", "Cardiovascular"],
+        ].map(([name, role]) => (
+          <div class="bg-[color:var(--color-paper)] p-6">
+            <div class="font-medium text-[color:var(--color-ink-900)]">{name}</div>
+            <div class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-500)] mt-1.5">{role}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,15 @@
+# Reference mirror of legacy site — not part of the redesign repo
+original-mirror/
+
+# Node
+node_modules/
+*.log
+.DS_Store
+
+# Astro
+site/dist/
+site/.astro/
+
+# Editor
+.vscode/
+.idea/

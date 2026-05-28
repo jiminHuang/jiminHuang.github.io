@@ -1,0 +1,63 @@
+---
+const cols = [
+  {
+    title: "Research",
+    links: [
+      "Current projects",
+      "Past projects",
+      "Collaborations",
+      "PhD opportunities",
+    ],
+  },
+  {
+    title: "Tools",
+    links: ["TerMine", "Argo", "U-Compare", "EventMine", "Thalia"],
+  },
+  {
+    title: "Resources",
+    links: ["Corpora", "Terminologies", "Lexica", "Evaluation sets"],
+  },
+  {
+    title: "About",
+    links: ["People", "Publications", "Seminars", "Press", "Contact"],
+  },
+];
+---
+
+<footer class="mt-24 border-t hairline bg-[color:var(--color-ink-950)] text-[color:var(--color-ink-100)]">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-10">
+      <div class="col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-sm bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] grid place-items-center font-bold tracking-tight">N</span>
+          <div class="leading-tight">
+            <div class="text-[11px] uppercase tracking-[0.18em] text-[color:var(--color-ink-300)]">National Centre for</div>
+            <div class="font-semibold text-[color:var(--color-paper)]">Text Mining</div>
+          </div>
+        </div>
+        <p class="text-sm text-[color:var(--color-ink-300)] max-w-xs leading-relaxed">
+          The world's first publicly-funded text-mining centre, hosted at the
+          University of Manchester since 2004.
+        </p>
+      </div>
+      {cols.map((col) => (
+        <div>
+          <div class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-ink-300)] mb-4">{col.title}</div>
+          <ul class="space-y-2">
+            {col.links.map((l) => (
+              <li><a href="#" class="text-sm hover:text-[color:var(--color-accent-500)] transition-colors">{l}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-[color:var(--color-ink-300)]">
+      <div>© {new Date().getFullYear()} National Centre for Text Mining · University of Manchester</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-[color:var(--color-paper)]">Terms</a>
+        <a href="#" class="hover:text-[color:var(--color-paper)]">Privacy</a>
+        <a href="#" class="hover:text-[color:var(--color-paper)]">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
