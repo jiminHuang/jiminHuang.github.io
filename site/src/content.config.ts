@@ -40,4 +40,35 @@ const tools = defineCollection({
   }),
 });
 
-export const collections = { projects, tools };
+const people = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/people" }),
+  schema: z.object({
+    name: z.string(),
+    title: z.string().optional(),
+    group: z.enum([
+      "Director",
+      "Deputy",
+      "Scientific Advisor",
+      "Staff",
+      "Visiting",
+      "Associated",
+      "PhD",
+      "MPhil",
+      "Alumni",
+    ]),
+    affiliation: z.string().optional(),
+    email: z.string().optional(),
+    topics: z.array(z.string()).default([]),
+    supervisor: z.string().optional(),
+    coSupervisor: z.string().optional(),
+    funding: z.string().optional(),
+    /** Alumni only */
+    yearGraduated: z.number().int().optional(),
+    degree: z.string().optional(),
+    currentPosition: z.string().optional(),
+    /** Display ordering inside a group (lower = earlier) */
+    order: z.number().int().default(100),
+  }),
+});
+
+export const collections = { projects, tools, people };

@@ -43,6 +43,14 @@ body {
 
 .sans { font-family: var(--font-sans); font-feature-settings: "kern", "liga", "tnum"; }
 .serif { font-family: var(--font-serif); }
+/* Headings — modern Garamond, comfortable to read at any size */
+.display {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  font-feature-settings: "kern", "liga", "lnum";
+}
+/* Use sparingly: H1 of a page, big numerals (MMIV, 50+), Greek letters */
 .antique { font-family: var(--font-antique); font-feature-settings: "kern", "liga", "onum"; }
 
 .hairline { border-color: rgba(20, 19, 15, 0.14); }

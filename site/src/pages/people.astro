@@ -1,0 +1,199 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Meander from "../components/Meander.astro";
+import SectionEyebrow from "../components/SectionEyebrow.astro";
+
+const people = await getCollection("people");
+
+const groupOrder: Record<string, { greek: string; label: string; order: number }> = {
+  Director:            { greek: "Α", label: "Director",            order: 1 },
+  Deputy:              { greek: "Β", label: "Deputy Director",     order: 2 },
+  "Scientific Advisor":{ greek: "Γ", label: "Scientific Advisor",  order: 3 },
+  Staff:               { greek: "Δ", label: "Research staff",      order: 4 },
+  Visiting:            { greek: "Ε", label: "Visiting researchers",order: 5 },
+  Associated:          { greek: "Ζ", label: "Associated members",  order: 6 },
+  PhD:                 { greek: "Η", label: "PhD students",        order: 7 },
+  MPhil:               { greek: "Θ", label: "MPhil students",      order: 8 },
+  Alumni:              { greek: "Ω", label: "Alumni",              order: 9 },
+};
+
+const grouped = Object.keys(groupOrder).map((key) => ({
+  key,
+  ...groupOrder[key],
+  members: people
+    .filter((p) => p.data.group === key)
+    .sort((a, b) => a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)),
+})).filter((g) => g.members.length > 0);
+
+const total = people.length;
+const phdCount = people.filter((p) => p.data.group === "PhD").length;
+const alumniCount = people.filter((p) => p.data.group === "Alumni").length;
+const obfuscate = (email?: string) =>
+  email ? email.replace("@", " {at} ") : undefined;
+---
+
+<Layout
+  title="People — NaCTeM"
+  description="The researchers, students, and alumni of the National Centre for Text Mining."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden paper-grain border-b hairline">
+    <div class="absolute inset-0 -z-10">
+      <div
+        class="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full blur-3xl opacity-[0.18]"
+        style="background: radial-gradient(closest-side, var(--color-amber-400), transparent 70%)"
+      ></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-16">
+      <nav class="sans text-sm text-[color:var(--color-ink-500)] mb-10">
+        <a href="/" class="hover:text-[color:var(--color-amber-600)]">Home</a>
+        <span class="mx-2 opacity-50">/</span>
+        <span class="text-[color:var(--color-ink-700)]">People</span>
+      </nav>
+
+      <SectionEyebrow letter="Ξ" label="The Centre" />
+
+      <h1 class="antique text-[clamp(2.6rem,5.6vw,5rem)] font-normal leading-[1.04] tracking-[-0.01em] text-[color:var(--color-ink-900)] max-w-4xl mb-8">
+        The people who <em class="italic text-[color:var(--color-amber-600)]">make NaCTeM.</em>
+      </h1>
+
+      <p class="serif text-xl md:text-2xl text-[color:var(--color-ink-700)] leading-[1.55] max-w-3xl">
+        Twenty-plus researchers, dozens of PhD students past and present, and a
+        diaspora of alumni now scattered across labs and industry. NaCTeM is
+        as much a network as a centre.
+      </p>
+
+      <div class="mt-14 grid grid-cols-3 gap-px bg-[color:var(--color-ink-100)] border hairline rounded-2xl overflow-hidden max-w-2xl">
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{total}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">People listed</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{phdCount}</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Current PhDs</div>
+        </div>
+        <div class="bg-[color:var(--color-paper)] p-5">
+          <div class="antique text-4xl text-[color:var(--color-ink-900)] leading-none">{alumniCount}+</div>
+          <div class="mt-2 smallcaps text-[color:var(--color-ink-500)]">Alumni</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 pb-6 opacity-50">
+      <Meander tone="ink" />
+    </div>
+  </section>
+
+  <!-- GROUPS -->
+  {grouped.map((g, idx) => (
+    <section class={`border-b hairline ${idx % 2 === 1 ? "bg-[color:var(--color-paper-2)]" : ""}`}>
+      <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20">
+        <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+          <div>
+            <SectionEyebrow letter={g.greek} label={g.label} />
+            <h2 class="display text-3xl md:text-5xl font-medium tracking-tight text-[color:var(--color-ink-900)] leading-[1.05]">
+              {g.label}
+            </h2>
+          </div>
+          <div class="smallcaps text-[color:var(--color-ink-500)]">
+            {g.members.length} {g.members.length === 1 ? "person" : "people"}
+          </div>
+        </div>
+
+        {g.key === "Alumni" ? (
+          <ul class="border-t hairline">
+            {g.members.map((p) => (
+              <li class="border-b hairline py-5 grid grid-cols-12 gap-4 items-baseline">
+                <div class="col-span-2 smallcaps text-[color:var(--color-ink-500)]">{p.data.yearGraduated ?? "—"}</div>
+                <div class="col-span-3 display text-xl font-medium text-[color:var(--color-ink-900)]">{p.data.name}</div>
+                <div class="col-span-1 sans text-xs text-[color:var(--color-ink-500)]">{p.data.degree}</div>
+                <div class="col-span-6 serif text-base text-[color:var(--color-ink-700)] italic">{p.data.currentPosition}</div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {g.members.map((p) => (
+              <article class="border hairline rounded-xl p-6 bg-[color:var(--color-paper)] hover:border-[color:var(--color-ink-900)] hover:shadow-sm transition-all">
+                <div class="display text-2xl font-medium text-[color:var(--color-ink-900)] leading-tight">{p.data.name}</div>
+                {p.data.title && (
+                  <div class="serif italic text-base text-[color:var(--color-ink-700)] mt-1">{p.data.title}</div>
+                )}
+                {p.data.affiliation && (
+                  <div class="sans text-xs text-[color:var(--color-ink-500)] mt-3 leading-relaxed">{p.data.affiliation}</div>
+                )}
+
+                {p.data.topics.length > 0 && (
+                  <ul class="mt-4 flex flex-wrap gap-1.5">
+                    {p.data.topics.map((t) => (
+                      <li class="smallcaps text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] rounded-full px-2.5 py-1">
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {(p.data.supervisor || p.data.coSupervisor || p.data.funding) && (
+                  <dl class="mt-4 pt-4 border-t hairline space-y-1.5 sans text-xs">
+                    {p.data.supervisor && (
+                      <div class="flex gap-2">
+                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Supervisor</dt>
+                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.supervisor}</dd>
+                      </div>
+                    )}
+                    {p.data.coSupervisor && (
+                      <div class="flex gap-2">
+                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Co-supervisor</dt>
+                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.coSupervisor}</dd>
+                      </div>
+                    )}
+                    {p.data.funding && (
+                      <div class="flex gap-2">
+                        <dt class="smallcaps text-[color:var(--color-ink-500)] shrink-0">Funding</dt>
+                        <dd class="serif italic text-[color:var(--color-ink-700)]">{p.data.funding}</dd>
+                      </div>
+                    )}
+                  </dl>
+                )}
+
+                {p.data.email && (
+                  <div class="mt-4 sans text-xs text-[color:var(--color-ink-500)] tracking-wide">
+                    {obfuscate(p.data.email)}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
+
+  <!-- CTA -->
+  <section class="bg-[color:var(--color-ink-950)] text-[color:var(--color-paper)] relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 opacity-30">
+      <Meander tone="amber" />
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid md:grid-cols-[2fr_1fr] gap-10 items-end">
+      <div>
+        <SectionEyebrow letter="Ω" label="Join us" tone="dark" />
+        <h2 class="display text-3xl md:text-5xl font-medium tracking-tight leading-[1.05]">
+          PhD and postdoc <em class="italic text-[color:var(--color-amber-400)]">openings</em> are announced here.
+        </h2>
+        <p class="serif text-lg text-[color:var(--color-ink-300)] leading-[1.55] mt-6 max-w-xl">
+          We supervise across biomedical NLP, LLMs, mental-health text mining,
+          and more. Get in touch with the Director with a CV and a one-page
+          research idea.
+        </p>
+      </div>
+      <a
+        href="mailto:sophia.ananiadou@manchester.ac.uk"
+        class="inline-flex items-center gap-2 sans bg-[color:var(--color-paper)] text-[color:var(--color-ink-900)] rounded-full px-6 py-3 text-sm font-medium hover:bg-[color:var(--color-amber-400)] transition-colors w-fit"
+      >
+        Email the Director <span aria-hidden>→</span>
+      </a>
+    </div>
+  </section>
+</Layout>
