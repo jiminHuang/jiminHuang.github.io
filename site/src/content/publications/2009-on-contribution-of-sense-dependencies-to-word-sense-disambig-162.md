@@ -1,14 +1,20 @@
 ---
-title: "On Contribution of Sense Dependencies to Word Sense Disambiguation"
-authors: ["Hatori, J.", "Miyao, Y.", "Tsujii, J."]
-authorSlugs: ["", "", "junichi-tsujii"]
-venue: "in: Information and Media Technologies, 4:4(1129--1155)"
-venueShort: "in: Information and Media Technologies"
+title: On Contribution of Sense Dependencies to Word Sense Disambiguation
+authors:
+- Hatori, J.
+- Miyao, Y.
+- Tsujii, J.
+authorSlugs:
+- ''
+- ''
+- junichi-tsujii
+venue: 'in: Information and Media Technologies, 4:4(1129--1155)'
+venueShort: 'in: Information and Media Technologies'
 venueType: journal
 year: 2009
 aigaionId: 162
-pubType: "Article"
-bibtexKey: "hatori:2009"
-pages: "1129--1155"
+pubType: Article
+bibtexKey: hatori:2009
+pages: 1129--1155
 keywords: []
 ---

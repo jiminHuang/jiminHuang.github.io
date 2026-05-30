@@ -1,15 +1,25 @@
 ---
-title: "Investigating heterogeneous protein annotations toward cross-corpora utilization"
-authors: ["Wang, Y.", "Kim, J.-D.", "SÃ¦tre, R.", "Pyysalo, S.", "Tsujii, J."]
-authorSlugs: ["yuyan-wang", "", "", "", "junichi-tsujii"]
-venue: "in: BMC Bioinformatics, 10(403)"
-venueShort: "BMC"
+title: Investigating heterogeneous protein annotations toward cross-corpora utilization
+authors:
+- Wang, Y.
+- Kim, J.-D.
+- SÃ¦tre, R.
+- Pyysalo, S.
+- Tsujii, J.
+authorSlugs:
+- yuyan-wang
+- ''
+- ''
+- ''
+- junichi-tsujii
+venue: 'in: BMC Bioinformatics, 10(403)'
+venueShort: BMC
 venueType: journal
 year: 2009
-url: "http://www.biomedcentral.com/1471-2105/10/403"
+url: http://www.biomedcentral.com/1471-2105/10/403
 aigaionId: 171
-pubType: "Article"
-bibtexKey: "ywang:2010"
-pages: "403"
+pubType: Article
+bibtexKey: ywang:2010
+pages: '403'
 keywords: []
 ---

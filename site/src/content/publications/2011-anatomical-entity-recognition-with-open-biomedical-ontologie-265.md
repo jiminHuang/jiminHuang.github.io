@@ -1,14 +1,22 @@
 ---
-title: "Anatomical Entity Recognition with Open Biomedical Ontologies"
-authors: ["Pyysalo, S.", "Ohta, T.", "Ananiadou, S."]
-authorSlugs: ["", "", "sophia-ananiadou"]
-venue: "Proceedings of the Fourth International Symposium on Languages in Biology and Medicine (LBM 2011)"
-venueShort: "Proceedings of the Fourth International Symposium on Languag"
+title: Anatomical Entity Recognition with Open Biomedical Ontologies
+authors:
+- Pyysalo, S.
+- Ohta, T.
+- Ananiadou, S.
+authorSlugs:
+- ''
+- ''
+- sophia-ananiadou
+venue: Proceedings of the Fourth International Symposium on Languages in Biology and Medicine (LBM 2011)
+venueShort: Proceedings of the Fourth International Symposium on Languag
 venueType: conference
 year: 2011
-url: "http://www.nactem.ac.uk/papers/Pyysalo_2011_Anatomical.pdf"
+url: http://www.nactem.ac.uk/papers/Pyysalo_2011_Anatomical.pdf
 aigaionId: 265
-pubType: "Inproceedings"
-bibtexKey: "Booktitle:"
+pubType: Inproceedings
+bibtexKey: 'Booktitle:'
 keywords: []
+topics:
+- entity recognition
 ---

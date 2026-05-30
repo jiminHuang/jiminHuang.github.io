@@ -14,39 +14,16 @@ const peopleCount = new Set(pubs.flatMap((p) => p.data.authors)).size;
 const allYears = [...new Set(pubs.map((p) => p.data.year ?? 0))].filter((y) => y > 0).sort((a, b) => b - a);
 const yearRange = allYears.length ? `${allYears[allYears.length - 1]}–${allYears[0]}` : "—";
 
-// Topic heuristics: scan title + venue
-const TOPIC_RULES: { topic: string; patterns: RegExp[] }[] = [
-  { topic: "LLMs",            patterns: [/\b(LLM|large language model|GPT|llama|prompt)/i] },
-  { topic: "Biomedical NLP",  patterns: [/\b(biomedical|bioNLP|MEDLINE|PubMed|gene|protein|biology|clinical)/i] },
-  { topic: "Mental health",   patterns: [/\b(mental health|depression|stress|suicid|emotional|empathy|psych)/i] },
-  { topic: "Event extraction",patterns: [/\b(event extraction|event mining|biomedical event)/i] },
-  { topic: "Information retrieval", patterns: [/\b(retrieval|search|ranking|RAG|reranking)/i] },
-  { topic: "Sentiment & stance",   patterns: [/\b(sentiment|opinion|stance|emotion)/i] },
-  { topic: "Summarisation",   patterns: [/\b(summari[sz]ation|summari[sz]e)/i] },
-  { topic: "Misinformation",  patterns: [/\b(fake|misinformation|conspiracy|fact[- ]check)/i] },
-  { topic: "Argument mining", patterns: [/\b(argument|claim detection|debate)/i] },
-  { topic: "Financial NLP",   patterns: [/\b(financial|finance|FinTech|investment|trading|stock)/i] },
-  { topic: "Multilingual",    patterns: [/\b(multilingual|cross-lingual|translation|low-resource)/i] },
-  { topic: "Knowledge graphs",patterns: [/\b(knowledge graph|ontology|semantic web)/i] },
-];
-
-function topicsFor(p: typeof pubs[number]): string[] {
-  const blob = `${p.data.title} ${p.data.venue ?? ""}`.toLowerCase();
-  const matches = new Set<string>();
-  for (const r of TOPIC_RULES) {
-    if (r.patterns.some((pat) => pat.test(blob))) matches.add(r.topic);
-  }
-  return [...matches];
-}
-
-const pubTopics = new Map(pubs.map((p) => [p.id, topicsFor(p)]));
+// Topics come from TerMine (C-value) — see .claude/skills/termine-topics/
+const pubTopics = new Map(pubs.map((p) => [p.id, p.data.topics ?? []]));
 const topicCounts: Record<string, number> = {};
 for (const list of pubTopics.values()) {
   for (const t of list) topicCounts[t] = (topicCounts[t] ?? 0) + 1;
 }
 const topTopics = Object.entries(topicCounts)
+  .filter(([_, c]) => c >= 2) // only topics that span ≥ 2 papers
   .sort((a, b) => b[1] - a[1])
-  .slice(0, 10);
+  .slice(0, 14);
 
 const aigaionAll = "https://www.nactem.ac.uk/aigaion2/index.php/publications.html";
 

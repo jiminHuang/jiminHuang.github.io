@@ -13,3 +13,4 @@ site/.astro/
 # Editor
 .vscode/
 .idea/
+.cache/

@@ -1,14 +1,24 @@
 ---
-title: "Highly Scalable Text Mining Parallel Tagging Application"
-authors: ["Tekiner, F.", "Ananiadou, S.", "Tsuruoka, Y.", "Tsujii, J."]
-authorSlugs: ["", "sophia-ananiadou", "", "junichi-tsujii"]
-venue: "Proceedings of ICSSCW2009, Famgusta, Cyprus"
-venueShort: "Proceedings of ICSSCW2009"
+title: Highly Scalable Text Mining Parallel Tagging Application
+authors:
+- Tekiner, F.
+- Ananiadou, S.
+- Tsuruoka, Y.
+- Tsujii, J.
+authorSlugs:
+- ''
+- sophia-ananiadou
+- ''
+- junichi-tsujii
+venue: Proceedings of ICSSCW2009, Famgusta, Cyprus
+venueShort: Proceedings of ICSSCW2009
 venueType: conference
 year: 2009
-url: "http://www.star.uclan.ac.uk/~ft/papers/Firat_Tekiner_ICSSCW_2009.pdf"
+url: http://www.star.uclan.ac.uk/~ft/papers/Firat_Tekiner_ICSSCW_2009.pdf
 aigaionId: 161
-pubType: "Inproceedings"
-bibtexKey: "tekiner:2009"
+pubType: Inproceedings
+bibtexKey: tekiner:2009
 keywords: []
+topics:
+- Text Mining
 ---

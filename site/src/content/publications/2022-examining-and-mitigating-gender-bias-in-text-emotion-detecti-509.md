@@ -1,16 +1,20 @@
 ---
-title: "Examining and mitigating gender bias in text emotion detection task"
-authors: ["Odbal, G. Z.", "Ananiadou, S."]
-authorSlugs: ["", "sophia-ananiadou"]
-venue: "in: Neurocomputing, 493(422-434)"
-venueShort: "in: Neurocomputing"
+title: Examining and mitigating gender bias in text emotion detection task
+authors:
+- Odbal, G. Z.
+- Ananiadou, S.
+authorSlugs:
+- ''
+- sophia-ananiadou
+venue: 'in: Neurocomputing, 493(422-434)'
+venueShort: 'in: Neurocomputing'
 venueType: journal
 year: 2022
-doi: "http://dx.doi.org/10.1016/j.neucom.2022.04.057"
-url: "https://www.sciencedirect.com/science/article/abs/pii/S0925231222004374"
+doi: http://dx.doi.org/10.1016/j.neucom.2022.04.057
+url: https://www.sciencedirect.com/science/article/abs/pii/S0925231222004374
 aigaionId: 509
-pubType: "Article"
-bibtexKey: "Publication status:"
-pages: "422-434"
+pubType: Article
+bibtexKey: 'Publication status:'
+pages: 422-434
 keywords: []
 ---

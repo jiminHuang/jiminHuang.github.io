@@ -1,15 +1,23 @@
 ---
-title: "A Chinese-Japanese Lexical Machine Translation through a Pivot Language"
-authors: ["Tsunakawa, T.", "Okazaki, N.", "Liu, X.", "Tsujii, J."]
-authorSlugs: ["", "", "", "junichi-tsujii"]
-venue: "in: ACM Transactions on Asian Language Information Processing, 8:2(9:1--9:21)"
-venueShort: "Information Processing"
+title: A Chinese-Japanese Lexical Machine Translation through a Pivot Language
+authors:
+- Tsunakawa, T.
+- Okazaki, N.
+- Liu, X.
+- Tsujii, J.
+authorSlugs:
+- ''
+- ''
+- ''
+- junichi-tsujii
+venue: 'in: ACM Transactions on Asian Language Information Processing, 8:2(9:1--9:21)'
+venueShort: Information Processing
 venueType: journal
 year: 2009
-url: "http://doi.acm.org/10.1145/1526252.1526257"
+url: http://doi.acm.org/10.1145/1526252.1526257
 aigaionId: 138
-pubType: "Article"
-bibtexKey: "tuna:2009"
-pages: "9:1--9:21"
+pubType: Article
+bibtexKey: tuna:2009
+pages: 9:1--9:21
 keywords: []
 ---

@@ -1,15 +1,21 @@
 ---
-title: "The value of an in-domain lexicon in genomics qa"
-authors: ["Sasaki, Y.", "McNaught, J.", "Ananiadou, S."]
-authorSlugs: ["", "john-mcnaught", "sophia-ananiadou"]
-venue: "in: Journal of bioinformatics and computational biology, 8:1(147--161)"
-venueShort: "Bioinformatics"
+title: The value of an in-domain lexicon in genomics qa
+authors:
+- Sasaki, Y.
+- McNaught, J.
+- Ananiadou, S.
+authorSlugs:
+- ''
+- john-mcnaught
+- sophia-ananiadou
+venue: 'in: Journal of bioinformatics and computational biology, 8:1(147--161)'
+venueShort: Bioinformatics
 venueType: journal
 year: 2010
-url: "http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=ShowDetailView&TermToSearch=20183880"
+url: http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=ShowDetailView&TermToSearch=20183880
 aigaionId: 181
-pubType: "Article"
-bibtexKey: "sasaki:2010"
-pages: "147--161"
+pubType: Article
+bibtexKey: sasaki:2010
+pages: 147--161
 keywords: []
 ---

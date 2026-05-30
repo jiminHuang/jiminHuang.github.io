@@ -1,16 +1,39 @@
 ---
-title: "Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English"
-authors: ["Zhang, X.", "Xiang, R.", "Yuan, C.", "Feng, D.", "Han, W.", "Lopez-Lira, A.", "Liu, X. -Y.", "Ananiadou, S.", "Peng, M.", "Huang, J.", "Xie, Q."]
-authorSlugs: ["xin-zhang", "", "chenhan-yuan-alum-2025", "", "", "", "", "sophia-ananiadou", "", "jimin-huang-phd", "qianqian-xie"]
-venue: "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '24), pages 6236-6246"
-venueShort: "Proceedings of the 30th ACM SIGKDD Conference on Knowledge D"
+title: Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English
+authors:
+- Zhang, X.
+- Xiang, R.
+- Yuan, C.
+- Feng, D.
+- Han, W.
+- Lopez-Lira, A.
+- Liu, X. -Y.
+- Ananiadou, S.
+- Peng, M.
+- Huang, J.
+- Xie, Q.
+authorSlugs:
+- xin-zhang
+- ''
+- chenhan-yuan-alum-2025
+- ''
+- ''
+- ''
+- ''
+- sophia-ananiadou
+- ''
+- jimin-huang-phd
+- qianqian-xie
+venue: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '24), pages 6236-6246
+venueShort: Proceedings of the 30th ACM SIGKDD Conference on Knowledge D
 venueType: conference
 year: 2024
-doi: "http://dx.doi.org/10.1145/3637528.3671554"
-url: "https://dl.acm.org/doi/abs/10.1145/3637528.3671554"
+doi: http://dx.doi.org/10.1145/3637528.3671554
+url: https://dl.acm.org/doi/abs/10.1145/3637528.3671554
 aigaionId: 569
-pubType: "Inproceedings"
-bibtexKey: "zhang:2024"
-pages: "6236-6246"
+pubType: Inproceedings
+bibtexKey: zhang:2024
+pages: 6236-6246
 keywords: []
+abstract: Despite Spanish's pivotal role in the global finance industry, a pronounced gap exists in Spanish financial natural language processing (NLP) and application studies compared to English, especially in the era of large language models (LLMs). To bridge this gap, we unveil Toisón de Oro, the first bilingual framework that establishes instruction datasets, finetuned LLMs, and evaluation benchmark for financial LLMs in Spanish joint with English. We construct a rigorously curated bilingual instruction dataset including over 144K Spanish and English samples from 15 datasets covering 7 tasks. Harnessing this, we introduce FinMA-ES, an LLM designed for bilingual financial applications. We evaluate our model and existing LLMs using FLARE-ES, the first comprehensive bilingual evaluation benchmark with 21 datasets covering 9 tasks. The FLARE-ES benchmark results reveal a significant multilingual performance gap and bias in existing LLMs. FinMA-ES models surpass SOTA LLMs such as GPT-4 in Spanish financial tasks, due to strategic instruction tuning and leveraging data from diverse linguistic resources, highlighting the positive impact of cross-linguistic transfer. All our datasets, models, and benchmarks have been released.
 ---
