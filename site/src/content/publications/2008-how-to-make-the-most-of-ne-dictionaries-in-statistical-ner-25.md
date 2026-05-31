@@ -21,4 +21,24 @@ pages: 63--70
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/35
 pdfName: Sasaki_BioNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- Tomoko Ohta
+- National Centre
+- John McNaught
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Current Trends
+- NE Dictionaries
+- Statistical NER
+- National Centre
+- Text Mining
+- Computer Science
+- Princess Street
+- term ambiguity
+- large-scale terminological resources
+- Many researches
 ---

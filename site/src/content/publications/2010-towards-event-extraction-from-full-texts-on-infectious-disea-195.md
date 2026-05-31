@@ -28,4 +28,6 @@ pubType: Inproceedings
 bibtexKey: 'Booktitle:'
 pages: 132--140
 keywords: []
+topics:
+- full text
 ---

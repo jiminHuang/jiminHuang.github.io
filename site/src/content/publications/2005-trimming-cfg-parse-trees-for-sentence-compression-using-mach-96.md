@@ -21,7 +21,16 @@ pages: 850--857
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/82
 pdfName: Unno_ACL_2006.pdf
-topics:
+topics: []
+paperTerms:
 - CFG Parse Trees
-- Machine Learning
+- Learning Approaches
+- Computer Science
+- '{ unno'
+- Sentence compression
+- short grammatical sentence
+- nal sentence
+- context-free grammar
+- original meaning
+- CFG rules
 ---

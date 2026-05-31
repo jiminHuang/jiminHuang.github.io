@@ -23,4 +23,26 @@ pages: 761--768
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/34
 pdfName: Sasaki_COLING_2008.pdf
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- Tomoko Ohta
+- National Centre
+- John McNaught
+- Text Mining
+- Paul Thompson
+- Princess Street
+- text mining
+paperTerms:
+- Gene Regulation Corpus
+- Yutaka Sasaki
+- Paul Thompson
+- Philip Cotter
+- John McNaught
+- Computer Science
+- National Centre
+- Text Mining
+- Princess Street
+- United Kingdom
 ---

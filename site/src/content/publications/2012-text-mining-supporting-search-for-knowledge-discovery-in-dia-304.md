@@ -19,6 +19,5 @@ bibtexKey: ananiadou:2012b
 keywords:
 - diabetes
 - knowledge discovery
-topics:
-- Text Mining
+topics: []
 ---

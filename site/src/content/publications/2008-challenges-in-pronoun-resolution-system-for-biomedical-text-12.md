@@ -19,6 +19,16 @@ pages: 2408--2412
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/19
 pdfName: Nguyen_LREC_2008.pdf
-topics:
-- Biomedical Text
+topics: []
+paperTerms:
+- Pronoun Resolution System
+- Oxford Road
+- National Centre
+- Text Mining
+- Princess Street
+- '{ nltngan'
+- pronoun resolution
+- biomedical texts
+- newswire domain
+- GENIA Comparative statistics
 ---

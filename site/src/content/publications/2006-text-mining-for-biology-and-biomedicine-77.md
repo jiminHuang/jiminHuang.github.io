@@ -10,6 +10,5 @@ pubType: Book
 bibtexKey: ananiadou:2006
 keywords:
 - Editors
-topics:
-- Text Mining
+topics: []
 ---

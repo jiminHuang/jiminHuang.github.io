@@ -17,4 +17,7 @@ pages: 1267-1270
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/112
 pdfName: Tateisi_LREC_2004.pdf
+topics:
+- Computational Linguistics
+- Biomedical Text
 ---

@@ -26,4 +26,7 @@ pubType: Inproceedings
 bibtexKey: goldsack:2023
 pages: 468–477
 keywords: []
+topics:
+- RESEARCH ARTICLE
+- Shared Task
 ---

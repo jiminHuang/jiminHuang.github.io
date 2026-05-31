@@ -22,6 +22,5 @@ pubType: Incollection
 bibtexKey: 'Booktitle:'
 pages: 111-132
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

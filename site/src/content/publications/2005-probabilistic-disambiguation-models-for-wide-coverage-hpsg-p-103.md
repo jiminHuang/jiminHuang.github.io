@@ -17,6 +17,5 @@ pages: 83--90
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/87
 pdfName: Miyao_ACL_2005.pdf
-topics:
-- probabilistic disambiguation model
+topics: []
 ---

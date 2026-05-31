@@ -18,6 +18,5 @@ pubType: Inproceedings
 bibtexKey: batista16construction
 pages: 22-25
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

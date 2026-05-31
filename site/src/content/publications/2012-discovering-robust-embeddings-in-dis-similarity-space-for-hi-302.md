@@ -21,4 +21,15 @@ pubType: Article
 bibtexKey: mu:2012b
 keywords: []
 abstract: Recent research has shown the effectiveness of rich feature representation for tasks in natural language processing (NLP). However, exceedingly large number of features do not always improve classification performance. They may contain redundant information, lead to noisy feature presentations, and also render the learning algorithms intractable. In this paper, we propose a supervised embedding framework that modifies the relative positions between instances to increase the compatibility between the input features and the output labels and meanwhile preserves the local distribution of the original data in the embedded space. The proposed framework attempts to support flexible balance between the preservation of intrinsic geometry and the enhancement of class separability for both interclass and intraclass instances. It takes into account characteristics of linguistic features by using an inner product‐based optimization template. (Dis)similarity features, also known as empirical kernel mapping, is employed to enable computationally tractable processing of extremely high‐dimensional input, and also to handle nonlinearities in embedding generation when necessary. Evaluated on two NLP tasks with six data sets, the proposed framework provides better classification performance than the support vector machine without using any dimensionality reduction technique. It also generates embeddings with better class discriminability as compared to many existing embedding algorithms.
+paperTerms:
+- Discovering Robust Embeddings
+- Similarity Space
+- rich feature representation
+- natural language processing
+- classification performance
+- redundant information
+- noisy feature presentations
+- supervised embedding framework
+- input features
+- output labels
 ---

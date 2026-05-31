@@ -26,4 +26,6 @@ pubType: Inproceedings
 bibtexKey: nedellec13
 pages: 1--7
 keywords: []
+topics:
+- BioNLP Shared Task
 ---

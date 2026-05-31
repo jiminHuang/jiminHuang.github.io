@@ -20,4 +20,22 @@ bibtexKey: yu:2025b
 pages: 11257–11272
 keywords: []
 abstract: 'We investigate how large language models (LLMs) perform latent multi-hop reasoning in prompts like "Wolfgang Amadeus Mozart''s mother''s spouse is".To analyze this process, we introduce logit flow, an interpretability method that traces how logits propagate across layers and positions toward the final prediction.Using logit flow, we identify four distinct stages in single-hop knowledge prediction: (A) entity subject enrichment, (B) entity attribute extraction, (C) relation subject enrichment, and (D) relation attribute extraction.Extending this analysis to multi-hop reasoning, we find that failures often stem from the relation attribute extraction stage, where conflicting logits reduce prediction accuracy.To address this, we propose back attention, a novel mechanism that enables lower layers to leverage higher-layer hidden states from different positions during attention computation.With back attention, a 1-layer transformer achieves the performance of a 2-layer transformer.Applied to five LLMs, back attention improves accuracy on five reasoning datasets, demonstrating its effectiveness in enhancing latent multi-hop reasoning ability.'
+topics:
+- Language Models
+- Computer Science
+- Catastrophic Forgetting
+- Zeping Yu
+- Sophia Ananiadou
+- language models
+paperTerms:
+- Empirical Methods
+- Natural Language Processing
+- Back Attention
+- Multi-Hop Reasoning
+- Large Language Models
+- Israel Institute
+- '@ technion.ac.il'
+- language models
+- latent multi-hop reasoning
+- Wolfgang Amadeus Mozart
 ---

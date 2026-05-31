@@ -28,4 +28,6 @@ pubType: Inproceedings
 bibtexKey: Ohta_Pyysalo:2013:BioNLP-ST
 pages: 67-75
 keywords: []
+topics:
+- BioNLP Shared Task
 ---

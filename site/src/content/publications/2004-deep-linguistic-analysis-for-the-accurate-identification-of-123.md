@@ -17,7 +17,5 @@ pages: 1392-1397
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/107
 pdfName: Miyao_COLING_2004.pdf
-topics:
-- Accurate Identification
-- Predicate-Argument Relations
+topics: []
 ---

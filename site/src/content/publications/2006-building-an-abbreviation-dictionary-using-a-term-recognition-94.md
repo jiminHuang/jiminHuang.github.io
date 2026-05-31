@@ -17,7 +17,16 @@ pages: 3089-3095
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/81
 pdfName: Okazaki_Bioinf_2006.pdf
-topics:
-- Abbreviation Dictionary
-- Term Recognition Approach
+topics: []
+paperTerms:
+- text mining
+- abbreviation dictionary
+- term recognition
+- Information Science
+- Computer Science
+- Manchester Interdisciplinary Biocentre
+- Oxford Road
+- Associate Editor
+- Golan Yona
+- productive type
 ---

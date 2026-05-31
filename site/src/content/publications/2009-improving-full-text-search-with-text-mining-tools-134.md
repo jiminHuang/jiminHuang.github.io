@@ -21,6 +21,16 @@ pages: 301-302
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/115
 pdfName: Piao_NLDB_2009.pdf
-topics:
+topics: []
+paperTerms:
+- Full Text Search
 - Text Mining
+- Scott Piao
+- Brian Rea
+- John McNaught
+- Sophia Ananiadou
+- National Centre
+- Computer Science
+- Manchester UK
+- '{ scott.piao'
 ---

@@ -19,6 +19,16 @@ pages: 2013-2019
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/27
 pdfName: Piao_LREC_2008.pdf
-topics:
+topics: []
+paperTerms:
 - Related Terms
+- Scott Piao
+- John McNaught
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Computer Science
+- United Kingdom
+- '{ scott.piao'
+- challenging task
 ---

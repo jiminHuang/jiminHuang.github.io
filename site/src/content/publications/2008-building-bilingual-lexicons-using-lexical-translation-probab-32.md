@@ -19,4 +19,21 @@ pages: 1664--1667
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/41
 pdfName: Tsunakawa_LREC_2008.pdf
+topics:
+- Computer Science
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Pivot Languages
+- Takashi Tsunakawa
+- Naoaki Okazaki
+- ichi Tsujii
+- Computer Science
+- Graduate School
+- Information Science
+- National Centre
+- Text Mining
+- Princess Street
 ---

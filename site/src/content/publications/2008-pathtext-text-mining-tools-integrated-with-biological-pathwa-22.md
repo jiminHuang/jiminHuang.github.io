@@ -31,6 +31,5 @@ pubType: Inproceedings
 bibtexKey: saetre:2008b
 pages: '65'
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

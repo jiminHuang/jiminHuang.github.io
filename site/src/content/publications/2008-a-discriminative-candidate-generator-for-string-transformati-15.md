@@ -21,4 +21,12 @@ pages: 447-456
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/25
 pdfName: Okazaki_EMNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- John McNaught
+- Text Mining
+- Princess Street
+- text mining
 ---

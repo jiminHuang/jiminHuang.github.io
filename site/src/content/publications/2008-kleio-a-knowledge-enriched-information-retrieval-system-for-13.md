@@ -29,4 +29,23 @@ pages: 787--788
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/20
 pdfName: Nobata_SIGIR_2008.pdf
+topics:
+- Computer Science
+- Oxford Road
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Computer Science
+- Oxford Road
+- Yoshimasa.Tsuruoka }
+- National Centre
+- Text Mining
+- Interdisciplinary Biocentre
+- Princess Street Manchester
+- '{ okazaki'
+- advanced information retrieval
+- UK National Centre
 ---

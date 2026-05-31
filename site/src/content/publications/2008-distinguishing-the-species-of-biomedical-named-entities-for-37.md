@@ -17,4 +17,21 @@ pages: S6
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/46
 pdfName: Wang_BMC_2008.pdf
+topics:
+- National Centre
+- Text Mining
+- Princess Street
+- Biomedical papers
+- text mining
+paperTerms:
+- Xinglong Wang
+- Text Mining
+- Princess Street
+- Informatics Forum
+- Crichton Street
+- xinglong.wang @ manchester.ed.ac.uk
+- Michael Matthews
+- ambiguous mentions
+- full-length articles
+- model organisms
 ---

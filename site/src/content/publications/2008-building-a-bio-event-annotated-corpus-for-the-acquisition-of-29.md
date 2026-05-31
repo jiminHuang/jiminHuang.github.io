@@ -27,4 +27,22 @@ pages: 2159--2166
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/38
 pdfName: Thompson_LREC_2008.pdf
+topics:
+- Sophia Ananiadou
+- National Centre
+- John McNaught
+- Text Mining
+- Paul Thompson
+- text mining
+paperTerms:
+- Bio-Event Annotated Corpus
+- Semantic Frames
+- Biomedical Corpora
+- Text Mining
+- '{ paul.thompson'
+- '} @ manchester.ac.uk'
+- '{ simonetta.montemagni'
+- specific view
+- annotation scheme
+- annotation process
 ---

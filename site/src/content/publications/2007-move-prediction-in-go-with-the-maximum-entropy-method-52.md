@@ -22,4 +22,20 @@ abstract: We address the problem of predicting moves in the board game of Go. We
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/48
 pdfName: Araki_CIG_2007.pdf
+topics:
+- Computer Science
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Move Prediction
+- Maximum Entropy Method
+- Nobuo Araki
+- Kazuhiro Yoshida
+- Yoshimasa Tsuruoka
+- ichi Tsujii
+- Graduate School
+- Information Science
+- ark @ is.s.u-tokyo.ac.jp
+- kyoshida @ is.s.u-tokyo.ac.jp
 ---

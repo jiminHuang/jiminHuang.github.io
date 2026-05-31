@@ -21,4 +21,22 @@ pages: 2768-2774
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/65
 pdfName: Tsuruoka_Bioinf_2007.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- John McNaught
+- Text Mining
+- text mining
+paperTerms:
+- text mining
+- similarity measures
+- dictionary look-up
+- logistic regression
+- Computer Science
+- Associate Editor
+- Jonathan Wren
+- biomedical data integration
+- biological concept
+- i.e ID
 ---

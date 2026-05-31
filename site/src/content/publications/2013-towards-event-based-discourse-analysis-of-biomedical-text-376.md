@@ -18,6 +18,5 @@ pubType: Article
 bibtexKey: 'Journal:'
 pages: 101-120
 keywords: []
-topics:
-- Biomedical Text
+topics: []
 ---

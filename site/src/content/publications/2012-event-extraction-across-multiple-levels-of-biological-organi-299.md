@@ -27,4 +27,17 @@ pages: i575-i581
 keywords:
 - eventmine
 abstract: 'MOTIVATION: Event extraction using expressive structured representations has been a significant focus of recent efforts in biomedical information extraction. However, event extraction resources and methods have so far focused almost exclusively on molecular-level entities and processes, limiting their applicability. RESULTS: We extend the event extraction approach to biomedical information extraction to encompass all levels of biological organization from the molecular to the whole organism. We present the ontological foundations, target types and guidelines for entity and event annotation and introduce the new multi-level event extraction (MLEE) corpus, manually annotated using a structured representation for event extraction. We further adapt and evaluate named entity and event extraction methods for the new task, demonstrating that both can be achieved with performance broadly comparable with that for established molecular entity and event extraction tasks. AVAILABILITY: The resources and methods introduced in this study are available from http://nactem.ac.uk/MLEE/. CONTACT: pyysalos@cs.man.ac.uk SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.'
+topics:
+- extraction methods
+paperTerms:
+- Event extraction
+- biological organization MOTIVATION
+- expressive structured representations
+- biomedical information extraction
+- extraction resources
+- molecular-level entities
+- applicability RESULTS
+- extraction approach
+- biological organization
+- ontological foundations
 ---

@@ -25,4 +25,23 @@ pubType: Inproceedings
 bibtexKey: yang:2025
 pages: 7032–7056
 keywords: []
+topics:
+- Language Models
+- Sophia Ananiadou
+- Erxue Min
+- National Centre
+- Text Mining
+- language models
+- text mining
+paperTerms:
+- Empirical Methods
+- Natural Language Processing
+- Selective Preference Optimization
+- Token-Level Reward Function
+- National Centre
+- Text Mining
+- Artificial Intelligence
+- Wuhan University
+- Information Research
+- Fin AI
 ---

@@ -21,8 +21,17 @@ pubType: Article
 bibtexKey: ohta10reevaluation
 pages: 917--928
 keywords: []
-topics:
-- Text Mining
-- Biomedical Text
+topics: []
 abstract: Text mining can support the interpretation of the enormous quantity of textual data produced in biomedical field. Recent developments in biomedical text mining include advances in the reliability of the recognition of named entities (NEs) such as specific genes and proteins, as well as movement toward richer representations of the associations of NEs. We argue that this shift in representation should be accompanied by the adoption of a more detailed model of the relations holding between NEs and other relevant domain terms. As a step toward this goal, we study NE-term relations with the aim of defining a detailed, broadly applicable set of relation types based on accepted domain standard concepts for use in corpus annotation and domain information extraction approaches.
+paperTerms:
+- enormous quantity
+- textual data
+- biomedical text mining
+- specific genes
+- richer representations
+- relevant domain terms
+- NE-term relations
+- relation types
+- domain standard concepts
+- corpus annotation
 ---

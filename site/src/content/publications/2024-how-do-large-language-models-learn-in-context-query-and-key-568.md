@@ -17,4 +17,24 @@ pubType: Inproceedings
 bibtexKey: yu:2024
 pages: 3281–3292
 keywords: []
+topics:
+- Language Models
+- Computer Science
+- Zeping Yu
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- language models
+- text mining
+paperTerms:
+- Empirical Methods
+- Natural Language Processing
+- In-Context Heads
+- Metric Learning
+- Zeping Yu
+- Sophia Ananiadou
+- Computer Science
+- National Centre
+- Text Mining
+- sentence classification
 ---

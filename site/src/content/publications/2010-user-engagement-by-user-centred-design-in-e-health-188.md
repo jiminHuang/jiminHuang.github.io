@@ -28,4 +28,15 @@ bibtexKey: 'Journal:'
 pages: 4209-4224
 keywords: []
 abstract: This paper describes the application of user-centred design (UCD) methods and a user engagement (UE) approach to a case study development of a visualization tool (ADVISES) to support epidemiological research. The combined UCD/UE approach consisted of scenario-based design, and analysis of the users' tasks and mental model of the domain. Prototyping and storyboarding techniques were used to explore design options with users as well as specifying functionality for two versions of the software to meet the needs of novice and expert users. An evaluation of the prototype was carried out to assess the extent to which the expert model would support public health professionals in their analysis activities. The results of the design exploration requirements analysis study are reported. The implications of scenario-based design exploration, participatory design and user engagement are discussed.
+paperTerms:
+- User Engagement
+- User-Centred Design
+- visualization tool
+- epidemiological research
+- combined UCD/UE approach
+- scenario-based design
+- mental model
+- domain Prototyping
+- storyboarding techniques
+- design options
 ---

@@ -22,4 +22,24 @@ bibtexKey: yang:2023
 pages: 1-12
 keywords: []
 abstract: 'A key challenge for Emotion Recognition in Conversations (ERC) is to distinguish semantically similar emotions. Some works utilise Supervised Contrastive Learning (SCL) which uses categorical emotion labels as supervision signals and contrasts in high-dimensional semantic space. However, categorical labels fail to provide quantitative information between emotions. ERC is also not equally dependent on all embedded features in the semantic space, which makes the high-dimensional SCL inefficient. To address these issues, we propose a novel low-dimensional Supervised Cluster-level Contrastive Learning (SCCL) method, which first reduces the high-dimensional SCL space to a three-dimensional affect representation space Valence-Arousal-Dominance (VAD), then performs cluster-level contrastive learning to incorporate measurable emotion prototypes. To help modelling the dialogue and enriching the context, we leverage the pre-trained knowledge adapters to infuse linguistic and factual knowledge. Experiments show that our method achieves new state-of-the-art results with <inline-formula><tex-math notation="LaTeX">$69.81\%$</tex-math></inline-formula> on IEMOCAP, <inline-formula><tex-math notation="LaTeX">$65.7\%$</tex-math></inline-formula> on MELD, and <inline-formula><tex-math notation="LaTeX">$62.51\%$</tex-math></inline-formula> on DailyDialog datasets. The analysis also proves that the VAD space is not only suitable for ERC but also interpretable, with VAD prototypes enhancing its performance and stabilising the training of SCCL. In addition, the pre-trained knowledge adapters benefit the performance of the utterance encoder and SCCL. Our code is available at: <uri>https://github.com/SteveKGYang/SCCL</uri>'
+topics:
+- Language Models
+- Social Media Analysis
+- Computer Science
+- Catastrophic Forgetting
+- United Kingdom
+- Sophia Ananiadou
+- language models
+- rich information
+paperTerms:
+- Cluster-Level Contrastive Learning
+- Kailai Yang
+- Tianlin Zhang
+- Hassan Alhuzali
+- Sophia Ananiadou
+- Emotion Recognition
+- Contrastive Learning
+- categorical emotion labels
+- supervision signals
+- high-dimensional semantic space
 ---

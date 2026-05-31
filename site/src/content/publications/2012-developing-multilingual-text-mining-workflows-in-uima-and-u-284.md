@@ -20,6 +20,5 @@ pages: 82 - 93
 keywords:
 - isher
 - ucompare
-topics:
-- Text Mining
+topics: []
 ---

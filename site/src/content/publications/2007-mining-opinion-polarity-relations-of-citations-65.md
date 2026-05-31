@@ -23,4 +23,22 @@ pages: 366-371
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/58
 pdfName: Piao_IWCS_2007.pdf
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- John McNaught
+- Text Mining
+- text mining
+paperTerms:
+- Opinion Polarity Relations
+- Scott S Piao
+- Sophia Ananiadou
+- Yoshimasa Tsuruoka
+- Yutaka Sasaki
+- John McNaught
+- Computer Science
+- United Kingdom
+- Opinion mining
+- mining sentiment information
 ---

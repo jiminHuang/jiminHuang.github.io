@@ -19,4 +19,21 @@ pages: 238--258
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/53
 pdfName: Miyao_GEAF_2007.pdf
+topics:
+- Computer Science
+- Wide coverage
+- Text Mining
+- text mining
+- manual annotation
+paperTerms:
+- Framework-Independent Evaluation
+- Linguistic Parsers
+- Computer Science
+- Text Mining
+- Tracy Holloway King
+- CSLI Studies
+- Computational Linguistics ONLINE
+- Ann Copestake
+- Series Editor
+- CSLI Publications
 ---

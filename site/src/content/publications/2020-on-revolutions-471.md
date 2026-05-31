@@ -28,4 +28,23 @@ bibtexKey: 'Journal:'
 pages: '4'
 keywords: []
 abstract: Abstract Sometimes the normal course of events is disrupted by a particularly swift and profound change. Historians have often referred to such changes as “revolutions”, and, though they have identified many of them, they have rarely supported their claims with statistical evidence. Here, we present a method to identify revolutions based on a measure of multivariate rate of change called Foote novelty. We define revolutions as those periods of time when the value of this measure is, by a non-parametric test, shown to significantly exceed the background rate. Our method also identifies conservative periods when the rate of change is unusually low. We apply it to several quantitative data sets that capture long-term political, social and cultural changes and, in some of them, identify revolutions — both well known and not. Our method is general and can be applied to any phenomenon captured by multivariate time series data of sufficient quality.
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Data Science
+- Princess Street
+- text mining
+paperTerms:
+- Ben Lambert
+- Matthias Mauch
+- Marina Papadopoulou
+- profound change Historians
+- multivariate rate
+- Foote novelty
+- ne revolutions
+- non-parametric test
+- background rate
+- conservative periods
 ---

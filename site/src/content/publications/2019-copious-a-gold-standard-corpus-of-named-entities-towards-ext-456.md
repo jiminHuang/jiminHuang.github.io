@@ -18,7 +18,17 @@ pubType: Article
 bibtexKey: nguyen:2019
 pages: e29626
 keywords: []
-topics:
-- entity recognition
+topics: []
 abstract: Background Species occurrence records are very important in the biodiversity domain. While several available corpora contain only annotations of species names or habitats and geographical locations, there is no consolidated corpus that covers all types of entities necessary for extracting species occurrence from biodiversity literature. In order to alleviate this issue, we have constructed the COPIOUS corpus—a gold standard corpus that covers a wide range of biodiversity entities. Results Two annotators manually annotated the corpus with five categories of entities, i.e. taxon names, geographical locations, habitats, temporal expressions and person names. The overall inter-annotator agreement on 200 doubly-annotated documents is approximately 81.86% F-score. Amongst the five categories, the agreement on habitat entities was the lowest, indicating that this type of entity is complex. The COPIOUS corpus consists of 668 documents downloaded from the Biodiversity Heritage Library with over 26K sentences and more than 28K entities. Named entity recognisers trained on the corpus could achieve an F-score of 74.58%. Moreover, in recognising taxon names, our model performed better than two available tools in the biodiversity domain, namely the SPECIES tagger and the Global Name Recognition and Discovery. More than 1,600 binary relations of Taxon-Habitat, Taxon-Person, Taxon-Geographical locations and Taxon-Temporal expressions were identified by applying a pattern-based relation extraction system to the gold standard. Based on the extracted relations, we can produce a knowledge repository of species occurrences. Conclusion The paper describes in detail the construction of a gold standard named entity corpus for the biodiversity domain. An investigation of the performance of named entity recognition (NER) tools trained on the gold standard revealed that the corpus is sufficiently reliable and sizeable for both training and evaluation purposes. The corpus can be further used for relation extraction to locate species occurrences in literature—a useful task for monitoring species distribution and preserving the biodiversity.
+paperTerms:
+- Related articles
+- Biodiversity Data Journal
+- Company Profile
+- APC Policies
+- Editorial Policies
+- General Policies
+- Advanced Books
+- Conventional Books
+- Conference Abstracts
+- Conference Proceedings
 ---

@@ -19,4 +19,23 @@ pages: S8
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/43
 pdfName: Tsuruoka_BMC_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+- manual annotation
+paperTerms:
+- BioMed Central
+- citation purposes
+- sentence selection
+- Computer Science
+- Princess Street
+- Text Mining
+- Yoshimasa Tsuruoka*
+- '@ manchester.ac.uk'
+- Jun'ichi Tsujii
+- tsujii @ is.s.u-tokyo.ac.jp
 ---

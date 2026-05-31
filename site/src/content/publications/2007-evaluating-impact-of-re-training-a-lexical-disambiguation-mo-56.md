@@ -19,6 +19,5 @@ pages: 11--22
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/51
 pdfName: Hara_IWPT_2007.pdf
-topics:
-- HPSG parser
+topics: []
 ---

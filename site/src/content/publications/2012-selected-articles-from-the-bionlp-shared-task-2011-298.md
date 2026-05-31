@@ -8,4 +8,6 @@ pubType: Proceedings
 bibtexKey: kim:2012
 keywords:
 - Editors
+topics:
+- BioNLP Shared Task
 ---

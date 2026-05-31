@@ -24,4 +24,6 @@ pubType: Inproceedings
 bibtexKey: trieu:2019
 pages: 196-205
 keywords: []
+topics:
+- full text
 ---

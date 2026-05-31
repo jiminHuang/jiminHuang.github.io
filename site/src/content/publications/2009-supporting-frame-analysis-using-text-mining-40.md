@@ -27,6 +27,5 @@ aigaionId: 40
 pubType: Inproceedings
 bibtexKey: ananiadou:2009b
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

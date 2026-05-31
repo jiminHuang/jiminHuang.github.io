@@ -23,4 +23,20 @@ pages: 46-54
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/18
 pdfName: Miyao_ACL_2008.pdf
+topics:
+- Computer Science
+- Text Mining
+- Biomedical papers
+- text mining
+paperTerms:
+- Task-oriented Evaluation
+- Syntactic Parsers
+- Yusuke Miyao
+- Kenji Sagae
+- Takuya Matsuzaki
+- ichi Tsujii
+- Computer Science
+- National Center
+- Text Mining
+- '{ yusuke'
 ---

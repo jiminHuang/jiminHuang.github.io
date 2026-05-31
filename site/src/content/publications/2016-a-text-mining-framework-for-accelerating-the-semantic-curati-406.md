@@ -20,6 +20,5 @@ pubType: Inproceedings
 bibtexKey: batista16tmframework
 pages: 459-462
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

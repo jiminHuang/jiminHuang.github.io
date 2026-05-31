@@ -19,4 +19,6 @@ pages: 75--82
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/86
 pdfName: Matsuzaki_ACL_2005.pdf
+topics:
+- Computational Linguistics
 ---

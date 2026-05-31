@@ -17,6 +17,16 @@ pages: 461-470
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/114
 pdfName: Tsuruoka_biomedInf_2004.pdf
-topics:
+topics: []
+paperTerms:
 - Dictionary-based Approaches
+- Name Recognition
+- Yoshimasa Tsuruoka
+- ichi Tsujii
+- Computer Science
+- Japan Science
+- Technology Agency
+- '{ tsuruoka'
+- Elsevier Science
+- Dictionary-based protein
 ---

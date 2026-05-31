@@ -19,4 +19,7 @@ pdfName: Okanohara_LNCS_2005.pdf
 topics:
 - Polarity Scores
 - Machine Learning
+paperTerms:
+- training reviews
+- Square error
 ---

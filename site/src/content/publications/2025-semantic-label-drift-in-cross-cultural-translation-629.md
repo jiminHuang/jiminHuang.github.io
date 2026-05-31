@@ -23,4 +23,21 @@ pubType: Misc
 bibtexKey: kabir:2025c
 keywords: []
 abstract: 'Machine Translation (MT) is widely employed to address resource scarcity in low-resource languages by generating synthetic data from high-resource counterparts. While sentiment preservation in translation has long been studied, a critical but underexplored factor is the role of cultural alignment between source and target languages. In this paper, we hypothesize that semantic labels are drifted or altered during MT due to cultural divergence. Through a series of experiments across culturally sensitive and neutral domains, we establish three key findings: (1) MT systems, including modern Large Language Models (LLMs), induce label drift during translation, particularly in culturally sensitive domains; (2) unlike earlier statistical MT tools, LLMs encode cultural knowledge, and leveraging this knowledge can amplify label drift; and (3) cultural similarity or dissimilarity between source and target languages is a crucial determinant of label preservation. Our findings highlight that neglecting cultural factors in MT not only undermines label fidelity but also risks misinterpretation and cultural conflict in downstream applications.'
+topics:
+- Language Models
+- Computer Science
+- full text
+- Sophia Ananiadou
+- language models
+paperTerms:
+- independent nonprofit
+- Simons Foundation
+- member institutions
+- contributors Donate
+- Advanced Search
+- arXiv identifier DOI
+- quick links
+- Help Pages
+- Computer Science
+- Semantic Label Drift
 ---

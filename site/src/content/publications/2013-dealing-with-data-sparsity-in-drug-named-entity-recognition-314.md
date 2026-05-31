@@ -20,7 +20,17 @@ pubType: Inproceedings
 bibtexKey: piliouras13
 pages: 14-21
 keywords: []
-topics:
-- entity recognition
+topics: []
 abstract: Drug Named Entity Recognition (drug-NER) is a critical step for complex Biomedical Natural Language Processing (BioNLP) tasks such as the extraction of pharmaco-genomic, pharmaco-dynamic and pharmaco-kinetic parameters. Large quantities of high quality training data are almost always a prerequisite for employing supervised machine-learning (ML) techniques to achieve high classification performance. However, the human labour needed to produce and maintain such resources is a detrimental limitation. In this study, we attempt to improve the performance of drug NER without relying exclusively on manual annotations. Instead, we use either a small gold-standard corpus (120 abstracts) or no corpus at all. In our approach, we use a \emph{voting system} to combine a number of heterogeneous models to enhance performance. Moreover, 11 regular-expressions that capture common drug suffixes were evolved via genetic-programming. We evaluate our approach against state-of-the-art recognisers trained on manual annotations, automatic annotations and a mixture of both. Aggregate classifiers are shown to improve performance, achieving a maximum F-score of 95%. In addition, combined models trained on mixed data are shown to achieve comparable performance to models trained exclusively on gold-standard data.
+paperTerms:
+- data sparsity
+- quality training data
+- classification performance
+- human labour
+- detrimental limitation
+- drug NER
+- manual annotations
+- small gold-standard corpus
+- heterogeneous models
+- common drug suffixes
 ---

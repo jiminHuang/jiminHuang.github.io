@@ -19,8 +19,16 @@ pages: 2748--2758
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/93
 pdfName: Spasic_BioInf_2005.pdf
-topics:
-- Biomedical Terms
-- biomedical terms
+topics: []
+paperTerms:
+- text mining
 - case-based reasoning system
+- biomedical terms
+- Sackville Street
+- PO Box
+- Information Science
+- sheer volume
+- natural language processing
+- cient access
+- ant information
 ---

@@ -27,8 +27,16 @@ pages: 4-15
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/70
 pdfName: Chun_PSB_2006.pdf
-topics:
-- Gene-Disease Relations
-- Domain Dictionaries
-- Machine Learning
+topics: []
+paperTerms:
+- Proceedings Trim Size
+- Japan Science
+- Technology agency
+- National Institute
+- Advanced Industrial Science
+- AIST Waterfront
+- Bio-IT Research Building
+- Integrated Database Team
+- AIST Waterfront Bio-IT
+- Research Building
 ---

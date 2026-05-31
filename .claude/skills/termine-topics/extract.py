@@ -167,18 +167,108 @@ def chunked(corpus_texts: list[str]) -> list[str]:
 # ─────────────────────────── pipeline ───────────────────────────
 
 
+STOPLIST = {
+    # PDF metadata / boilerplate
+    "open access", "submission guidelines", "main content", "research article",
+    "supporting information", "supplementary material", "view article",
+    "permissions reuse", "creative commons", "available online",
+    "abstract introduction", "introduction methods", "results discussion",
+    "data availability", "conflicts interest", "competing interests",
+    "author contributions", "additional file", "additional files",
+    "corresponding author", "et al", "rights reserved", "user license",
+    # Journal/venue names — not topics
+    "bmc bioinformatics", "bmc medical informatics", "bmj open", "al bmj open",
+    "computational linguistics", "biomedical text", "computational approaches",
+    "13th workshop", "international workshop", "international journal",
+    "third workshop", "shared task", "rel tasks", "ngan nguyen1",
+    # Format / page artifacts
+    "page  of", "page of", "table  results", "figure  table",
+    "natural language", "machine learning", "deep learning",  # too generic
+}
+
 def normalise(term: str, max_words: int) -> Optional[str]:
     term = re.sub(r"\s+", " ", term).strip()
     if not term:
         return None
     if len(term.split()) > max_words:
         return None
-    if len(term) < 3:
+    if len(term) < 4:
         return None
-    # Drop obvious garbage like all-numeric or all-punctuation
+    # Drop obvious garbage
     if re.fullmatch(r"[\d\W_]+", term):
         return None
+    # Stoplist
+    if term.lower() in STOPLIST:
+        return None
+    # Has digits — usually page numbers, DOI fragments, "Nguyen1"
+    if re.search(r"\d", term):
+        return None
+    # ALL CAPS — usually author surname or section header
+    if term.isupper() and len(term) > 4:
+        return None
+    # Single letter or trailing initial like "Lee J"
+    if re.search(r"\b[A-Z]\.?\s*$", term):
+        return None
     return term
+
+
+def run_per_paper(docs: list[tuple[str, str]], args) -> None:
+    """POST each doc individually to TerMine; write its own top terms to frontmatter."""
+    os.makedirs(args.per_paper_cache, exist_ok=True)
+    where, _, field = args.field_write.partition(":")
+    field = field or "paperTerms"
+
+    n_done = 0
+    n_skipped = 0
+    n_tagged = 0
+    total_terms = 0
+    for i, (path, value) in enumerate(docs, 1):
+        if len(value) < args.per_paper_min_chars:
+            n_skipped += 1
+            continue
+        # Cache key from filename
+        key = os.path.basename(path).rsplit(".", 1)[0]
+        cache_path = os.path.join(args.per_paper_cache, key + ".json")
+        if os.path.isfile(cache_path):
+            try:
+                terms = json.load(open(cache_path))
+            except Exception:
+                terms = None
+        else:
+            try:
+                raw = termine_extract(value, timeout=120)
+            except Exception as e:
+                print(f"  [{i}/{len(docs)}] {key}: {e}", file=sys.stderr)
+                terms = None
+            else:
+                # Normalise + keep top N
+                clean = []
+                seen = set()
+                for t, s in raw:
+                    n = normalise(t, args.max_words)
+                    if n and n.lower() not in seen:
+                        seen.add(n.lower())
+                        clean.append([n, s])
+                terms = clean[: args.per_paper_top]
+                open(cache_path, "w").write(json.dumps(terms))
+                time.sleep(0.6)  # polite
+        if not terms:
+            continue
+        names = [t[0] for t in terms]
+        if args.dry_run:
+            if i <= 10:
+                print(f"  {key[:60]:60} → {names[:5]}")
+        else:
+            write_frontmatter_field(path, field, names)
+        n_tagged += 1
+        total_terms += len(names)
+        n_done += 1
+        if n_done % 25 == 0:
+            print(f"  ... {n_done} processed (tagged={n_tagged} skipped_short={n_skipped})",
+                  file=sys.stderr)
+
+    print(f"[per-paper] tagged {n_tagged} docs with {total_terms} terms; "
+          f"skipped {n_skipped} short docs", file=sys.stderr)
 
 
 def main():
@@ -190,6 +280,20 @@ def main():
     p.add_argument("--min-score", type=float, default=0)
     p.add_argument("--max-words", type=int, default=4)
     p.add_argument("--dry-run", action="store_true", help="Print top terms only, don't write back")
+    p.add_argument("--text-cache", default=None,
+                   help="Directory of extracted full-text files (e.g. .cache/pdftext). "
+                        "Looked up by <aigaionId>.txt; if found, its content REPLACES "
+                        "the frontmatter content for that paper.")
+    p.add_argument("--per-paper", action="store_true",
+                   help="POST each paper to TerMine individually and write its own top "
+                        "terms back. Slow (~1 req/paper) but each paper's terms are "
+                        "extracted in isolation.")
+    p.add_argument("--per-paper-cache", default=".cache/termine_perpaper",
+                   help="Where to cache per-paper TerMine JSON")
+    p.add_argument("--per-paper-top", type=int, default=10,
+                   help="How many top terms to keep per paper (default 10)")
+    p.add_argument("--per-paper-min-chars", type=int, default=400,
+                   help="Skip per-paper extraction if doc content is shorter than this")
     args = p.parse_args()
 
     files = sorted(glob.glob(args.input))
@@ -199,13 +303,27 @@ def main():
 
     # Read each file → extracted text
     docs: list[tuple[str, str]] = []
+    n_full = 0
     for path in files:
         text = open(path).read()
         fm, body = parse_frontmatter(text)
         value = get_field_value(text, fm, args.field_from)
+        if args.text_cache:
+            pid = fm.get("aigaionId")
+            if pid:
+                cache_file = os.path.join(args.text_cache, f"{pid}.txt")
+                if os.path.isfile(cache_file):
+                    cached = open(cache_file).read().strip()
+                    if cached and len(cached) > 200:
+                        value = cached
+                        n_full += 1
         if value:
             docs.append((path, value))
-    print(f"[termine-topics] {len(docs)} have content", file=sys.stderr)
+    print(f"[termine-topics] {len(docs)} have content ({n_full} from full-text cache)", file=sys.stderr)
+
+    if args.per_paper:
+        run_per_paper(docs, args)
+        return
 
     # Send to TerMine in chunks
     texts = [d[1] for d in docs]

@@ -28,4 +28,25 @@ keywords:
 - ucompare
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/122
 pdfName: kontonatsios13b.pdf
+topics:
+- Computer Science
+- full text
+- Georgios Kontonatsios
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Paul Thompson
+- Princess Street
+- text mining
+paperTerms:
+- interoperable platform
+- multimodal NLP applications
+- Georgios Kontonatsios
+- Paul Thompson
+- Riza Theresa Batista-Navarro
+- Claudiu Mih
+- Ioannis Korkontzelos
+- Sophia Ananiadou
+- National Centre
+- Text Mining
 ---

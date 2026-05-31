@@ -31,7 +31,17 @@ pubType: Article
 bibtexKey: 'Journal:'
 pages: 3829-3844
 keywords: []
-topics:
-- Text Mining
+topics: []
 abstract: The UK Education Evidence Portal (eep) provides a single, searchable, point of access to the contents of the websites of 33 organizations relating to education, with the aim of revolutionizing work practices for the education community. Use of the portal alleviates the need to spend time searching multiple resources to find relevant information. However, the combined content of the websites of interest is still very large (over 500,000 documents and growing). This means that searches using the portal can produce very large numbers of hits. As users often have limited time, they would benefit from enhanced methods of performing searches and viewing results, allowing them to drill down to information of interest more efficiently, without having to sift through potentially long lists of irrelevant documents. The Joint Information Systems Committee (JISC)-funded ASSIST project has produced a prototype web interface to demonstrate the applicability of integrating a number of text-mining tools and methods into the eep, to facilitate an enhanced searching, browsing and document-viewing experience. New features include automatic classification of documents according to a taxonomy, automatic clustering of search results according to similar document content, and automatic identification and highlighting of key terms within documents.
+paperTerms:
+- Education Evidence Portal
+- Text Mining
+- education community Use
+- relevant information
+- combined content
+- long lists
+- irrelevant documents
+- -funded ASSIST project
+- prototype web interface
+- text-mining tools
 ---

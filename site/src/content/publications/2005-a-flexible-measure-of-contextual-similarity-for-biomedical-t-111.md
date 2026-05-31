@@ -17,9 +17,16 @@ pages: 197--208
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/94
 pdfName: Spasic_PSB_2005.pdf
-topics:
+topics: []
+paperTerms:
+- Flexible Measure
+- Contextual Similarity
 - Biomedical Terms
-- biomedical terms
-- flexible measure
-- contextual similarity
+- Pacific Symposium
+- i.spasic @ umist.ac.uk
+- s.ananiadou @ salford.ac.uk
+- tual features
+- biomedical ontologies
+- cient information
+- syntactic elements
 ---

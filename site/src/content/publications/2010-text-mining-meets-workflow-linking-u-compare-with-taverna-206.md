@@ -24,7 +24,17 @@ bibtexKey: 'Journal:'
 pages: 2486-2487
 keywords:
 - ucompare
-topics:
-- Text Mining
+topics: []
 abstract: 'UNLABELLED: Text mining from the biomedical literature is of increasing importance, yet it is not easy for the bioinformatics community to create and run text mining workflows due to the lack of accessibility and interoperability of the text mining resources. The U-Compare system provides a wide range of bio text mining resources in a highly interoperable workflow environment where workflows can very easily be created, executed, evaluated and visualized without coding. We have linked U-Compare to Taverna, a generic workflow system, to expose text mining functionality to the bioinformatics community. AVAILABILITY: http://u-compare.org/taverna.html, http://u-compare.org.'
+paperTerms:
+- Linking U-Compare
+- Text mining
+- biomedical literature
+- bioinformatics community
+- text mining workflows
+- text mining resources
+- U-Compare system
+- interoperable workflow environment
+- generic workflow system
+- text mining functionality
 ---

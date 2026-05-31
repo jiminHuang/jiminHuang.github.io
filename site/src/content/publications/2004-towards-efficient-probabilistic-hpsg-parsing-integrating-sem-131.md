@@ -18,6 +18,16 @@ bibtexKey: tsuruoka:2004b
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/113
 pdfName: Tsuruoka_ijcnlp_2004.pdf
-topics:
+topics: []
+paperTerms:
 - syntactic preference
+- Yoshimasa Tsuruoka
+- Japan Science
+- Technology Agency
+- Yusuke Miyao
+- ichi Tsujii
+- Computer Science
+- '{ tsuruoka'
+- cient pars-
+- probabilistic Head-driven Phrase
 ---

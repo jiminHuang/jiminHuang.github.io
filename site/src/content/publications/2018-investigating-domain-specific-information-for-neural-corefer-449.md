@@ -20,6 +20,5 @@ pubType: Inproceedings
 bibtexKey: 'Booktitle:'
 pages: 183-188
 keywords: []
-topics:
-- Biomedical Text
+topics: []
 ---

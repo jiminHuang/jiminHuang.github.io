@@ -24,4 +24,6 @@ pubType: Inproceedings
 bibtexKey: stenetorp-EtAl:2011:BioNLP-ST
 pages: 112--120
 keywords: []
+topics:
+- BioNLP Shared Task
 ---

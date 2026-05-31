@@ -17,6 +17,16 @@ pages: 209--216
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/66
 pdfName: Yoshida_BioNLP_2007.pdf
-topics:
+topics: []
+paperTerms:
+- clinical language processing
+- Biomedical Named-Entity Recognition
+- Kazuhiro Yoshida
+- ichi Tsujii
+- Computer Science
+- National Center
+- Text Mining
+- '{ kyoshida'
 - entity recognition
+- statistical classi
 ---

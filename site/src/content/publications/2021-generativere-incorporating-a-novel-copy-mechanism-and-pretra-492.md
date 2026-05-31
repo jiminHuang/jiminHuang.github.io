@@ -18,4 +18,23 @@ bibtexKey: cao:2021
 pages: 2119–2126
 keywords: []
 abstract: Previous neural seq2seq models have shown the effectiveness for jointly extracting relation triplets. However, most of these models suffer from incompletion and disorder problems when they extract multi-token entities from input sentences. To tackle these problems, we propose a generative, multi-task learning framework, named GenerativeRE. We firstly propose a special entity labelling method on both input and output sequences. During the training stage, GenerativeRE fine-tunes the pretrained generative model and learns the special entity labels simultaneously. During the inference stage, we propose a novel copy mechanism equipped with three mask strategies, to generate the most probable tokens by diminishing the scope of the model decoder. Experimental results show that our model achieves 4.6% and 0.9% F1 score improvements over the current state-of-the-art methods in the NYT24 and NYT29 benchmark datasets respectively.
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Hong Kong
+- text mining
+paperTerms:
+- Novel Copy Mechanism
+- Joint Entity
+- Relation Extraction
+- Jiarun Cao
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- United Kingdom
+- '{ jiarun.cao'
+- models suf-
 ---

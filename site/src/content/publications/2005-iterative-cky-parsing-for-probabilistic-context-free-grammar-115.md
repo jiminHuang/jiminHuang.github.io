@@ -17,4 +17,17 @@ pages: 52-60
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/99
 pdfName: Tsuruoka_ijcnlp_2005.pdf
+topics:
+- Computer Science
+paperTerms:
+- Iterative CKY
+- Probabilistic Context-Free Grammars
+- Yoshimasa Tsuruoka
+- ichi Tsujii
+- Computer Science
+- Japan Science
+- Technology Agency
+- '{ tsuruoka'
+- iterative CKY pars-
+- probabilistic context-
 ---

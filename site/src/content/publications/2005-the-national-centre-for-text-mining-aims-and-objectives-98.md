@@ -21,7 +21,5 @@ aigaionId: 98
 pubType: Article
 bibtexKey: ananiadou:2005
 keywords: []
-topics:
-- Text Mining
-- National Centre
+topics: []
 ---

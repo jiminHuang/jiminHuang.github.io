@@ -34,4 +34,21 @@ bibtexKey: rebholz:2008
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/28
 pdfName: Rebholz_ISMB_2008.pdf
+topics:
+- Wide coverage
+- Oxford Road
+- scientific literature
+- Text Mining
+- text mining
+paperTerms:
+- reference terminological resource
+- Area della Ricerca
+- Oxford Road
+- large-scale terminological resource
+- text mining efforts
+- biomedical domain
+- semantic types
+- chemical compounds
+- biological ontologies
+- initial term repository
 ---

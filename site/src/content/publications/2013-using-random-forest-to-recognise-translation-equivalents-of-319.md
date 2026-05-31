@@ -22,7 +22,16 @@ pages: 95-104
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/127
 pdfName: kontonatsios13c.pdf
-topics:
-- Biomedical Terms
+topics: []
+paperTerms:
+- Random Forest Classi
+- National Centre
+- Text Mining
+- Computer Science
+- Microsoft Research Asia
+- '{ gkontonatsios'
+- '@ cs.man.ac.uk'
+- semantic equivalents
 - biomedical terms
+- language pairs
 ---

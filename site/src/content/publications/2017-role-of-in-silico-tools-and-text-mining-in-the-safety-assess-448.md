@@ -27,6 +27,5 @@ pubType: Article
 bibtexKey: 'Journal:'
 pages: S96
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

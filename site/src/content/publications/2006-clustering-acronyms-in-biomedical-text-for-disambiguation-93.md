@@ -17,6 +17,16 @@ pages: 959-962
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/79
 pdfName: Okazaki_LREC_2006.pdf
-topics:
-- Biomedical Text
+topics: []
+paperTerms:
+- Naoaki Okazaki
+- Sophia Ananiadou
+- Graduate School
+- Information Science
+- National Centre
+- Text Mining
+- PO Box
+- Sackville Street
+- United Kingdom
+- Sophia.Ananiadou @ manchester.ac.uk
 ---

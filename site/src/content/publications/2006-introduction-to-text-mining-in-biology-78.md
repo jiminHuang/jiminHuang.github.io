@@ -15,6 +15,5 @@ pubType: Incollection
 bibtexKey: ananiadou:2006b
 pages: 1--12
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

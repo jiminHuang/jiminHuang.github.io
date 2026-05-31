@@ -18,4 +18,6 @@ pubType: Inproceedings
 bibtexKey: ohta-pyysalo-tsujii:2011:BioNLP-ST
 pages: 16--25
 keywords: []
+topics:
+- BioNLP Shared Task
 ---

@@ -22,4 +22,6 @@ pubType: Inproceedings
 bibtexKey: kim:2009
 pages: 1--9
 keywords: []
+topics:
+- Shared Task
 ---

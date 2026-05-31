@@ -23,6 +23,16 @@ pages: 27--34
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/39
 pdfName: Thompson_LREC_2008_b.pdf
-topics:
-- Biomedical Text
+topics: []
+paperTerms:
+- Biomedical Texts
+- Text Mining
+- '{ paul.thompson'
+- '{ giulia.venturi'
+- accurate recognition
+- modal information
+- categorisation scheme
+- small pilot
+- biomedical statements
+- lexical items
 ---

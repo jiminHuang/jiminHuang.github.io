@@ -17,7 +17,16 @@ pages: 77-90
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/97
 pdfName: Tsujii_LRE_2005.pdf
-topics:
-- Logical Ontology
-- Text Mining
+topics: []
+paperTerms:
+- logical ontology
+- text mining
+- Junichi Tsujii
+- Computer Science
+- Graduate School
+- Information Science
+- Sophia Ananiadou
+- National Centre
+- Salford University
+- s.ananiadou @ salford.ac.uk
 ---

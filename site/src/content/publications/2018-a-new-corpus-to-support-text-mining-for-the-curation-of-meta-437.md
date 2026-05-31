@@ -28,6 +28,5 @@ pubType: Inproceedings
 bibtexKey: shardlow:2018
 pages: 280-285
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

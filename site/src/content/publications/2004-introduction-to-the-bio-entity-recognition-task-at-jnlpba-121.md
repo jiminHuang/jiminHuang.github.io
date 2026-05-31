@@ -23,7 +23,16 @@ pages: 70--75
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/105
 pdfName: Kim_JNLPBA_2004.pdf
-topics:
-- entity recognition
+topics: []
+paperTerms:
 - Bio-Entity Recognition Task
+- Jin-Dong KIM
+- Tomoko OHTA
+- Yoshimasa TSURUOKA
+- Yuka TATEISI
+- Japan Science
+- Technology Agency
+- Computer Science
+- Nigel COLLIER
+- National Institute
 ---

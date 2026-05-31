@@ -102,4 +102,19 @@ bibtexKey: rehm:2016
 pages: 351-374
 keywords: []
 abstract: This article provides an overview of the dissemination work carried out in META-NET from 2010 until 2015; we describe its impact on the regional, national and international level, mainly with regard to politics and the funding situation for LT topics. The article documents the initiative’s work throughout Europe in order to boost progress and innovation in our field.
+topics:
+- Sophia Ananiadou
+- John McNaught
+- Paul Thompson
+paperTerms:
+- Language Resources
+- Evaluation Conference
+- Enable Confetti
+- Toggle Sidebar
+- Main Conference
+- Strategic Impact
+- International Level
+- Ninth International Conference
+- Cite BibTeX
+- LT topics
 ---

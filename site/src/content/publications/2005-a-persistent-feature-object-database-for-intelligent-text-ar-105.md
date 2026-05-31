@@ -19,6 +19,5 @@ pages: 197--205
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/89
 pdfName: Ninomiya_LNCS_2005.pdf
-topics:
-- Persistent Feature-Object Database
+topics: []
 ---

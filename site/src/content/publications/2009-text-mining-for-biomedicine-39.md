@@ -14,6 +14,5 @@ pubType: Article
 bibtexKey: ananiadou:2009
 pages: 1--11
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

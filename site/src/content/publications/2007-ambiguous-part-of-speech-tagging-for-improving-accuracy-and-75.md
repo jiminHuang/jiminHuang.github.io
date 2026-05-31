@@ -21,4 +21,21 @@ pages: 1783-1788
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/67
 pdfName: Yoshida_IJCAI_2007.pdf
+topics:
+- Computer Science
+- Tomoko Ohta
+- Text Mining
+- Biomedical papers
+- text mining
+paperTerms:
+- Ambiguous Part-of-Speech
+- Domain Portability
+- Syntactic Parsers
+- Kazuhiro Yoshida
+- Yoshimasa Tsuruoka
+- Yusuke Miyao
+- ichi Tsujii
+- Computer Science
+- National Center
+- Text Mining
 ---

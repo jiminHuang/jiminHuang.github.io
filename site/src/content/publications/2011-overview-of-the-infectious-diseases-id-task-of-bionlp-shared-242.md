@@ -30,4 +30,6 @@ pubType: Inproceedings
 bibtexKey: pyysalo-EtAl:2011:BioNLP-ST
 pages: 26--35
 keywords: []
+topics:
+- BioNLP Shared Task
 ---

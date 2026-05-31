@@ -20,6 +20,5 @@ pubType: Inproceedings
 bibtexKey: batista16tmtutorial
 pages: 471â€“473
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

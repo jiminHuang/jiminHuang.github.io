@@ -37,6 +37,16 @@ pages: 17-20
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/78
 pdfName: Ohta_ACL_2006.pdf
-topics:
-- Intelligent Search Engine
+topics: []
+paperTerms:
+- Interactive Presentation Sessions
+- intelligent search engine
+- GUI-based ef
+- cient MEDLINE search
+- deep syntactic parsing
+- Tomoko Ohta
+- Yoshimasa Tsuruoka
+- Jumpei Takeuchi
+- Jin-Dong Kim
+- Yusuke Miyao
 ---

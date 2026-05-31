@@ -23,4 +23,17 @@ pubType: Article
 bibtexKey: rak:2014b
 keywords: []
 abstract: 'Web services have become a popular means of interconnecting solutions for processing a body of scientific literature. This has fuelled research on high-level data exchange formats suitable for a given domain and ensuring the interoperability of Web services. In this article, we focus on the biological domain and consider four interoperability formats, BioC, BioNLP, XMI and RDF, that represent domain-specific and generic representations and include well-established as well as emerging specifications. We use the formats in the context of customizable Web services created in our Web-based, text-mining workbench Argo that features an ever-growing library of elementary analytics and capabilities to build and deploy Web services straight from a convenient graphical user interface. We demonstrate a 2-fold customization of Web services: by building task-specific processing pipelines from a repository of available analytics, and by configuring services to accept and produce a combination of input and output data interchange formats. We provide qualitative evaluation of the formats as well as quantitative evaluation of automatic analytics. The latter was carried out as part of our participation in the fourth edition of the BioCreative challenge. Our analytics built into Web services for recognizing biochemical concepts in BioC collections achieved the highest combined scores out of 10 participating teams. Database URL: http://argo.nactem.ac.uk.'
+topics:
+- scientific literature
+paperTerms:
+- Processing Biological Literature
+- scientific literature
+- Web services
+- biological domain
+- interoperability formats
+- generic representations
+- customizable Web services
+- text-mining workbench Argo
+- ever-growing library
+- elementary analytics
 ---

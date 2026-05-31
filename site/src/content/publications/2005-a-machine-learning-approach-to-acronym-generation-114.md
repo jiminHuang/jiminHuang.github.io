@@ -19,6 +19,5 @@ pages: 25-31
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/98
 pdfName: Tsuruoka_Biolink_2005.pdf
-topics:
-- Machine Learning
+topics: []
 ---

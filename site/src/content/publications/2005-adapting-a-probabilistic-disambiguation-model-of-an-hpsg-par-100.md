@@ -19,7 +19,16 @@ pages: 199--210
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/85
 pdfName: Hara-IJCNLP-2005.pdf
-topics:
+topics: []
+paperTerms:
 - probabilistic disambiguation model
 - HPSG parser
+- Computer Science
+- Japan Science
+- Technology Agency
+- Sackville St
+- pendent HPSG parser
+- biomedical domain
+- probabilistic model
+- original HPSG parser
 ---

@@ -15,4 +15,6 @@ aigaionId: 591
 pubType: Misc
 bibtexKey: 'Year:'
 keywords: []
+topics:
+- Multimodal LLMs
 ---

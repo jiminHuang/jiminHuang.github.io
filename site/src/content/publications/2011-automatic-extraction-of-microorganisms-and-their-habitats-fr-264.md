@@ -22,6 +22,5 @@ pubType: Article
 bibtexKey: 'Journal:'
 pages: '184'
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

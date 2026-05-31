@@ -21,8 +21,16 @@ pages: 103--114
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/88
 pdfName: Ninomiya_IWPT_2005.pdf
-topics:
+topics: []
+paperTerms:
 - Beam Thresholding
-- Unification Filtering
-- Hybrid Parsing
+- cation Filtering
+- Probabilistic HPSG Parsing
+- Takashi Ninomiya
+- Computer Science
+- Yoshimasa Tsuruoka
+- tsuruoka @ is.s.u-tokyo.ac.jp
+- Yusuke Miyao
+- yusuke @ is.s.u-tokyo.ac.jp
+- ichi Tsujii
 ---

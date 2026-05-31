@@ -20,6 +20,5 @@ pubType: Inproceedings
 bibtexKey: ananiadou:2010
 pages: 3344--3350
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

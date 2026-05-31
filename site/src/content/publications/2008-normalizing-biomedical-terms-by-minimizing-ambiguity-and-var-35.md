@@ -19,7 +19,16 @@ pages: S2
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/44
 pdfName: Tsuruoka_BMC_2008_b.pdf
-topics:
-- Biomedical Terms
+topics: []
+paperTerms:
+- BioMed Central
+- citation purposes
 - biomedical terms
+- Computer Science
+- Princess Street
+- Text Mining
+- Yoshimasa Tsuruoka*
+- '@ manchester.ac.uk'
+- John McNaught
+- john.mcnaught @ manchester.ac.uk
 ---

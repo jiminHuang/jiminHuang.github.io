@@ -26,6 +26,5 @@ aigaionId: 409
 pubType: Article
 bibtexKey: 'Journal:'
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

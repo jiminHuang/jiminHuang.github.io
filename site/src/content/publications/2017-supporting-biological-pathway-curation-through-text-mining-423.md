@@ -17,6 +17,5 @@ pubType: Incollection
 bibtexKey: ananiado:2017a
 pages: 59-73
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

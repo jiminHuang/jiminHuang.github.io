@@ -25,6 +25,16 @@ pages: 34--48
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/118
 pdfName: Nobata_ICSD_2009.pdf
-topics:
-- Text Mining
+topics: []
+paperTerms:
+- Semantic Search
+- Digital Document
+- Text Mining Results
+- Chikashi Nobata
+- Yutaka Sasaki
+- Naoaki Okazaki
+- C.J Rupp
+- ichi Tsujii
+- Sophia Ananiadou
+- National Centre
 ---

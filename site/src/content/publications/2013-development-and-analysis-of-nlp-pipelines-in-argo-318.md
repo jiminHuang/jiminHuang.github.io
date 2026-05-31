@@ -22,4 +22,23 @@ pages: 115-120
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/126
 pdfName: rak13development.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- text mining
+- manual annotation
+- BioNLP Shared Task
+paperTerms:
+- NLP Pipelines
+- Rafal Rak
+- Andrew Rowley
+- Jacob Carter
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Computer Science
+- Manchester Institute
+- Princess St
 ---

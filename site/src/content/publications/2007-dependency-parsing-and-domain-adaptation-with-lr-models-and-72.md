@@ -17,4 +17,19 @@ pages: 1044-1050
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/63
 pdfName: Sagae_EMNLP_2007.pdf
+topics:
+- Computer Science
+- Text Mining
+- text mining
+paperTerms:
+- Dependency Parsing
+- Domain Adaptation
+- LR Models
+- Parser Ensembles
+- Computer Science
+- Text Mining
+- '{ sagae'
+- data-driven variant
+- best-first search
+- LR dependency parsing
 ---

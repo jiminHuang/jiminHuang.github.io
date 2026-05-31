@@ -19,4 +19,21 @@ pages: 30--37
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/45
 pdfName: Tsuruoka_BioNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Current Trends
+- Sparse Named Entities
+- Dynamic Sentence Selection
+- Computer Science
+- National Centre
+- Text Mining
+- '@ manchester.ac.uk'
+- sophia.ananiadou @ manchester.ac.uk
+- human effort
+- entity annotations
 ---

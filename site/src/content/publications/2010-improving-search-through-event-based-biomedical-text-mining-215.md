@@ -18,7 +18,16 @@ bibtexKey: 'Booktitle:'
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/120
 pdfName: Ananiadou_AMICUS_2010.pdf
-topics:
+topics: []
+paperTerms:
+- Improving Search
+- Sophia Ananiadou
+- National Centre
 - Text Mining
-- Biomedical Text
+- Princess Street
+- sophia.ananiadou @ manchester.ac.uk
+- Paul Thompson
+- paul.thompson @ manchester.ac.uk
+- Raheel Nawaz
+- Computer Science
 ---

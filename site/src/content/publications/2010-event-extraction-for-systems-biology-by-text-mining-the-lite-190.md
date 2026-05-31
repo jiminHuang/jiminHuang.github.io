@@ -20,6 +20,5 @@ pubType: Article
 bibtexKey: ananiadou:2010b
 pages: 381-390
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

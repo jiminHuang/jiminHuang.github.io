@@ -21,6 +21,5 @@ bibtexKey: kontonatsios:2011
 keywords:
 - isher
 - ucompare
-topics:
-- Text Mining
+topics: []
 ---

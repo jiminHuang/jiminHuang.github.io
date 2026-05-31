@@ -27,4 +27,21 @@ pages: 33--40
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/50
 pdfName: Hahn_LAW_2007.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- John McNaught
+- Text Mining
+- text mining
+paperTerms:
+- Linguistic Annotation Workshop
+- Annotation Type System
+- Data-Driven NLP Pipeline
+- Udo Hahn
+- Ekaterina Buyko
+- Katrin Tomanek
+- Jena University Language
+- Information Engineering
+- Scott Piao
+- John McNaught
 ---

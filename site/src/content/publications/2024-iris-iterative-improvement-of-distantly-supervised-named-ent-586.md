@@ -18,4 +18,21 @@ aigaionId: 586
 pubType: Misc
 bibtexKey: yano:2024
 keywords: []
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- manual annotation
+- BioNLP Shared Task
+paperTerms:
+- Iterative Improvement
+- Distantly Supervised
+- Named Entity Annotations
+- Ken Yano
+- National Institute
+- Advanced Industrial Science
+- Makoto Miwa
+- Toyota Technological Institute
+- Sophia Ananiadou
+- entity annotation
 ---

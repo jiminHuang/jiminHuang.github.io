@@ -23,7 +23,16 @@ pages: 1402--1405
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/80
 pdfName: Ohta_LREC_2006.pdf
-topics:
+topics: []
+paperTerms:
 - Biological Annotations
 - Biological Interaction Events
+- Japan Science
+- Technology Agency
+- Computer Science
+- '{ okap'
+- biomedical domain
+- GENIA corpus
+- tree annotation
+- linguistic structure
 ---

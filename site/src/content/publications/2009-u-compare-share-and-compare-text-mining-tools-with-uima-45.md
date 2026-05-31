@@ -27,6 +27,5 @@ bibtexKey: kano:2009b
 pages: 1997--1998
 keywords:
 - ucompare
-topics:
-- Text Mining
+topics: []
 ---

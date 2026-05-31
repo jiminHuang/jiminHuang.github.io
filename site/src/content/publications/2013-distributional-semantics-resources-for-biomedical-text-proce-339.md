@@ -22,6 +22,5 @@ pubType: Inproceedings
 bibtexKey: Pyysalo:2013b
 pages: 39-44
 keywords: []
-topics:
-- Biomedical Text
+topics: []
 ---

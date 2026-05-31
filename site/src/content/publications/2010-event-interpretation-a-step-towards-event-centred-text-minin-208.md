@@ -19,6 +19,16 @@ keywords:
 - metaknowledge
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/121
 pdfName: Nawaz_AMICUS_2010.pdf
-topics:
+topics: []
+paperTerms:
+- Event Interpretation
+- Event-Centred Text
+- Raheel Nawaz
+- Computer Science
+- Princess Street
+- nawazr @ cs.man.ac.uk
+- Paul Thompson
+- National Centre
 - Text Mining
+- paul.thompson @ manchester.ac.uk
 ---

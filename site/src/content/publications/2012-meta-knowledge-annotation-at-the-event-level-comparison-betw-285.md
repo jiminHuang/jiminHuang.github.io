@@ -19,4 +19,6 @@ bibtexKey: nawaz:2012b
 pages: 24-31
 keywords:
 - metaknowledge
+topics:
+- knowledge annotation
 ---

@@ -24,4 +24,17 @@ bibtexKey: 'Journal:'
 pages: 513-540
 keywords: []
 abstract: This paper presents the preparation, results and analysis of the BioNLP’09 shared task on event extraction, organized to address the automatic extraction of fine-grained information from the scientific literature on molecular biology. A representation of this information was defined taking into account both the biological and computational requirements of the task, and corpus resources manually annotated by domain experts provided to task participants. To create a basis for further progress, emphasis was placed on providing fine-grained evaluation that isolates different subtasks and allows the analysis of different aspects of the results through various evaluation criteria. In introducing this new task to the community, we made an effort to reduce the cost of participation by making common natural language processing tools, data, and evaluation methods easily accessible. The task received community-wide participation, establishing the state-of-the-art performance at fine-grained event extraction as well as allowing the identification of remaining challenges and suggesting directions for future improvements. All the resources and results of the shared task are publicly available and an online evaluation on blind test data accessible at http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/.
+topics:
+- scientific literature
+paperTerms:
+- Bio-Molecular Events
+- automatic extraction
+- fine-grained information
+- scientific literature
+- molecular biology
+- computational requirements
+- corpus resources
+- domain experts
+- fine-grained evaluation
+- evaluation criteria
 ---

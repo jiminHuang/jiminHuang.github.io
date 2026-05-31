@@ -25,4 +25,14 @@ bibtexKey: wangyue:2010
 pages: 901-916
 keywords: []
 abstract: 'Although there are several corpora with protein annotation, incompatibility between the annotations in different corpora remains a problem that hinders the progress of automatic recognition of protein names in biomedical literature. Here, we report on our efforts to find a solution to the incompatibility issue, and to improve the compatibility between two representative protein-annotated corpora: the GENIA corpus and the GENETAG corpus. In a comparative study, we improve our insight into the two corpora, and a series of experimental results show that most of the incompatibility can be removed.'
+paperTerms:
+- Inter-corpora Compatibility
+- Protein Annotations
+- protein annotation
+- automatic recognition
+- biomedical literature
+- incompatibility issue
+- representative protein-annotated corpora
+- GENIA corpus
+- GENETAG corpus
 ---

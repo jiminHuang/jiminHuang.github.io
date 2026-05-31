@@ -23,7 +23,13 @@ pubType: Article
 bibtexKey: ananiadou:2009c
 pages: 509-523
 keywords: []
-topics:
-- Text Mining
+topics: []
 abstract: In this article, we describe how we are using text mining solutions to enhance the production of systematic reviews. The aims of this collaborative project are the development of a text mining framework to support systematic reviews and the provision of a service exemplar serving as a test bed for deriving requirements for the development of more generally applicable text mining tools and services.
+paperTerms:
+- Systematic Reviews
+- Text Mining
+- collaborative project
+- text mining framework
+- service exemplar
+- test bed
 ---

@@ -21,7 +21,16 @@ pages: 239--251
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/92
 pdfName: Spasic_BriefBioinf_2005.pdf
-topics:
-- Text Mining
-- raw text
+topics: []
+paperTerms:
+- Irena Spasic
+- postdoctoral research
+- Interdisciplinary Biocentre
+- research interests
+- biomedical text mining
+- Sophia Ananiadou
+- National Centre
+- Computer Science
+- text mining
+- John McNaught
 ---

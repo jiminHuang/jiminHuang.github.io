@@ -30,6 +30,16 @@ bibtexKey: piao2007
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/56
 pdfName: Piao_CorpLing_2007.pdf
-topics:
+topics: []
+paperTerms:
+- BOOTStrep Annotation Scheme
 - Text Mining
+- Scott Piao
+- Ekaterina Buyko
+- Yoshimasa Tsuruoka
+- Katrin Tomanek
+- Jin-Dong Kim
+- John McNaught
+- Udo Hahn
+- natural language texts
 ---

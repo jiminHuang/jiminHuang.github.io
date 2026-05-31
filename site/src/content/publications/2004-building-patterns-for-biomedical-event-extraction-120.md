@@ -21,4 +21,17 @@ pages: 163--164
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/104
 pdfName: Chun_GIW_2004.pdf
+topics:
+- Tomoko Ohta
+paperTerms:
+- Building Patterns
+- Biomedical Event Extraction
+- chun @ is.s.u-tokyo.ac.jp
+- okap @ is.s.u-tokyo.ac.jp
+- jdkim @ is.s.u-tokyo.ac.jp
+- Tsujii Laboratory
+- Japan Science
+- Technology agency
+- biomedical relationship
+- information extraction
 ---

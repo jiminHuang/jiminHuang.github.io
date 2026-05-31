@@ -28,4 +28,22 @@ bibtexKey: goldsack:2024
 pages: 468-477
 keywords: []
 abstract: Tomas Goldsack, Zheheng Luo, Qianqian Xie, Carolina Scarton, Matthew Shardlow, Sophia Ananiadou, Chenghua Lin. The 22nd Workshop on Biomedical Natural Language Processing and BioNLP Shared Tasks. 2023.
+topics:
+- Language Models
+- Sophia Ananiadou
+- scientific literature
+- Matthew Shardlow
+- language models
+- BioNLP Shared Task
+paperTerms:
+- Lay Summarization
+- Biomedical Research Articles
+- '{ zheheng.luo'
+- m.shardlow @ mmu.ac.uk
+- Lay Summarisation
+- Research Articles
+- BioNLP Workshop
+- tive summarisation models
+- lay summaries
+- non-technical audiences
 ---

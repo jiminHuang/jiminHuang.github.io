@@ -19,6 +19,5 @@ aigaionId: 421
 pubType: Inproceedings
 bibtexKey: 'Booktitle:'
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

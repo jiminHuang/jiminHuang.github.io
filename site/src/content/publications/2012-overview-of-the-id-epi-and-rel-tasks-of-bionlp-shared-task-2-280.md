@@ -32,4 +32,28 @@ bibtexKey: pyysalo:2012
 pages: S2
 keywords: []
 abstract: 'We present the preparation, resources, results and analysis of three tasks of the BioNLP Shared Task 2011: the main tasks on Infectious Diseases (ID) and Epigenetics and Post-translational Modifications (EPI), and the supporting task on Entity Relations (REL). The two main tasks represent extensions of the event extraction model introduced in the BioNLP Shared Task 2009 (ST''09) to two new areas of biomedical scientific literature, each motivated by the needs of specific biocuration tasks. The ID task concerns the molecular mechanisms of infection, virulence and resistance, focusing in particular on the functions of a class of signaling systems that are ubiquitous in bacteria. The EPI task is dedicated to the extraction of statements regarding chemical modifications of DNA and proteins, with particular emphasis on changes relating to the epigenetic control of gene expression. By contrast to these two application-oriented main tasks, the REL task seeks to support extraction in general by separating challenges relating to part-of relations into a subproblem that can be addressed by independent systems. Seven groups participated in each of the two main tasks and four groups in the supporting task. The participating systems indicated advances in the capability of event extraction methods and demonstrated generalization in many aspects: from abstracts to full texts, from previously considered subdomains to new ones, and from the ST''09 extraction targets to other entities and events. The highest performance achieved in the supporting task REL, 58% F-score, is broadly comparable with levels reported for other relation extraction tasks. For the ID task, the highest-performing system achieved 56% F-score, comparable to the state-of-the-art performance at the established ST''09 task. In the EPI task, the best result was 53% F-score for the full set of extraction targets and 69% F-score for a reduced set of core extraction targets, approaching a level of performance sufficient for user-facing applications. In this study, we extend on previously reported results and perform further analyses of the outputs of the participating systems. We place specific emphasis on aspects of system performance relating to real-world applicability, considering alternate evaluation metrics and performing additional manual analysis of system outputs. We further demonstrate that the strengths of extraction systems can be combined to improve on the performance achieved by any system in isolation. The manually annotated corpora, supporting resources, and evaluation tools for all tasks are available from http://www.bionlp-st.org and the tasks continue as open challenges for all interested parties.'
+topics:
+- Computer Science
+- full text
+- Sophia Ananiadou
+- scientific literature
+- Sampo Pyysalo
+- Tomoko Ohta
+- National Centre
+- Text Mining
+- extraction methods
+- text mining
+- manual annotation
+- BioNLP Shared Task
+paperTerms:
+- BioNLP Shared Task
+- Infectious Diseases
+- Post-translational Modifications
+- supporting task
+- Entity Relations
+- main tasks
+- extraction model
+- biomedical scientific literature
+- specific biocuration tasks
+- ID task
 ---

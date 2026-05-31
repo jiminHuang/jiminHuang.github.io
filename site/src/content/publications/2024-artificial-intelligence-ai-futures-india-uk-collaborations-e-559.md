@@ -31,4 +31,28 @@ pubType: Article
 bibtexKey: dwivedi:2024
 pages: '102725'
 keywords: []
+topics:
+- Biomedical Text Summarization
+- Decision Making
+- Language Models
+- Computer Science
+- Best Practices
+- Sophia Ananiadou
+- scientific literature
+- National Centre
+- Text Mining
+- Data Science
+- language models
+- text mining
+paperTerms:
+- Artificial Intelligence
+- India-UK Collaborations
+- Yogesh K Dwivedi
+- Digital Futures
+- Sustainable Business
+- Society Research Group
+- Swansea University
+- Bay Campus
+- Fabian Bay
+- Symbiosis Institute
 ---

@@ -19,6 +19,5 @@ aigaionId: 260
 pubType: Inproceedings
 bibtexKey: kork:2011
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

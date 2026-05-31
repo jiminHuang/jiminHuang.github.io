@@ -40,6 +40,5 @@ pubType: Article
 bibtexKey: 'Journal:'
 pages: S159
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

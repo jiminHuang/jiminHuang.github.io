@@ -40,4 +40,21 @@ bibtexKey: xiong:2025
 pages: 13921–13934
 keywords: []
 abstract: 'Guojun Xiong, Zhiyang Deng, Keyi Wang, Yupeng Cao, Haohang Li, Yangyang Yu, Xueqing Peng, Mingquan Lin, Kaleb E Smith, Xiao-Yang Liu, Jimin Huang, Sophia Ananiadou, Qianqian Xie. Findings of the Association for Computational Linguistics: ACL 2025. 2025.'
+topics:
+- Decision Making
+- Language Models
+- Sophia Ananiadou
+- Data Science
+- language models
+paperTerms:
+- Reinforcement Learning
+- Financial Trading
+- '@ gmail.com'
+- Large language models
+- multimodal financial data
+- impressive reasoning capabilities
+- nancial tasks
+- goal-oriented scenarios
+- active financial markets
+- complex agentic approaches
 ---

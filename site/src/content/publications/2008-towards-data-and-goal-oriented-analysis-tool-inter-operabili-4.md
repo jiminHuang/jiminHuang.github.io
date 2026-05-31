@@ -31,4 +31,22 @@ pages: 859-864
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/8
 pdfName: Kano_IJCNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- Tomoko Ohta
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Computer Science
+- PO Box
+- Sackville St
+- National Centre
+- Text Mining
+- Manchester Interdisciplinary Biocentre
+- Princess St
+- '{ kano'
+- '@ is.s.u-tokyo.ac.jp'
+- '{ yoshimasa.tsuruoka'
 ---

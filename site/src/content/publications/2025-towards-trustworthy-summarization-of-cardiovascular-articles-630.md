@@ -24,4 +24,21 @@ bibtexKey: partalidou:2025
 pages: 200–207
 keywords: []
 abstract: While large, biomedical documents with complex terminology are in need of being understood more easily and efficiently, summarizing this kind of content can be problematic, as Large Language Models (LLMs) aren't always trustworthy.Considering the importance of comprehending Cardiovascular Diseases, we study in depth the ability of different state-ofthe-art biomedical LLMs to generate factual and certain summaries in this topic, and examine which generation choices can influence their trustworthiness.To that end, besides using factuality metrics, we employ techniques for token-level uncertainty estimation, an area that has received little attention from the scientific community.Our results reveal dissimilarities between LLMs and generation methods, and highlight connections between factuality and uncertainty metrics, thereby laying the groundwork for further investigation in the area.
+topics:
+- Biomedical Text Summarization
+- Language Models
+- Riza Batista-Navarro
+- Sophia Ananiadou
+- language models
+paperTerms:
+- Towards Trustworthy Summarization
+- Cardiovascular Articles
+- Athena Research Center
+- epartala @ csd.auth.gr
+- biomedical documents
+- plex terminology
+- Large Language Models
+- Cardiovascular Diseases
+- the-art biomedical LLMs
+- generation choices
 ---

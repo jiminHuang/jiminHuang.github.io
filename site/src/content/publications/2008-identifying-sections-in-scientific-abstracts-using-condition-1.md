@@ -21,4 +21,23 @@ pages: 381-388
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/31
 pdfName: Hirohata_IJCNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Princess Street
+- extraction methods
+- text mining
+paperTerms:
+- Conditional Random Fields
+- Kenji Hirohata
+- Naoaki Okazaki
+- Sophia Ananiadou
+- sophia.ananiadou @ manchester.ac.uk
+- Graduate School
+- Mitsuru Ishizuka
+- Computer Science
+- National Centre
+- Text Mining
 ---

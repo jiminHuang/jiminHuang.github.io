@@ -19,4 +19,22 @@ pages: '10'
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/23
 pdfName: Kim_BMC_2008.pdf
+topics:
+- Computer Science
+- Tomoko Ohta
+- National Centre
+- Text Mining
+- text mining
+- manual annotation
+paperTerms:
+- BioMed Central
+- citation purposes
+- Corpus annotation
+- Computer Science
+- Information Science
+- Text Mining
+- Jin-Dong Kim*
+- jdkim @ is.s.u-tokyo.ac.jp
+- Tomoko Ohta
+- okap @ is.s.u-tokyo.ac.jp
 ---

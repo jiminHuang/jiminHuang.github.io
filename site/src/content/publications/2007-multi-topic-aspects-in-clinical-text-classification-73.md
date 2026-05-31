@@ -19,4 +19,23 @@ pages: 62--70
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/64
 pdfName: Sasaki_IEEE_2007.pdf
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Multi-Topic Aspects
+- Clinical Text Classi
+- Text Mining
+- Computer Science
+- Princess Street
+- United Kingdom
+- '@ manchester.ac.uk'
+- clinical free text
+- practical situ-
+- topics Automatic assignment
 ---

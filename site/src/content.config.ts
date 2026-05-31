@@ -152,8 +152,10 @@ const publications = defineCollection({
     keywords: z.array(z.string()).default([]),
     pdfUrl: z.string().optional(),         // Aigaion-hosted PDF attachment
     pdfName: z.string().optional(),
-    /** Multi-word technical terms extracted by TerMine (C-value) */
+    /** Corpus-level terms (from global TerMine pass; intersected with paper text) */
     topics: z.array(z.string()).default([]),
+    /** Per-paper terms — TerMine run on this paper's full text alone */
+    paperTerms: z.array(z.string()).default([]),
   }),
 });
 

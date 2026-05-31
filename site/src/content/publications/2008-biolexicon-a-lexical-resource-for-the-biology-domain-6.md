@@ -25,4 +25,24 @@ pages: 109--116
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/10
 pdfName: Sasaki_SMBM_2008.pdf
+topics:
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- National Centre
+- John McNaught
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- A Lexical Resource
+- Biology Domain
+- biological terminology
+- analysis errors
+- BOOTStrep BioLexicon
+- linguistic resource
+- terminological verbs
+- comprehensive coverage
+- biological terms
+- linguistic aspects
 ---

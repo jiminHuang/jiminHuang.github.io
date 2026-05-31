@@ -19,4 +19,20 @@ pages: 624--631
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/62
 pdfName: Sagae_ACL_2007.pdf
+topics:
+- Computer Science
+- Wide coverage
+- Text Mining
+- text mining
+paperTerms:
+- Czech Republic
+- HPSG Parsing
+- Shallow Dependency Constraints
+- Computer Science
+- Text Mining
+- '{ sagae'
+- bines strengths
+- surface syntactic pars-
+- deep syntactic parsing
+- surface dependencies
 ---

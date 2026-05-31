@@ -28,4 +28,21 @@ bibtexKey: ananiadou:2007c
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/49
 pdfName: Ananiadou_ICSB_2007.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- information retrieval system
+- Computer Science
+- National Centre
+- Text Mining
+- Semantic Text
+- advanced information retrieval
+- metadata searches
+- management technologies
+- SemText draws
+- core technologies
 ---

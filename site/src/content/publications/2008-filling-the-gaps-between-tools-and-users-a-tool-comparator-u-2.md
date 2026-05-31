@@ -32,6 +32,16 @@ abstract: Recently, several text mining programs have reached a near-practical l
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/30
 pdfName: Kano_PSB_2008.pdf
-topics:
+topics: []
+paperTerms:
+- Computer Science
+- PO Box
+- Sackville St
+- National Centre
 - Text Mining
+- Manchester Interdisciplinary Biocentre
+- Princess St
+- text mining programs
+- database curators
+- research groups
 ---

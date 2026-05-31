@@ -33,4 +33,21 @@ keywords:
 - tacit knowledge
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/37
 pdfName: Thew_IEEE_2008_b.pdf
+topics:
+- Decision Making
+- National Centre
+- John McNaught
+- Text Mining
+- text mining
+paperTerms:
+- e-Science Requirements
+- Manchester Business School
+- National Centre
+- Text Mining
+- e-Social Science
+- Northwest Institute
+- Bio-Health Informatics
+- Sarah.Thew @ manchester.ac.uk
+- requirements engineering techniques
+- science application
 ---

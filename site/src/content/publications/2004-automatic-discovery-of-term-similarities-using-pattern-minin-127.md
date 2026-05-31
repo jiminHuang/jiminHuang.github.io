@@ -19,4 +19,22 @@ pages: 55-80
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/110
 pdfName: Nenadic_Terminology_2004.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- scientific literature
+- Text Mining
+- Biomedical papers
+- text mining
+paperTerms:
+- Term Similarities
+- Goran Nenadic
+- G.Nenadic @
+- Irena Spasic
+- Computer Science
+- I.Spasic @ salford.ac.uk
+- Sophia Ananiadou
+- S.Ananiadou @ salford.ac.uk
+- automatic discovery
+- term comparison
 ---

@@ -18,4 +18,6 @@ pubType: Inproceedings
 bibtexKey: nguyen-kim-tsujii:2011:BioNLP-ST
 pages: 74--82
 keywords: []
+topics:
+- Shared Task
 ---

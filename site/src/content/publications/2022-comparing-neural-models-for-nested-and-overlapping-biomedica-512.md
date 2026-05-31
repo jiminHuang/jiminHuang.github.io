@@ -26,4 +26,23 @@ bibtexKey: espinosa:2022
 pages: '211'
 keywords: []
 abstract: 'BACKGROUND: Nested and overlapping events are particularly frequent and informative structures in biomedical event extraction. However, state-of-the-art neural models either neglect those structures during learning or use syntactic features and external tools to detect them. To overcome these limitations, this paper presents and compares two neural models: a novel EXhaustive Neural Network (EXNN) and a Search-Based Neural Network (SBNN) for detection of nested and overlapping events. RESULTS: We evaluate the proposed models as an event detection component in isolation and within a pipeline setting. Evaluation in several annotated biomedical event extraction datasets shows that both EXNN and SBNN achieve higher performance in detecting nested and overlapping events, compared to the state-of-the-art model Turku Event Extraction System (TEES). CONCLUSIONS: The experimental results reveal that both EXNN and SBNN are effective for biomedical event extraction. Furthermore, results on a pipeline setting indicate that our models improve detection of events compared to models that use either gold or predicted named entities.'
+topics:
+- Language Models
+- Computer Science
+- National Centre
+- Text Mining
+- language models
+- text mining
+- BioNLP Shared Task
+paperTerms:
+- neural models
+- biological systems
+- biological organisation
+- drug reactions
+- Information Extraction
+- relevant entities
+- pairwise relations
+- drug-disease relations
+- protein-protein interactions
+- binary relations
 ---

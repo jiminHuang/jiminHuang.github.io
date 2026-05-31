@@ -48,7 +48,16 @@ aigaionId: 361
 pubType: Article
 bibtexKey: comeau14bioc
 keywords: []
-topics:
-- Biomedical Text
+topics: []
 abstract: 'BioC is a new simple XML format for sharing biomedical text and annotations and libraries to read and write that format. This promotes the development of interoperable tools for natural language processing (NLP) of biomedical text. The interoperability track at the BioCreative IV workshop featured contributions using or highlighting the BioC format. These contributions included additional implementations of BioC, many new corpora in the format, biomedical NLP tools consuming and producing the format and online services using the format. The ease of use, broad support and rapidly growing number of tools demonstrate the need for and value of the BioC format. Database URL: http://bioc.sourceforge.net/.'
+paperTerms:
+- simple XML format
+- interoperable tools
+- natural language processing
+- interoperability track
+- BioC format
+- additional implementations
+- biomedical NLP tools
+- online services
+- broad support
 ---

@@ -21,6 +21,5 @@ pubType: Inbook
 bibtexKey: batista2017text
 pages: 30-42
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

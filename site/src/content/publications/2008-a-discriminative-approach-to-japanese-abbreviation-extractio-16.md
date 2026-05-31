@@ -19,4 +19,22 @@ pages: 889-894
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/26
 pdfName: Okazaki_IJCNLP_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Discriminative Approach
+- Japanese Abbreviation Extraction
+- Naoaki Okazaki
+- Mitsuru Ishizuka
+- ichi Tsujii
+- Graduate School
+- Computer Science
+- National Centre
+- Text Mining
+- Manchester Interdisciplinary Biocentre
 ---

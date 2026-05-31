@@ -18,4 +18,26 @@ bibtexKey: min:2023
 pages: 1-10
 keywords: []
 abstract: Rumour detection on social media is an important topic due to the challenges of misinformation propagation and slow verification of misleading information. Most previous work focus on the response posts on social media, ignoring the useful characteristics of involved users and their relations. In this paper, we propose a novel framework, Post-User Fusion Network (PESTO), which models the patterns of rumours from both post diffusion and user social networks. Specifically, we propose a novel Chronologically-masked Transformer architecture to model both temporal sequence and diffusion structure of rumours, and apply a Relational Graph Convolutional Network to model the social relations of involved users, with a fusion network based on self-attention mechanism to incorporate the two aspects. Additionally, two data augmentation techniques are leveraged to improve the robustness and accuracy of our models. Empirical results on four datasets of English tweets show the superiority of the proposed method.
+topics:
+- Social Media Analysis
+- United Kingdom
+- Post-User Fusion Network
+- Rumour Detection
+- Sophia Ananiadou
+- Erxue Min
+- Independent Researcher
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Social Media Analysis
+- Post-User Fusion Network
+- Rumour Detection
+- Erxue Min
+- Independent Researcher
+- erxue.min @ gmail.com
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- United Kingdom
 ---

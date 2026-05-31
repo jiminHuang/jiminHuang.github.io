@@ -34,4 +34,21 @@ bibtexKey: peng:2025
 pages: 30176–30202
 keywords: []
 abstract: Xueqing Peng, Triantafillos Papadopoulos, Efstathia Soufleri, Polydoros Giannouris, Ruoyu Xiang, Yan Wang, Lingfei Qian, Jimin Huang, Qianqian Xie, Sophia Ananiadou. Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing. 2025.
+topics:
+- Language Models
+- Computer Science
+- United Kingdom
+- Sophia Ananiadou
+- language models
+paperTerms:
+- Empirical Methods
+- Natural Language Processing
+- Low-Resource Greek
+- Fin AI
+- Athena Research Center
+- jimin.huang @ thefin.ai
+- global econ-
+- language models
+- Greek financial context
+- linguistic complexity
 ---

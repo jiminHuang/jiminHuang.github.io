@@ -18,4 +18,21 @@ pages: 88-97
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/125
 pdfName: rak13making.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Rafal Rak
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Computer Science
+- '{ rafal.rak'
+- text corpora
+- architecture de
+- common data struc-
+- processing compo-
 ---

@@ -21,6 +21,16 @@ pages: 60--69
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/103
 pdfName: Yakushiji_SMBM_2005.pdf
-topics:
-- Predicate-argument Structure Patterns
+topics: []
+paperTerms:
+- Biomedical Information Extraction
+- Predicate-Argument Structure Patterns
+- Akane Yakushiji
+- Yusuke Miyao
+- Yuka Tateisi
+- ichi Tsujii
+- Computer Science
+- Japan Science
+- Technology Agency
+- formation Extraction
 ---

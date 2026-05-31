@@ -33,6 +33,16 @@ pages: 1736-1740
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/32
 pdfName: Saetre_LREC_2008.pdf
-topics:
+topics: []
+paperTerms:
 - Text Mining
+- PathText Resource
+- aComputer Science
+- dOkinawa Institute
+- eNational Centre
+- Princess Street
+- '@ is.s.u-tokyo.ac.jp'
+- bmyukiko @ symbio.jst.go.jp
+- ckikuchi-norihiro @ mki.co.jp
+- dkitano @ sbi.jp
 ---

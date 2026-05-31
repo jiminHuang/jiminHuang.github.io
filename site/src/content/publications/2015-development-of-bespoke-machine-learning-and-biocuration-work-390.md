@@ -18,7 +18,5 @@ pubType: Inproceedings
 bibtexKey: batista15development
 pages: 51-56
 keywords: []
-topics:
-- Text Mining
-- Machine Learning
+topics: []
 ---

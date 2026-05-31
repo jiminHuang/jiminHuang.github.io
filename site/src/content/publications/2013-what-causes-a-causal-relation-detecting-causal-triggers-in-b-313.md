@@ -19,4 +19,27 @@ keywords:
 - biocause
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/123
 pdfName: mihaila13c.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- Sampo Pyysalo
+- Tomoko Ohta
+- National Centre
+- John McNaught
+- Text Mining
+- Paul Thompson
+- Princess Street
+- text mining
+- BioNLP Shared Task
+paperTerms:
+- causal relation
+- Causal Triggers
+- Biomedical Scienti
+- Claudiu Mih
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Computer Science
+- Princess Street
+- claudiu.mihaila @ manchester.ac.uk
 ---

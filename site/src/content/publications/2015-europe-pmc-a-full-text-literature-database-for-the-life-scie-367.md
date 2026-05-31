@@ -15,4 +15,15 @@ bibtexKey: eupmc:2014
 pages: D1042-D1048
 keywords: []
 abstract: This article describes recent developments of Europe PMC (http://europepmc.org), the leading database for life science literature. Formerly known as UKPMC, the service was rebranded in November 2012 as Europe PMC to reflect the scope of the funding agencies that support it. Several new developments have enriched Europe PMC considerably since then. Europe PMC now offers RESTful web services to access both articles and grants, powerful search tools such as citation-count sort order and data citation features, a service to add publications to your ORCID, a variety of export formats, and an External Links service that enables any related resource to be linked from Europe PMC content.
+paperTerms:
+- Europe PMC
+- full-text literature database
+- life sciences
+- life science literature
+- funding agencies
+- RESTful web services
+- search tools
+- citation-count sort order
+- data citation features
+- export formats
 ---

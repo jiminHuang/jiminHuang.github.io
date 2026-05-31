@@ -19,8 +19,16 @@ pages: 345--351
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/111
 pdfName: Spasic_IDEAL_2004.pdf
-topics:
+topics: []
+paperTerms:
 - Biomedical Terms
 - Literature Mining
-- biomedical terms
+- Genetic Algorithms
+- Irena Spasi
+- Goran Nenadi
+- Manchester Institute
+- PO Box
+- G.Nenadic } @
+- S.Ananiadou @ salford.ac.uk
+- evant literature
 ---

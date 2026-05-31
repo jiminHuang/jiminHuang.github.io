@@ -20,4 +20,6 @@ pubType: Inproceedings
 bibtexKey: Vasquez-Rodriguez:2023
 pages: 218-224
 keywords: []
+topics:
+- Shared Task
 ---

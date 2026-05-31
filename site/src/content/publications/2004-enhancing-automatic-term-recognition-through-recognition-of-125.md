@@ -19,6 +19,16 @@ pages: 604--610
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/108
 pdfName: Nenadic_Coling_2004.pdf
-topics:
+topics: []
+paperTerms:
 - automatic term recognition
+- Goran Nenadi
+- G.Nenadic @
+- Sophia Ananiadou*
+- Computer Science
+- S.Ananiadou @ salford.ac.uk
+- John McNaught*
+- J.McNaught @
+- National Centre
+- Text Mining
 ---

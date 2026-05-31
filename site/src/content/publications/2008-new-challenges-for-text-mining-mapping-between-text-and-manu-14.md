@@ -27,6 +27,5 @@ pages: S5
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/21
 pdfName: Oda_BMC_2008.pdf
-topics:
-- Text Mining
+topics: []
 ---

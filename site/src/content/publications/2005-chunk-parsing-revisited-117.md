@@ -17,4 +17,6 @@ pages: 133--140
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/101
 pdfName: Tsuruoka_IWPT_2005.pdf
+topics:
+- Computer Science
 ---

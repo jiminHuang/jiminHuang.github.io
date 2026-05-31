@@ -17,4 +17,23 @@ pages: 457--464
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/40
 pdfName: Tsunakawa_IJCNLP_2008.pdf
+topics:
+- Computer Science
+- Oxford Road
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+- manual annotation
+paperTerms:
+- Bilingual Synonym Identi
+- Spelling Variations
+- Takashi Tsunakawa
+- ichi Tsujii
+- Computer Science
+- Graduate School
+- Information Science
+- Oxford Road
+- National Centre
+- Text Mining
 ---

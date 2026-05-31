@@ -19,4 +19,21 @@ pages: 1--18
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/29
 pdfName: Meziane_RE_2008.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- text mining
+paperTerms:
+- Natural Language speci
+- Farid Meziane
+- Nikos Athanasakis
+- Sophia Ananiadou
+- Published online
+- Springer-Verlag London Limited
+- Early phases
+- software development
+- Many systems
+- formal speci
 ---

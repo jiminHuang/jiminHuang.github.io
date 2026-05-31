@@ -40,4 +40,6 @@ pubType: Inproceedings
 bibtexKey: liu:2025
 pages: 271–276
 keywords: []
+topics:
+- Shared Task
 ---

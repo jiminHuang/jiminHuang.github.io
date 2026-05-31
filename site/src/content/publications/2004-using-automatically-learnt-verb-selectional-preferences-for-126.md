@@ -17,7 +17,16 @@ pages: 483--497
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/109
 pdfName: Spasic_JBI_2004.pdf
-topics:
+topics: []
+paperTerms:
 - Biomedical Terms
-- biomedical terms
+- Irena Spasic
+- Sophia Ananiadoub
+- Faraday Building
+- PO Box
+- Sackville Street
+- United Kingdom
+- Computer Science
+- National Centre
+- Text Mining
 ---

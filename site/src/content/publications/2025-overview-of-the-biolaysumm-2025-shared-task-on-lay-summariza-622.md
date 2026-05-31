@@ -34,4 +34,24 @@ bibtexKey: xiao:2025b
 pages: 365–377
 keywords: []
 abstract: Chenghao Xiao, Kun Zhao, Xiao Wang, Siwei Wu, Sixing Yan, Tomas Goldsack, Sophia Ananiadou, Noura Al Moubayed, Liang Zhan, William K. Cheung, Chenghua Lin. Proceedings of the 24th Workshop on Biomedical Language Processing. 2025.
+topics:
+- Language Models
+- Multimodal LLMs
+- Sophia Ananiadou
+- scientific literature
+- Matthew Shardlow
+- Hong Kong
+- language models
+- BioNLP Shared Task
+paperTerms:
+- Biomedical Language Processing
+- Lay Summarization
+- Biomedical Research Articles
+- Radiology Reports
+- chenghao.xiao @
+- chenghua.lin @ manchester.ac.uk
+- Biomedical Research
+- BioNLP Workshop
+- state-of-the-art Specifi-
+- Report Generation
 ---

@@ -27,4 +27,29 @@ keywords:
 - ucompare
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/124
 pdfName: mihaila13e.pdf
+topics:
+- Computer Science
+- knowledge annotation
+- Georgios Kontonatsios
+- Sophia Ananiadou
+- Sampo Pyysalo
+- Raheel Nawaz
+- Tomoko Ohta
+- National Centre
+- John McNaught
+- Text Mining
+- Paul Thompson
+- text mining
+- BioNLP Shared Task
+paperTerms:
+- Better Understanding
+- Claudiu Mih
+- Georgios Kontonatsios
+- Riza Theresa Batista-Navarro
+- Paul Thompson
+- Ioannis Korkontzelos
+- Sophia Ananiadou
+- National Centre
+- Text Mining
+- Computer Science
 ---

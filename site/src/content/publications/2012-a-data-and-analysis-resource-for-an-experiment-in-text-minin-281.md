@@ -20,6 +20,5 @@ pubType: Inproceedings
 bibtexKey: black:2012
 pages: 2083-2088
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

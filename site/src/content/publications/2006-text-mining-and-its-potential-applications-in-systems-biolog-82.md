@@ -19,6 +19,16 @@ pages: 571 - 579
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/69
 pdfName: Ananiadou_tibtech_2006.pdf
-topics:
-- Text Mining
+topics: []
+paperTerms:
+- Text mining
+- systems biology
+- Computer Science
+- National Centre
+- Manchester Interdisciplinary Biocentre
+- Princess St
+- Faraday Building
+- Sackville St
+- Manchester Centre
+- Integrative Systems Biology
 ---

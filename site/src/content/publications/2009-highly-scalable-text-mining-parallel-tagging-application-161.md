@@ -19,6 +19,5 @@ aigaionId: 161
 pubType: Inproceedings
 bibtexKey: tekiner:2009
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

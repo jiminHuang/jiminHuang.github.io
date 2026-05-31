@@ -19,6 +19,5 @@ aigaionId: 278
 pubType: Article
 bibtexKey: rak:2012
 keywords: []
-topics:
-- Text Mining
+topics: []
 ---

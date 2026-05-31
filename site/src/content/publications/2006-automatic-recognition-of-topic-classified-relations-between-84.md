@@ -27,7 +27,16 @@ pages: 5-12
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/71
 pdfName: Chun_SMBM_2006.pdf
-topics:
-- Topic-Classified Relations
-- Prostate Cancer
+topics: []
+paperTerms:
+- Automatic Recognition
+- Medline Abstracts
+- Computer Science
+- Graduate School
+- Information Science
+- '{ chun'
+- National Institute
+- Advanced Industrial Science
+- '{ rshiba'
+- Japan Science
 ---

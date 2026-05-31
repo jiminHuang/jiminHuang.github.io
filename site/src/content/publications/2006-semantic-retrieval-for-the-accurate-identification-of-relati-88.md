@@ -27,6 +27,16 @@ pages: 1017--1024
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/75
 pdfName: Miyao_ACL_2006.pdf
-topics:
-- Accurate Identification
+topics: []
+paperTerms:
+- Semantic Retrieval
+- Accurate Identi
+- Relational Concepts
+- Massive Textbases
+- Yusuke Miyao
+- Tomoko Ohta
+- Katsuya Masuda
+- Yoshimasa Tsuruoka
+- Kazuhiro Yoshida
+- Takashi Ninomiya
 ---

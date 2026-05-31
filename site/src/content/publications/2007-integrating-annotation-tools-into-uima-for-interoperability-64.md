@@ -19,4 +19,22 @@ pages: 575--582
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/57
 pdfName: Piao_AHM_2007.pdf
+topics:
+- Computer Science
+- Sophia Ananiadou
+- National Centre
+- John McNaught
+- Text Mining
+- text mining
+paperTerms:
+- Annotation Tools
+- Scott Piao
+- Sophia Ananiadou
+- John McNaught
+- Computer Science
+- National Centre
+- Text Mining
+- '{ scott.piao'
+- '} @ manchester.ac.uk'
+- practical issue
 ---

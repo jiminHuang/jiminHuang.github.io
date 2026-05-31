@@ -21,4 +21,23 @@ pages: 165-176
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/15
 pdfName: Kim_APBC_2008.pdf
+topics:
+- full text
+- Oxford Road
+- Tomoko Ohta
+- National Centre
+- Text Mining
+- Princess Street
+- text mining
+paperTerms:
+- Proceedings Trim Size
+- corpus annotation
+- knowledge acquisition
+- biomedical literature
+- Jin-Dong Kim
+- Tomoko Ohta
+- Kanae Oda
+- ichi Tsujii
+- Oxford Road
+- National Centre
 ---

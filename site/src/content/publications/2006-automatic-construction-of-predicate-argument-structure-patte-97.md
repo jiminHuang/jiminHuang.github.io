@@ -23,6 +23,16 @@ pages: 284--292
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/83
 pdfName: Yakushiji_emnlp_2006.pdf
-topics:
+topics: []
+paperTerms:
+- Automatic Construction
 - Predicate-argument Structure Patterns
+- Biomedical Information Extraction
+- Akane Yakushiji
+- Yusuke Miyao
+- Tomoko Ohta
+- Computer Science
+- Sackville St
+- '{ akane'
+- Yuka Tateisi
 ---

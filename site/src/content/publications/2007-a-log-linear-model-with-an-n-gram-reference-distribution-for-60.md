@@ -21,4 +21,19 @@ pages: 60--68
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/54
 pdfName: Ninomiya_IWPT_2007.pdf
+topics:
+- Computer Science
+- Text Mining
+- text mining
+paperTerms:
+- Parsing Technologies
+- Czech Republic
+- log-linear model
+- n-gram reference distribution
+- accurate HPSG
+- Takashi Ninomiya
+- Information Technology Center
+- Takuya Matsuzaki
+- Computer Science
+- Yusuke Miyao
 ---

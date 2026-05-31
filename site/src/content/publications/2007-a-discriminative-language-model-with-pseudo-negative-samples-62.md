@@ -17,4 +17,10 @@ pages: 73--80
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/55
 pdfName: Okanohara_ACL_2007.pdf
+topics:
+- Language Models
+- Computer Science
+- Text Mining
+- language models
+- text mining
 ---

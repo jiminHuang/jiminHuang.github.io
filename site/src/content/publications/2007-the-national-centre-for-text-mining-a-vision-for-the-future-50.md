@@ -13,7 +13,5 @@ aigaionId: 50
 pubType: Article
 bibtexKey: ananiadou:2007
 keywords: []
-topics:
-- Text Mining
-- National Centre
+topics: []
 ---

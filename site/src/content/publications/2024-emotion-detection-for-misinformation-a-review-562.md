@@ -25,4 +25,18 @@ bibtexKey: liu:2024
 pages: '102300'
 keywords: []
 abstract: With the advent of social media, an increasing number of netizens are sharing and reading posts and news online. However, the huge volumes of misinformation (e.g., fake news and rumors) that flood the internet can adversely affect people’s lives, and have resulted in the emergence of rumor and fake news detection as a hot research topic. The emotions and sentiments of netizens, as expressed in social media posts and news, constitute important factors that can help to distinguish fake news from genuine news and to understand the spread of rumors. This article comprehensively reviews emotion-based methods for misinformation detection, with a particular focus on advanced fusion methods. We begin by explaining the strong links between emotions and misinformation. We subsequently provide a detailed analysis of a range of misinformation detection methods that employ a variety of emotion, sentiment and stance-based features, and describe their strengths and weaknesses. Finally, we discuss a number of ongoing challenges in emotion-based misinformation detection based on large language models, and suggest future research directions, including data collection (multi-platform, multilingual), annotation, benchmark, multimodality, and interpretability.
+topics:
+- Language Models
+- language models
+paperTerms:
+- Emotion detection
+- social media
+- news online
+- huge volumes
+- fake news
+- fake news detection
+- hot research topic
+- social media posts
+- genuine news
+- emotion-based methods
 ---

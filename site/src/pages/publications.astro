@@ -261,9 +261,13 @@ const typeCounts = Object.fromEntries(
                   <div class="serif text-sm text-[color:var(--color-ink-700)] leading-snug mb-3">{p.data.venue}</div>
                 )}
 
-                {p.data.keywords && p.data.keywords.length > 0 && (
+                {((p.data.paperTerms && p.data.paperTerms.length > 0) ||
+                  (p.data.keywords && p.data.keywords.length > 0)) && (
                   <ul class="flex flex-wrap gap-1.5 mb-3">
-                    {p.data.keywords.map((k) => (
+                    {(p.data.paperTerms ?? []).map((k) => (
+                      <li class="sans text-[10px] uppercase tracking-wider text-[color:var(--color-amber-600)] bg-[color:var(--color-amber-100)] border hairline rounded-full px-2 py-0.5" style="border-color: var(--color-amber-500);">{k}</li>
+                    ))}
+                    {(p.data.keywords ?? []).map((k) => (
                       <li class="sans text-[10px] uppercase tracking-wider text-[color:var(--color-ink-500)] bg-[color:var(--color-paper-2)] border hairline rounded-full px-2 py-0.5">{k}</li>
                     ))}
                   </ul>

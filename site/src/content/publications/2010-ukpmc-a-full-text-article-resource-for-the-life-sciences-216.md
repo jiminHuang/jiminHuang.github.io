@@ -79,4 +79,17 @@ bibtexKey: McEntyre2010
 pages: D58-D65
 keywords: []
 abstract: UK PubMed Central (UKPMC) is a full-text article database that extends the functionality of the original PubMed Central (PMC) repository. The UKPMC project was launched as the first 'mirror' site to PMC, which in analogy to the International Nucleotide Sequence Database Collaboration, aims to provide international preservation of the open and free-access biomedical literature. UKPMC (http://ukpmc.ac.uk) has undergone considerable development since its inception in 2007 and now includes both a UKPMC and PubMed search, as well as access to other records such as Agricola, Patents and recent biomedical theses. UKPMC also differs from PubMed/PMC in that the full text and abstract information can be searched in an integrated manner from one input box. Furthermore, UKPMC contains 'Cited By' information as an alternative way to navigate the literature and has incorporated text-mining approaches to semantically enrich content and integrate it with related database resources. Finally, UKPMC also offers added-value services (UKPMC+) that enable grantees to deposit manuscripts, link papers to grants, publish online portfolios and view citation information on their papers. Here we describe UKPMC and clarify the relationship between PMC and UKPMC, providing historical context and future directions, 10 years on from when PMC was first launched.
+topics:
+- full text
+paperTerms:
+- full-text article database
+- original PubMed Central
+- UKPMC project
+- international preservation
+- considerable development
+- PubMed search
+- biomedical theses UKPMC
+- full text
+- input box
+- '''Cited By'
 ---

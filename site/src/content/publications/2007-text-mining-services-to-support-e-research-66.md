@@ -16,6 +16,16 @@ bibtexKey: rea:2007
 keywords: []
 pdfUrl: https://www.nactem.ac.uk/aigaion2/index.php/attachments/single/59
 pdfName: Rea_AHM_2007.pdf
-topics:
+topics: []
+paperTerms:
+- Text Mining Services
+- Support E-Research
+- Brian Rea
+- Sophia Ananiadou
+- National Centre
 - Text Mining
+- Computer Science
+- '{ brian.rea'
+- e-Science infrastructure
+- technological support
 ---

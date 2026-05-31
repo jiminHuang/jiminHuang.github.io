@@ -29,4 +29,7 @@ aigaionId: 576
 pubType: Misc
 bibtexKey: 'hu: 2024'
 keywords: []
+topics:
+- Language Models
+- language models
 ---
